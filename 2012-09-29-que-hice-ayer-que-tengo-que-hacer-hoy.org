@@ -6,8 +6,10 @@
 #+INCLUDE:   header.org
 #+DATE:      2012-09-29
 
-Hoy participé del [[http://in.cafelug.org.ar/2012/08/2-programa-de-charlas---2012/index.html][CaFeIN]] dando una charla sobre el uso de [[http://orgmode.org][Org-mode]] en
-el día a día de un desarrollador (o al menos =BUGFIXER=).
+Hoy participé del
+[[http://in.cafelug.org.ar/2012/08/2-programa-de-charlas---2012/index.html][CaFeIN]]
+dando una charla sobre el uso de [[http://orgmode.org][Org-mode]] en el
+día a día de un desarrollador (o al menos =BUGFIXER=).
 
 Tuve suerte y logré dar casi todo el temario planteado, lo mejor fué capturar
 la pantalla en un video para luego unirlo a la filmación de la charla, de esta

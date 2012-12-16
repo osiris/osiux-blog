@@ -1,9 +1,12 @@
-========================
-CampusParty Bogotá CPCO5
-========================
+#+TITLE:       CampusParty Bogotá CPCO5
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2012-06-26
 
-la previa
-=========
+** la previa
 
 El viaje comenzó bien, logré capturar el booteo
 del sistema de entretenimiento del avión, el
@@ -11,81 +14,64 @@ cual usa Linux. Al llegar a Corferias, había una
 cola enorme intentando registrarse y no quedaban
 dudas de que el evento era muy grande!
 
-.. image::  http://osiux.com/img/cpco5/cpco5-600-01.jpg
-   :target: http://osiux.com/img/cpco5/cpco5-1920-01.jpg
+[[file:img/cpco5/cpco5-1920-01.jpg][file:img/cpco5/cpco5-600-01.jpg]]
 
 El datacenter llamado *cerebro* estaba en medio
 de la *arena*.
 
-.. image::  http://osiux.com/img/cpco5/cpco5-600-02.jpg
-   :target: http://osiux.com/img/cpco5/cpco5-1920-02.jpg
+[[file:img/cpco5/cpco5-1920-02.jpg][file:img/cpco5/cpco5-600-02.jpg]]
 
 Hice el reconocimiento del lugar.
 
-.. image::  http://osiux.com/img/cpco5/cpco5-600-03.jpg
-   :target: http://osiux.com/img/cpco5/cpco5-1920-03.jpg
+[[file:img/cpco5/cpco5-1920-03.jpg][file:img/cpco5/cpco5-600-03.jpg]]
 
 Encontré un canal de televisión que transmite
 desde el evento y unos auditorios abiertos muy
 cómodos.
 
-.. image::  http://osiux.com/img/cpco5/cpco5-600-04.jpg
-   :target: http://osiux.com/img/cpco5/cpco5-1920-04.jpg
+[[file:img/cpco5/cpco5-1920-04.jpg][file:img/cpco5/cpco5-600-04.jpg]]
 
 Ni bien ubiqué un lugar para conectarme y dar
 aviso que de estaba todo bien, recorrí el
 camping y pude ver que el tráfico de red
 comenzaba a aumentar y esto era la previa.
 
-.. image::  http://osiux.com/img/cpco5/cpco5-600-05.jpg
-   :target: http://osiux.com/img/cpco5/cpco5-1920-05.jpg
+[[file:img/cpco5/cpco5-1920-05.jpg][file:img/cpco5/cpco5-600-05.jpg]]
 
-
-el primer día de charlas
-========================
+** el primer día de charlas
 
 El público aumentó considerablemente y había un
 clima de juegos.
 
-.. image::  http://osiux.com/img/cpco5/cpco5-600-06.jpg
-   :target: http://osiux.com/img/cpco5/cpco5-1920-06.jpg
+[[file:img/cpco5/cpco5-1920-06.jpg][file:img/cpco5/cpco5-600-06.jpg]]
 
 Aparecieron las clásicas promotoras y los
 stands dentro y fuera de la *arena*.
 
-.. image::  http://osiux.com/img/cpco5/cpco5-600-07.jpg
-   :target: http://osiux.com/img/cpco5/cpco5-1920-07.jpg
+[[file:img/cpco5/cpco5-1920-07.jpg][file:img/cpco5/cpco5-600-07.jpg]]
 
 Encontré robots y amigos.
 
-.. image::  http://osiux.com/img/cpco5/cpco5-600-08.jpg
-   :target: http://osiux.com/img/cpco5/cpco5-1920-08.jpg
+[[file:img/cpco5/cpco5-1920-08.jpg][file:img/cpco5/cpco5-600-08.jpg]]
 
-no seas un terminal de internet, creá una red libre
-===================================================
+** no seas un terminal de internet, creá una red libre
 
 A las 16hs di una conferencia donde comenté las
 ventajas de las redes libres y la interconexión
 con internet ante un público que se animó a
 preguntar bastante!
 
-.. image::  http://osiux.com/img/cpco5/cpco5-600-09.jpg
-   :target: http://osiux.com/img/cpco5/cpco5-1920-09.jpg
+[[file:img/cpco5/cpco5-1920-09.jpg][file:img/cpco5/cpco5-600-09.jpg]]
 
-video
------
+*** video
 
-.. image:: http://osiux.com/img/cpco5/cpco5-redlibre.jpg
-   :target: http://youtu.be/IKO17A5Imbc
+[[http://youtu.be/IKO17A5Imbc][img/cpco5/cpco5-redlibre.jpg]]
 
-slides
-------
+*** slides
 
 - http://pub.osiux.com/cpco5-redlibre.pdf
 
-
-continuará...
-=============
+** continuará...
 
 Mañana sigue la movida e intentaré descubir la
 noche del CampusParty ya que es un evento 24hs

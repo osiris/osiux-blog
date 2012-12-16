@@ -1,7 +1,10 @@
-#+DATE: 2012-06-01
-#+INFOJS_OPT: view:info toc:nil
-
-* PirateBox PirateFloppy
+#+TITLE:       PirateBox PirateFloppy
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2012-06-01
 
 PirateBox [fn:piratebox] es un proyecto para compartir archivos usando
 un router WiFi, en mi caso estoy usando un TPLink MR3020 [fn:mr3020] y

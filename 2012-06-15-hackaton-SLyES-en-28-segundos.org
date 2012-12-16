@@ -1,13 +1,19 @@
+#+TITLE:       Hackaton Software Libre y Economía Social en 28 segundos
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2012-06-15
 
-========================================================
-Hackaton Software Libre y Economía Social en 28 segundos
-========================================================
+Ariel de [[http://gcoop.coop][gcoop]], dejó la cámara sacando **una foto
+cada 30 segundos** durante el hackaton del
+[[http://www.gcoop.coop/sles-2012][SLyES]] y armó un video donde se
+puede apreciar cómo se trabajó:
 
-Ariel de `gcoop <http://gcoop.coop>`_, dejó la cámara sacando **una foto cada 30 segundos** durante el hackaton del `SLyES 2012 <http://www.gcoop.coop/sles-2012>`_ y armó un video donde se puede apreciar cómo se trabajó:
+#+BEGIN_HTML
+<video controls="controls" src="http://gcoop.coop/hackaton-slyes.ogv"></video>
+#+END_HTML
 
-.. raw:: html
-
-  <video controls="controls" src="http://gcoop.coop/hackaton-slyes.ogv"></video>
-
-* `Descargar Video <http://gcoop.coop/hackaton-slyes.ogv>`_
+- [[http://gcoop.coop/hackaton-slyes.ogv][Descargar Video]
 

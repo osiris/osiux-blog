@@ -1,6 +1,10 @@
-===============================================
-3er. Evento de Software Libre y Economía Social
-===============================================
+#+TITLE:       3er. Evento de Software Libre y Economía Social
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2012-06-13
 
 Hoy desde las 16 horas los esperamos en el Centro Cultural de la
 Cooperación (Sala Solidaridad, 2 subsuelo) para compartir experiencias e
@@ -21,9 +25,7 @@ Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento
 
 - http://www.facttic.org.ar/
 
- 
 Sobre los invitados
--------------------
 
 Patricio Griffin
  Presidente del INAES desde 2007. Es Abogado, especializado en
@@ -83,6 +85,7 @@ Juan Manuel Schillaci
  Miembro Fundador de la Cooperativa de Trabajo de Desarrollo de
  Software Libre Devecoop; Analista de Sistemas.
 
-- Invita: `gcoop Cooperativa de Trabajo gcoop Ltda <http://gcoop.coop/>`_
-- Auspician: `FECOOTRA <http://www.fecootra.org.ar/>`_ y `CNCT <http://www.cnct.org.ar/>`_
+- Invita: [[fhttp://gcoop.coop][Cooperativa de Trabajo gcoop Ltda]]
+- Auspician:
+  [[http://www.fecootra.org.ar/][FECOOTRA]] y [[http://www.cnct.org.ar/][CNCT]]
 

@@ -1,32 +1,35 @@
-
-==========================================================================
-Cómo automatizar VLC para grabar un programa de televisión digital abierta
-==========================================================================
+#+TITLE:       Cómo automatizar VLC para grabar un programa de televisión digital abierta
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2012-05-28
 
 El jueves pasado recorrí varios lugares de microcentro y donde había
-antenas para *TDA* [#tda]_ eran muy caras y donde estaban a buen precio
+antenas para *TDA* [fn:tda] eran muy caras y donde estaban a buen precio
 no tenían stock, asi que volví a casa sin una antena decente para mi
-sintonizador geniatech [#geniatech]_.
+sintonizador geniatech [fn:geniatech].
 
 Luego de luchar al menos una hora, mediante un sistema de dos *amarres*, el
 primero fijando la antena al cordón de una cortina y el segundo al monopatín de
-mi hijo, logré tener *buena* señal de Canal Encuentro [#encuentro]_.
+mi hijo, logré tener *buena* señal de Canal Encuentro [fn:encuentro].
 
-.. image:: http://osiux.com/img/sintonizador-usb-tda-con-amarre.jpg
+[[file:img/sintonizador-usb-tda-con-amarre.jpg]]
 
 La idea era grabar el episodio *Internet: comunicación* del ciclo *en el medio
-digital* [#enelmedio]_ en el cual participó *BuenosAiresLibre* [#bal]_.
+digital* [fn:enelmedio] en el cual participó *BuenosAiresLibre* [fn:bal].
 
 El problema era el horario, eran las 23hs y el programa empezaba a las 04:30 de
 la matina, si bien podía esperar a verlo el viernes a las 22hs en un horario
 más cómodo, estaba ansioso, ya que fue filmado en Septiembre del año pasado!
 
-Asi que empecé a ver cómo grabarlo y luego de luchar con ``RecordMyDesktop``,
-``ffmpeg`` y ``sox``, vi que ``vlc`` tiene un bonito botón rojo para grabar,
+Asi que empecé a ver cómo grabarlo y luego de luchar con =RecordMyDesktop=,
+=ffmpeg= y =sox=, vi que =vlc= tiene un bonito botón rojo para grabar,
 pero tenía que estar ahí en vivo para presionarlo!
 
-La solución fue instalar el paquete ``xautomation`` que permite automatizar
-tareas del entorno ``X`` usando una línea de ``bash``, indicando al mouse
+La solución fue instalar el paquete =xautomation= que permite automatizar
+tareas del entorno =X= usando una línea de =bash=, indicando al mouse
 moverse a las coordenadas del botón rojo y luego hacer clic.
 
 Entonces la tarea iniciada a las 23:16 del jueves fue:
@@ -36,12 +39,14 @@ Entonces la tarea iniciada a las 23:16 del jueves fue:
 3. esperar 60 minutos
 4. mover el mouse y hacer clic para detener la grabación
 
-Traducido a ``bash``::
+Traducido a =bash=:
 
+#+BEGIN_SRC sh :results none :exports code
     sleep 5h && \
     xte 'mousemove 29 694' && xte 'mouseclick 1' && \
     sleep 60m && \
     xte 'mousemove 29 694' && xte 'mouseclick 1'
+#+END_SRC
 
 Asi que me pude ir a dormir tranquilo y a la mañana siguiente pude disfrutar
 del programa mientras desayunaba.
@@ -54,9 +59,9 @@ Para el que quiera ver un resumen del programa:
 
 - http://osiux.com/2012-05-25-buenos-aires-libre-en-el-medio-digital.txt
 
-.. [#tda] http://www.tda.gob.ar/
-.. [#geniatech] http://osiux.com/tv/tv-digital-geniatech-usb-mygica-s87-dibcom-stk8096gp.txt
-.. [#encuentro] http://encuentro.gob.ar/
-.. [#enelmedio] http://encuentro.gob.ar/Event.aspx?Id=737
-.. [#bal] http://buenosaireslibre.org
+[fn:tda] http://www.tda.gob.ar/
+[fn:geniatech] http://osiux.com/tv/tv-digital-geniatech-usb-mygica-s87-dibcom-stk8096gp.txt
+[fn:encuentro] http://encuentro.gob.ar/
+[fn:enelmedio] http://encuentro.gob.ar/Event.aspx?Id=737
+[fn:bal] http://buenosaireslibre.org
 

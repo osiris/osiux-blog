@@ -1,6 +1,10 @@
-============================
-Free Software is cooperative
-============================
+#+TITLE:       Free Software is cooperative
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2012-07-06
 
 http://stories.coop/stories/written/free-software-cooperative
 

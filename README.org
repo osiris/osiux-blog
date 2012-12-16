@@ -1,0 +1,17 @@
+#+TITLE:       README
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2012-12-16
+
+Este es un repositorio de archivos en formato
+Org-mode que luego son exportados a
+formato HTML mediante Emacs para armar mi blog.
+
+Anteriormente eran archivos en formato
+reSTructuredText convertidos dinámicamente a
+formato HTML usando
+[[http://www.frontweb.com.ar][frontweb]]
+
