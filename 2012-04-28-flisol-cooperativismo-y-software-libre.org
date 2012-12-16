@@ -1,0 +1,19 @@
+#+TITLE:       Cooperativismo y Software Libre en FLISOL Buenos Aires
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2012-04-28
+
+Este año en el [[http://flisol.info][Festival Latinoamericano de
+Instalación de Software Libre]] de Buenos Aires, pude dar una charla de
+*Cooperativismo y Software Libre*. Básicamente se comentó como funciona
+una cooperativa y específicamente como trabajamos en
+[[http://gcoop.coop][gcoop]] uniendo el mundo del software libre y el
+cooperativismo, está disponible la presentación:
+
+[[file:img/COOPySL.png]]
+
+- http://gcoop.coop/COOPySL.pdf
+

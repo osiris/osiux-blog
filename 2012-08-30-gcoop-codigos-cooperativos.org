@@ -1,0 +1,35 @@
+================================
+gcoop tiene Códigos Cooperativos
+================================
+
+:date: 2012-08-30
+
+Ya no solo desarrollamos Software Libre, en este caso presentamos un Corto
+Documental que produjimos en el que buscamos contar de manera amena lo que
+hacemos y las implicancias sociales del cooperativismo y el Software Libre.
+
+La idea de hacer un Corto surgió a partir de la Convocatoria de la
+*Confederación Cooperativa de la Argentina* (`COOPERAR
+<http://cooperar.coop/>`_) que invitó a presentar proyectos de video que
+cuenten diversas experiencias cooperativas para el `Congreso Argentino
+de las Cooperativas <http://www.cac2012.coop/>`_. 
+
+En este marco convocamos al Director *Daniel Henriquez* y su
+**Cooperativa La olla** para trabajar el proyecto (dirección, guión,
+filmación, edición) como asi también a `Licuadora Studio
+<http://www.licuadorastudio.com/>`_ para las animaciones gráficas (con
+software libre). La música original la realizó especialmente para el
+corto (y la liberó) el grupo amigo `Camanchaca
+<http://www.camanchaca.com.ar/>`_.
+
+Este sábado a las 15.30 horas los invitamos al `Pueblo Cooperativo
+<http://www.pueblo.coop/>`_ que se encuentra en `Tecnopolis
+<http://tecnopolis.ar/>`_ para disfrutar entre amigos de una **avant -
+premier** de "Códigos Cooperativos". Acorde a nuestra filosofía el corto
+tiene licencia Creative Commons por lo que pronto lo pondremos a
+circular por el mundo. Los esperamos.
+
+.. image:: http://osiux.com/img/codigos-cooperativos.jpg
+    :width: 600
+    :target: http://www.youtube.com/watch?v=sMI1HA9mOmc&feature=youtu.be
+

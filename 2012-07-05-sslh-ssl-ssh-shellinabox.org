@@ -1,0 +1,38 @@
+#+TITLE:     sslh ssl ssh shellinabox
+#+AUTHOR:    Osiris Alejandro Gomez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE:   header.org
+#+DATE:      2012-07-05
+
+Como todo amante de =*UNIX= siempre quiero tener un
+=shell/terminal/consola/ssh= disponible y desde hace mucho que vengo
+usando =ajaxterm= [fn:ajaxterm], pero ayer descubrí
+=shellinabox= [fn:shellinabox] que funciona mucho mejor. Lo combiné
+con =sslh= [fn:sslh] que multiplexa un puerto en varios analizando el
+header del protocolo utilizado, de esta manera puedo loguearme usando
+=SSL= desde un browser mediante =HTTPS= e ingresar a un shell y
+también tengo la posibilidad de ingresar directamente por el puerto
+443 mediante de ssh en los casos que esté filtrado y no haya un IDS,
+de cualquier manera siempre tengo =ssh= disponible :-D
+
+Diagrama de conexión::
+
+#+BEGIN_EXAMPLE
+        +--------+   +---+   +----------------+
+  ----->|443/sslh|-->|ssl|-->|4200/shellinabox|
+        +---+----+   +---+   +----+-----------+
+            |                     |
+            |        +---+        |
+            +------->|ssh|<-------+
+                     +---+
+                       ^
+                       |
+                       |
+#+END_EXAMPLE
+
+[fn:ajaxterm] http://antony.lesuisse.org/software/ajaxterm/
+[fn:shellinabox] https://code.google.com/p/shellinabox/
+[fn:sslh] http://www.rutschle.net/tech/sslh.shtml
+

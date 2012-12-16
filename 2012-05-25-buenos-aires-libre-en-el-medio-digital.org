@@ -1,0 +1,40 @@
+#+TITLE:       BuenosAiresLibre en el medio digital
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2012-05-25
+
+En coincidencia con la conmemoración de la revolución del 25 de Mayo,
+hoy a las 22hs por Canal Encuentro [fn:encuentro], en el ciclo *en el
+medio digital* [fn:enelmedio] se transmitirá el episodio *Internet:
+comunicación* del cual participa el proyecto *BuenosAiresLibre* [fn:bal]
+que es una revolución tecnológica, una red libre, abierta, autónoma e
+independiente gestionada por sus propios usuarios de manera comunitaria
+con un esquema organizativo horizontal.
+
+Si bien quedó mucho material por mostrar, se presenta como una
+alternativa de conexión en la ciudad de Buenos Aires y que es al mismo
+tiempo un modelo posible de implementación para otras ciudades y países,
+formando parte de las diversas *RedesLibres* [fn:redes] de latinoamérica
+
+.. image:: http://osiux.com/img/buenos-aires-libre-en-el-medio-digital.jpg
+   :target: http://eternauta2001tdt.blogspot.com.ar/2012/04/en-el-medio-digital.html
+   :width: 600
+
+Levantá tu nodo de BAL y aprendé a formar tu propia red libre!
+
+**Sábado 02 de Junio - Taller en Hacklab Barracas**
+
+- http://wiki.buenosaireslibre.org/Reuniones/Abiertas/2012-06-02
+
+**Viernes 08 de Junio - Reunión en LaTribu, Lambaré 873**
+
+- http://wiki.buenosaireslibre.org/Reuniones/Organizativas/2012-Junio-08
+
+[fn:encuentro] http://encuentro.gob.ar/
+[fn:enelmedio] http://encuentro.gob.ar/Event.aspx?Id=737
+[fn:bal] http://buenosaireslibre.org
+[fn:redes] http://redeslibres.org
+

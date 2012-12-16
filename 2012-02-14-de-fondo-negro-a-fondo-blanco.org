@@ -1,0 +1,39 @@
+#+TITLE:       De Fondo Negro a Fondo Blanco
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2012-02-14 
+
+En [[http://gcoop.coop][gcoop]], solemos auto-capacitarnos al menos
+una vez por mes, algún socio que tenga ganas de explicar algo que le
+resulte interesante compartir puede dar una charlita.
+
+[[file:img/de-fondo-negro-a-fondo-blanco.png]]
+
+Esta vez, tuve la suerte de mostrar un breve resumen sobre cómo usar
+[[http://orgmode.org][org-mode]] que es parte de *Emacs* y que
+básicamente permite hacer de todo, planificación de proyectos, manejo
+de agenda y calendario, ejecutar código y capturar resultados,
+realizar tablas y planillas de cálculo, administración de tareas,
+tomar simples notas, hacer mapas mentales, y mucho más. Entre varias
+características, es posible obtener elegantes documentos en PDF o
+HTML.
+
+Para muestra, nada mejor que ver el texto [fn:texto] con el que realicé los
+slides [fn:slides] de la charla, un simple archivo de texto plano, que al
+presionar =C-c C-e p= se convierte en un LaTeX Beamer:
+
+Seguramente iré mejorando los slides más adelante, pero escribir esa
+charlita me tomó sólo 3hs y 25minutos
+
+#+BEGIN_EXAMPLE
+  * de fondo negro a fondo blanco
+    :LOGBOOK:
+    CLOCK: [2012-02-13 lun 23:45]--[2012-02-14 mar 03:10] =>  3:25
+    :END:
+#+END_EXAMPLE
+
+[fn:texto]  http://pub.osiux.com/charlas/de-fondo-negro-a-fondo-blanco/de-fondo-negro-a-fondo-blanco.org
+[fn:slides] http://pub.osiux.com/charlas/de-fondo-negro-a-fondo-blanco/de-fondo-negro-a-fondo-blanco.pdf

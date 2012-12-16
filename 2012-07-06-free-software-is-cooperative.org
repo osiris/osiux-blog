@@ -1,0 +1,44 @@
+============================
+Free Software is cooperative
+============================
+
+http://stories.coop/stories/written/free-software-cooperative
+
+"A cooperative resolves the need to work in a democratic way, to reclaim
+work as a creative enterprise, to build with others. Thus, work is not
+simply done for profit maximization, but also for the growth of the
+people who do it, taking into account the social and environmental
+impact thereby generated," writes Pablo A. Vannini, a member of gcoop.
+
+gcoop was formed by a group of young people who came together in 2005 to
+form a cooperative to develop Free Software. We specialize in the
+development of CRM Software (Client and Member Management), website
+development (with Drupal technology), and customized development (using
+Python and PHP).
+
+Free Software has shown that collaborative and cooperative work
+encourages the development of high quality information systems that
+generate better solutions and adapt to the needs of clients. This idea
+does not only apply to the activity of the cooperative, but goes to the
+core of the enterprise - the development of a democratic organization
+concerned with the development of the community in which it is located.
+
+"A cooperative enterprise," Vannini explains "offers the only way for a
+worker to be autonomous, responsible, and work in solidarity." He adds
+that the cooperative form allows for mutual assistance and maintaining
+the work even if someone falls ill or needs family leave. Working
+together and helping each other creates a virtuous circle of growth.
+"For us, the cooperative is not just a legal form, but also a movement
+based on a rich history. The legal form is a starting point necessary
+for securing the foundation of solidarity upon which to build the
+project."
+
+Other cooperatives of young programmers have been created based on the
+experience of gcoop and together we have recently founded a Federation
+specializing in the themes in which we work: Argentina Federation of
+Worker Cooperatives for Technology, Innovation and Knowledge (FACTTIC
+http://www.facttic.org.ar), based on the experience of the "Red Gráfica"
+(http://www.redgraficacoop.com.ar/) and "Red Metalúrgica". gcoop is also
+a member of the federation of workers cooperatives, FECOOTRA
+(http://www.fecootra.org.ar).
+

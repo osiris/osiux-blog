@@ -1,0 +1,14 @@
+#+TITLE:       gcoop es una caricatura
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2012-02-29 
+
+Gracias a *Chester G* que tuvo la gentileza de hacerle caso al pedido de
+*Hugo Ruscitti* para dibujar las caricaturas de cada socio de gcoop con motivo
+del quinto aniversario, hoy podemos usar como avatar estas imágenes (aunque mi
+percepción de la realidad me dice que soy mas bonito):
+
+[[file:img/gcoop-cartoon.gif]]

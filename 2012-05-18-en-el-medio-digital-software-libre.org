@@ -1,0 +1,24 @@
+#+TITLE:       episodio Software Libre cliclo En el medio digital
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2012-05-18
+
+Canal Encuentro [fn:encuentro] cada día ofrece mejores programas y uno de
+ellos es el último ciclo de la serie *en el medio* que en esta
+oportunidad trata el *mundo digital* [fn:digital], el episodio 7 hablan
+sobre *Software Libre* y es muy gratificante que *gcoop Cooperativa de
+Software Libre* [fn:gcoop] sea parte del mismo como asi también el resto
+de colegas activistas de este movimiento que tantas satisfacciones me
+brinda día a día.
+
+[[file:img/en-el-medio-digital-software-libre.jpg]]
+
+- http://eternauta2001tdt.blogspot.com.ar/2012/04/en-el-medio-digital.html
+
+[fn:encuentro] http://encuentro.gob.ar/
+[fn:digital] http://encuentro.gob.ar/Event.aspx?Id=737
+[fn:gcoop] http://gcoop.coop
+

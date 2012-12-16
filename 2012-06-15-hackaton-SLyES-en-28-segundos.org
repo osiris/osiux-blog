@@ -1,0 +1,13 @@
+
+========================================================
+Hackaton Software Libre y Economía Social en 28 segundos
+========================================================
+
+Ariel de `gcoop <http://gcoop.coop>`_, dejó la cámara sacando **una foto cada 30 segundos** durante el hackaton del `SLyES 2012 <http://www.gcoop.coop/sles-2012>`_ y armó un video donde se puede apreciar cómo se trabajó:
+
+.. raw:: html
+
+  <video controls="controls" src="http://gcoop.coop/hackaton-slyes.ogv"></video>
+
+* `Descargar Video <http://gcoop.coop/hackaton-slyes.ogv>`_
+

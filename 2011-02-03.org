@@ -1,0 +1,36 @@
+#+TITLE:       Blog de prueba
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2011-02-03
+
+** Pomodoro notify-send
+
+| **14:50**
+
+Hace un par de meses vengo usando la
+[[http://www.pomodotechnique.com][Técnica Pomodoro]] y como no me
+gustaba ningún applet existente, decidí realizar un notificador usando
+=notify-send=. En breve publico un howto detallado.
+
+** Tu vida en un TXT
+
+| **15:05**
+
+Estoy por rehacer la charla [[file:todo-txt-rst+org-mode.org][TODO txt rST + org-mode]] y esta vez en
+lugar de generar los slides en rest pienso usar únicamente
+org-mode. Sin lugar a dudas estará muy inspirada en [[file:emacs-orgmode-organize-your-life-in-plain-text.txt][Organize your life
+in plain text]]
+
+** [[file:frontweb.txt][Frontweb como blog]]
+
+| **16:13**
+
+Junto a [[http://www.examplelab.com.ar][Hugo Ruscitti]], estamos planeado incorporar funciones de blog
+en [[http://frontweb.com.ar][Frontweb]], de momento empiezo a *bloguear* usando un esquema de
+archivos con formato =YYYY-MM-DD= en el nombre del archivo que seguro
+luego podremos filtrar de la lista de archivos y presentar de una
+manera muy vistosa.
+

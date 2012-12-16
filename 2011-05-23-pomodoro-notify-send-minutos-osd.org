@@ -1,0 +1,21 @@
+#+TITLE:       Pomodoro notify-send y Minutos OSD
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2011-05-23
+
+Luego de varios meses pude dedicar un par de pomodoros a documentar
+los dos scripts que uso para hacer mis pomodoros. :-)
+
+[[file:pomodoro/pomodoro-notify-send-5.png]]
+
+Hay dos opciones, usando OSD (On Screen Display) y el comando
+=notify-send=, ambos scripts están realizados en =bash=.
+
+- [[file:pomodoro-minutos-osd.org][pomodoro minutos osd]]
+- [[pomodoro-notify-send.org][pomodoro notify send]]
+
+Para entender un poco más sobre los pomodoros leer [[file:la-tecnica-pomodoro.txt][la técnica pomodoro]]
+

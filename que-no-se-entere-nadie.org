@@ -1,0 +1,364 @@
+#+TITLE:       Que no se entere nadie!
+#+DESCRIPTION: Análisis de tráfico de red mediante tcpdump
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+    
+** la era de la inocencia
+
+   Iniciamos Firefox como es costumbre de todos los días y empezamos
+   a saltar de un sitio web a otro. Nada extraño sucede, leemos y
+   escribimos comentarios, ingresamos a algún chat, en fin nos
+   comunicamos con otras personas a través de la red.
+
+   Suponemos que debido a que estamos solos frente a la compu, nadie
+   más está viendo todo lo que enviamos y recibimos a través de la
+   red... :-S
+
+** olfateando la red
+
+   Si mientras estamos usando la red, se nos ocurre ver qué datos
+   pasan a través de la red, sólo necesitamos usar  =tcpdump=:
+
+   #+BEGIN_EXAMPLE
+     sudo apt-get install tcpdump       
+   #+END_EXAMPLE
+
+   Su uso es muy simple, solo basta indicar la interfaz de red:
+
+   #+BEGIN_SRC sh :results output :exports code
+     sudo tcpdump -i eth2
+   #+END_SRC
+
+   El resultado es similar al siguiente:
+
+   #+BEGIN_EXAMPLE
+   10:09:54.261674 IP malbec.ssh > osiale.gcoop.com.ar.49322: Flags [P.], seq 2750542384:2750543808, ack 4116367059, win 1331, options [nop,nop,TS val 20388916 ecr 20607900], length 1424
+   10:09:54.261748 IP osiale.gcoop.com.ar.49322 > malbec.ssh: Flags [.], ack 1424, win 1321, options [nop,nop,TS val 20607950 ecr 20388916], length 0
+   10:09:54.263027 IP osiale.gcoop.com.ar.46685 > malbec.domain: 7023+ PTR? 18.1.168.192.in-addr.arpa. (45)
+   10:09:54.263195 IP malbec.domain > osiale.gcoop.com.ar.46685: 7023* 1/0/0 PTR osiale.gcoop.com.ar. (78)
+   10:09:54.540654 IP malbec.ssh > osiale.gcoop.com.ar.49322: Flags [P.], seq 1424:2512, ack 1, win 1331, options [nop,nop,TS val 20388986 ecr 20607950], length 1088
+   10:09:54.540690 IP osiale.gcoop.com.ar.49322 > malbec.ssh: Flags [.], ack 2512, win 1321, options [nop,nop,TS val 20608019 ecr 20388986], length 0
+   10:09:54.606095 IP osiale.gcoop.com.ar.48150 > malbec.domain: 29621+ A? daisy.ubuntu.com. (34)
+   10:09:54.606229 IP malbec.domain > osiale.gcoop.com.ar.48150: 29621 2/0/0 A 91.189.95.55, A 91.189.95.54 (66)
+   10:09:54.785237 IP malbec.ssh > osiale.gcoop.com.ar.49322: Flags [.], seq 2512:3960, ack 1, win 1331, options [nop,nop,TS val 20389047 ecr 20608019], length 1448
+   10:09:54.785281 IP osiale.gcoop.com.ar.49322 > malbec.ssh: Flags [.], ack 3960, win 1321, options [nop,nop,TS val 20608081 ecr 20389047], length 0
+   #+END_EXAMPLE
+
+   Lo que vemos, es la información del encabezado de cada paquete
+   que pasa por la interfaz de red, en este caso =eth2=.
+
+   Si no sabemos qué interfaz de red utilizar o simplemente ver
+   cuáles están disponibles, usamos el comando =ifconfig=:
+
+   #+BEGIN_SRC sh :results output :exports code
+     ifconfig
+   #+END_SRC
+
+   Veríamos un listado similar al siguiente:
+
+   #+BEGIN_EXAMPLE
+   eth0      Link encap:Ethernet  direcciónHW 00:15:d2:19:5b:7d  
+	     ACTIVO DIFUSIÓN MULTICAST  MTU:1500  Métrica:1
+	     Paquetes RX:0 errores:0 perdidos:0 overruns:0 frame:0
+	     Paquetes TX:0 errores:0 perdidos:0 overruns:0 carrier:0
+	     colisiones:0 long.colaTX:1000 
+	     Bytes RX:0 (0.0 B)  TX bytes:0 (0.0 B)
+	     Interrupción:19 Dirección base: 0xa000 
+
+   eth2      Link encap:Ethernet  direcciónHW 00:15:84:2b:6b:8e  
+	     Direc. inet:192.168.1.18  Difus.:192.168.1.255  Másc:255.255.255.0
+	     Dirección inet6: fe80::215:84ff:fe2b:6b8e/64 Alcance:Enlace
+	     ACTIVO DIFUSIÓN FUNCIONANDO MULTICAST  MTU:1500  Métrica:1
+	     Paquetes RX:632042 errores:0 perdidos:0 overruns:0 frame:0
+	     Paquetes TX:647823 errores:0 perdidos:0 overruns:0 carrier:0
+	     colisiones:0 long.colaTX:1000 
+	     Bytes RX:207733278 (207.7 MB)  TX bytes:291419413 (291.4 MB)
+	     Interrupción:18 Dirección base: 0xc800 
+
+   lo        Link encap:Bucle local  
+	     Direc. inet:127.0.0.1  Másc:255.0.0.0
+	     Dirección inet6: ::1/128 Alcance:Anfitrión
+	     ACTIVO BUCLE FUNCIONANDO  MTU:16436  Métrica:1
+	     Paquetes RX:186169 errores:0 perdidos:0 overruns:0 frame:0
+	     Paquetes TX:186169 errores:0 perdidos:0 overruns:0 carrier:0
+	     colisiones:0 long.colaTX:0 
+	     Bytes RX:37061384 (37.0 MB)  TX bytes:37061384 (37.0 MB)
+   #+END_EXAMPLE
+
+   En este caso contamos con =eth0=, =eth2= y =lo= que es la interfaz local.
+   Como se puede ver, la =eth2= tiene la dirección *IP* =192.168.1.18=.
+
+   Si quisieramos ver las *IPs* y los números de puertos en lugar de
+   los nombres de dominio y servicios asociados, debemos usar el
+   parámetro =-n=:
+
+   #+BEGIN_SRC sh :results output :exports code
+     sudo tcpdump -i eth2 -n
+   #+END_SRC
+
+   Ahora se reemplaza =osiale.gcoop.com.ar= por =192.168.1.18=,
+   =ssh= por =22=, =domain= por =53= y =malbec= por =192.168.1.1=:
+
+   #+BEGIN_EXAMPLE
+   10:09:54.261674 IP 192.168.1.1.22 > 192.168.1.18.49322: Flags [P.], seq 2750542384:2750543808, ack 4116367059, win 1331, options [nop,nop,TS val 20388916 ecr 20607900], length 1424
+   10:09:54.261748 IP 192.168.1.18.49322 > 192.168.1.1.22: Flags [.], ack 1424, win 1321, options [nop,nop,TS val 20607950 ecr 20388916], length 0
+   10:09:54.263027 IP 192.168.1.18.46685 > 192.168.1.1.53: 7023+ PTR? 18.1.168.192.in-addr.arpa. (45)
+   10:09:54.263195 IP 192.168.1.1.53 > 192.168.1.18.46685: 7023* 1/0/0 PTR 192.168.1.18. (78)
+   10:09:54.540654 IP 192.168.1.1.22 > 192.168.1.18.49322: Flags [P.], seq 1424:2512, ack 1, win 1331, options [nop,nop,TS val 20388986 ecr 20607950], length 1088
+   10:09:54.540690 IP 192.168.1.18.49322 > 192.168.1.1.22: Flags [.], ack 2512, win 1321, options [nop,nop,TS val 20608019 ecr 20388986], length 0
+   10:09:54.606095 IP 192.168.1.18.48150 > 192.168.1.1.53: 29621+ A? daisy.ubuntu.com. (34)
+   10:09:54.606229 IP 192.168.1.1.53 > 192.168.1.18.48150: 29621 2/0/0 A 91.189.95.55, A 91.189.95.54 (66)
+   10:09:54.785237 IP 192.168.1.1.22 > 192.168.1.18.49322: Flags [.], seq 2512:3960, ack 1, win 1331, options [nop,nop,TS val 20389047 ecr 20608019], length 1448
+   10:09:54.785281 IP 192.168.1.18.49322 > 192.168.1.1.22: Flags [.], ack 3960, win 1321, options [nop,nop,TS val 20608081 ecr 20389047], length 0
+   #+END_EXAMPLE
+
+   El tráfico de red que capturamos depende mucho de en que lugar de
+   la red estamos parados, no es lo mismo hacerlo desde un punto
+   terminal que hacerlo entre un *router* y un *switch* o desde
+   el *gateway* de salida a internet de toda la red. En los puntos
+   donde se concentran todas conexiones vamos va ver el tráfico de
+   más máquinas, es decir más personas!
+
+** mirando en profundidad
+
+   Es posible el contenido de los paquetes en formato ASCII mediante
+   el parámetro =-A=, indicar la cantidad de paquetes a capturar con
+   =-c= y aplicar filtros, como por ejemplo que solo nos interesar
+   capturar el tráfico que enviamos a los sitios web, o sea filtrar
+   por puerto de destino =80=.
+
+   La sentencia sería la siguiente:
+
+   #+BEGIN_SRC sh :results output :exports code
+     tcpdump -i eth2 -n -A -c 1 dst port 80
+   #+END_SRC
+
+   En este caso logramos capturar la consulta al sitio =osiux.com=
+   que corresponde a la *IP* =67.208.113.123= y puerto =80=, para
+   esto se está usando un =Firefox= versión =15.0.1= en una máquina
+   con =Ubuntu= y el idioma preferido es =es_ar= (Español,
+   Argentina).
+
+   En este caso, el que realiza la consulta es la *IP*
+   =192.168.1.18= desde el puerto =57935=.
+
+   #+BEGIN_EXAMPLE
+   10:49:31.622425 IP 192.168.1.18.57935 > 67.208.113.123.80: Flags [P.], seq 3592177738:3592178048, ack 4115460638, win 457, options [nop,nop,TS val 21202290 ecr 455625744], length 310
+   E..j..@.@.....
+   .C.q{.O.P..HJ.L............
+   .C.r.(L.GET / HTTP/1.1
+   Host: osiux.com
+   User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0.1
+   Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+   Accept-Language: es-ar,es;q=0.8,en-us;q=0.5,en;q=0.3
+   Accept-Encoding: gzip, deflate
+   Connection: keep-alive
+   #+END_EXAMPLE
+
+   Es muchísima información la que se puede obtener con observar un
+   sólo paquete de red!
+
+   Entonces podemos saber:
+
+   - qué sitios se visitan
+   - quiénes los miran
+   - qué escriben
+   - qué leen
+
+** y si chateamos?
+
+   Probemos que sucede si chateamos en la red local, sin salir a
+   Internet. Para esto, usamos *Pidgin*, un programa que soporta
+   casi todos los protocolos y servicios de chat existentes.
+
+   Primero instalamos *Pidgin*:
+
+   #+BEGIN_EXAMPLE
+     sudo apt-get install pidgin
+   #+END_EXAMPLE
+
+   Luego lo iniciamos, escribiendo =pidgin= en una terminal o lo
+   buscamos en el menú de la interfaz gráfica, debería estar
+   en *Aplicaciones->Internet->Pidgin*
+   
+   Al iniciar, nos solicita *añadir* una cuenta, elegimos el
+   protocolo *Bonjour* e ingresamos nuestro *Nombre* y *Apodo*, para
+   finalizar presionamos *Aceptar* y luego *Cerrar*.
+
+   Listo, ahora vamos a poder chatear con todos aquellos que en la
+   red local, tengan instalando un programa que soporte el protocolo
+   *Bonjour*, también conocido como *IChat* o *Avahi*.
+   
+   Comenzamos a chatear con nuestros amigos y al mismo tiempo
+   ejecutamos =tcpdump= filtrando por el puerto =5298=
+
+   #+BEGIN_SRC sh :results output :exports code
+     tcpdump -i eth2 -n -A -c5 port 5298
+   #+END_SRC
+
+   El resultado de capturar 5 paquetes es:
+
+   #+BEGIN_EXAMPLE
+   11:15:55.330043 IP6 fe80::215:84ff:fe2b:6b8e.51378 > fe80::3e07:54ff:fe55:62d4.5298: Flags [P.], seq 31812643:31812912, ack 3913411495, win 551, options [nop,nop,TS val 21598217 ecr 29125604], length 269
+   `....-.@.............<Z.........>.T..Ub.......l#.A.....'.U.....
+   .I.	..k.<message to='Leito@zapata' from='osiris@osiale' type='chat'><body>bien, escribiendo el curso de ayer</body><html xmlns='http://www.w3.org/1999/xhtml'><body><font>bien, escribiendo el curso de ayer</font></body></html><x xmlns='jabber:x:event'><composing/></x></message>
+   11:15:55.330428 IP6 fe80::3e07:54ff:fe55:62d4.5298 > fe80::215:84ff:fe2b:6b8e.51378: Flags [.], ack 269, win 274, options [nop,nop,TS val 29130803 ecr 21598217], length 0
+   `.... .@........>.T..Ub..............<Z......A....m0....n......
+   ...3.I.	
+   11:16:05.557354 IP6 fe80::215:84ff:fe2b:6b8e.51378 > fe80::3e07:54ff:fe55:62d4.5298: Flags [P.], seq 269:554, ack 1, win 551, options [nop,nop,TS val 21600774 ecr 29130803], length 285
+   `....=...............<Z.........>.T..Ub.......m0.A.....'.e.....
+   .I.....3<message to='Leito@zapata' from='osiris@osiale' type='chat'><body>y necesito capturar el tr..fico de Bonjour</body><html xmlns='http://www.w3.org/1999/xhtml'><body><font>y necesito capturar el tr..fico de Bonjour</font></body></html><x xmlns='jabber:x:event'><composing/></x></message>
+   11:16:05.557715 IP6 fe80::3e07:54ff:fe55:62d4.5298 > fe80::215:84ff:fe2b:6b8e.51378: Flags [.], ack 554, win 291, options [nop,nop,TS val 29133360 ecr 21600774], length 0
+   `.... ..........>.T..Ub..............<Z......A....nM...#Y......
+   ...0.I..
+   11:16:07.356720 IP6 fe80::215:84ff:fe2b:6b8e.51378 > fe80::3e07:54ff:fe55:62d4.5298: Flags [P.], seq 554:761, ack 1, win 551, options [nop,nop,TS val 21601223 ecr 29133360], length 207
+   `....................<Z.........>.T..Ub.......nM.A.....'.......
+   .I.....0<message to='Leito@zapata' from='osiris@osiale' type='chat'><body>:-P</body><html xmlns='http://www.w3.org/1999/xhtml'><body><font>:-P</font></body></html><x xmlns='jabber:x:event'><composing/></x></message>
+   #+END_EXAMPLE
+
+   Si miramos el primer paquete ignorando los caracteres especiales,
+   se puede ver que el mensaje es para *Leito* desde la
+   máquina *zapata* y lo envía *osiris* desde la máquina *osiale* y
+   el cuerpo del mensaje se encuentra entre las *etiquetas* =<body>=
+   y =</body>=.
+
+   #+BEGIN_EXAMPLE     
+     <message to='Leito@zapata' from='osiris@osiale' type='chat'>
+       <body>bien, escribiendo el curso de ayer</body>
+       <html xmlns='http://www.w3.org/1999/xhtml'>
+       <body>
+	 <font>bien, escribiendo el curso de ayer</font>
+       </body>
+       </html>
+       <x xmlns='jabber:x:event'><composing/></x>
+     </message>
+   #+END_EXAMPLE
+
+   Entonces, quiere decir que tanto lo que navegamos como lo que
+   chateamos puede ser interceptado y leído por cualquiera en la
+   red, solo basta usar =tcpdump=.
+
+** el fin de la privacidad?
+
+   Cualquier *sniffer* como =tcpdump= puede capturar todo el tráfico
+   de la red y hasta se podría modificar el contenido de los
+   paquetes que viajan a través de la red sin que nos demos cuenta.
+
+   Y entonces, cómo hacemos para tener algo de privacidad?
+
+   La respuesta es *no enviar mensajes en texto plano*, para esto lo
+   mejor es *cifrar todos los mensajes*, hay varios protocolos que
+   envían y reciben todos los datos de manera cifrada.
+
+   En el caso de los sitios webs es posible acceder por *HTTPS* en
+   lugar de *HTTP*, por ejemplo, en lugar de ir a
+   =http://google.com= podemos acceder a
+   =https://encrypted.google.com/= y asi todo lo que enviemos
+   a *google* irá cifrado y aunque alguien capture ese tráfico de
+   red, *no podrá entenderlo*, aunque no evitaremos que sepan que
+   estamos ingresando al sitio *google.com*.
+
+   Tener que tipear *https* en lugar de *http* todo el tiempo no es
+   algo cómodo y además la mayoría de las páginas web hacen enlaces
+   a los sitios usando *http*. La solución a este problema es
+   instalar un *plugin* en el navegador, por ejemplo para *Firefox*
+   existe *HTTPSEveryWhere*, que hace esto por nosotros y soporta
+   una gran lista de sitios webs, obviamente los más usados.
+
+   Para instalarlo, acceder a: 
+   https://www.eff.org/https-everywhere-node
+
+   También existen otras alternativas como usar un *túnel SSH*.
+   Siempre que dispongamos de una máquina remota con GNU/Linux
+   conectada a internet (en nuestra casa, por ejemplo) podríamos
+   usarla para cifrar nuestra conexión y lograr (por lo menos) que
+   en la red local, en la que estamos actualmente nadie pueda ver lo
+   que hacemos.
+
+   Para esto, podemos hacer lo siguiente:
+
+   #+BEGIN_EXAMPLE
+     ssh -fN -D 9090 osiris@osiux.com
+   #+END_EXAMPLE
+
+   De esta manera, de ahora en más vamos a tener un *Proxy SOCKS*
+   corriendo en el puerto =9090=, sólo bastaría decirle a todas las
+   aplicaciones que usan la red, que no se conecten directamente,
+   sino que utilicen =localhost:9090= como servidor *Proxy*.
+
+   En *Firefox* ir a *Editar->Preferencias->Avanzadas->Red->Configuración*
+
+   Ahí seleccionamos *Configuración manual de proxy* e ingresamos
+   en *Servidor proxy SOCKS* la dirección *localhost y el puerto
+   9090*, presionamos *Aceptar*, y listo, ya podemos navegar
+   tranquilos.
+
+   En realidad, sólo estamos cifrando un tramo de la conexión, desde
+   la máquina en donde estamos hasta la máquina remota, desde esta
+   última el tráfico viajará sin el cifrado de *SSH*.
+
+** por las dudas yo guardo el tráfico de red ;-)
+
+   Podemos decirle a =tcpdump= que en lugar de mostrarnos el tráfico
+   de red, lo guarde en un archivo, para luego analizarlo en
+   profundidad. También se utiliza para hacer monitoreo remoto o
+   buscar la causa de algún problema en la red, detectar alguna
+   intrusión no autorizada, hacer auditorías, etc.
+
+   Mediante =-s 0= indicamos que capture el paquete completo y con
+   =-w= se especifica el archivo donde se guarda el tráfico.
+
+   #+BEGIN_EXAMPLE
+     sudo tcpdump -i eth2 -n -s 0 -w porlasdudas.pcap
+   #+END_EXAMPLE
+
+   Existen muchas herramientas que leen archivos =.pcap=, una de
+   ellas es *Wireshark*, que es un analizador de protocolos muy
+   completo y que además posee interfaz gráfica.
+
+   Lo instalamos:
+
+   #+BEGIN_EXAMPLE
+     apt-get install wireshark
+   #+END_EXAMPLE
+
+   Podemos indicar a *WireShark* que inicie leyendo el archivo:
+
+   #+BEGIN_EXAMPLE
+     wireshark -r porlasdudas.pcap
+   #+END_EXAMPLE
+
+   También se puede iniciar desde el menú *Aplicaciones->Internet->Wireshark*
+
+   Una vez iniciado, se puede apreciar que la pantalla está dividida
+   en tres partes, que serían:
+
+   - el listado de paquetes
+   - panel de detalles del paquete seleccionado
+   - panel de bytes del paquete seleccionado
+
+   Es bastante intuitivo y muy interesante para los curiosos! :-D
+
+** no entendí nada! :-(
+
+   El análisis de tráfico de red, requiere de ciertos conocimientos
+   básicos de redes, sobre el modelo *OSI* y el modelo *TCP/IP*,
+   saber sobre *DNS*, *ARP* y otras tantas cosas como los *RFC*,
+   pero a no desesperar, leer aunque sea muy por arriba los
+   siguiente links:
+
+   - https://es.wikipedia.org/wiki/Modelo_osi
+   - https://es.wikipedia.org/wiki/Modelo_TCP/IP
+
+   La próxima entrega veremos en un lenguaje muy simple y claro, lo
+   básico de cómo funcionan las redes y sobre todo cómo interactúan
+   los distintos elementos que la componen.
+
+   La idea de usar *tcpdump* era volverlos un poquito paranoicos,
+   ahora saben que es muy probable que alguien en algún punto de la
+   red, esté mirando (y hasta guardando) todos los datos que
+   enviamos y recibimos, aunque sólo se trate del /Administrador de la Red/.
+

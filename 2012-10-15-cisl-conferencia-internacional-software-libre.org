@@ -1,0 +1,28 @@
+#+TITLE:     CISL Conferencia Internacional Software Libre
+#+AUTHOR:    Osiris Alejandro Gomez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE:   header.org
+#+DATE:      2012-10-15
+
+Hoy comenzó el [[http://cisl.org.ar][CISL]] y
+voy a estar hablando sobre Redes Libres,
+el miércoles 17 a la tarde
+
+#+BEGIN_EXAMPLE
+  Charla: REDES PARA TODOS
+  Cuándo: MIERCOLES 17/OCTUBRE de 14:00 a 14:50
+  Dónde:  Biblioteca Nacional, Agüero 2502 CABA
+          Sala Augusto Cortazar
+#+END_EXAMPLE
+
+La Conferencia Internacional de Software Libre
+está plagada de charlas y talleres muy buenos!
+
+*¡NO SE LA PIERDAN! - Entrada Libre y Gratuita!*
+
+[[file:img/redes-para-todos.png]]
+
+[[http://pub.osiux.com/redes-para-todos.pdf]]
+

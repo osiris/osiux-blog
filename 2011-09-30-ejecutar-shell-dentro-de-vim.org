@@ -1,0 +1,44 @@
+#+TITLE:       Ejecutar un Shell dentro de Vim
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2011-09-30
+
+Ayer alguien preguntó en la [[http://gcoop.coop][coop]] cómo ejecutar un
+shell como una ventana más de Vim, tras una rápida búsqueda por la web
+encontramos un excelente plugin llamado
+[[http://conque.googlecode.com][ConqueTerm]], muy fácil de instalar:
+
+#+BEGIN_SRC sh :results none :exports code
+    cd ~/.vim
+    wget https://conque.googlecode.com/files/conque_2.3.vmb
+    vim conque_2.3.vmb
+    :so %
+    :q
+#+END_SRC
+
+Para abrir una ventana con una terminal basta con ejecutar:
+
+#+BEGIN_EXAMPLE
+    :ConqueTermSplit bash
+#+END_EXAMPLE
+
+También se puede invocar a otras aplicaciones:
+
+#+BEGIN_EXAMPLE
+    :ConqueTermSplit top
+#+END_EXAMPLE
+
+Terminé agregando un alias a mi =.vimrc=:
+
+#+BEGIN_EXAMPLE
+    nmap ,c :ConqueTermSplit bash<CR>
+#+END_EXAMPLE
+
+De esta manera cada vez que necesito usar =bash= y no quiero salir de Vim,
+basta con pulsar =,c=. En breve publico todos mis archivos de configuración.
+:-)
+
+

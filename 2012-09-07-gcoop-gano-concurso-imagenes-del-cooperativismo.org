@@ -1,0 +1,30 @@
+
+====================================================================
+Ganamos el Concurso de Videos del Congreso Argentino de Cooperativas
+====================================================================
+
+.. image:: http://osiux.com/img/gcoop-codigos-cooperativos.jpg
+
+En el marco del Concurso de Vídeos del `Congreso Argentino de las Cooperativas
+(CAC) <http://www.cac2012.coop/>`_ realizamos el vídeo `Códigos Cooperativos
+<http://www.gcoop.coop/codigos-cooperativos>`_ junto con la *Cooperativa La
+Olla*.
+
+En el cierre del Congreso se realizó la entrega de Premios y fuimos
+premiados con el **Primer Premio de la Categoría Prefesional**.
+
+Agradecemos a la `Confederación Argentina de Cooperativas (COOPERAR)
+<http://www.cooperar.coop/>`_ , a la `Federación Argentina de Cooperativas de
+Trabajo (FECOOTRA) <http://www.fecootra.org.ar/>`_ por invitarnos a participar
+del Congreso y muy especialmente: A *Daniel Henriquez* y la *Cooperativa La
+Olla*, a `malefico <https://twitter.com/malefico3d>`_ por los dibujos libres, a
+`Camanchaca <http://www.camanchaca.com.ar/>`_ por la música original libre.
+
+**Miralo, Bajalo, Disfrutalo**
+
+.. raw:: html
+
+  <video controls="controls" width="640" height="360" src="http://archive.org/download/codigos-cooperativos-gcoop/gcoop-codigos-cooperativos-1280x720.ogv"></video>
+
+* `Descargar Video <http://archive.org/details/codigos-cooperativos-gcoop>`_
+

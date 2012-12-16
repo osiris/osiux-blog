@@ -1,0 +1,50 @@
+#+TITLE:     Técnica Pomodoro, mostrar minutos mediante OSD (On Screen Display)
+#+AUTHOR:    Osiris Alejandro Gomez
+#+EMAIL:     osiux@osiux.com.ar
+#+LANGUAGE:  es
+#+INCLUDE:   header.org
+#+DATE:      2011-05-23
+
+* Pomodoro Minutos OSD
+
+Muchas veces cuando realizo una presentación o una charla me encuentro limitado
+por el tiempo y debe tener presente constantemente cuántos minutos me quedan
+para seguir hablando, debido a ello hice un simple script bash usando OSD (On
+Screen Display) que muestra los minutos restantes.
+
+#+BEGIN_SRC sh :results none :exports code
+  #!/bin/bash
+
+  MM=25
+
+  if [ ! -z "$1" ]
+  then
+      MM=$1
+  fi
+
+  for i in $(seq $MM -1 0)
+  do
+      osdctl -s $i" "
+      sleep 60
+  done
+#+END_SRC
+
+Es necesario levantar el servicio =osdsh= al inicio de la sesión, lo
+conveniente es agregarlo en el archivo =.xinitrc=.
+
+#+BEGIN_SRC sh :results none :exports code
+  exec osdsh -c green -p1 -a2 -o 2 -d 50 &
+#+END_SRC
+
+Luego para ejecutarlo basta invocar el nombre del script, en mi caso
+=minutos= está ubicado en =~/bin/minutos= y si no se especifica ningún
+parámetro toma por defecto el valor 25 que es la duración de un pomodoro [fn:pomodoro].
+
+#+ATTR_HTML: width: "680"
+[[file:img/pomodoro/pomodoro-minutos-osd.png]]
+
+Una alternativa es usar =notify-send= [fn:notify-send].
+
+[fn:pomodoro] [[file:la-tecnica-pomodoro.txt]]
+[fn:notify-send] [[file:pomodoro-notify-send.org]]
+

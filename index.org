@@ -1,0 +1,97 @@
+#+TITLE:     ABSOLUTELLY NO WARRANTY | free software
+#+AUTHOR:    Osiris Alejandro Gomez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+OPTIONS:   toc:nil
+#+INCLUDE:   header.org
+
+* =/=
+** =blog=
+*** 2012
+**** 2012-10
+     - [[file:2012-10-15-cisl-conferencia-internacional-software-libre.org][Conferencia Internacional de Software Libre CISL 2012]]
+
+**** 2012-09
+     - [[file:2012-09-29-que-hice-ayer-que-tengo-que-hacer-hoy.org][Qué hice ayer? Qué tengo que hacer hoy?]]
+
+**** 2012-07
+     - [[file:2012-07-05-sslh-ssl-ssh-shellinabox.org][sslh SSL SSH shellinabox]]
+
+**** 2012-06
+     - [[file:2012-06-14-visualizando-cooperativas-de-argentina.org][Visualizando Cooperativas de Argentina]]
+*** 2011
+**** 2011-03
+     - [[file:2011-03-15-dibujando-con-numeros-desde-la-consola.org][Dibujando con números desde la consola]]
+
+** =docs=
+*** GNU/Linux
+- [[file:ssh-para-gobernar-el-mundo.org][SSH para gobernar el mundo, aprendiendo a usar SSH]]
+- [[file:que-no-se-entere-nadie.org][Que no se entere nadie! Análisis de tráfico de red mediante tcpdump]]
+- [[file:automatizando-tareas.org][Automatizando Tareas, manejo de crontab, watch y scripts]]
+*** Redes Libres / FreeNetworks
+    - [[file:flisol-bogota-2012.org][Redes Libres en Flisol Bogotá 2012]]
+    - [[file:la-escala-lo-cambia-todo.org][La escala lo cambia todo]]
+    - [[file:redes-libres-festival-cultura-libre-fm-latribu.org]]
+    - [[file:2012-06-01-pirate-box-floppy-disk.org][PirateBox PirateFloppy usando diskettes de 5.25"]]
+*** Metodologías
+    - [[file:pomodoro-minutos-osd.org][Técnica Pomodoro, mostrar minutos mediante OSD (On Screen Display)]]
+    - [[file:pomodoro-notify-send.org]]
+    - [[file:capturar-ideas-en-papel-de-moleskine-hispterpda-pocketmod-y-libreta-artesanal.org]]
+*** Gráficos
+    - [[file:visualizando-grafos-graphviz.txt][Visualizando grafos mediante graphviz]]
+*** Bases de datos
+    - [[file:mysql-bash-vim-tips.org]]
+*** =var=
+    - [[file:apache-mod-rewrite-htaccess.org]]
+    - [[file:awesome-es-increible.org][Awesome es increíble]]
+    - [[file:chroot-mount-fstab-bind.org]]
+    - [[file:curuzu-libre-2008.org]]
+    - [[file:dame-una-consola.org][dame una consola]]
+    - [[file:fluxbox-gtk2-root-tail-gkrellm.org]]
+    - [[file:frontweb.org]]
+    - [[file:gpg.org]]
+    - [[file:help.rst]]
+    - [[file:imagenes-magicas-imagemagick.org][Imágenes Mágicas usando ImageMagick]]
+    - [[file:imapsync-migrar-mails.org]]
+    - [[file:login-sin-passwords-con-pam-usb.org]]
+    - [[file:lvm-luks-bacoop.org]]
+    - [[file:mysql-not-in-versus-left-join.org]]
+    - [[file:olimpiadas-informaticas-en-monte-caseros.org]]
+    - [[file:osiux.org]]
+    - [[file:restructuredtext-blog-python-script-rest2web.org]]
+    - [[file:restructuredtext-blog-script-rst2blog.org]]
+    - [[file:ubuntu-11.10-en-exomate-de-conectar-igualdad.org][Instalando Ubuntu 11.10 en notebook exomate de Conectar Igualdad]]
+
+** =whoami=
+
+   [[file:img/no-soy-un-pirata-compartir-es-bueno.jpg]]
+
+   Osiris Alejandro Gómez (a.k.a. OSiUX), es Programador y
+   Administrador GNU/Linux. Socio de [[http://gcoop.coop][gcoop Cooperativa de Software
+   Libre]] y miembro de [[http://buenosaireslibre.org][BuenosAiresLibre]], además colabora en [[http://usla.org.ar][USLA]]
+   (Usuarios de Software Libre de Argentina) y [[http://cafelug.org.ar][CaFeLUG]] (Grupo de
+   Usuarios GNU/Linux de la Capital Federal).
+
+** =gpg=
+
+   Mantener las convesaciones confidenciales hoy día es una tarea
+   importante ante tanto logueo y registro de los medios de
+   comunicación digitales. Es por eso que uso y recomiendo GPG.
+
+*** =signature=
+
+    #+BEGIN_EXAMPLE
+      Osiris Alejandro Gomez (OSiUX) osiux@osiux.com.ar
+      DC44 95D2 0D5D D544 FC1A F00F B308 A671 9237 D36C
+      http://www.osiux.com.ar http://www.altermundi.net
+
+      Osiris Alejandro Gomez (OSiRiS) osiris@gcoop.coop
+      DC44 95D2 0D5D D544 FC1A F00F B308 A671 9237 D36C
+      http://gcoop.coop | Cooperativa de Software Libre
+      Buenos Aires, Velasco 508 "A" | 0054(11)4855-4390
+    #+END_EXAMPLE
+
+*** =public key=
+
+    [[http://pub.osiux.com/gpg/9237D36C.asc]]

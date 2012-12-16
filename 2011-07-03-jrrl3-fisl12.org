@@ -1,0 +1,61 @@
+#+TITLE:       Resumen de JRRL3 en FISL12
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2011-07-03
+
+Recién pude terminar un resumen de lo que fueron las JRRL3 en el
+[[http://softwarelivre.org/fisl12][FISL12]] todavía le faltan cosas,
+especialmente transcribir varios videos, puedo agregar algunos
+comentarios que se destacaron y lo bueno fue ver que luego de unos días
+habíamos intercambiado ideas y el que inicialmente la dijo por primera
+vez ahora estaba diciendo la idea de otro grupo y viceversa, realmente
+compartimos un muy grata experiencia, seguro pudimos hacer algo más, en
+la próxima jornada lo haremos o lo harán los que participen.
+
+No publiqué antes porque quería contagiar el entusiasmo de lo vivido y
+lo mucho que se hizo, por eso salen 9 videos, una pequeña selección de
+fotos (saqué más de 200 por día) y al menos los títulos de cada una de
+las charlas, para los que no pudieron ir, les aclaro que nos dieron todo
+un track, un día completo de charlas dedicadas a
+[[http://redeslibres.org/es/terceras-jornadas-regionales-de-redes-libres][JRRL3]]
+en un gran auditorio, más un aula por 3hs otro día, la entrevista de
+radio y una muy buena onda para sacarnos a pasear, llevarnos a almorzar,
+cenar, bailar y compartir cerveza y amistad.
+
+Creo que tenemos que aprovechar este impulso y contagiarlo a todos los
+que alguna vez quisieron hacer algo y no se animaron, a todo aquél que
+siente que es mucho trabajo, decirle que se puede, que tenemos que ser
+más, de a poco iremos creciendo y mejorando, hay mucho por hacer y
+contamos con personas extremadamente voluntariosas que van a dar una
+mano.
+
+El evento fue increíble, contar con la presencia de Elektra y
+compartir conocimientos fue muy gratificante. Lamento que Lugro no
+pudo estar para aprovechar un poco más la presencia de Elektra.
+
+Charlamos varios pasos a seguir, por un lado queda trabajo por tener un
+texto definitivo del Manifiesto, adaptado a cada idioma/región, por otro
+lado usar OpenVPN/Tinc para interconectar todas las redes, aunque sea
+sólo para ver que llegamos a otros nodos (aunque no sean funcionales los
+enlaces) y para terminar, estaría bueno que
+[[http://montevideolibre.org][MVDLibre]] y
+[[http://buenosaireslibre.org][BAL]] vayan un fin de semana a Rosario y
+armar una red híbrida entre [[http://olsr.org][OLSR]] y
+[[https://secure.wikimedia.org/wikipedia/en/wiki/B.A.T.M.A.N.][BATMAN]],
+charlamos al respecto con Elektra y coincidimos en que hay que
+aprovechar los dos mundos.
+
+Bueno, evidentemente mi poder de síntesis es bastante pobre, paso el
+link:
+
+[[file:jrrl3-terceras-jornadas-regionales-de-redes-libres-en-fisl12.org]]
+
+Lo iré mejorando, se aceptan correcciones y si alguno se anima a hacer
+subtítulos para los videos seria ideal, a cuantos más lleguemos mejor.
+
+Un fuerte abrazo a todos! y la seguimos http://redeslibres.org, espero
+poder viajar a Colombia para las cuartas jornadas!
+

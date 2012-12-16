@@ -1,0 +1,18 @@
+#+TITLE:       redactando Awesome es Increíble
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        
+
+Usar *Awesome* como entorno gráfico es muy gratificante, no consume
+recursos, es muy ágil, evita perder tiempo ubicando ventanas, aprovecha
+al máximo posible la resolución de pantalla y ayuda mucho a poner
+atención a eso que necesitás hacer y nada más. Eso si, al parecer no hay
+vuelta atrás, te volvés más minimalista día tras día.
+
+Aunque le falta un poco más, he decidido publicar el artículo
+[[http://osiux.com/awesome-es-increible.txt][Awesome es Increíble]] asi
+recibo comentarios y me obligan a terminarlo lo antes posible.
+

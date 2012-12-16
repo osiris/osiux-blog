@@ -1,0 +1,87 @@
+#+TITLE:       Fábrica de Fallas. 4to Festival de Cultura libre y Copyleft
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2011-11-25
+
+| en LaTribu Lambaré 873 http://culturalibre.fmlatribu.com/?p=101
+
+#+BEGIN_EXAMPLE
+ +------------------------------------------------------------------------------------------------+
+ | SABADO 26 NOVIEMBRE                                                                            |
+ +----------+-------------------------------------------------------------------------------------+
+ | 13 a 15  | ***Todo software es político***                                                     |
+ |          | Con Enrique Chaparro, Verónica Xhardez, y Claudio Prado (Brasil)                    |
+ +----------+-------------------------------------------------------------------------------------+
+ | 15 a 17  | ***No coincidimos con los mecanismos de la amistad contemporánea***                 |
+ |          | Con Roberto Jacoby, Sara Torres y Leonor Silvestri.                                 |
+ +----------+-------------------------------------------------------------------------------------+
+ | 17 a 19  | ***¿Todo documento de civilización es simultáneamente un documento de barbarie?***  |
+ |          | Con Franco Ingrassia, Daniel Link , Moira Millán, Gustavo Fontán.                   |
+ +----------+-------------------------------------------------------------------------------------+
+ | 19 a 21  | ***Videoconferencia Sorpresa***                                                     |
+ |          | Dos horas que te van a cambiar la percepción del mundo. (estate atenti!)            |
+ +----------+-------------------------------------------------------------------------------------+
+ | desde 12 | ***Hackatón: "Universal freshnes (C14pp)"***                                        |
+ +----------+-------------------------------------------------------------------------------------+
+ | xlatarde | ***Hacks/Hackers Bs As***                                                           |
+ +----------+-------------------------------------------------------------------------------------+
+ | 14 a 16  | ***Movimiento igual música: el cuerpo como motor rítmico***                         |
+ |          | Con Martín Minervini***                                                             |
+ +----------+-------------------------------------------------------------------------------------+
+ | 15 a 18  | ***Taller de Mash Up con Villa Diamante + Lagartijeando***                          |
+ |          | El mash up como práctica subversiva del modo de organizar los sonidos.              |
+ +----------+-------------------------------------------------------------------------------------+
+ | 16 a 19  | ***El demonio es otra cosa: Taller de autocultivo con la revista THC***             |
+ |          | Plantitas para tu libertad (acá adentro hay cosas verdes).                          |
+ +----------+-------------------------------------------------------------------------------------+
+ | 20 a 22  | ***Cineclub libertario: Videoactivismo 2.0 #globalrevolution                        |
+ |          | en la calle  Con DOCA (Documentalistas Argentinos)***                               |
+ +----------+-------------------------------------------------------------------------------------+
+ | 14 a 20  | ***Proyecto DaL + Mecanismo de filtración de poemas***                              |
+ +----------+-------------------------------------------------------------------------------------+
+ | DOMINGO 27 NOVIEMBRE                                                                           |
+ +----------+-------------------------------------------------------------------------------------+
+ | 13 a 15  | ***La revolución será off line***                                                   |
+ |          | Con Movimiento Giros de Rosario , MoCaSE VC, Jorge Rulli (Grupo de Reflexión Rural) |
+ +----------+-------------------------------------------------------------------------------------+
+ | 15 a 17  | ***La mitad de los artistas están presos (de la técnica)***                         |
+ |          | Con Daniel Melero, Juan Pablo Ringhelheim y Gustavo Varela.                         |
+ +----------+-------------------------------------------------------------------------------------+
+ | 17 a 19  | ***El sonido subversivo: Videoconferencia con Anki Toner*** (Barcelona)             |
+ +----------+-------------------------------------------------------------------------------------+
+ | 14 a 17  | ***Taller de Puredata, Arduino y alfombras mágicas***                               |
+ |          | Con el Colectivo Xlibre                                                             |
+ +----------+-------------------------------------------------------------------------------------+
+ | 17 a 19  | ***Taller Meta Mano: Fast food sonoro***                                            |
+ |          | Con Agustín Genoud                                                                  |
+ +----------+-------------------------------------------------------------------------------------+
+ | 14 a 17  | ***La Fabricicleta+Comunidad Gitana Permacultural Islandia+El cartero de tu vidai***|
+ +----------+-------------------------------------------------------------------------------------+
+ | 15 a 19  | ***Taller de arte urbano, graffitti, stencil***                                     |
+ |          | Con Malegría, Pin8, N.N., Ñero, Ródez, Brian Gray                                   |
+ +----------+-------------------------------------------------------------------------------------+
+ | 15 a 19  | ***Taller de construcción de antenas caseras***                                     |
+ |          | Con Buenos Aires Libre                                                              |
+ +----------+-------------------------------------------------------------------------------------+
+ | 15 a 19  | ***Taller de Autoedición de libros***                                               |
+ |          | Con Cospel Ediciones, La E del Coihue Infinito, )el asunto(                         |
+ +----------+-------------------------------------------------------------------------------------+
+ | 15 a 18  | ***Taller de Mapeo Colectivo***                                                     |
+ |          | Con Iconoclasistas                                                                  |
+ +----------+-------------------------------------------------------------------------------------+
+ | 15 a 19  | ***La FEA (Feria de Economías Alternativas)***                                      |
+ |          | Con La Casona de Humahuaca                                                          |
+ +----------+-------------------------------------------------------------------------------------+
+ | 16 a 18  | ***Despanzurrando – Recauchutando LB.TV***                                          |
+ +----------+-------------------------------------------------------------------------------------+
+ | 14 a 19  | ***Comida Migrante***                                                               |
+ |          | Con el Colectivo Simbiosis Cultural                                                 |
+ +----------+-------------------------------------------------------------------------------------+
+ | 19 a 23  | ***Música en libertad***                                                            |
+ |          | NDE Ramírez, X Rock Hacker, Fede Flores,                                            |
+ |          | Camanchaca, Mala Querencia, A los Gauchos Psicomísticos del Miasma, Oiga!           |
+ +----------+-------------------------------------------------------------------------------------+
+#+END_EXAMPLE
