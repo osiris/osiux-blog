@@ -6,23 +6,47 @@
 #+OPTIONS:   toc:nil
 #+INCLUDE:   header.org
 
-* =/=
-** =blog=
-*** 2012
-**** 2012-10
-     - [[file:2012-10-15-cisl-conferencia-internacional-software-libre.org][Conferencia Internacional de Software Libre CISL 2012]]
+* =* /=
+** =** blog=
+*** =*** 2012=
+    - [[file:2012-10-15-cisl-conferencia-internacional-software-libre.org][2012/10/15 Conferencia Internacional de Software Libre CISL 2012]]
+    - [[file:2012-09-29-que-hice-ayer-que-tengo-que-hacer-hoy.org][2012/09/29 Qué hice ayer? Qué tengo que hacer hoy?]]
+    - [[file:2012-09-07-gcoop-gano-concurso-imagenes-del-cooperativismo.org][2012/09/07 gcoop ganó concurso imágenes del cooperativismo]]
+    - [[file:2012-08-30-gcoop-codigos-cooperativos.org][2012/08/30 gcoop tiene códigos cooperativos]]
+    - [[file:2012-08-27-proximas-charlas-y-eventos.org][2012/08/27 próximas charlas y eventos]]
+    - [[file:2012-07-06-free-software-is-cooperative.org][2012/07/06 free software is cooperative]]
+    - [[file:2012-07-05-sslh-ssl-ssh-shellinabox.org][2012/07/05 sslh SSL SSH shellinabox]]
+    - [[file:2012-06-30-hackbo-jrrl4-flash-tplink-mr3220-batman-mesh.org][2012/06/30 hackbo jrrl4 flash tplink mr3220 batman mesh]]
+    - [[file:2012-06-26-campus-party-bogota-cpco5.org][2012/06/26 campus party bogota cpco5]]
+    - [[file:2012-06-15-hackaton-SLyES-en-28-segundos.org][2012/06/15 hackaton SLyES en 28 segundos]]
+    - [[file:2012-06-14-visualizando-cooperativas-de-argentina.org][2012/06/14 Visualizando Cooperativas de Argentina]]
+    - [[file:2012-06-13-SLyES-software-libre-y-economia-social-2012.org][2012/06/13 SLyES software libre y economia social 2012]]
+    - [[file:2012-06-01-pirate-box-floppy-disk.org][2012/06/01 pirate box floppy disk]]
+    - [[file:2012-05-28-como-automatizar-vlc-para-grabar-programa-television-digital-abierta.org][2012/05/28 cómo automatizar vlc para grabar programa televisión digital abierta]]
+    - [[file:2012-05-25-buenos-aires-libre-en-el-medio-digital.org][2012/05/25 BuenosAiresLibre en el medio digital]]
+    - [[file:2012-05-24-carta-abierta-software-libre-con-cfk.org][2012/05/24 Carta abierta SoftwareLibreConCFK]]
+    - [[file:2012-05-23-la-escala-lo-cambia-todo.org][2012/05/23 la escala lo cambia todo]]
+    - [[file:2012-05-18-en-el-medio-digital-software-libre.org][2012/05/18 en el medio digital software libre]]
+    - [[file:2012-05-05-flisol-bogota.org][2012/05/05 FLISoL Bogotá]]
+    - [[file:2012-04-28-flisol-cooperativismo-y-software-libre.org][2012/04/28 FLISoL Cooperativismo y software libre]]
+    - [[file:2012-03-05-redes-abiertas-versus-redes-cerradas.org][2012/03/05 Rdes Abiertas versus Redes Cerradas]]
+    - [[file:2012-02-29-gcoop-cartoon.org][2012/02/29 gcoop es una caricatura]]
+    - [[file:2012-02-17-las-cooperativas-construyen-un-mundo-mejor.org][2012/02/17 las cooperativas construyen un mundo mejor]]
+    - [[file:2012-02-14-de-fondo-negro-a-fondo-blanco.org][2012/02/14 de fondo negro a fondo blanco]]
 
-**** 2012-09
-     - [[file:2012-09-29-que-hice-ayer-que-tengo-que-hacer-hoy.org][Qué hice ayer? Qué tengo que hacer hoy?]]
-
-**** 2012-07
-     - [[file:2012-07-05-sslh-ssl-ssh-shellinabox.org][sslh SSL SSH shellinabox]]
-
-**** 2012-06
-     - [[file:2012-06-14-visualizando-cooperativas-de-argentina.org][Visualizando Cooperativas de Argentina]]
-*** 2011
-**** 2011-03
-     - [[file:2011-03-15-dibujando-con-numeros-desde-la-consola.org][Dibujando con números desde la consola]]
+*** =*** 2011=
+    - [[file:2011-03-15-dibujando-con-numeros-desde-la-consola.org][2011/03/15 Dibujando con números desde la consola]]
+    - [[file:2011-12-29-orgmode-y-gnuplot.org][2011/12/29 org-mode y gnuplot]]
+    - [[file:2011-11-25-fabrica-de-fallas-4to-festival-cultura-libre-copyleft.org][2011/11/25 fábrica de fallas 4to festival cultura libre y copyleft]]
+    - [[file:2011-11-10-curso-software-libre-y-programacion-conectar-igualdad.org][2011/11/10 curso software libre y programación Conectar Igualdad]]
+    - [[file:2011-11-05_bsdday-argentina-2011.org][2011/11/05 BSDday Argentina 2011]]
+    - [[file:2011-10-24-software-libre-en-monte-caseros-y-ubuntu-11.10-en-conectar-igualdad.org][2011/10/24 software libre en monte caseros y ubuntu 11.10 en conectar igualdad]]
+    - [[file:2011-09-30-ejecutar-shell-dentro-de-vim.org][2011/09/30 Ejecutar shell dentro de Vim]]
+    - [[file:2011-07-16-awesome-es-increible.org][2011/07/16 Awesome es increíble]]
+    - [[file:2011-07-03-jrrl3-fisl12.org][2011/07/03 JRRL3 en FISL12]]
+    - [[file:2011-05-23-pomodoro-notify-send-minutos-osd.org][2011/05/23 pomodoro notify send minutos osd]]
+    - [[file:2011-03-15-dibujando-con-numeros-desde-la-consola.org][2011/03/15 dibujando con números desde la consola]]
+    - [[file:2011-02-03.org][2011/02/03 Blog de prueba]]
 
 ** =docs=
 *** GNU/Linux

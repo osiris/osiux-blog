@@ -1,14 +1,13 @@
 /* OSiUX #80c800 #9fc800 #cfff00 */
 body {
     /* margin: 1em; */
-    border-right:  5px solid #80c800;
-    border-bottom: 5px solid #80c800;
     padding: 5;
     background: black none repeat scroll 0 0;
     border: 0px solid #000;
     color: #e0e0e0;
-    font-family: Inconsolata, Monospace, Courier, "Courier New";
-    font-size: 95%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Monaco, MEnlo, Consola, "Courier New", monosapce;
+    font-size: 100%;
 }
 
 code {
@@ -18,16 +17,15 @@ code {
 }
 
 div#content {
-    border: 1px solid #cfff00;
     background: #111;
     margin: 0;
     padding: 1em;
+    width: 600px;
 }
 
 a {
     color: #cfff00;
     text-decoration: none;
-    font-weight: bold;
     padding: 1px;
     solid #e0e0e0;
 }
