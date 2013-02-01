@@ -1,4 +1,4 @@
-#+TITLE:     ABSOLUTELLY NO WARRANTY | free software
+#+TITLE:     ABSOLUTELLY NO WARRANTY
 #+AUTHOR:    Osiris Alejandro Gomez
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
@@ -8,6 +8,9 @@
 
 * =* /=
 ** =** blog=
+*** =*** 2013=
+    - [[file:2013-02-01-migrando-de-frontweb-a-org-mode.org][2013/02/01 Migrando de frontweb a Org-mode]]
+    
 *** =*** 2012=
     - [[file:2012-10-15-cisl-conferencia-internacional-software-libre.org][2012/10/15 Conferencia Internacional de Software Libre CISL 2012]]
     - [[file:2012-09-29-que-hice-ayer-que-tengo-que-hacer-hoy.org][2012/09/29 Qué hice ayer? Qué tengo que hacer hoy?]]
