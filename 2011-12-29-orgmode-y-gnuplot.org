@@ -14,7 +14,6 @@ hacer y por si fuera poco, documenté todo el proceso. :-)
 
 Lee la nota completa en:
 
-[[file:visualizando-org-mode-con-gnuplot.org][visualizando
-orgmode con gnuplot]]
+[[file:visualizando-org-mode-con-gnuplot.org][visualizando orgmode con gnuplot]
 
 

@@ -27,6 +27,6 @@ disponibles a fin de lograr un rápido y efectivo despliegue.
 [fn:bmesh]    http://www.bogota-mesh.org/
 [fn:pagina12] http://www.pagina12.com.ar/diario/suplementos/futuro/13-2546-2011-06-11.html
 [fn:espinal]  http://espinal.redlibre.co/
-[fn:escala]   http://osiux.com/la-escala-lo-cambia-todo.txt
+[fn:escala]   http://osiux.com/la-escala-lo-cambia-todo.org
 [fn:BAL]      http://buenosaireslibre.org
 

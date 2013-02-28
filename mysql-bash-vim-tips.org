@@ -1,0 +1,323 @@
+#+TITLE: MySQL Bash Vim Tips
+#+DATE:  2009/12/01
+
+** Crear Base y Usuario
+
+.. code-block:: mysql
+
+    CREATE DATABASE sugar CHARACTER SET utf8 COLLATE utf8_general_ci;
+    CREATE user sugar;
+    GRANT ALL ON sugar.* TO 'sugar'@'%';
+    SET PASSWORD FOR 'sugar'@'%'=PASSWORD('sugar');
+
+
+** UTF8
+
+Definir UTF8 en el cliente
+
+.. code-block:: bash
+
+    mysql --default-character-set=utf8
+
+Definir UTF8
+
+.. code-block:: mysql
+
+    SET NAMES utf8; SELECT * FROM contacts;
+
+
+MySQL de Bash
+=============
+
+Definir Alias
+
+.. code-block:: bash
+
+    set alias sugar = 'mysql --default-character-set=utf8 -u sugar -psugar -B sugar -h localhost '
+
+Ejecutar consulta
+
+.. code-block:: bash
+
+    echo "SELECT user_name FROM users WHERE is_admin = 1;" | sugar
+
+Listado de Tablas
+
+.. code-block:: bash
+
+    set alias tablas='echo "show tables" | sugar | grep -v Tables_in | sort -u'
+
+Listado Tabla Campo
+
+.. code-block:: bash
+
+    set alias tablacampo='echo "show tables" | sugar | grep -v Tables_in | while read t; \
+    do d=$(echo "desc "$t";" | cct15 | grep -v Field | awk1); \
+    for c in $d;do echo $t"__"$c;done ;done'
+
+Quitar nombre de campo
+
+.. code-block:: bash
+
+    mysql -N
+
+
+Vaciar todas las tablas que contengan la palabra *calls*
+
+.. code-block:: bash
+
+    sugar < $(echo "show tables" | sugar | grep calls | while read t;do echo "TRUNCATE table $t;";done)
+
+
+MySQL desde Vim
+===============
+
+Agregar en `.vimrc`
+
+.. code-block:: vim
+
+    command -range=% SUGAR :<line1>,<line2>w !mysql -u sugar -psugar -B sugar -t -v -v -v
+
+Ejecutar todo el archivo
+
+.. code-block:: vim
+
+    :SUGAR
+
+Ejecutar la línea actual
+
+.. code-block:: vim
+
+    :. SUGAR
+
+Ejecutar un rango de líneas
+
+.. code-block:: vim
+
+    :3,8 SUGAR
+
+Ejecutar desde línea actual hasta el final
+
+.. code-block:: vim
+
+    :.,$ SUGAR
+
+Usar diccionarios
+
+.. code-block:: vim
+
+    :set dictionary=tablas, tablacampo
+
+    CTRL-X CTRL-K
+
+
+Reemplazar Texto
+================
+
+Traducir valores
+
+.. code-block:: mysql
+
+    SELECT      REPLACE(REPLACE(direction,'Inbound','Entrante'),'Outbound','Saliente') AS direccion
+    FROM        calls;
+
+Actualizar registros
+
+.. code-block:: mysql
+
+    UPDATE contacts SET last_name = REPLACE(last_name, 'NUNEZ', 'NUÑEZ');
+
+Buscar duplicados
+=================
+
+.. code-block:: mysql
+
+    SELECT      last_name, first_name, COUNT(id) AS total
+    FROM        contacts
+    GROUP BY    first_name, last_name
+    HAVING      total > 1
+    ORDER BY    last_name, first_name;
+
+
+Agrupar
+=======
+
+.. code-block:: mysql
+
+    SELECT      name,
+                (
+                SELECT  CASE
+                WHEN    EXTRACT(HOUR FROM date_start) < 12
+                THEN    'mañana'
+                ELSE    'tarde'
+                END
+                ) AS turno,
+                COUNT(id) as total
+    FROM        calls
+    GROUP BY    name, turno
+    HAVING      total > 500
+    ORDER BY    total DESC;
+
+
+Cruzando tablas
+===============
+
+Explicito mejor que implicito
+
+.. code-block:: mysql
+
+    SELECT      COUNT(cc.id) AS total
+    FROM        calls_contacts cc
+    LEFT JOIN   contacts co ON co.id = cc.contact_id ;
+    AND         cc.deleted = 0
+    AND         co.deleted = 0
+
+    SELECT      COUNT(cc.id) AS total
+    FROM        calls_contacts cc, contacts co
+    WHERE       co.deleted = 0
+    AND         co.id = cc.contact_id
+    AND         cc.deleted = 0
+
+Contactos con llamadas
+
+.. code-block:: mysql
+
+    SELECT      COUNT(cc.id) AS total
+    FROM        calls_contacts cc
+    LEFT JOIN   contacts co ON co.id = cc.contact_id;
+
+
+Contactos con llamadas entrantes
+
+.. code-block:: mysql
+
+    SELECT      co.last_name,
+                co.first_name,
+                CONVERT_TZ(date_start, '+00:00', '-03:00') as fecha
+    FROM        contacts co
+    INNER JOIN  calls_contacts cc ON (cc.contact_id = co.id AND cc.deleted = 0)
+    INNER JOIN  calls ca ON (ca.id = cc.call_id AND ca.deleted = 0)
+    WHERE       co.deleted = 0
+    AND         last_name IS NOT NULL
+    LIMIT       20;
+
+Actualizar las llamadas de un contacto
+
+.. code-block:: mysql
+
+    UPDATE      calls ca, contacts co, calls_contacts cc
+    SET         ca.assigned_user_id = (
+                                        SELECT  id
+                                        FROM    users
+                                        WHERE   user_name = 'osiris'
+                                        )
+    WHERE       ca.id = cc.call_id
+    AND         co.id = cc.contact_id
+    AND         co.id = '2a756d50-ae20-0754-a7c7-49beb64cee37';
+
+
+    UPDATE      calls ca
+    INNER JOIN  calls_contacts cc ON cc.call_id = ca.id
+    INNER JOIN  contacts co ON co.id = cc.contact_id
+    SET         ca.assigned_user_id = (
+                                        SELECT  id
+                                        FROM    users
+                                        WHERE   user_name = 'osiris'
+                                        )
+    WHERE       co. = '2a756d50-ae20-0754-a7c7-49beb64cee37';
+
+
+Insertar desde otra tabla
+=========================
+
+.. code-block:: mysql
+
+    DROP TABLE IF EXISTS calls_contacts_today;
+
+    CREATE TABLE `calls_contacts_today` (
+        `id` varchar(36) NOT NULL,
+        `contact_id` varchar(36) NOT NULL,
+        `call_id` varchar(36) NOT NULL,
+        `status` varchar(25) default NULL,
+        `direction` varchar(25) default NULL,
+         PRIMARY KEY  (`call_id`)
+    );
+
+    INSERT INTO calls_contacts_today
+                (id, contact_id, call_id, status, direction)
+    SELECT      UUID(), cc.contact_id, ca.id, ca.status, ca.direction
+    FROM        calls ca
+    INNER JOIN  calls_contacts cc ON cc.call_id = ca.id
+    WHERE       DATE(ca.date_start) = CURDATE();
+
+
+AUTOCOMPLETE
+============
+
+.. code-block:: mysql
+
+    \#
+
+    SELECT FROM t<Presionar TAB>
+
+
+COUNT
+=====
+
+.. code-block:: mysql
+
+    UPDATE calls set deleted = 1 WHERE status = 'Not Held';
+    SELECT COUNT(*) FROM calls;
+    SELECT COUNT(id) FROM calls;
+    SELECT COUNT(id) FROM calls WHERE deleted = 0;
+    SELECT SQL_CALC_FOUND_ROWS id FROM calls WHERE deleted = 0 LIMIT 1; SELECT FOUND_ROWS();
+
+
+EXPLAIN
+=======
+
+.. code-block:: mysql
+
+    EXPLAIN SELECT      COUNT(id)
+            FROM        calls
+            WHERE       deleted = 0
+            AND         assigned_user_id = 'ba8630eb-7442-73f9-a88e-49b6be5882c2';
+
+
+INDEX
+=====
+
+.. code-block:: mysql
+
+    SHOW INDEX IN calls;
+    ALTER TABLE calls ADD INDEX idx_deleted_user (deleted, assigned_user_id);
+    ALTER TABLE calls DROP INDEX idx_deleted_user;
+
+
+UNIQUE
+======
+
+.. code-block:: mysql
+
+    ALTER TABLE calls_contacts_today ADD UNIQUE idx_contact_call (contact_id, call_id);
+
+
+AUTO_INCREMENT
+==============
+
+.. code-block:: mysql
+
+    ALTER TABLE tracker AUTO_INCREMENT = 9;
+    ALTER TABLE tracker MODIFY id INT(11) AUTO_INCREMENT;
+
+
+REGEXP
+======
+
+.. code-block:: mysql
+
+    UPDATE      contacts
+    SET         postal = SUBSTR(postal,4,7)
+    WHERE       postal NOT REGEXP '^[0-9]{4}$'
+    AND         postal REGEXP '^[A-Z]{3}[0-9]{4}$'
+
