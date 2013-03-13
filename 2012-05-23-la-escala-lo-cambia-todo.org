@@ -15,7 +15,7 @@ Daniel Ochoa wilsondanielg@gmail.com de la red EspinalLibre [fn:espinal]
 fue *"Cambie Bogota-Mesh por el nombre de su proyecto local y aplica
 igual"* y eso fue suficiente como disparador para una reflexión que hace
 tiempo vengo elaborando y charlando con varios integrantes de diferentes
-redes libres. La titulé [file:la-escala-lo-cambia-todo.org][la escala lo
+redes libres. La titulé [[file:la-escala-lo-cambia-todo.org][la escala lo
 cambia todo]] [fn:escala] y si bien está muy dirigida a la comunidad de
 BuenosAiresLibre [fn:BAL] creo que aplica a cualquier ciudad grande
 donde hay espacio para la creación de más de una red, con la posibilidad
@@ -27,6 +27,6 @@ disponibles a fin de lograr un rápido y efectivo despliegue.
 [fn:bmesh]    http://www.bogota-mesh.org/
 [fn:pagina12] http://www.pagina12.com.ar/diario/suplementos/futuro/13-2546-2011-06-11.html
 [fn:espinal]  http://espinal.redlibre.co/
-[fn:escala]   http://osiux.com/la-escala-lo-cambia-todo.org
+[fn:escala]   [[file:la-escala-lo-cambia-todo.org]]
 [fn:BAL]      http://buenosaireslibre.org
 

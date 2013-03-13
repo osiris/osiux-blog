@@ -4,7 +4,7 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE:     header.org
-#+DATE:        
+#+DATE:        2011-07-16
 
 Usar *Awesome* como entorno gráfico es muy gratificante, no consume
 recursos, es muy ágil, evita perder tiempo ubicando ventanas, aprovecha
@@ -12,7 +12,7 @@ al máximo posible la resolución de pantalla y ayuda mucho a poner
 atención a eso que necesitás hacer y nada más. Eso si, al parecer no hay
 vuelta atrás, te volvés más minimalista día tras día.
 
-Aunque le falta un poco más, he decidido publicar el artículo
-[[http://osiux.com/awesome-es-increible.txt][Awesome es Increíble]] asi
-recibo comentarios y me obligan a terminarlo lo antes posible.
+Aunque le falta un poco más, he decidido publicar el artículo [[file:awesome-es-increible.org][Awesome
+es Increíble]] asi recibo comentarios y me obligan a terminarlo lo antes
+posible.
 

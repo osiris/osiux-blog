@@ -19,9 +19,8 @@ alternativa de conexión en la ciudad de Buenos Aires y que es al mismo
 tiempo un modelo posible de implementación para otras ciudades y países,
 formando parte de las diversas *RedesLibres* [fn:redes] de latinoamérica
 
-.. image:: http://osiux.com/img/buenos-aires-libre-en-el-medio-digital.jpg
-   :target: http://eternauta2001tdt.blogspot.com.ar/2012/04/en-el-medio-digital.html
-   :width: 600
+#+ATTR_HTML: width: 600
+[[file:img/buenos-aires-libre-en-el-medio-digital.jpg]]
 
 Levantá tu nodo de BAL y aprendé a formar tu propia red libre!
 
@@ -37,4 +36,3 @@ Levantá tu nodo de BAL y aprendé a formar tu propia red libre!
 [fn:enelmedio] http://encuentro.gob.ar/Event.aspx?Id=737
 [fn:bal] http://buenosaireslibre.org
 [fn:redes] http://redeslibres.org
-

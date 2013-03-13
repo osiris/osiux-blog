@@ -1,1 +1,1 @@
-[[file:index.org][http://osiux.com]] | *ABSOLUTELLY NO WARRANTY* | [[http://creativecommons.org/licenses/by-sa/2.5/ar/][CC-BY-SA]] | *¡Compartir es Bueno!* | [[http://github.com/osiris/osiux-blog][source]]
+[[file:index.org][http://osiux.com]] | [[http://creativecommons.org/licenses/by-sa/2.5/ar/][CC-BY-SA]] | [[http://github.com/osiris/osiux-blog][source]] | [[file:osiux.org][OSiUX]]

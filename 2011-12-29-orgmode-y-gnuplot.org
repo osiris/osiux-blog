@@ -6,14 +6,13 @@
 #+INCLUDE:     header.org
 #+DATE:        2011-12-29
 
-Hoy me desvelé pero estoy muy contento, luego de varios días de jugar con
-gnuplot y orgmode logré realizar el gráfico que hace tiempo tenía ganas de
-hacer y por si fuera poco, documenté todo el proceso. :-)
+Hoy me desvelé pero estoy muy contento, luego de varios días de jugar
+con gnuplot y orgmode logré realizar el gráfico que hace tiempo tenía
+ganas de hacer y por si fuera poco, documenté todo el proceso. :-)
 
-[[file:http://osiux.com/img/org-task-by-day-2011-12.png]]
+[[file:img/org-task-by-day-2011-12.png]]
 
 Lee la nota completa en:
 
-[[file:visualizando-org-mode-con-gnuplot.org][visualizando orgmode con gnuplot]
-
+[[file:visualizando-org-mode-con-gnuplot.org][visualizando orgmode con gnuplot]]
 
