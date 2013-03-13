@@ -17,7 +17,7 @@
 
 ** =gpg=
 
-   Mantener las convesaciones confidenciales hoy día es una tarea
+   Mantener las conversaciones confidenciales hoy día es una tarea
    importante ante tanto logueo y registro de los medios de
    comunicación digitales. Es por eso que uso y recomiendo GPG.
 

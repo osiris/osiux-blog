@@ -35,7 +35,7 @@ ElGamal**, es suficiente:
        Your selection? 1
 #+END_EXAMPLE
 
-Lo proximo será elegir el tamaño de la llave, en el ejemplo elegimos
+Lo próximo será elegir el tamaño de la llave, en el ejemplo elegimos
 2048 y que nunca expire. Lo recomendable es que *si* expire, al
 menos dentro de un año, por si alguna vez nuestra llave se ve
 comprometida o perdemos la clave o casos similares donde no podriamos
@@ -139,8 +139,7 @@ Lo cual debería devolverlos algo similar a:
     sub   4096g/AB0B4D9C 2008-09-09
 #+END_EXAMPLE
 
-Donde =0D34DB33F= es nuestra key-id.
-
+Donde =0D34DB33F= es nuestra =key-id=.
 
 ** Exportando nuestra llave pública
 
@@ -155,7 +154,6 @@ Y para guardarla en un archivo
 #+BEGIN_EXAMPLE
     gpg --export -a 0D34DB33F > jcpetela.asc
 #+END_EXAMPLE
-
 
 ** Agregando nuevas identidades a nuestra llave 
 
@@ -227,7 +225,6 @@ necesariamente correcta a menos de que reinicie el programa.**
 
 Lo haga o no, para guardar los cambios, antes debemos ejecutar el
 comando ``save`` que nos pedira la passphrase.
-
 
 ** Revocando nuestra llave
 
@@ -347,7 +344,6 @@ que para revocarla:
     [  absoluta ] (1)  Juan Carlos Petela (jcpetela) <juanca@petela.org>
 #+END_EXAMPLE
 
-
 ** Buscando e Importando llaves públicas ajenas
 
 Digamos que un amigo exportó su llave pública y nos la envió en un
@@ -398,7 +394,6 @@ Donde podemos ver que existe mas de una llave, quizas utilice ambas,
 quizas una haya dejado de utilizarla, por eso es conveniente averiguar
 cual es antes de continuar.
 
-
 ** Cifrando archivos
 
 Si queremos cifrar archivos que contienen información sensible,
@@ -436,7 +431,6 @@ manera:
 #+BEGIN_EXAMPLE
     gpg --decrypt archivo_cifrado.gpg
 #+END_EXAMPLE
-
 
 ** Firmando llaves
 
@@ -482,7 +476,6 @@ pgp/gpg:
     gpg --keyserver subkeys.pgp.net --send-key 1234D00D 
 #+END_EXAMPLE
 
-
 ** Otras aplicaciones para utilizar con GPG
 
 - Icedove/Thunderbird + Enigmal http://www.difundefirefox.com/extensiones/enigmail
@@ -491,14 +484,7 @@ pgp/gpg:
 - seahorse http://www.gnome.org/projects/seahorse/index.html
 - kgpg http://www.secure-my-email.com/clients_kgpg.php
 - gpgv http://packages.debian.org/sid/gpgv
--
--
--igning-party
--------------
--
--ttp://packages.debian.org/signing-party
--
--igning-party is a collection for all kinds of PGP/GnuPG related things, including tools for signing keys, keyring analysis, and party preparation.
+- signing-party http://packages.debian.org/signing-party
 - =caff=: CA - Fire and Forget signs and mails a key
 - =pgp-clean=: removes all non-self signatures from key
 - =pgp-fixkey=: removes broken packets from keys

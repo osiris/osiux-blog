@@ -58,6 +58,9 @@
     - [[file:automatizando-tareas.org][Automatizando Tareas, manejo de crontab, watch y scripts]]
     - [[file:privacidad-y-anonimato-en-la-red.org][Privacidad y anonimato en la red]]
 
+*** HowTo
+    - [[file:howto-gpg-gnu-pgp.org][Howto GPG GNU PGP]]
+
 *** Redes Libres / FreeNetworks
     - [[file:flisol-bogota-2012.org][Redes Libres en Flisol Bogotá 2012]]
     - [[file:la-escala-lo-cambia-todo.org][La escala lo cambia todo]]
@@ -70,7 +73,7 @@
 *** Gráficos
     - [[file:visualizando-grafos-graphviz.txt][Visualizando grafos mediante graphviz]]
 *** Bases de datos
-    - [[file:mysql-bash-vim-tips.org]]
+    - [[file:mysql-bash-vim-tips.org][MySQL Bash Vim tips]]
 *** =var=
     - [[file:apache-mod-rewrite-htaccess.org]]
     - [[file:awesome-es-increible.org][Awesome es increíble]]

@@ -1,149 +1,143 @@
-#+TITLE: MySQL Bash Vim Tips
-#+DATE:  2009/12/01
+#+TITLE:     MySQL Bash Vim Tips
+#+AUTHOR:    Osiris Alejandro Gomez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE:   header.org
+#+DATE:      2009-12-01
 
 ** Crear Base y Usuario
 
-.. code-block:: mysql
-
+#+BEGIN_EXAMPLE
     CREATE DATABASE sugar CHARACTER SET utf8 COLLATE utf8_general_ci;
     CREATE user sugar;
     GRANT ALL ON sugar.* TO 'sugar'@'%';
     SET PASSWORD FOR 'sugar'@'%'=PASSWORD('sugar');
-
+#+END_EXAMPLE
 
 ** UTF8
 
 Definir UTF8 en el cliente
 
-.. code-block:: bash
-
+#+BEGIN_EXAMPLE
     mysql --default-character-set=utf8
+#+END_EXAMPLE
 
 Definir UTF8
 
-.. code-block:: mysql
-
+#+BEGIN_EXAMPLE
     SET NAMES utf8; SELECT * FROM contacts;
+#+END_EXAMPLE
 
-
-MySQL de Bash
-=============
+** MySQL de Bash
 
 Definir Alias
 
-.. code-block:: bash
-
+#+BEGIN_EXAMPLE
     set alias sugar = 'mysql --default-character-set=utf8 -u sugar -psugar -B sugar -h localhost '
+#+END_EXAMPLE
 
 Ejecutar consulta
 
-.. code-block:: bash
-
+#+BEGIN_EXAMPLE
     echo "SELECT user_name FROM users WHERE is_admin = 1;" | sugar
+#+END_EXAMPLE
 
 Listado de Tablas
 
-.. code-block:: bash
-
+#+BEGIN_EXAMPLE
     set alias tablas='echo "show tables" | sugar | grep -v Tables_in | sort -u'
+#+END_EXAMPLE
 
 Listado Tabla Campo
 
-.. code-block:: bash
-
+#+BEGIN_EXAMPLE
     set alias tablacampo='echo "show tables" | sugar | grep -v Tables_in | while read t; \
     do d=$(echo "desc "$t";" | cct15 | grep -v Field | awk1); \
     for c in $d;do echo $t"__"$c;done ;done'
+#+END_EXAMPLE
 
 Quitar nombre de campo
 
-.. code-block:: bash
-
+#+BEGIN_EXAMPLE
     mysql -N
-
+#+END_EXAMPLE
 
 Vaciar todas las tablas que contengan la palabra *calls*
 
-.. code-block:: bash
-
+#+BEGIN_EXAMPLE
     sugar < $(echo "show tables" | sugar | grep calls | while read t;do echo "TRUNCATE table $t;";done)
+#+END_EXAMPLE
 
 
-MySQL desde Vim
-===============
+** MySQL desde Vim
 
-Agregar en `.vimrc`
+Agregar en =.vimrc=
 
-.. code-block:: vim
-
+#+BEGIN_EXAMPLE
     command -range=% SUGAR :<line1>,<line2>w !mysql -u sugar -psugar -B sugar -t -v -v -v
+#+END_EXAMPLE
 
 Ejecutar todo el archivo
 
-.. code-block:: vim
-
+#+BEGIN_EXAMPLE
     :SUGAR
+#+END_EXAMPLE
 
 Ejecutar la línea actual
 
-.. code-block:: vim
-
+#+BEGIN_EXAMPLE
     :. SUGAR
+#+END_EXAMPLE
 
 Ejecutar un rango de líneas
 
-.. code-block:: vim
-
+#+BEGIN_EXAMPLE
     :3,8 SUGAR
+#+END_EXAMPLE
 
 Ejecutar desde línea actual hasta el final
 
-.. code-block:: vim
-
+#+BEGIN_EXAMPLE
     :.,$ SUGAR
+#+END_EXAMPLE
 
 Usar diccionarios
 
-.. code-block:: vim
-
+#+BEGIN_EXAMPLE
     :set dictionary=tablas, tablacampo
 
     CTRL-X CTRL-K
+#+END_EXAMPLE
 
+** Reemplazar Texto
 
-Reemplazar Texto
-================
+*** Traducir valores
 
-Traducir valores
-
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     SELECT      REPLACE(REPLACE(direction,'Inbound','Entrante'),'Outbound','Saliente') AS direccion
     FROM        calls;
+#+END_SRC
 
-Actualizar registros
+*** Actualizar registros
 
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     UPDATE contacts SET last_name = REPLACE(last_name, 'NUNEZ', 'NUÑEZ');
+#+END_SRC
 
-Buscar duplicados
-=================
+** Buscar duplicados
 
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     SELECT      last_name, first_name, COUNT(id) AS total
     FROM        contacts
     GROUP BY    first_name, last_name
     HAVING      total > 1
     ORDER BY    last_name, first_name;
+#+END_SRC
 
+** Agrupar
 
-Agrupar
-=======
-
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     SELECT      name,
                 (
                 SELECT  CASE
@@ -157,15 +151,14 @@ Agrupar
     GROUP BY    name, turno
     HAVING      total > 500
     ORDER BY    total DESC;
+#+END_SRC
 
 
-Cruzando tablas
-===============
+** Cruzando tablas
 
 Explicito mejor que implicito
 
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     SELECT      COUNT(cc.id) AS total
     FROM        calls_contacts cc
     LEFT JOIN   contacts co ON co.id = cc.contact_id ;
@@ -177,20 +170,19 @@ Explicito mejor que implicito
     WHERE       co.deleted = 0
     AND         co.id = cc.contact_id
     AND         cc.deleted = 0
+#+END_SRC
 
 Contactos con llamadas
 
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     SELECT      COUNT(cc.id) AS total
     FROM        calls_contacts cc
     LEFT JOIN   contacts co ON co.id = cc.contact_id;
-
+#+END_SRC
 
 Contactos con llamadas entrantes
 
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     SELECT      co.last_name,
                 co.first_name,
                 CONVERT_TZ(date_start, '+00:00', '-03:00') as fecha
@@ -200,11 +192,11 @@ Contactos con llamadas entrantes
     WHERE       co.deleted = 0
     AND         last_name IS NOT NULL
     LIMIT       20;
+#+END_SRC
 
 Actualizar las llamadas de un contacto
 
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     UPDATE      calls ca, contacts co, calls_contacts cc
     SET         ca.assigned_user_id = (
                                         SELECT  id
@@ -225,13 +217,11 @@ Actualizar las llamadas de un contacto
                                         WHERE   user_name = 'osiris'
                                         )
     WHERE       co. = '2a756d50-ae20-0754-a7c7-49beb64cee37';
+#+END_SRC
 
+** Insertar desde otra tabla
 
-Insertar desde otra tabla
-=========================
-
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     DROP TABLE IF EXISTS calls_contacts_today;
 
     CREATE TABLE `calls_contacts_today` (
@@ -249,75 +239,62 @@ Insertar desde otra tabla
     FROM        calls ca
     INNER JOIN  calls_contacts cc ON cc.call_id = ca.id
     WHERE       DATE(ca.date_start) = CURDATE();
+#+END_SRC
 
+** AUTOCOMPLETE
 
-AUTOCOMPLETE
-============
-
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     \#
 
     SELECT FROM t<Presionar TAB>
+#+END_SRC
 
+** COUNT
 
-COUNT
-=====
-
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     UPDATE calls set deleted = 1 WHERE status = 'Not Held';
     SELECT COUNT(*) FROM calls;
     SELECT COUNT(id) FROM calls;
     SELECT COUNT(id) FROM calls WHERE deleted = 0;
     SELECT SQL_CALC_FOUND_ROWS id FROM calls WHERE deleted = 0 LIMIT 1; SELECT FOUND_ROWS();
+#+END_SRC
 
+** EXPLAIN
 
-EXPLAIN
-=======
-
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     EXPLAIN SELECT      COUNT(id)
             FROM        calls
             WHERE       deleted = 0
             AND         assigned_user_id = 'ba8630eb-7442-73f9-a88e-49b6be5882c2';
+#+END_SRC
 
+** INDEX
 
-INDEX
-=====
-
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     SHOW INDEX IN calls;
     ALTER TABLE calls ADD INDEX idx_deleted_user (deleted, assigned_user_id);
     ALTER TABLE calls DROP INDEX idx_deleted_user;
+#+END_SRC
 
+** UNIQUE
 
-UNIQUE
-======
-
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     ALTER TABLE calls_contacts_today ADD UNIQUE idx_contact_call (contact_id, call_id);
+#+END_SRC
 
+** AUTO_INCREMENT
 
-AUTO_INCREMENT
-==============
-
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     ALTER TABLE tracker AUTO_INCREMENT = 9;
     ALTER TABLE tracker MODIFY id INT(11) AUTO_INCREMENT;
+#+END_SRC
 
+** REGEXP
 
-REGEXP
-======
-
-.. code-block:: mysql
-
+#+BEGIN_SRC sql :engine mysql :exports code
     UPDATE      contacts
     SET         postal = SUBSTR(postal,4,7)
     WHERE       postal NOT REGEXP '^[0-9]{4}$'
     AND         postal REGEXP '^[A-Z]{3}[0-9]{4}$'
+#+END_SRC
 
