@@ -56,6 +56,8 @@
     - [[file:ssh-para-gobernar-el-mundo.org][SSH para gobernar el mundo, aprendiendo a usar SSH]]
     - [[file:que-no-se-entere-nadie.org][Que no se entere nadie! Análisis de tráfico de red mediante tcpdump]]
     - [[file:automatizando-tareas.org][Automatizando Tareas, manejo de crontab, watch y scripts]]
+    - [[file:privacidad-y-anonimato-en-la-red.org][Privacidad y anonimato en la red]]
+
 *** Redes Libres / FreeNetworks
     - [[file:flisol-bogota-2012.org][Redes Libres en Flisol Bogotá 2012]]
     - [[file:la-escala-lo-cambia-todo.org][La escala lo cambia todo]]

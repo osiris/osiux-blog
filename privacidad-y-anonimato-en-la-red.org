@@ -1,0 +1,291 @@
+#+TITLE:       privacidad y anominato en la red
+#+DESCRIPTION: GPG, TOR, LUKS, HTTPS
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       <osiux@riseup.net>
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+LaTeX_CLASS: beamer
+#+MACRO:       BEAMERMODE presentation
+#+MACRO:       BEAMERTHEME Madrid
+#+MACRO:       BEAMERCOLORTHEME default
+#+MACRO:       BEAMERSUBJECT RMRF
+#+MACRO:       BEAMERINSTITUTE gcoop | Cooperativa de Software Libre
+
+* Seguridad de la Información
+
+  - Integridad
+  - Disponibilidad
+  - Confidencialidad
+
+* Niveles de Seguridad
+
+  #+BEGIN_EXAMPLE
+  +--------------------------------+-----------------+
+  | Inicio Dispositivo             | BIOS User/Admin |
+  | Selección Sistema Operativo    | GRUB/Bootloader |
+  | Acceso al Sistema Operativo    | root            |
+  | Acceso a los datos             | LUKS            |
+  | Acceso a la sesión del usuario | osiris          |
+  | Acceso al canal seguro         | ssh             |
+  | Recepción y Envío de Correos   | imap/smtp       |
+  | Firmar/Cifrar correos          | gpg             |
+  +--------------------------------+-----------------+
+  #+END_EXAMPLE
+
+* Cifrando el disco
+
+  #+BEGIN_EXAMPLE
+    cryptsetup luksFormat /dev/sdb3
+    cryptsetup luksOpen /dev/sdb3 misdatos
+    mount /dev/mapper/soloparami /home/osiris
+  #+END_EXAMPLE
+
+* Privacidad y Anonimato
+
+  - ocultar el contenido del mensaje
+  - ocultar origen y remitente
+
+* Herramientas
+
+  - gpg
+  - polipo
+  - socat
+  - ssh
+  - ssl
+  - tor
+
+* Distribuciones
+
+  - Liberte Linux
+  - Mandragora
+  - Polippix
+  - Privatix Live System
+  - TAILS, The Amnesic Incognito Live System
+  - Ubuntu Privacy Remix
+
+* plugins firefox
+
+   #+BEGIN_EXAMPLE
+     +-------------------+-------------------------------+
+     | AdblockPlus       | bloquea publicidad            |
+     | AutoProxy         | permite usar muchos proxies   |
+     | Flashblock        | bloquea flash                 |
+     | Ghostery          | bloquea scripts/trackers      |
+     | HTTPS Every Where | fuerza HTTPS en lugar de HTTP |
+     | NoScript          | bloquea scripts/trackers      |
+     | ShowIP            | muestra IP servidor           |
+     | ShowMyIP          | muestra IP local              |
+     +-------------------+-------------------------------+
+   #+END_EXAMPLE
+
+* HTTP vs HTTPS
+
+  - en HTTP los datos viajan en claro
+  - en HTTPS los datos viajan cifrados
+
+* Buscar sin dejar rastros?
+
+  - scroogle.com
+  - lxquick.com/StargPage.com
+
+* ManInTheMiddle | HombreEnElMedio
+
+  #+begin_example
+    iptables -t nat -A PREROUTING -i eth0
+    -p tcp --dport 443
+    -j REDIRECT --to-port 4443
+
+    socat -v OPENSSL-LISTEN:4443,reuseaddr,
+    verify=0,cert=server.crt,key=server.key,
+    cafile=ca.crt,debug,
+    fork OPENSSL:gmail.com:443
+  #+end_example
+
+* navegar sin proxy
+
+  [[file:navegar-sin-proxy.png]]
+
+* SSH Proxy SOCKS
+
+  - muy fácil de implementar!
+    #+begin_example
+      ssh -D 9090 osiris@osiux.com
+    #+end_example
+  - multiplataforma OpenSSH/PUTTY
+  - cifrado
+
+* navegar con proxy
+
+  [[file:navegar-con-proxy.png]]
+
+* firefox DNS
+
+  - hacer consulta DNS desde el proxy
+  #+begin_example
+    about:config
+    network.proxy.socks_remote_dns = true
+  #+end_example
+
+* tunnel SSH
+
+  #+begin_example
+    ssh -L 8080:osiux.com:80  osiris@osiux.com
+           ^    ^         ^    ^      ^
+           |    |         |    |      |
+           |    |         |    |      servidor
+           |    |         |    |
+           |    destino   |    usuario
+           |              |
+           puerto local   puerto destino
+  #+end_example
+
+* siempre =localhost=
+
+  - aplicaciones apuntan a =localhost:puerto=
+  - si el =tunnel ssh= no está levantado, no hay canal *seguro*
+
+* =~/.ssh/config=
+
+  #+begin_example
+  Host osiux.com
+      User osiris
+      HostName 67.208.113.123
+      LocalForward 2525 localhost:25
+      LocalForward 9930 localhost:993
+      LocalForward 8123 localhost:8123
+      LocalForward 6667 irc.freenode.net:6667
+      LocalForward 5223 talk.google.com:5223
+      LocalForward 5222 talk.google.com:5222
+      LocalForward 1863 messenger.hotmail.com:1863
+  #+end_example
+
+* compartir es bueno
+
+  usted es libre de:
+  - compartir, copiar, distribuir, ejecutar
+  - comunicar públicamente la obra
+  - hacer obras derivadas
+  - hacer un uso comercial de esta obra
+
+  http://pub.osiux.com/priv-y-anon.pdf
+
+* diagramas                            :noexport:
+** navegar sin proxy 						   :noexport:
+
+   #+BEGIN_SRC ditaa :file navegar-sin-proxy.png :cmdline -E :exports none
+     /-------\                   /-------\ /--------------\
+     |       |                   |       | |              |
+     |firefox|                   |  DNS  | |  osiux.com   |
+     |   cRED|                   |   cYEL| |          cBLU|
+     |1.2.3.4|                   |8.8.8.8| |67.208.113.123|
+     |:5678  |                   |    :53| |           :80|
+     \-+-----/                   \------+/ \---------+----/
+       :                                :            :
+       | soy 1.2.3.4 resolver osiux.com |            |
+       |------------------------------->|----\       |
+       |                                |    |       |
+       |                                |  +-+-+     |
+       | osiux.com es 67.208.113.123    |  |{s}|     |
+       |<-------------------------------|--+log|     |
+       |                                |  +---+     |
+       |                                |            |
+       | soy 1.2.3.4 UserAgent GET / HTTP/1.1        |
+       |-------------------------------------------->|----\
+       |                                             |    |
+       |                                             |  +-+-+
+       | HTTP/1.1 200 OK ContentType text/html       |  |{s}|
+       |<--------------------------------------------|--+log|
+       |                                             |  +---+
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:navegar-sin-proxy.png]]
+
+** navegar con proxy						   :noexport:
+
+    #+BEGIN_SRC ditaa :file navegar-con-proxy.png :cmdline -E :exports none
+     /-------\           /-------\            /-------\ /--------------\
+     |       |           |       |            |       | |              |
+     |firefox|           |  proxy|            |  DNS  | |  osiux.com   |
+     |   cRED|           |   cGRE|            |  cYEL | |         cBLU |
+     |1.2.3.4|           |2.2.2.2|            |8.8.8.8| |67.208.113.123|
+     |:5678  |           |  :8123|            |    :53| |           :80|
+     \-+-----/           \-----+-/            \------+/ \---------+----/
+       :                       :                     :            :
+       | soy 1.2.3.4           |                     |            |
+       | resolver osiux.com    | soy 2.2.2.2         |            |
+       |---------------------->| resolver osiux.com  |            |
+       |                       |-------------------->|----\       |
+       |                       |                     |    |       |
+       |                       | osiux.com es        |  +-+-+     |
+       | osiux.com es          | 67.208.113.123      |  |{s}|     |
+       | 67.208.113.123        |<--------------------|--+log|     |
+       |<----------------------|                        +---+     |
+       |                       |                                  |
+       | soy 1.2.3.4           |                                  |
+       | GET / HTTP/1.1        | soy 2.2.2.2                      |
+       |---------------------->| GET / HTTP/1.1                   |
+       |                       |--------------------------------->|----\
+       |                       |                                  |    |
+       |                       | HTTP/1.1 200 OK                  |  +-+-+
+       | HTTP/1.1 200 OK       | ContentType text/html            |  |{s}|
+       | ContentType text/html |<---------------------------------|--+log|
+       |<----------------------|                                  |  +---+
+       |                       |                                  |
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:navegar-con-proxy.png]]
+
+** navegar sin proxy uml					   :noexport:
+
+   #+BEGIN_SRC plantuml :file secuencia-sin-proxy.png :exports none
+      skinparam sequenceParticipantFontName Monospaced
+      skinparam sequenceParticipantBorderColor black
+      skinparam sequenceLifeLineBorderColor black
+      skinparam sequenceArrowFontName Monospaced
+      skinparam sequenceArrowColor blue
+
+      participant "firefox\n1.2.3.4:4321" as firefox #orange
+      participant "DNS\n8.8.8.8:53" as DNS #yellow
+      participant "google.com\n6.6.6.6:80" as google #red
+      hide footbox
+      autonumber "<b>[0]"
+
+      firefox -> DNS: cuál es la IP de <b>google.com</b>
+      DNS -> DNS: log
+      DNS --> firefox: es la IP <b>6.6.6.6</b>
+      firefox -> google: mi IP es <b>1.2.3.4</b> + UserAgent + GET /
+      google -> google: log
+      google --> firefox: HTML
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:secuencia-sin-proxy-4.png]]
+
+** navegar con proxy uml					   :noexport:
+
+   #+BEGIN_SRC plantuml :file secuencia-con-proxy.png :exports none
+      skinparam sequenceParticipantFontName Monospaced
+      skinparam sequenceParticipantBorderColor black
+      skinparam sequenceLifeLineBorderColor black
+      skinparam sequenceArrowFontName Monospaced
+      skinparam sequenceArrowColor blue
+
+      participant "firefox\n1.2.3.4:4321" as firefox #orange
+      participant "proxy\n2.2.2.2" as proxy #green
+      participant "DNS\n8.8.8.8:53" as DNS #yellow
+      participant "google.com\n6.6.6.6:80" as google #red
+      hide footbox
+      autonumber "<b>[0]"
+
+      firefox -> DNS: cuál es la IP de <b>google.com</b>
+      DNS -> DNS: log
+      DNS --> firefox: es la IP <b>6.6.6.6</b>
+      firefox -> google: mi IP es <b>1.2.3.4</b> + UserAgent + GET /
+      google -> google: log
+      google --> firefox: HTML
+   #+END_SRC
+
+   #+RESULTS:
