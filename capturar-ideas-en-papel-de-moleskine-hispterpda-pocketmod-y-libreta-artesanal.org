@@ -1,0 +1,183 @@
+#+TITLE:     Capturar ideas en papel: de moleskine, hispterpda, pocketmod y libreta artesanal
+#+AUTHOR:    Osiris Alejandro Gomez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE:   header.org
+#+DATE:      2011-10-06
+
+** Capturando Ideas
+
+Muchas metodologías de gestión del tiempo coinciden en un paso escencial,
+capturas ideas lo antes posible y uno de los medios más efectivos, flexibles y
+más disponibles es el papel, por esto conviene siempre tener alguna especie de
+libreta a mano. Si bien hace tiempo es posible utilizar algún dispositivo
+electrónico, ninguno es tan versatil y maleable como el papel.
+
+[[file:tmb/libreta_artesanal/libreta_artesanal_12.jpg]]
+[[file:tmb/libreta_artesanal/libreta_artesanal_12.jpg]]
+[[file:tmb/libreta_artesanal/libreta_artesanal_13.jpg]]
+[[file:tmb/libreta_artesanal/libreta_artesanal_14.jpg]]
+
+Inicialmente cuando leía acerca del método GTD [fn:GTD], pase un buen rato
+eligiendo la mejor libreta para recopilar y en esa carrera terminé comprando
+una *moleskine* [fn:moleskine], y antes de completarla ya había comprado otra
+libreta de similares características pero menor calidad y precio, luego tuve la
+suerte de perderlas para provisoriamente usar una muy barata libreta que en
+poco tiempo terminó por desarmarse (realmente era de mala calidad).
+
+** Alternativas a moleskine
+
+En la búsqueda de algo económico y práctico a la vez descubrí
+la *hispterPDA* [fn:hispterpda], que consta de varias hojas sostenidas
+por un clip, broche o incluso una banda elástica, tiene la ventaja de
+poder separar las hojas para tener una visión global, reorganizar e
+incluso archivar de maneras muy distintas. No encontré un clip que no
+lo perdiera y por lo que suelo registrar se escapaba a mis
+necesidades.
+
+Entonces dí con la *pocketmod* [fn:pocketmod] una idea fabulosa por su simplesa,
+tomar una hoja y dividirla en 8 partes y haciendo sólo dos cortes ya obtenés
+una mini-libreta lista para usar. Con esto jugué bastante, primero con los
+generadores web que incluyen calendarios, listas de tareas y varios templates.
+
+[[file:tmb/libreta_artesanal/libreta_pocketmod_01.jpg]]
+[[file:tmb/libreta_artesanal/libreta_pocketmod_02.jpg]]
+[[file:tmb/libreta_artesanal/libreta_pocketmod_03.jpg]]
+[[file:tmb/libreta_artesanal/libreta_pocketmod_04.jpg]]
+
+Como uso *Org-mode* [fn:org-mode] decidí integrarlo a la *pocketmod*,
+intenté adaptar un script para *hispterpda* que extraía citas
+de *Org-mode* generando un PDF en formato *pocketmod* pero no me dió
+resultado, aunque de esa experiencia obtuve la experiencia de
+interactuar con el utilitario =pdfjam= [fn:pdfjam] que facilita la
+unión de distintos archivos pdf en uno solo.
+
+Decidido a obtener mi propio template de *pocketmod*, obté por hacer un par de
+archivos en ascii-art, incluyendo la salida del programa =cal= de consola,
+esto está disponible en un repositorio =git= [fn:rst2pocketmod] y no son más que
+unos archivos en formato *reStructuredText* [fn:rst].
+
+Cuando finalmente quedé conforme con el template y lo imprimí y empecé a usarlo
+vi rápidamente que estaba desaprovechando papel, la hoja A4 estaba siendo usada
+de una sola cara. Fui a una papelería y adquirí unas hojas de 120 gramos
+pensando en imprimir en doble faz, luego de hacerlo y plegarla vi que no
+resultaba cómoda y le di vueltas al asunto.
+
+Buscando maneras de encuadernar sin usar adhesivos vi varios ejemplos de
+plegado y observando una foto de un sitio web que no recuerdo obtuve una
+libreta que me gustó, aunque con el uso dejé de imprimir el template y
+generalmente uso las hojas en blanco.
+
+*** Libreta Artesanal
+
+Usando una hoja A4 (210x297mm) el primer paso es
+doblarla en dos para luego nuevamente doblarla en dos.
+
+#+BEGIN_EXAMPLE
+    +---------+---------+    +---------+---------+
+    |         |         |    |         |         |
+    |         |         |    |         |         |
+    |         |         |    +---------+---------+
+    |         |         |    |         |         |
+    |         |         |    |         |         |
+    +---------+---------+    +---------+---------+
+
+    +----+----+---------+    +----+----+----+----+
+    |    |    |         |    |    |    |    |    |
+    |    |    |         |    |    |    |    |    |
+    +----+----+---------+    +----+----+----+----+
+    |    |    |         |    |    |    |    |    |
+    |    |    |         |    |    |    |    |    |
+    +----+----+---------+    +----+----+----+----+
+#+END_EXAMPLE
+
+Luego es necesario hacer 2 cortes, asi obtenemos 4 hojas A6 (148x105mm)
+
+#+BEGIN_EXAMPLE
+    +----+----+----+----+    +----+----+  +----+----+
+    |    |    |    |    |    |    |    |  |    |    |
+    |    |    |    |    |    |    |    |  |    |    |
+    +----+----+----+----+    +----+----+  +----+----+
+
+    +----+----+----+----+    +----+----+  +----+----+
+    |    |    |    |    |    |    |    |  |    |    |
+    |    |    |    |    |    |    |    |  |    |    |
+    +----+----+----+----+    +----+----+  +----+----+
+#+END_EXAMPLE
+
+Ahora hacer 6 cortes de 5mm cada 15mm para la unión entre hojas
+
+#+BEGIN_EXAMPLE
+     15mm 15mm 15mm 15mm 15mm 15mm 15mm
+    +<-->+<-->+<-->+<-->+<-->+<-->+<-->+
+
+         1    2    3    4    5    6
+    +----+----+----+----+----+----+----+   +
+    |    |    |    |    |    |    |    |   ^
+    |                                  |   |
+    |                                  |   |
+    |                                  |   |
+    |                                  |  148.5mm
+    |                                  |   |
+    |                                  |   |
+    |                                  |   |
+    |                                  |   v
+    +----------------------------------+   +
+
+    +<------------ 105mm ------------->+
+#+END_EXAMPLE
+
+Plegar hacia adentro los 3 segmentos interiores
+
+#+BEGIN_EXAMPLE
+    +----+    +----+    +----+    +----+
+    |    +----+    +----+    +----+    |
+    |    +----+    +----+    +----+    |
+    |                                  |
+    |                                  |
+    |                                  |
+    |                                  |
+    |                                  |
+    |                                  |
+    |                                  |
+    +----------------------------------+
+#+END_EXAMPLE
+
+Luego los mismos 3 segmentos hacia el otro lado
+
+#+BEGIN_EXAMPLE
+    +----+    +----+    +----+    +----+
+    |    +----+    +----+    +----+    |
+    |                                  |
+    |                                  |
+    |                                  |
+    |                                  |
+    |                                  |
+    |                                  |
+    |                                  |
+    |                                  |
+    +----------------------------------+
+#+END_EXAMPLE
+
+Finalmente apilar todas las hojas e introducir una varilla de mandera
+de 2mm de diámetro.
+
+** Fotos Paso a Paso
+
+[[file:tmb/libreta_artesanal/libreta_artesanal_01.jpg]]
+[[file:tmb/libreta_artesanal/libreta_artesanal_02.jpg]]
+[[file:tmb/libreta_artesanal/libreta_artesanal_03.jpg]]
+[[file:tmb/libreta_artesanal/libreta_artesanal_04.jpg]]
+[[file:tmb/libreta_artesanal/libreta_artesanal_05.jpg]]
+[[file:tmb/libreta_artesanal/libreta_artesanal_06.jpg]]
+
+[fn:GTD] https://es.wikipedia.org/wiki/GTD
+[fn:moleskine] https://es.wikipedia.org/wiki/Moleskine
+[fn:hispterpda] https://secure.wikimedia.org/wikipedia/en/wiki/Hipster_PDA
+[fn:pocketmod] http://www.pocketmod.com/
+[fn:org-mode] https://es.wikipedia.org/wiki/Org-mode
+[fn:pdfjam] http://freshmeat.net/projects/pdfjam/
+[fn:rst2pocketmod] http://git.osiux.com.ar/?p=rst2pocketmod.git
+[fn:rst] http://osiux.com/restructuredtext-texto-re-estructurado.txt
+

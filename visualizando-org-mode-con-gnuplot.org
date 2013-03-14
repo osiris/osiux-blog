@@ -8,7 +8,7 @@
 
 ** Introducción
 
-Desde que comencé a usar org-mode [#orgmode]_ siempre tuve ganas de
+Desde que comencé a usar org-mode [fn:orgmode] siempre tuve ganas de
 graficar el registro de horas que llevo a diario, pasaron dos largos
 años y hoy lo conseguí, luego de 9 horas y 59 minutos:
 
@@ -531,7 +531,7 @@ los scripts para graficar org-mode.
 
 Ejecutando unas pocas líneas se puede ver, cuanto tardé:
 
-#+BEGIN_SRC org :exports code
+#+BEGIN_EXAMPLE
   #+begin_src sh :session :results output
   cd ~/org
   grep -A 3 "*** visualizando" plot.org | grep "="
@@ -539,7 +539,7 @@ Ejecutando unas pocas líneas se puede ver, cuanto tardé:
 
   #+results:
   :     CLOCK: [2011-12-29 jue 02:55]--[2011-12-29 jue 05:47] =>  2:52
-#+END_SRC
+#+END_EXAMPLE
 
 ** ChangeLog
 
