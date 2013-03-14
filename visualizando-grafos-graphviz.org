@@ -1,0 +1,14 @@
+#+TITLE:       Visualizando Grafos usando Graphviz
+#+DESCRIPTION: generación automática de grafos directamente desde una consola
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+
+** Introducción
+
+Generación de distintos grafos como estructuras de datos, estructuras de árbol,
+diagramas entidad-relación, de redes, de flujo, etc, utilizando el conjunto de
+herramientas Graphviz y su integración con otras aplicaciones. Desarrollo de
+scripts para la generación automática de grafos directamente desde una consola.
