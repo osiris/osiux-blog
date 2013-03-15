@@ -1,6 +1,6 @@
 body{padding:5;background:black none repeat scroll 0 0;border:0px solid #000;color:#e0e0e0;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;font-family:Monaco, Menlo, Consola, Inconsolata, "Courier New", monospace;font-size:100%;}
 code{color:#cfff00;font-size:120%;font-weight:bold;}
-div#content{background:#111;margin:0;padding:1em;width:600px;}
+div#content{background:#111;margin:0;padding:1em;width:640px;}
 a{color:#cfff00;text-decoration:none;padding:1px;solid #e0e0e0;}
 a:hover{color:#cfff00;text-decoration:underline;}
 #table-of-contents{margin:1em 0;padding:.1em;}
@@ -24,7 +24,7 @@ pre{border:1px solid #ccc;background:black;padding:.5em;overflow:auto;font-size:
 div#postamble p{text-align:left;color:#888;font-size:80%;padding:1;margin:1;}
 table{font-size:100%;border-collapse:collapse;margin:.5em 0;}
 th, td{border:1px solid #777;padding:.3em;margin:2px;}
-th{background:#eee;}
+th{background:#cfff00;color:#000}
 span.underline{text-decoration:underline;}
 .fixme{background:#ff0;font-weight:bold;}
 .ra{text-align:right;}

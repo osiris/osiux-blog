@@ -377,7 +377,8 @@ son:
 
 El primer gráfico:
 
-file:img/org-task-by-day-1.png
+#+ATTR_HTML: width="640" height="480" alt="Tareas por día"
+[[file:img/org-task-by-day-1.png]]
 
 *** Mejorando el gráfico
 
@@ -444,6 +445,7 @@ sóla línea de código::
 
 Con todos estos cambios aplicados el gráfico mejora notablemente:
 
+#+ATTR_HTML: width="640" height="480" alt="Tareas por día Diciembre del 2011"
 file:img/org-task-by-day-2011-12.png
 
 El código completo de gnuplot es el siguiente:
@@ -504,11 +506,13 @@ por:
 
 Y obtuve un gráfico de todo el 2010:
 
-file:img/org-task-by-day-2010.png
+#+ATTR_HTML: width="640" height="480" alt="Tareas por día Año 2010"
+[[file:tmb/org-task-by-day-2010.png]]
 
 Comparando el 2011, veo que soy un adicto a org-mode:
 
-file:img/org-task-by-day-2011.png
+#+ATTR_HTML: width="640" height="480" alt="Tareas por día Año 2011"
+[[file:tmb/org-task-by-day-2011.png]]
 
 ** Conclusión
 
@@ -544,6 +548,7 @@ Ejecutando unas pocas líneas se puede ver, cuanto tardé:
 ** ChangeLog
 
 - [2013-02-28 jue] Cambio formato rst por org.
+- [2013-03-15 vie] Agrego width a imágenes.
 
 [fn:orgmode] http://orgmode.org
 [fn:emacs] https://www.gnu.org/software/emacs/
