@@ -1,5 +1,5 @@
 #+TITLE:     ABSOLUTELLY NO WARRANTY
-#+AUTHOR:    Osiris Alejandro Gomez
+#+AUTHOR:    Osiris Alejandro Gómez
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
@@ -52,10 +52,20 @@
 
 ** =** docs=
 *** =*** GNU/Linux=
-    - [[file:ssh-para-gobernar-el-mundo.org][SSH para gobernar el mundo, aprendiendo a usar SSH]]
-    - [[file:que-no-se-entere-nadie.org][Que no se entere nadie! Análisis de tráfico de red mediante tcpdump]]
+    - [[file:apache-mod-rewrite-htaccess.org][Apache mod-rewrite .htaccess]]
     - [[file:automatizando-tareas.org][Automatizando Tareas, manejo de crontab, watch y scripts]]
+    - [[file:awesome-es-increible.org][Awesome es increíble]]
+    - [[file:chroot-mount-fstab-bind.org][chroot mount fstab bind]]
+    - [[file:curuzu-libre-2008.org][Curuzú Libre 2008]]
+    - [[file:dame-una-consola.org][dame una consola]]
+    - [[file:fluxbox-gtk2-root-tail-gkrellm.org][fluxbox gtk2 root-tail gkrellm]]
+    - [[file:imapsync-migrar-mails.org][Migrar mails usando imapsync]]
+    - [[file:login-sin-passwords-con-pam-usb.org][login sin passwords con pam usb]]
+    - [[file:lvm-luks-bacoop.org][Particiones Cifradas usando LVM y LUKS]] 
     - [[file:privacidad-y-anonimato-en-la-red.org][Privacidad y anonimato en la red]]
+    - [[file:que-no-se-entere-nadie.org][Que no se entere nadie! Análisis de tráfico de red mediante tcpdump]]
+    - [[file:ssh-para-gobernar-el-mundo.org][SSH para gobernar el mundo, aprendiendo a usar SSH]]
+    - [[file:ubuntu-11.10-en-exomate-de-conectar-igualdad.org][Instalando Ubuntu 11.10 en notebook exomate de Conectar Igualdad]]
 
 *** =*** HowTo=
     - [[file:howto-gpg-gnu-pgp.org][Howto GPG GNU PGP]]
@@ -80,24 +90,12 @@
 
 *** =*** Bases de datos=
     - [[file:mysql-bash-vim-tips.org][MySQL Bash Vim tips]]
+    - [[file:mysql-not-in-versus-left-join.org]]
 
 *** =*** var=
-    - [[file:apache-mod-rewrite-htaccess.org]]
-    - [[file:awesome-es-increible.org][Awesome es increíble]]
-    - [[file:chroot-mount-fstab-bind.org]]
-    - [[file:curuzu-libre-2008.org]]
-    - [[file:dame-una-consola.org][dame una consola]]
-    - [[file:fluxbox-gtk2-root-tail-gkrellm.org]]
-    - [[file:frontweb.org]]
+    - [[file:frontweb.org][frontweb]]
     - [[file:gpg.org]]
     - [[file:help.rst]]
-    - [[file:imapsync-migrar-mails.org]]
-    - [[file:login-sin-passwords-con-pam-usb.org]]
-    - [[file:lvm-luks-bacoop.org]]
-    - [[file:mysql-not-in-versus-left-join.org]]
     - [[file:olimpiadas-informaticas-en-monte-caseros.org]]
-    - [[file:osiux.org]]
     - [[file:restructuredtext-blog-python-script-rest2web.org]]
     - [[file:restructuredtext-blog-script-rst2blog.org]]
-    - [[file:ubuntu-11.10-en-exomate-de-conectar-igualdad.org][Instalando Ubuntu 11.10 en notebook exomate de Conectar Igualdad]]
-

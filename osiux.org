@@ -1,5 +1,5 @@
 #+TITLE:     OSiUX
-#+AUTHOR:    Osiris Alejandro Gomez
+#+AUTHOR:    Osiris Alejandro Gómez
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
@@ -11,9 +11,9 @@
 
    Osiris Alejandro Gómez (a.k.a. OSiUX), es Programador y
    Administrador GNU/Linux. Socio de [[http://gcoop.coop][gcoop Cooperativa de Software
-   Libre]] y miembro de [[http://buenosaireslibre.org][BuenosAiresLibre]], además colabora en [[http://usla.org.ar][USLA]]
-   (Usuarios de Software Libre de Argentina) y [[http://cafelug.org.ar][CaFeLUG]] (Grupo de
-   Usuarios GNU/Linux de la Capital Federal).
+   Libre]] y miembro de [[http://altermundi.net][Altermundi]] y [[http://buenosaireslibre.org][BuenosAiresLibre]], además colabora
+   en [[http://usla.org.ar][USLA]] (Usuarios de Software Libre de Argentina) y [[http://cafelug.org.ar][CaFeLUG]] (Grupo
+   de Usuarios GNU/Linux de la Capital Federal).
 
 ** =gpg=
 

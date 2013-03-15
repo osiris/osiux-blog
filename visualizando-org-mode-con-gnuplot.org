@@ -1,5 +1,5 @@
 #+TITLE:       visualizando dos años de orgmode con gnuplot - viewing two years of orgmode with gnuplot
-#+AUTHOR:      Osiris Alejandro Gomez
+#+AUTHOR:      Osiris Alejandro Gómez
 #+EMAIL:       osiux@osiux.com
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
