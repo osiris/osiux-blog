@@ -8,6 +8,7 @@
 
 ** Convirtiendo un CSV en un gráfico animado
 
+#+ATTR_HTML: width="640" height="480" alt="Software Libre y Economía Social"
 [[file:img/2012-06-13-SLyES-2037-0114.jpg]]
 
 Ayer fue el evento *Software Libre y Economía Social* [fn:slyes2012] y
@@ -33,7 +34,7 @@ y en función de el tipo de cooperativa elegir un color distinto.
 
 El script =csv2log.sh=:
 
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC sh :exports code
   cat ../datos/coops.csv | tr " " "-" | sed s/"--"/"-"/g | tr -d '"' | while read LINE
   do
       DATE=$(echo "$LINE" | awk '{print $1}' FS=',' | tr "/" " " | awk '{print $3"-"$2"-"$1}')
@@ -52,7 +53,7 @@ El script =csv2log.sh=:
       NOMBRE=$(echo $LINE  | awk '{print $6}' FS=',' | tr "-" " " | tr A-Z a-z | cut -c -20)
       echo $TIME"|"$TIPO"|"$STATUS"|"$PROV"/"$LOCA"/"$NRO"-"$NOMBRE"|"$COLOR
   done | sort -n | tee gource.log
-#+END_EXAMPLE
+#+END_SRC
 
 La estructura el grafo es =Provincia/Localidad/Matrícula-Cooperativa=,
 ya que los nombres son muy largos, opté por limitarlos a 20 caracteres.
@@ -60,7 +61,7 @@ ya que los nombres son muy largos, opté por limitarlos a 20 caracteres.
 Con el archivo =gource.log= ya creado, la animación se genera mediante
 el script =gource.sh= que establece los parámetros de visualización.
 
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC sh :exports code
   cat gource.log | gource - --log-format custom \
   --selection-colour FF0000 \
   --stop-at-end \
@@ -74,7 +75,7 @@ el script =gource.sh= que establece los parámetros de visualización.
   --logo puntitos.png --max-file-lag -1 \
   --default-user-image '/home/osiris/data/dev/CoopViz/datos/colores/default.png' \
   --user-image-dir '/home/osiris/data/dev/CoopViz/datos/colores/'
-#+END_EXAMPLE
+#+END_SRC
 
 Al finalizar el evento pude mostar mediante un proyector cómo el
 cooperativismo existe en cada una de las provincias desde hace años,
@@ -85,14 +86,17 @@ presentada ayer.
 
 ** Año 1929
 
+#+ATTR_HTML: width="640" height="360" alt="Cooperativas de Argentina Año 1929"
 [[file:img/SLyES-2012-CoopViz-1929.jpg]]
 
 ** Año 2000
 
+#+ATTR_HTML: width="640" height="360" alt="Cooperativas de Argentina Año 2000"
 [[file:img/SLyES-2012-CoopViz-2000.jpg]]
 
 ** Año 2007
 
+#+ATTR_HTML: width="640" height="360" alt="Cooperativas de Argentina Año 2007"
 [[file:img/SLyES-2012-CoopViz-2007.jpg]]
 
 ** Video Cooperativas de Argentina 1927-2008
@@ -100,6 +104,10 @@ presentada ayer.
 Hoy con algo más de tiempo, armé un video y lo liberé!
 
 - Descargar Video http://archive.org/download/SlyES-2012-CoopViz/SLyES-2012-cooperativas-de-argentina.ogv
+
+** Changelog
+
+   - [2013-03-15 vie] mejoro bloques de código y agrego tamaños a imágenes
 
 [fn:slyes2012] http://www.gcoop.coop/sles-2012
 [fn:inaes] http://www.inaes.gob.ar/es/Enlaces/listados.asp
