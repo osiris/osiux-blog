@@ -3,6 +3,10 @@ update-all: update-htaccess update-css update-img update-html
 clear-html:
 	rm html/*.html*
 
+update-robots:
+	cd html;rsync -avz robots.txt vodka:~/osiux
+	cd html;rsync -avz robots.txt merlot:~/html
+
 update-htaccess:
 	cd html;rsync -avz .htaccess vodka:~/osiux
 	cd html;rsync -avz .htaccess merlot:~/html
