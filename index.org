@@ -6,8 +6,17 @@
 #+OPTIONS:   toc:nil
 #+INCLUDE:   header.org
 
+** Huayra, el día que las vacas vuelen, llegó!
+
+   #+ATTR_HTML: witdh="640" height="500" alt="Huayra"
+   [[file:img/huayra-vaca-volando.png]]
+
+   - [[file:2013-03-18-huayra-el-dia-que-las-vacas-vuelen.org][leer más...]]
+   - [[http://linuxtracker.org/download.php?id=ef0968d17295e1c03f4e2868b363c6f9c7691400&f=Huayra+VR+GNU%2FLinux+1.0.torrent&key=6c2d037a][Descargar .torrent]]
+
 ** =** blog=
 *** =*** 2013=
+    - [[file:2013-03-18-huayra-el-dia-que-las-vacas-vuelen.org][Huayra, el día que las vacas vuelen, llegó!]]
     - [[file:2013-02-01-migrando-de-frontweb-a-org-mode.org][02/01 Migrando de frontweb a Org-mode]]
     
 *** =*** 2012=
