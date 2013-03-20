@@ -75,6 +75,7 @@
     - [[file:que-no-se-entere-nadie.org][Que no se entere nadie! Análisis de tráfico de red mediante tcpdump]]
     - [[file:ssh-para-gobernar-el-mundo.org][SSH para gobernar el mundo, aprendiendo a usar SSH]]
     - [[file:ubuntu-11.10-en-exomate-de-conectar-igualdad.org][Instalando Ubuntu 11.10 en notebook exomate de Conectar Igualdad]]
+    - [[file:procesos-linux.org][Procesos Linux, administrando recursos del sistema]]
 
 *** =*** HowTo=
     - [[file:howto-gpg-gnu-pgp.org][Howto GPG GNU PGP]]

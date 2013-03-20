@@ -18,7 +18,7 @@ h6{font-size:110%;}
 h2, h3, h4, h5, h6{border-bottom:2px solid black;font-weight:bold;color:yellow;margin-top:35px;}
 tt{color:#00f;}
 .verbatim{margin:.5em 0;}
-pre{border:1px solid #ccc;background:black;padding:.5em;overflow:auto;font-size:120%;white-space:pre-wrap;}
+pre{border:1px solid #ccc;background:black;padding:.5em;overflow:auto;font-size:110%;white-space:pre-wrap;}
 .verbatim pre{margin:0;}
 .verbatim-caption{border:1px solid #ccc;border-bottom:0;background:#fff;display:block;font-size:80%;padding:.2em;}
 div#postamble p{text-align:left;color:#888;font-size:80%;padding:1;margin:1;}
@@ -41,7 +41,7 @@ span.underline{text-decoration:underline;}
 .timestamp-kwd{color:#f59ea0;}
 .tag{background-color:#add8e6;font-weight:normal}
 .target{background-color:#551a8b;}
-pre{border:1pt solid #80c800;background-color:black;padding:4pt;font-family:inconsolata, courier, monospace;font-size:120%;white-space:pre-wrap;}
+pre{border:1pt solid #80c800;background-color:black;padding:4pt;font-family:inconsolata, courier, monospace;font-size:110%;white-space:pre-wrap;}
 table{border-collapse:collapse;}
 td, th{vertical-align:top;}
 .org-info-search-highlight{background-color:#adefef;color:#000000;font-weight:bold;}
