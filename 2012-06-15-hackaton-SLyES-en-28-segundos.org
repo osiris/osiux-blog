@@ -15,5 +15,5 @@ puede apreciar cómo se trabajó:
 <video controls="controls" src="http://gcoop.coop/hackaton-slyes.ogv"></video>
 #+END_HTML
 
-- [[http://gcoop.coop/hackaton-slyes.ogv][Descargar Video]
+- [[http://gcoop.coop/hackaton-slyes.ogv][Descargar Video]]
 

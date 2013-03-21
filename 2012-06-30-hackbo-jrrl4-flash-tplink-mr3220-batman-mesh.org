@@ -19,7 +19,7 @@ realizadas en las redes DeltaLibre y QuintanaLibre del programa
   <video controls="controls" src="http://archive.org/download/jrrl4-hackbo-batmesh/jrrl4-hackbo-flash-tplink-mr3220-batman-mesh.ogv"></video>
 #+END_HTML
 
-- `Descargar Video Charla <http://archive.org/download/jrrl4-hackbo-batmesh/jrrl4-hackbo-flash-tplink-mr3220-batman-mesh.ogv>`_
+- [[http://archive.org/download/jrrl4-hackbo-batmesh/jrrl4-hackbo-flash-tplink-mr3220-batman-mesh.ogv][Descargar Video Charla]]
 
 ** video pantalla
 
@@ -27,7 +27,7 @@ realizadas en las redes DeltaLibre y QuintanaLibre del programa
   <video controls="controls" src="http://pub.osiux.com/charlas/jrrl4-hackbo-flash-tplink-mr3220-batman-mesh-screen.ogv"></video>
 #+END_HTML
 
-- `Descargar Video Pantalla <http://pub.osiux.com/charlas/jrrl4-hackbo-flash-tplink-mr3220-batman-mesh-screen.ogv>`_
+- [[http://pub.osiux.com/charlas/jrrl4-hackbo-flash-tplink-mr3220-batman-mesh-screen.ogv][Descargar Video Pantalla]]
 
 ** imagenes OpenWRT release 31316 batmesh
 

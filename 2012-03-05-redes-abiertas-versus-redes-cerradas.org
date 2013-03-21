@@ -6,34 +6,35 @@
 #+INCLUDE:     header.org
 #+DATE:        2012-03-05
 
-Estuve jugando un poco con varios *APs* (Access Points) y luego de un par de
-minutos de *"scannear"* las redes que me rodean se me ocurrió graficarlas!
+Estuve jugando un poco con varios *APs* (Access Points) y luego de un
+par de minutos de *scannear* las redes que me rodean se me ocurrió
+graficarlas!
 
-Como de costumbre la herramienta elegida fue
-[[http://graphviz.org][graphviz]] y salió bastante bien, comparto la
-imagen:
+Como de costumbre la herramienta elegida fue [[http://graphviz.org][graphviz]] y salió bastante
+bien, comparto la imagen:
 
 [[file:img/aps-2012-03-05.gif]]
 
 A medida que la señal disminuye los *SSIDs* (nombres) se alejan del
 centro (mi nodo) y el tamaño de la fuente se reduce.
 
-Como se puede apreciar, lamentablemente no abundan las redes abiertas, por el
-contrario, escasean y lo peor de todo es que muy pocas asignan =IP= por
-=DHCP= y cuentan con *cero contenido*, algunos pocos dan el servicio de
-salir a *INET*.
+Como se puede apreciar, lamentablemente no abundan las redes abiertas,
+por el contrario, escasean y lo peor de todo es que muy pocas asignan
+=IP= por =DHCP= y cuentan con *cero contenido*, algunos pocos dan el
+servicio de salir a *INET*.
 
-Obviamente la excepción son los pocos nodos de `BuenosAiresLibre
-<http://buenosaireslibre.org>`_. Sería interesante poder revertir esta
-situación y lograr que los 309 equipos listados sean cada uno parte de una *red
-libre, abierta y comunitaria*, donde todos podríamos sacar provecho de la
-misma, dejando de estar aislados y cerrados con la comunidad que nos rodea.
+Obviamente la excepción son los pocos nodos
+de *BuenosAiresLibre* [fn:BAL]. Sería interesante poder revertir esta
+situación y lograr que los 309 equipos listados sean cada uno parte de
+una *red libre, abierta y comunitaria*, donde todos podríamos sacar
+provecho de la misma, dejando de estar aislados y cerrados con la
+comunidad que nos rodea.
 
-Invito a todos a capturar su zona y ver en un par de meses o años si el gráfico
-se torna más verde que rojo.
+Invito a todos a capturar su zona y ver en un par de meses o años si
+el gráfico se torna más verde que rojo.
 
-Solo hace falta generar un archivo que contenga SSID, MAC, estado (abierta o
-cerrada) y el nivel de señal, como por ejemplo
+Solo hace falta generar un archivo que contenga SSID, MAC, estado
+(abierta o cerrada) y el nivel de señal, como por ejemplo
 
 #+BEGIN_EXAMPLE
     FT9081668 	e0:cb:4e:61:4a:0f 	6 (B+G) 	AP 	yes 	50 	
@@ -41,11 +42,10 @@ cerrada) y el nivel de señal, como por ejemplo
     mesh.buenosaireslibre.org 	f8:d1:11:7a:61:b2 	1 (B+G) 	Ad hoc 	no 	35 	
 #+END_EXAMPLE
 
-Y luego ejecutar el script [[https://github.com/osiris/aps2dot/blob/master/aps2dot][aps2dot]] de la
-siguiente manera:
+Y luego ejecutar el script [[https://github.com/osiris/aps2dot/blob/master/aps2dot][aps2dot]] de la siguiente manera:
 
 #+BEGIN_SRC sh :results none :exports code
-	./aps2dot.sh >aps.dot;neato -Tpng aps.dot >aps.png
+./aps2dot.sh >aps.dot;neato -Tpng aps.dot >aps.png
 #+END_SRC
 
 Esta disponible el código fuente en un repositorio git:
@@ -53,5 +53,8 @@ Esta disponible el código fuente en un repositorio git:
 - https://github.com/osiris/aps2dot
 
 Se aceptan sugerencias a osiux@buenosaireslibre.org
-Y acordate, *si en tu barrio no hay un nodo libre, es porque *vos* no lo hiciste!*
 
+Y acordate, *si en tu barrio no hay un nodo libre, es porque *vos* no
+lo hiciste!*
+
+[fn:BAL] http://buenosaireslibre.org

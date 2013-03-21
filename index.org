@@ -16,7 +16,7 @@
 
 ** =** blog=
 *** =*** 2013=
-    - [[file:2013-03-18-huayra-el-dia-que-las-vacas-vuelen.org][Huayra, el día que las vacas vuelen, llegó!]]
+    - [[file:2013-03-18-huayra-el-dia-que-las-vacas-vuelen.org][18/03 Huayra, el día que las vacas vuelen, llegó!]]
     - [[file:2013-02-01-migrando-de-frontweb-a-org-mode.org][02/01 Migrando de frontweb a Org-mode]]
     
 *** =*** 2012=
@@ -40,13 +40,12 @@
     - [[file:2012-05-18-en-el-medio-digital-software-libre.org][05/18 en el medio digital software libre]]
     - [[file:2012-05-05-flisol-bogota.org][05/05 FLISoL Bogotá]]
     - [[file:2012-04-28-flisol-cooperativismo-y-software-libre.org][04/28 FLISoL Cooperativismo y software libre]]
-    - [[file:2012-03-05-redes-abiertas-versus-redes-cerradas.org][03/05 Rdes Abiertas versus Redes Cerradas]]
+    - [[file:2012-03-05-redes-abiertas-versus-redes-cerradas.org][03/05 Redes Abiertas versus Redes Cerradas]]
     - [[file:2012-02-29-gcoop-cartoon.org][02/29 gcoop es una caricatura]]
     - [[file:2012-02-17-las-cooperativas-construyen-un-mundo-mejor.org][02/17 las cooperativas construyen un mundo mejor]]
     - [[file:2012-02-14-de-fondo-negro-a-fondo-blanco.org][02/14 de fondo negro a fondo blanco]]
 
 *** =*** 2011=
-    - [[file:2011-03-15-dibujando-con-numeros-desde-la-consola.org][03/15 Dibujando con números desde la consola]]
     - [[file:2011-12-29-orgmode-y-gnuplot.org][12/29 org-mode y gnuplot]]
     - [[file:2011-11-25-fabrica-de-fallas-4to-festival-cultura-libre-copyleft.org][11/25 fábrica de fallas 4to festival cultura libre y copyleft]]
     - [[file:2011-11-10-curso-software-libre-y-programacion-conectar-igualdad.org][11/10 curso software libre y programación Conectar Igualdad]]
@@ -60,25 +59,27 @@
     - [[file:2011-02-03.org][02/03 Blog de prueba]]
 
 ** =** docs=
-*** =*** GNU/Linux=
-    - [[file:apache-mod-rewrite-htaccess.org][Apache mod-rewrite .htaccess]]
+*** =*** Introducción a GNU/Linux y la programación=
     - [[file:automatizando-tareas.org][Automatizando Tareas, manejo de crontab, watch y scripts]]
+    - [[file:procesos-linux.org][Procesos Linux, administrando recursos del sistema]]
+    - [[file:ssh-para-gobernar-el-mundo.org][SSH para gobernar el mundo, aprendiendo a usar SSH]]
+    - [[file:que-no-se-entere-nadie.org][Que no se entere nadie! Análisis de tráfico de red mediante tcpdump]]
+
+*** =*** GNU/Linux=
     - [[file:awesome-es-increible.org][Awesome es increíble]]
-    - [[file:chroot-mount-fstab-bind.org][chroot mount fstab bind]]
     - [[file:curuzu-libre-2008.org][Curuzú Libre 2008]]
     - [[file:dame-una-consola.org][dame una consola]]
     - [[file:fluxbox-gtk2-root-tail-gkrellm.org][fluxbox gtk2 root-tail gkrellm]]
-    - [[file:imapsync-migrar-mails.org][Migrar mails usando imapsync]]
-    - [[file:login-sin-passwords-con-pam-usb.org][login sin passwords con pam usb]]
-    - [[file:lvm-luks-bacoop.org][Particiones Cifradas usando LVM y LUKS]] 
     - [[file:privacidad-y-anonimato-en-la-red.org][Privacidad y anonimato en la red]]
-    - [[file:que-no-se-entere-nadie.org][Que no se entere nadie! Análisis de tráfico de red mediante tcpdump]]
-    - [[file:ssh-para-gobernar-el-mundo.org][SSH para gobernar el mundo, aprendiendo a usar SSH]]
-    - [[file:ubuntu-11.10-en-exomate-de-conectar-igualdad.org][Instalando Ubuntu 11.10 en notebook exomate de Conectar Igualdad]]
-    - [[file:procesos-linux.org][Procesos Linux, administrando recursos del sistema]]
 
 *** =*** HowTo=
     - [[file:howto-gpg-gnu-pgp.org][Howto GPG GNU PGP]]
+    - [[file:imapsync-migrar-mails.org][Migrar mails usando imapsync]]
+    - [[file:login-sin-passwords-con-pam-usb.org][login sin passwords con pam usb]]
+    - [[file:lvm-luks-bacoop.org][Particiones Cifradas usando LVM y LUKS]] 
+    - [[file:chroot-mount-fstab-bind.org][chroot mount fstab bind]]
+    - [[file:apache-mod-rewrite-htaccess.org][Apache mod-rewrite .htaccess]]
+    - [[file:ubuntu-11.10-en-exomate-de-conectar-igualdad.org][Instalando Ubuntu 11.10 en notebook exomate de Conectar Igualdad]]
 
 *** =*** Redes Libres / FreeNetworks=
     - [[file:flisol-bogota-2012.org][Redes Libres en Flisol Bogotá 2012]]

@@ -57,7 +57,7 @@ pequeños problemas cotidianos!
 
 Para el que quiera ver un resumen del programa:
 
-- http://osiux.com/2012-05-25-buenos-aires-libre-en-el-medio-digital.txt
+- [[file:2012-05-25-buenos-aires-libre-en-el-medio-digital.org]]
 
 [fn:tda] http://www.tda.gob.ar/
 [fn:geniatech] http://osiux.com/tv/tv-digital-geniatech-usb-mygica-s87-dibcom-stk8096gp.txt

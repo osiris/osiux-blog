@@ -38,39 +38,41 @@ sentido de pertenencia muy alto por tratarse de vecinos, que tienen
 una necesidad puntual a resolver y es la falta de una red digital de
 datos que permita comunicarse en el barrio/pueblo/ciudad y tener
 salida al mundo, pero con las características específicas de ese
-lugar. Una muestra de esto son las redes QuintanaLibre [fn:QL] y
-DeltaLibre [fn:DL] que comparten el mismo diseño [fn:redlibre] por ser
-laboratorios del proyecto ArraigoDigital [fn:arraigo], ambas surgieron
-por algo muy concreto, cada una tiene un pionero de BAL que necesita
-una buena conexión al mundo para realizar su trabajo y esto no era
-posible sólo con los ISP y WISP locales, para ello fue necesario
-levantar varios enlaces los cuales son aprovechados para todos los
-beneficios que brindan las redes libres, instalando muchos servicios
-en la red local que están siempre disponibles, aún cuando no hay
-conexión al mundo.
+lugar. Una muestra de esto son las redes *QuintanaLibre* [fn:QL]
+y *DeltaLibre* [fn:DL] que comparten el mismo diseño [fn:redlibre] por
+ser laboratorios del proyecto *ArraigoDigital* [fn:arraigo], ambas
+surgieron por algo muy concreto, cada una tiene un pionero de BAL que
+necesita una buena conexión al mundo para realizar su trabajo y esto
+no era posible sólo con los ISP y WISP locales, para ello fue
+necesario levantar varios enlaces los cuales son aprovechados para
+todos los beneficios que brindan las redes libres, instalando muchos
+servicios en la red local que están siempre disponibles, aún cuando no
+hay conexión al mundo.
 
 Técnicamente siempre hay una manera de conectar una red con otra red,
-aunque usen protocolos de enrutamiento muy distintos, hoy LibreVPN
-[fn:LVPN] es un proyecto que está uniendo varias redes libres de
-Argentina y ya son parte algunas redes de Colombia, es un experimento y
-seguramente encontraremos mejores maneras con el tiempo pero no tengo
-dudas de que son necesarias redes zonales y me atrevo a decir que en
-Buenos Aires sería ideal contar con una red libre por cada barrio,
-brindando autonomía barrial para luego interconectar todas las redes
-zonales y que sean parte del gran proyecto BAL sin perder identidad.
+aunque usen protocolos de enrutamiento muy distintos, hoy
+*LibreVPN* [fn:LVPN] es un proyecto que está uniendo varias redes
+libres de Argentina y ya son parte algunas redes de Colombia, es un
+experimento y seguramente encontraremos mejores maneras con el tiempo
+pero no tengo dudas de que son necesarias redes zonales y me atrevo a
+decir que en Buenos Aires sería ideal contar con una red libre por
+cada barrio, brindando autonomía barrial para luego interconectar
+todas las redes zonales y que sean parte del gran proyecto BAL sin
+perder identidad.
 
-Creo que en parte este enfoque reduciría las fricciones y contratiempos
-que todos conocemos y que son propios de cualquier proyecto y gran
-número de personas involucradas, pretender hacer las cosas de una sola
-manera y que todos estemos de acuerdo, cuando podemos hacerlas de
-diversas formas y luego interconectarnos y cooperar.
+Creo que en parte este enfoque reduciría las fricciones y
+contratiempos que todos conocemos y que son propios de cualquier
+proyecto y gran número de personas involucradas, pretender hacer las
+cosas de una sola manera y que todos estemos de acuerdo, cuando
+podemos hacerlas de diversas formas y luego interconectarnos y
+cooperar.
 
-No olvidemos el primer punto del *Manifiesto de las Redes Libres*
-[fn:manifiesto] *garantizar la descentralización* y el punto seis
-*promover la creación de otras redes libres, su interconexión e
+No olvidemos el primer punto del *Manifiesto de las Redes
+Libres* [fn:manifiesto] *garantizar la descentralización* y el punto
+seis *promover la creación de otras redes libres, su interconexión e
 interoperabilidad*.
 
-BAL siempre ha fomentado la creación y unión de nuevas redes libres
+*BAL* siempre ha fomentado la creación y unión de nuevas redes libres
 dentro y fuera del país, es hora de empezar por casa!
 
 [fn:BAL]        http://www.buenosaireslibre.org
@@ -80,5 +82,4 @@ dentro y fuera del país, es hora de empezar por casa!
 [fn:DL]         http://wiki.arraigodigital.org.ar/RedLibre/DeltaCamp
 [fn:redlibre]   http://wiki.arraigodigital.org.ar/RedLibre/Diseño
 [fn:arraigo]    http://wiki.arraigodigital.org.ar
-[fn:LVPN]       https://kiwwwi.com.ar/librevpn
-
+[fn:LVPN]       http://librevpn.org.ar
