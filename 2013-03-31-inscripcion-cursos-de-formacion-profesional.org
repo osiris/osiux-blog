@@ -1,0 +1,25 @@
+#+TITLE:     Inscripción Cursos de Formación Profesional en Software Libre
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+OPTIONS:   toc:nil
+#+INCLUDE:   header.org
+#+DATE:      2013-03-31
+
+[[http://gcoop.coop][gcoop]] abrió la inscripción a los *Cursos de Formación Profesional en
+Software Libre*, en convenio con el /Ministerio de Trabajo de la
+Nación/. Este año se abre el Nivel II, para todos aquellos que ya
+tienen un conocimiento en el uso de la computadora y el trabajo con
+GNU/Linux.
+
+Los invitamos a inscribirse con el siguiente formulario:
+
+- http://www.gcoop.coop/formulario-de-inscripcion-cursos-de-formacion-continua
+
+- Las vacantes son limitadas
+- La cursada es presencial y obligatoria dado que se entregan
+  certificados oficiales.
+
+Los cursos se desarrollan en el /Centro Político y Cultural Nuevo
+Encuentro Comuna 14/, ubicado en *Gurruchaga 2122*.
