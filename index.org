@@ -6,6 +6,11 @@
 #+OPTIONS:   toc:nil
 #+INCLUDE:   header.org
 
+** [[file:2013-04-02-altermesh-buenos-aires-libre-compartir-es-bueno.org][Altermesh, BuenosAiresLibre y CompartirEsBueno]]
+
+   #+ATTR_HTML: width="600" height="320" alt="Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram"
+   [[file:icn/osiux-network.png]]
+
 ** =** blog=
 *** =*** 2013=
     - [[file:2013-03-31-inscripcion-cursos-de-formacion-profesional.org][03/31 Abierta la inscripción a los Cursos de Formación Profesional en Software Libre]]
