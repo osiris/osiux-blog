@@ -49,11 +49,11 @@
    TP-Link con chipset =ar71xx= y además algunos modelos de Ubiquiti,
    en mi caso comencé por los siguientes modelos:
 
-   | modelo       | flash | ram   | radio0 | radio1 |
-   |--------------+-------+-------+--------+--------|
-   | TL-WDR3500ND | 8mb   | 128mb | 2.4Ghz | 5Ghz   |
-   | TL-MR3220    | 4mb   | 32mb  | 2.4Ghz | -      |
-   | TL-WR842ND   | 8mb   | 32mb  | 2.4Ghz | -      |
+   | modelo                    | flash | ram   | radio0 | radio1 |
+   |---------------------------+-------+-------+--------+--------|
+   | TL-WDR3500ND [fn:WDR3500] | 8mb   | 128mb | 2.4Ghz | 5Ghz   |
+   | TL-MR3220 [fn:MR3220]     | 4mb   | 32mb  | 2.4Ghz | -      |
+   | TL-WR842ND [fn:WR842ND]   | 8mb   | 32mb  | 2.4Ghz | -      |
 
    Todos los equipos cuentan con un conector USB que permite utilizar
    un pendrive para almacenar datos como asi también es posible
@@ -67,7 +67,7 @@
     para "cocinar" una versión de /Altermesh/, se puede usar la imagen
     genérica *AlterMesh-nodo* [fn:altermesh-nodo] o crear una propia
     partiendo de ésta o de alguna otra de
-    las *RedesLibres* [fn:redeslibres] que están haciendo uso del
+    las *RedesLibres* [fn:RedesLibres] que están haciendo uso del
     firmware. En mi caso creé el
     perfil *CompartirEsBueno* [fn:CompartirEsBueno], el mismo se puede
     utilizar tal y como está o incluso tomarlo como base para crear un
@@ -374,6 +374,9 @@
    buena noticia que los nodos se hayan visto en el primer intento.
 
 ** Graficando la red
+   :PROPERTIES:
+   :ID:       c3de996b-7628-41a5-841c-4cdeb77f5081
+   :END:
 
    Ahora hay más de una manera de conectarse a cada equipo y debido a
    ello se me ocurrió graficar los enlaces /IPv4/ e /IPv6/ (globales y
@@ -384,7 +387,7 @@
    #+ATTR_HTML: width="640" height="527" alt="Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram"
    [[file:tmb/osiux-network.png]]
 
-   - Descargar imagen en alta resolución: [[file:img/osiux-network.png]]
+   - Descargar imagen en alta resolución: http://osiux.com/img/osiux-network.png
 
 ** Cual es el próximo paso? [1/10]
 
@@ -417,6 +420,6 @@
 [fn:LibreNet6] http://docs.altermundi.net/LibreNet6
 [fn:chef] http://chef.mesh.altermundi.net
 [fn:altermesh-nodo] http://chef.mesh.altermundi.net/fwprofile/altermesh-nodo
-[fn:redes-libres] http://wiki.redeslibres.org
+[fn:RedesLibres] http://wiki.redeslibres.org
 [fn:CompartirEsBueno] http://chef.mesh.altermundi.net/network/compartiresbueno
 [fn:nwdiag] http://blockdiag.com/en/nwdiag/introduction.html?highlight=nwdiag
