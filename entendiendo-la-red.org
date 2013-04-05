@@ -1,0 +1,492 @@
+#+TITLE:     entendiendo la red
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+OPTIONS:   toc:nil
+#+DATE:      2013-04-04
+
+** Topología, redes y Subredes
+
+   - centralizada
+
+     #+BEGIN_SRC ditaa :file redes-centralizadas.png :cmdline -E
+       +---+             +---+
+       | A +----+   +----+ B |
+       +---+     \ /     +---+
+                ++-++
+                + C +
+                +--++
+       +---+     /  \    +---+
+       | D +----+    +---+ E |
+       +---+             +---+
+     #+END_SRC
+
+     #+RESULTS:
+     [[file:redes-centralizadas.png]]
+
+   - descentralizada
+
+     #+BEGIN_SRC ditaa :file redes-descentralizadas.png :cmdline -E
+       +---+             +---+  +---+             +---+
+       | A +----+   +----+ B |  | F +----+   +----+ G |
+       +---+     \ /     +---+  +---+     \ /     +---+
+                ++-++                    ++-++
+                + C +--------------------+ H +
+                +--++                    +--++
+       +---+     /  \    +---+  +---+     /  \    +---+
+       | D +----+    +---+ E |  | I +----+    +---+ J |
+       +---+             +---+  +---+             +---+
+     #+END_SRC
+
+     #+RESULTS:
+     [[file:redes-descentralizadas.png]]
+
+   - en malla o /mesh/
+
+     #+BEGIN_SRC ditaa :file redes-mesh.png :cmdline -E
+       +---+             +---+  +---+             +---+
+       | A +----+   +----+ B +--+ F +-------------+ G |
+       ++-++     \ /     +++++  ++-++             +--++
+        | \     ++-++     /| \   | \     +---+       |
+        |  +----+ C +----+ |  \  |  +----+ H +-----+ |
+        |       +--++      |   \ |       +--++     | |
+       ++--+     /  \    +-+-+  ++--+     /  \    ++-++
+       | D +----+    +---+ E |  | I +----+    +---+ J |
+       +---+             +---+  +---+             +---+
+     #+END_SRC
+
+     #+RESULTS:
+     [[file:redes-mesh.png]]
+
+** Protocolos ARP/IP/ICMP/UDP/TCP/IP
+** Ruteo
+
+   - estático
+   - dinámico
+
+** Asignación de IPs por medio de DHCP
+
+   - DHCP server
+   - DHCP client
+
+*** Red de 4 equipos
+
+    #+BEGIN_SRC ditaa :file redes-lan.png :cmdline -E
+      -----+---------+---------+---------+-----
+           |         |         |         |
+           |         |         |         |
+         +-+-+     +-+-+     +-+-+     +-+-+
+         | A |     | B |     | C |     | D |
+         +---+     +---+     +---+     +---+
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:redes-lan.png]]
+
+*** =B= dice, *necesito una IP!*
+
+    - mensaje: =DHCPDISCOVER=
+    - protocolo: UDP
+    - puerto destino: 67
+    - dirección física: 01:12:23:34:45:bb
+
+    #+BEGIN_SRC ditaa :file redes-dhcp-discover.png :cmdline -E
+      <----+<--------+-------->+-------->+---->
+           |         ^         |         |
+           v         |         v         v
+         +-+-+     +-+-+     +-+-+     +-+-+
+         | A |     | B |     | C |     | D |
+         +---+     +---+     +---+     +---+
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:redes-dhcp-discover.png]]
+
+*** =D= dice, *yo te puedo dar IP!*
+
+    - mensaje: =DHCPOFFER=
+    - dirección física: 01:12:23:34:45:dd
+    - dirección IP: 192.168.10.102
+    - gateway: 192.168.10.1
+    - dns primario: 8.8.8.8
+    - dns secundario: 8.8.4.4
+
+    #+BEGIN_SRC ditaa :file redes-dhcp-offer.png :cmdline -E :exports result
+      -----+---------+<--------+---------+-----
+           |         |         |         ^
+           |         v         |         |
+         +-+-+     +-+-+     +-+-+     +-+-+
+         | A |     | B |     | C |     | D |
+         +---+     +---+     +---+     +---+
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:redes-dhcp-offer.png]]
+
+*** =B= dice, confirmo recepción!
+
+    - mensaje: =DHCPREQUEST=
+
+    #+BEGIN_SRC ditaa :file redes-dhcp-request.png :cmdline -E :exports result
+      -----+---------+-------->+-------->+-----
+           |         ^         |         |
+           |         |         |         v
+         +-+-+     +-+-+     +-+-+     +-+-+
+         | A |     | B |     | C |     | D |
+         +---+     +---+     +---+     +---+
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:redes-dhcp-request.png]]
+
+*** =D= dice, confirmo confirmación!
+
+    - mensaje: =DHCPACK=
+
+    #+BEGIN_SRC ditaa :file redes-dhcp-ack.png :cmdline -E :exports result
+      -----+---------+<--------+<--------+-----
+           |         |         |         ^
+           |         v         |         |
+         +-+-+     +-+-+     +-+-+     +-+-+
+         | A |     | B |     | C |     | D |
+         +---+     +---+     +---+     +---+
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:redes-dhcp-ack.png]]
+
+** Resolución de nombres de dominios DNS
+
+   #+BEGIN_SRC sh :session :results output :exports both
+     host localhost
+   #+END_SRC
+
+   #+BEGIN_SRC sh :session :results output :exports both
+     dig osiux.com
+   #+END_SRC
+
+*** viendo un paquete de query dns
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      tcpdump -r dns-query.pcap -nvX
+    #+END_SRC
+
+    #+RESULTS:
+    : 02:14:20.301428 IP (tos 0x0, ttl 64, id 27874, offset 0, flags [none], proto UDP (17), length 55)
+    :     127.0.0.1.57039 > 127.0.0.1.53: 39172+ A? osiux.com. (27)
+    : 	0x0000:  4500 0037 6ce2 0000 4011 0fd2 7f00 0001  E..7l...@.......
+    : 	0x0010:  7f00 0001 decf 0035 0023 fe36 9904 0100  .......5.#.6....
+    : 	0x0020:  0001 0000 0000 0000 056f 7369 7578 0363  .........osiux.c
+    : 	0x0030:  6f6d 0000 0100 01                        om.....
+
+*** analizando el query dns
+*** analizando un paquete de query dns
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      tshark -r dns-query.pcap -VO dns
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+    Frame 1: 71 bytes on wire (568 bits), 71 bytes captured (568 bits)
+    Linux cooked capture
+    Internet Protocol Version 4, Src: 127.0.0.1 (127.0.0.1), Dst: 127.0.0.1 (127.0.0.1)
+    User Datagram Protocol, Src Port: 57039 (57039), Dst Port: domain (53)
+    Domain Name System (query)
+	Transaction ID: 0x9904
+	Flags: 0x0100 (Standard query)
+	    0... .... .... .... = Response: Message is a query
+	    .000 0... .... .... = Opcode: Standard query (0)
+	    .... ..0. .... .... = Truncated: Message is not truncated
+	    .... ...1 .... .... = Recursion desired: Do query recursively
+	    .... .... .0.. .... = Z: reserved (0)
+	    .... .... ...0 .... = Non-authenticated data: Unacceptable
+	Questions: 1
+	Answer RRs: 0
+	Authority RRs: 0
+	Additional RRs: 0
+	Queries
+	    osiux.com: type A, class IN
+		Name: osiux.com
+		Type: A (Host address)
+		Class: IN (0x0001)
+
+    #+end_example
+
+*** capturar consultas al dns
+
+    #+BEGIN_SRC sh :session :results output :exports code
+      ssh root@linksys '/usr/sbin/tcpdump -i br0 -s 0 -w - dst port 53' >linksys.pcap 
+    #+END_SRC
+
+*** ranking de dns
+
+    #+NAME: ranking-dns
+    #+BEGIN_SRC sh :session :results value :exports both
+      tcpdump -r linksys.pcap -c 2000 -nnnA dst port 53 | \
+      egrep -o "A+\? .*\." | sed s/".$"//g | awk '{print $2}' | \
+      egrep -v "(osiux|fbcdn|akamai)" | sort | uniq -c | sort -nr | head
+    #+END_SRC
+
+    #+RESULTS:
+    | 47 | www.facebook.com         |
+    | 42 | dns.msftncsi.com         |
+    | 41 | su.ff.avast.com          |
+    | 37 | ssl.google-analytics.com |
+    | 37 | ipv6.msftncsi.com        |
+    | 32 | www.habbo.es             |
+    | 26 | imap.googlemail.com      |
+    | 21 | dynamic.zoneedit.com     |
+    | 19 | www.msftncsi.com         |
+    | 18 | kiwwwi.com.ar            |
+
+    #+BEGIN_SRC gnuplot :var data=ranking-dns :file ranking-dns.png :exports result
+      reset 
+
+      set xdata time
+      set timefmt "%Y-%m-%d"
+      set format x "%d"
+
+      set title "Plot"
+      set xlabel "dominios"
+      set ylabel "cantidad"
+      set xtics nomirror
+      set ytics nomirror
+
+      plot data using 2:1 with lines lw 2 lt 3 title 'data'
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:ranking-dns.png]]
+    
+** Redes Wireless
+** Sniffers nmap, dsniff
+** Análisis de tráfico mediante tcpdump
+** Firewall, Port Forwarding, NAT
+** Túneles y Redes Privadas Virtuales VPN
+** Redes TCP/IP
+** Cómo saber la IP de un equipo?
+*** B dice, *cuál es la IP de D?*
+
+    - Se que D es *00:14:d1:18:4a:dd*
+    - Yo soy B y mi mac es *00:14:d1:18:4a:bb*
+    - Todos reciben paquete ARP por difusión
+
+    #+BEGIN_SRC ditaa :file redes-arp-1.png :cmdline -E :exports result
+      <----+<--------+-------->+-------->+---->
+           |         ^         |         |
+           v         |         v         v
+         +-+-+     +-+-+     +-+-+     +-+-+
+         | A |     | B |     | C |     | D |
+         +---+     +---+     +---+     +---+
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:redes-arp-1.png]]
+
+*** D contesta, *mi IP es 10.4.14.225*
+
+    #+BEGIN_SRC ditaa :file redes-arp-2.png :cmdline -E :exports result
+      -----+---------+<--------+---------+-----
+           |         |         |         ^
+           |         v         |         |
+         +-+-+     +-+-+     +-+-+     +-+-+
+         | A |     | B |     | C |     | D |
+         +---+     +---+     +---+     +---+
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:redes-arp-2.png]]
+
+*** Quénes están en esta red?
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      sudo arp-scan --interface eth0 --localnet
+    #+END_SRC
+
+    #+RESULTS:
+    : Interface: eth0, datalink type: EN10MB (Ethernet)
+    : Starting arp-scan 1.8.1 with 256 hosts (http://www.nta-monitor.com/tools/arp-scan/)
+    :
+    : 0 packets received by filter, 0 packets dropped by kernel
+    : Ending arp-scan 1.8.1: 256 hosts scanned in 1.625 seconds (157.54 hosts/sec). 0 responded
+
+*** pingueando
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      ping -c 5 127.0.0.1
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+    PING 127.0.0.1 (127.0.0.1) 56(84) bytes of data.
+    64 bytes from 127.0.0.1: icmp_req=1 ttl=64 time=0.075 ms
+    64 bytes from 127.0.0.1: icmp_req=2 ttl=64 time=0.050 ms
+    64 bytes from 127.0.0.1: icmp_req=3 ttl=64 time=0.062 ms
+    64 bytes from 127.0.0.1: icmp_req=4 ttl=64 time=0.050 ms
+    64 bytes from 127.0.0.1: icmp_req=5 ttl=64 time=0.047 ms
+
+    --- 127.0.0.1 ping statistics ---
+    5 packets transmitted, 5 received, 0% packet loss, time 4000ms
+    rtt min/avg/max/mdev = 0.047/0.056/0.075/0.014 ms
+    #+end_example
+
+*** capturando pings
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      sudo tcpdump -i lo -nnnt -c 5 icmp
+    #+END_SRC
+
+    #+RESULTS:
+    : IP 127.0.0.1 > 127.0.0.1: ICMP echo request, id 4177, seq 41, length 64
+    : IP 127.0.0.1 > 127.0.0.1: ICMP echo reply, id 4177, seq 41, length 64
+    : IP 127.0.0.1 > 127.0.0.1: ICMP echo request, id 4177, seq 42, length 64
+    : IP 127.0.0.1 > 127.0.0.1: ICMP echo reply, id 4177, seq 42, length 64
+    : IP 127.0.0.1 > 127.0.0.1: ICMP echo request, id 4177, seq 43, length 64
+
+*** viendo un =ping=
+
+    #+BEGIN_SRC sh :session :results output
+      sudo tcpdump -i lo -nnntvvX -c 1 -e icmp
+    #+END_SRC
+
+    #+RESULTS:
+    : 00:00:00:00:00:00 > 00:00:00:00:00:00, ethertype IPv4 (0x0800), length 98: (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto ICMP (1), length 84)
+    :     127.0.0.1 > 127.0.0.1: ICMP echo request, id 4177, seq 329, length 64
+    :   0x0000:  4500 0054 0000 4000 4001 3ca7 7f00 0001  E..T..@.@.<.....
+    :   0x0010:  7f00 0001 0800 a68d 1051 0149 e754 5e51  .........Q.I.T^Q
+    :   0x0020:  022f 0d00 0809 0a0b 0c0d 0e0f 1011 1213  ./..............
+    :   0x0030:  1415 1617 1819 1a1b 1c1d 1e1f 2021 2223  .............!"#
+    :   0x0040:  2425 2627 2829 2a2b 2c2d 2e2f 3031 3233  $%&'()*+,-./0123
+    :   0x0050:  3435 3637                                4567
+
+** Red con acceso a otra red
+
+   #+BEGIN_SRC ditaa :file redes-lan-wan.png :cmdline -E
+     -----+---------+<--------+---------+-----
+          |         |         |         ^
+          |         v         |         |
+        +-+-+     +-+-+     +-+-+     +-+-+
+        | A |     | B |     | C |     | D |
+        +---+     +---+     +---+     +-+-+
+                                        |
+                                        |
+                                        +-----
+    #+END_SRC
+
+   #+RESULTS:
+   [[file:redes-lan-wan.png]]
+
+
+   #+BEGIN_SRC ditaa :file redes-lan-proxy-wan.png :cmdline -E
+     -----+---------+-------->+-------->+-----
+          |         ^         |         |
+          |         |         |         v
+        +-+-+     +-+-+     +-+-+     +-+-+
+        | A |     | B |     | C |     | D |
+        +---+     +---+     +---+     +-+-+
+                                        |
+                                        v
+                                      +-+-+
+                                      | E |
+                                      +-+-+
+                            |
+                                v
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:redes-lan-proxy-wan.png]]
+
+** protocolos
+
+   #+BEGIN_SRC ditaa :file redes-protocolos.png :cmdline -E :exports result
+     +----------+
+     | TCP/UDP  |
+     +----------+
+     | IP/ICMP  |
+     +----------+
+     | ARP      |
+     +----------+
+     | ETHERNET |
+     +----------+
+   #+END_SRC
+
+*** ARP header
+
+    #+BEGIN_SRC ditaa :file redes-arp-header.png :cmdline -E :exports result
+      |                   |1                  |2                  |3  |
+      |0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|
+      +---------------+---------------+-------------------------------+
+      |         Hardware type         |          Protocol type        |
+      +---------------+---------------+-------------------------------+
+      |Hw address len.|Pr address len.|             Opcode            |
+      +-------------------------------+-------------------------------+
+      |               Source hardware address                         |
+      +---------------------------------------------------------------+
+      |               Source protocol address                         |
+      +---------------------------------------------------------------+
+      |               Destination hardware address                    |
+      +---------------------------------------------------------------+
+      |               Destination protocol address                    |
+      +---------------------------------------------------------------+
+      |                            Data                               |
+      +---------------------------------------------------------------+
+    #+END_SRC
+
+** Ethernet header
+** IP header
+
+   #+BEGIN_SRC ditaa :file redes-ip-header.png :cmdline -E :exports result
+     |                   |1                  |2                  |3  |
+     |0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|
+     +-------+-------+---------------+-------------------------------+
+     |Version|  IHL  | Diff.Services |     Total length              |
+     +-------+-------+---------------+-----+-------------------------+
+     |        Identification         |Flags|         Fragment offset |
+     +---------------+---------------+-----+-------------------------+
+     |    TTL        | Protocol      | Header checksum               |
+     +---------------+---------------+-------------------------------+
+     |                       Source IP address                       |
+     +---------------------------------------------------------------+
+     |                  Destination IP address                       |
+     +---------------------------------------------------------------+
+     |                     Options and padding                       |
+     +---------------------------------------------------------------+
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:redes-ip-header.png]]
+
+** TCP header
+
+   #+BEGIN_SRC ditaa :file redes-tcp-header.png :cmdline -E :exports result
+     |                   |1                  |2                  |3  |
+     |0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|
+     +-------------------------------+-------------------------------+
+     |          Source Port          |        Destination Port       |
+     +-------------------------------+-------------------------------+
+     |                        Sequence Number                        |
+     +-------------------------------+-------------------------------+
+     |                     Acknowledgment Number                     |
+     +-------+-----+-----+-+-+-+-+-+-+-------------------------------+
+     |dOffset|rsrvd| ECN |U|A|P|R|S|F|        Window                 |
+     |       |     |     |R|C|S|S|Y|I|                               |
+     |       |     |     |G|K|H|T|N|N|                               |
+     +-------+-----+-----+-+-+-+-+-+-+-------------------------------+
+     | Checksum                      | Urgent Pointer                |
+     +-------------------------------+-------------------------------+
+     |                      Options and padding                      |
+     +---------------------------------------------------------------+
+     |                           Data                                |
+     +---------------------------------------------------------------+
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:redes-tcp-header.png]]
+
+** ChangeLog
+
+   - [2013-04-04 jue] primer borrador general.
+
+[fn:arp] http://www.networksorcery.com/enp/protocol/arp.htm
