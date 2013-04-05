@@ -261,11 +261,32 @@
     [[file:ranking-dns.png]]
     
 ** Redes Wireless
+    
+   - Emulan a las redes cableadeas
+   - infraestructura
+   - ad-hoc
+
 ** Sniffers nmap, dsniff
 ** Análisis de tráfico mediante tcpdump
 ** Firewall, Port Forwarding, NAT
+*** iptables
 ** Túneles y Redes Privadas Virtuales VPN
-** Redes TCP/IP
+*** Redireccionar puertos con =ssh=
+
+    ssh -L 2525:localhost:25 osiux.com
+
+*** Proxy Socks mediante ssh
+
+    ssh -D 9090 osiux.com
+
+*** Tunel reverso con ssh
+
+    ssh -R 12345:localhost:22 osiux.com
+
+*** Redireccionar puertos con =socat=
+
+    socat
+
 ** Cómo saber la IP de un equipo?
 *** B dice, *cuál es la IP de D?*
 
@@ -412,7 +433,23 @@
      +----------+
    #+END_SRC
 
-*** ARP header
+*** Qué tiene un paquete TCP/IP?
+
+     +------------------------+--------------------------+
+     | MAC origen fe:ca:fe:ca | MAC destino  ca:fe:ca:fe |
+     +------------------------+--------------------------+
+     | IP origen 192.168.1.22 | IP destino  96.8.118.129 |
+     +---------------------------------------------------+
+     | Puerto origen    45678 | Puerto destino: 80       |
+     +------------------------+--------------------------+
+     | Nro Secuencia    12345 | Nro ACK                  |
+     +---+---+---+---+---+----+--------------------------+
+     | U | A | P | R | S | F | GET / HTTP/1.0            |
+     | R | C | S | S | Y | I |                           |
+     | G | K | H | T | N | N |                           |
+     +---+---+---+---+---+---+---------------------------+
+
+*** Ethernet header
 
     #+BEGIN_SRC ditaa :file redes-arp-header.png :cmdline -E :exports result
       |                   |1                  |2                  |3  |
@@ -434,7 +471,6 @@
       +---------------------------------------------------------------+
     #+END_SRC
 
-** Ethernet header
 ** IP header
 
    #+BEGIN_SRC ditaa :file redes-ip-header.png :cmdline -E :exports result
