@@ -1,0 +1,384 @@
+#+TITLE:       Introducción al Software Libre
+#+AUTHOR:      Osiris Alejandro Gómez
+#+EMAIL:       osiris@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE:     header.org
+#+DATE:        2013-04-08
+
+** Qué es el Software Libre?
+*** ¿Cómo empezó todo?
+**** GNU
+
+     file:img/GNU.png
+
+     En 1984, Richard Stallman [fn:RMS] comenzó a trabajar en el
+     proyecto GNU [fn:GNU], y un año más tarde fundó la Free Software
+     Foundation (FSF [fn:FSF]). Stallman introdujo una definición para
+     free software y el concepto de *copyleft*, el cual desarrolló
+     para dar a los usuarios libertad y para restringir las
+     posibilidades de apropiación del software.
+
+**** Linux
+
+     file:img/tux.png
+
+     Hacia 1991, cuando la primera versión del núcleo Linux [fn:Linux]
+     fue liberada, el proyecto GNU había producido varios de los
+     componentes del sistema operativo, incluyendo un intérprete de
+     comandos, una biblioteca C y un compilador, pero aún no contaba
+     con el núcleo que permitiera completar el sistema
+     operativo. Entonces, el núcleo creado por Linus
+     Torvalds [fn:Linus], quien se encontraba por entonces estudiando
+     en la Universidad de Helsinki, llenó el "hueco" final que el
+     sistema operativo GNU exigía.
+
+*** Las cuatro libertades
+**** libertad 0
+
+     Ejecutar el programa con cualquier propósito (privado, educativo,
+     público, comercial, militar, etc.)
+
+**** libertad 1
+
+     Estudiar y modificar el programa (para lo cual es necesario
+     acceder al código fuente).
+
+**** libertad 2
+
+     Copiar el programa de manera que se pueda ayudar al vecino o a
+     cualquiera.
+
+**** libertad 3
+
+     Mejorar el programa y publicar las mejoras (para lo cual es
+     necesario acceder al código fuente).
+
+*** GPL
+
+    La *Licencia Pública General de GNU* o más conocida por su nombre
+    en inglés *GNU General Public License* [fn:GPL] o simplemente su
+    acrónimo del inglés *GNU GPL*, es una licencia creada por la Free
+    Software Foundation a mediados de los 80, y está orientada
+    principalmente a proteger la libre distribución, modificación y
+    uso de software. Su propósito es declarar que el software cubierto
+    por esta licencia es software libre y protegerlo de intentos de
+    apropiación que restrinjan esas libertades a los usuarios.
+    
+*** Copyleft
+
+    file:img/copyleft.png
+
+    Copyleft describe un grupo de derechos aplicados a una obra. Nace
+    dentro de la comunidad del Software Libre como una estrategia
+    legal para *liberar* el Software.
+
+    Su objetivo es: *Garantizar ciertas libertades sobre la
+    explotación y utilización de la obra y de sus obras derivadas.*
+    Cualquier trabajo derivado de un trabajo con copyleft debe a su
+    vez atenerse a los principios del copyleft
+
+** Creative Commons
+
+Las licencias *Creative Commons* o *CC* están inspiradas en la
+licencia GPL (General Public License) de la Free Software Foundation,
+sin embargo no son un tipo de licenciamiento de software. La idea
+principal es posibilitar un modelo legal ayudado por herramientas
+informáticas para así facilitar la distribución y el uso de
+contenidos.
+
+Existen una serie de licencias Creative Commons [fn:CC], cada una con
+diferentes configuraciones o principios, como el derecho del autor
+original a dar libertad para citar su obra, reproducirla, crear obras
+derivadas, ofrecerla públicamente y con diferentes restricciones como
+no permitir el uso comercial o respetar la autoría original.
+
+| Attribution                                   | BY       |
+| Attribution-Share Alike                       | BY-SA    |
+| Attribution-No Derivative Works               | BY-ND    |
+| Attribution-Noncommercial                     | BY-NC    |
+| Attribution-Noncommercial-No Derivative Works | BY-NC-ND |
+| Attribution-Noncommercial-Share               | BY-NC-SA |
+
+file:img/CC-BY.png
+file:img/CC-SA.png
+file:img/CC-ND.png
+file:img/CC-NC.png
+
+** Distribuciones GNU/Linux
+*** Primeras Distribuciones
+
+    - H J Lu's "Boot-root"
+    - MCC Interim Linux
+    - TAMU
+    - SLS (Softlanding Linux System)
+    - Yggdrasil Linux
+
+*** Principales Distribuciones
+
+    - Slackware (inicialmente basada en SLS)
+    - Debian
+    - RedHat
+    - Suse (inicialmente basada en Slackware)
+    - Gentoo (basada en código fuente)
+
+** Consola versus Escritorio
+
+   - Todo lo que hacemos en el entorno gráfico lo podemos hacer desde
+     la consola...
+   - No todo lo que hacemos desde la consola se puede hacer en el
+     entorno gráfico...
+   - No siempre tendremos acceso gráfico al sistema...
+   - Pero siempre podremos acceder desde consola.
+
+*** Ejemplos Consola
+**** Reescalar fotos mediante imagemagick
+
+     #+BEGIN_SRC sh :exports code
+       mkdir -p 800;for f in *.jpg;do echo $f;convert -filter cubic -resize 800 $f ./800/$f;done
+     #+END_SRC
+
+**** Grabar un CD usando wodim
+
+     #+BEGIN_SRC sh :exports code
+       wodim -v dev=/dev/hda speed=4 imagen.iso  
+     #+END_SRC
+
+**** Grabar un DVD usando growisofs
+
+     #+BEGIN_SRC sh :exports code
+       nice --10 growisofs -dvd-compat -speed=2 -Z /dev/hda -R -J -V iso /home/iso
+     #+END_SRC
+       
+**** Reemplazar texto en varios archivos
+
+     #+BEGIN_SRC sh :exports code
+       for i in *.txt;do cat $i | sed s/hola/chau/g >$i.tmp;mv $i.tmp $i;done
+     #+END_SRC
+
+**** Backup de archivos usando rsync
+
+     #+BEGIN_SRC sh :exports code
+       rsync -e ssh -vzogtprul /home/directorio/ usuario@host:/backup/directorio
+     #+END_SRC
+
+**** Instalar aplicaciones usando apt-get/aptitude
+
+     #+BEGIN_SRC sh :exports code
+       apt-get install aplicacion
+       aptitude install aplicacion
+     #+END_SRC
+
+**** Acceso remoto usando ssh, scp, screen
+
+     #+BEGIN_SRC sh :exports code
+       ssh usuario@equipo comando
+       
+       scp * usuario@equipo:/directorio
+
+       screen C-a c
+       screen C-a d
+       screen -r
+     #+END_SRC
+
+** Línea de Tiempo GNU/Linux
+
+   - http://futurist.se/gldt/
+
+** Aplicaciones libres
+
+   Existen programas libres para hacer todo lo que habitualmente se
+   necesita hacer con una computadora. No es más dificil ni más fácil
+   usarlos, en la mayoría de los casos sólo es ligeramente distinto.
+
+   | Web         | Chat         | FTP/P2P    | Oficina    | Graficos | Multimedia | 3D        |
+   |-------------+--------------+------------+------------+----------+------------+-----------|
+   | Firefox     | aMSN         | aMule      | OO Writer  | Scribus  | Mplayer    | Blender   |
+   | Konqueror   | emesene      | gFTP       | AbiWord    | Inkscape | VLC        | k3d       |
+   | KompoZer    | Pidgin       | KTorrent   | Kile       | The Gimp | Audacity   | pythoncad |
+   | Akregator   | Ekiga        | LimeWire   | OO Calc    | F-Spot   | Audacious  | raster3d  |
+   | Liferea     | ChatZilla    | Vuze       | Gnumeric   | imgSeek  | Kino       |           |
+   | RSSOwl      | Konversation | Freeloader | OO Impress | Xsane    | Avidemux   |           |
+   | Amaya       | Kopete       | ncftp      | KPDF       | Digikam  |            |           |
+   | Bluefish    | KVIrc        | rtorrent   | Evince     | Imagick  |            |           |
+   | Epiphany    | X-Chat       |            | Korganizer |          |            |           |
+   | Quanta      |              |            | OO Base    |          |            |           |
+   | KMail       |              |            | OO Draw    |          |            |           |
+   | Thunderbird |              |            | Latex      |          |            |           |
+   | Evolution   |              |            |            |          |            |           |
+
+** Virtualizar o Emular
+*** QEMU
+
+    QEMU [fn:QEMU] es un emulador de procesadores basado en la
+    traducción dinámica de binarios (conversión del código binario de
+    la arquitectura fuente en código entendible por la arquitectura
+    huésped). QEMU también tiene capacidades de virtualización dentro
+    de un sistema operativo, ya sea Linux, Windows, o cualquiera de
+    los sistemas operativos admitidos (de hecho es la forma más común
+    de uso). Esta máquina virtual puede ejecutarse en cualquier tipo
+    de Microprocesador o arquitectura (x86, x86-64, PowerPC, MIPS,
+    SPARC, etc.). Está licenciado en parte con la LGPL y la GPL de
+    GNU.
+
+    El objetivo principal es emular un sistema operativo dentro de
+    otro sin tener que reparticionar el disco duro, empleando para su
+    ubicación cualquier directorio dentro de éste.
+
+    El programa no dispone de GUI, pero existe otro programa llamado
+    QEMU manager que hace las veces de interfaz gráfica si se utiliza
+    QEMU desde Windows. También existe una versión para Linux llamado
+    qemu-launcher. En Mac OS X puede utilizarse el programa Q que
+    dispone de una interfaz gráfica para crear y administrar las
+    máquinas virtuales.
+
+*** VirtualBox
+
+    Sun xVM VirtualBox [fn:VirtualBox] es un software de
+    virtualización para arquitecturas x86 que fue desarrollado
+    originalmente por la empresa alemana innotek GmbH, pero que pasó a
+    ser propiedad de la empresa Sun Microsystems en febrero de 2008
+    cuando ésta compró a innotek. Por medio de esta aplicación es
+    posible instalar sistemas operativos adicionales, conocidos como
+    "sistemas invitados", dentro de otro sistema operativo
+    "anfitrión", cada uno con su propio ambiente virtual. Por ejemplo,
+    se podrían instalar diferentes distribuciones de Linux en un
+    VirtualBox instalado en Windows XP o viceversa.
+
+    Entre los sistemas operativos soportados (en modo anfitrión) se
+    encuentran GNU/Linux, Mac OS X, OS/2 Warp , Windows, y
+    Solaris/OpenSolaris, y dentro de éstos es posible virtualizar los
+    sistemas operativos FreeBSD, GNU/Linux, OpenBSD, OS/2 Warp,
+    Windows y Solaris.
+
+    La aplicación fue inicialmente ofrecida bajo una Licencia de
+    software no libre|licencia de software privado, pero en enero de
+    2007, después de años de desarrollo, surgió VirtualBox OSE (Open
+    Source Edition) bajo la licencia GPL 2.
+
+*** Xen
+
+    Xen [fn:Xen] es una máquina virtual de código abierto desarrollada
+    por la Universidad de Cambridge. La meta del diseño es poder
+    ejecutar instancias de sistemas operativos con todas sus
+    características, de forma completamente funcional en un equipo
+    sencillo. Xen proporciona aislamiento seguro, control de recursos,
+    garantías de calidad de servicio y migración de máquinas virtuales
+    en caliente. Los sistemas operativos deben ser modificados
+    explícitamente para correr Xen (aunque manteniendo la
+    compatibilidad con aplicaciones de usuario). Esto permite a Xen
+    alcanzar virtualización de alto rendimiento sin un soporte
+    especial de hardware
+
+    Xen utiliza una técnica llamada paravirtualización para alcanzar
+    alto rendimiento. Con la paravirtualización, se puede alcanzar
+    alto rendimiento incluso en arquitecturas (x86) que no suelen
+    conseguirse con técnicas tradicionales de virtualización. A
+    diferencia de las máquinas virtuales tradicionales, que
+    proporcionan entornos basados en software para simular hardware,
+    Xen requiere portar los sistemas operativos para adaptarse al API
+    de Xen. Hasta el momento hay ports para NetBSD, Linux, FreeBSD y
+    Plan 9. En 2005, Novell muestra un port de NetWare para Xen. Un
+    port de Windows XP fue creado durante el desarrollo inicial de
+    Xen, pero las licencias de Microsoft prohíben su lanzamiento
+    público.
+
+*** OpenVZ
+
+    /OpenVZ/ [fn:OpenVZ] es una tecnología de virtualización en el
+    nivel de sistema operativo para /Linux/. /OpenVZ/ permite que un
+    servidor físico ejecute múltiples instancias de sistemas
+    operativos aislados, conocidos como Servidores Privados Virtuales
+    (SPV o VPS en inglés) o Entornos Virtuales (EV).
+
+    Si se lo compara a máquinas virtuales tales como /VMware/,
+    /VirtualBox/ y las tecnologías de virtualización tales como /Xen/,
+    /OpenVZ/ ofrece menor flexibilidad en la elección del sistema
+    operativo: tanto los huéspedes como los anfitriones deben ser
+    /Linux/ (aunque las distribuciones de /GNU/Linux/ pueden ser
+    diferentes en diferentes EVs). Sin embargo, la virtualización en
+    el nivel de sistema operativo de /OpenVZ/ proporciona mejor
+    rendimiento, escalabilidad, densidad, administración de recursos
+    dinámicos, y facilidad de administración que las alternativas.
+
+    /OpenVZ/ es una base de Virtuozzo que es un software comercial
+    desarrollado por SWsoft, Inc., /OpenVZ/ es un producto de software
+    libre y licenciado bajo los términos de la licencia /GNU GPL/
+    versión 2.
+
+*** LXC
+
+    /LXC/ [fn:LXC] (Linux Containers) es una tecnología de
+    virtualización en el nivel de sistema operativo (/SO/) para
+    Linux. /OpenVZ/ permite que un servidor físico ejecute múltiples
+    instancias de sistemas operativos aislados, conocidos como
+    Servidores Privados Virtuales (/SPV/ o /VPS/ en inglés) o Entornos
+    Virtuales (EV). /LXC/ no provee de una máquina virtual, más bien
+    provee un entorno virtual que tiene su propio espacio de procesos
+    y redes.
+
+    Es similar a otras tecnologías de virtualización en el nivel de SO
+    como /OpenVZ/ y /Linux-VServer/, asimismo se asemeja a aquellas de
+    otros sistemas operativos como /FreeBSD/ jail y Solaris
+    Containers.
+
+    /LXC/ se basa en la funcionalidad =cgroups= del /Linux/ que está
+    disponible desde la versión 2.6.29, desarrollada como parte de
+    /LXC/. También se basa en otras funcionalidades de aislamiento de
+    espacio de nombres, que fueron desarrolladas e integradas dentro
+    de la línea principal del núcleo de /Linux/.
+
+** Cómo Migrar?
+
+   La migración a GNU/Linux es un *proceso*, esto es, ha de hacerse en
+   etapas, concediendole a cada una, y concediendose el usuario, todo
+   el tiempo que necesiten ambos: la etapa y el usuario.
+
+   - Migran las personas, no los programas.
+   - Una migración compulsiva está destinada al fracaso.
+
+   En la primera parte, *A - Migrando al usuario*, hablamos del
+   protagonista de la migración: el usuario. En la segunda parte, *B -
+   Migrando programas*, veremos los muchos recursos para conocer,
+   probar y evaluar aplicaciones y distribuciones. En *C -
+   Capacitación* analizamos qué es lo que debe saber el usuario y cómo
+   adquirir ese conocimiento.  Contenidos:
+
+   A. Migrando al usuario
+   B. Migrando programas
+   C. Capacitación 
+
+** Créditos
+
+   - Todos los párrafos que hacen referencia a Wikipedia son obra
+     derivada de la misma bajo licencia GFDL [fn:GFDL].
+   - La sección *Cómo Migrar* está extraído del sitio web de María
+     Elena Casañas [fn:MEC].
+   - El comienzo de la sección *Consola versus Escritorio* es obra
+     derivada del *Curso de administración básica GNU/Linux* de
+     Jesús David Navarro [fn:JESUSDA].
+   - La sección *Copyleft* es obra derivada de *Un pequeño parche
+     para una sociedad minada de bugs* [fn:COPYLEFT].
+   - La sección *Aplicaciones Libres* es obra derivada de *Qué es el
+     software libre y porqué es importante para mi?* [fn:ViaLibre].
+   - El resto del documento está bajo Licencia Creative Commons by-sa
+     Argentina 2.5 [fn:CCBYSA].
+
+[fn:RMS] http://es.wikipedia.org/wiki/Stallman
+[fn:GNU] http://es.wikipedia.org/wiki/Gnu
+[fn:FSF] http://es.wikipedia.org/wiki/FSF
+[fn:GPL] http://es.wikipedia.org/wiki/GNU_General_Public_License
+[fn:Linux] http://es.wikipedia.org/wiki/Linux
+[fn:Linus] http://es.wikipedia.org/wiki/Linus_Torvalds
+[fn:CC] http://es.wikipedia.org/wiki/Creative_commons
+[fn:QEMU] http://es.wikipedia.org/wiki/QEMU
+[fn:VirtualBox] http://es.wikipedia.org/wiki/VirtualBox
+[fn:Xen] http://es.wikipedia.org/wiki/Xen
+[fn:OpenVZ] https://es.wikipedia.org/wiki/Openvz
+[fn:LXC] https://es.wikipedia.org/wiki/LXC
+[fn:GFDL] http://es.wikipedia.org/wiki/GFDL
+[fn:MEC] http://casanas.com.ar/web.php?sec=como&ssec=c1
+[fn:JESUSDA] http://www.jesusda.com/docs/tallerintroadminlinux/s5-linux
+[fn:COPYLEFT] http://jose.rebeldes.org.ar/wp-content/uploads/2007/04/copyleft_jose_flisol2007.pdf
+[fn:ViaLibre] http://www.vialibre.org.ar/materiales/ 
+[fn:CCBYSA] http://creativecommons.org/licenses/by-sa/2.5/ar
