@@ -1,0 +1,129 @@
+#+TITLE:     huayra grub rescue error unknown filesystem
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+OPTIONS:   toc:nil
+#+INCLUDE:   header.org
+#+DATE:      2013-04-06
+
+** mmmm que rarooo...
+
+   Luego de una exitosa jornada de dos días instalando
+   /Huayra/ [fn:huayra] en el /Primer Encuentro de Software Libre en
+   Monte Caseros/ [fn:1eslmc], como no podía ser de otra manera, justo
+   a última hora, el último día la netbook de "la directora" dejó de
+   arrancar tras instalar /Huayra 1.0/ y en su lugar apareció un bonito
+   mensaje de error =grub rescue> error unknown filesystem=
+
+   #+ATTR_HTML: width="640" height="480" alt="huayra grub rescue error unknown filesystem"
+   file:tmb/1eslmc/2013-04-06-17-45-a4bdc1-grub-rescue-error-unknown-filesystem.jpg
+
+** linux.mod
+
+   Apelando a nuestros conocimientos de recuperación empezamos a tirar
+   comandos, básicamente se puede listar el contenido de cada
+   partición haciendo =ls (hd0,1)/= y rápidamente vimos que el comando
+   =insmod linux.mod= fallaba porque no existía el archivo en
+   =(hd0,1)/boot/grub/linux.mod= entonces vimos la ubicación original
+   del archivo al copiarse el paquete es
+   =/usr/lib/grub/i386-pc/linux.mod= pero tampoco estaba, evidentemente
+   justo ese archivo no se copió al instalarse, por algún motivo que
+   ignoramos por ahora.
+
+   #+ATTR_HTML: width="640" height="480" alt="huayra grub error file not found"
+   [[file:tmb/1eslmc/2013-04-06-17-55-926d69-grub-error-file-not-found.jpg]]
+
+** super grub2 disk al rescate de grub
+
+   No quedaba otra que corregir =grub= pero aún booteando desde un
+   pendrive no se lograba iniciar el sistema, asi que buscamos alguna
+   distro de rescate, encontramos /Rescatux/ [fn:rescatux] y
+   /SuperGrub2Disk/ [fn:sg2disk], ésta última ocupaba apenas 7mb la
+   /ISO/, asi que era la indicada a probar dada la simplicidad y que
+   nuestra conexión al mundo era muy angosta de banda.
+
+   Descargamos la /ISO/ y verificamos el /MD5/:
+
+   #+BEGIN_EXAMPLE
+     # wget http://download.berlios.de/supergrub/super_grub2_disk_hybrid_2.00s1-beta1.iso
+     # wget http://download.berlios.de/supergrub/super_grub2_disk_hybrid_2.00s1-beta1.iso.md5
+
+     # md5sum super_grub2_disk_hybrid_2.00s1-beta1.iso
+     952a48942df720f579ebca0d09f197c4  super_grub2_disk_hybrid_2.00s1-beta1.iso
+
+     # cat super_grub2_disk_hybrid_2.00s1-beta1.iso.md5 
+     952a48942df720f579ebca0d09f197c4  super_grub2_disk_hybrid_2.00s1~beta1.iso
+   #+END_EXAMPLE
+
+   Intentamos instalarla en un pendrive de diversas maneras, primero
+   usando =unetbootin= [fn:unetbootin] la cual no funcionó.
+
+   Luego usando =dd= a la unidad, pero tampoco funcionó:
+
+   #+BEGIN_EXAMPLE
+     dd if=supergrub.iso of=/dev/sdb
+   #+END_EXAMPLE
+
+   Finalmente la fórmula ganadora fue:
+
+   #+BEGIN_EXAMPLE
+     dd if=supergrub.iso of=/dev/sdb1   
+   #+END_EXAMPLE
+
+   Booteamos con /SuperGrub2Disk/ y elegimos una opción que no
+   encontró nada de nada:
+
+   #+ATTR_HTML: width="640" height="480" alt="huayra not found any grub2 installation"
+   [[file:tmb/1eslmc/2013-04-06-18-15-caef04-not-found-any-grub2-installation.jpg]]
+
+   En el segundo intento tuvimos éxito!:
+
+   #+ATTR_HTML: width="640" height="480" alt="huayra super grub2 disk"
+   [[file:tmb/1eslmc/2013-04-06-18-15-d81f34-super-grub2-disk.jpg]]
+
+** instalando grub
+
+   Una vez iniciado el /Huayra/ de la netbook con la ayuda de
+   /SuperGrub2Disk/ procedimos a reinstalar =grub=:
+
+   #+BEGIN_EXAMPLE
+     grub-install /dev/sdb
+   #+END_EXAMPLE
+
+   #+ATTR_HTML: width="640" height="480" alt="huayra grub install"
+   [[file:tmb/1eslmc/2013-04-06-18-18-f4b7dd-grub-install.jpg]]
+
+** booteando Huayra
+
+   A festejar /Huayra/ salió andando de una, "la dire" contenta:
+
+   #+ATTR_HTML: width="640" height="480" alt="huayra"
+   [[file:tmb/1eslmc/2013-04-06-18-19-9d2385-huayra.jpg]]
+
+** compartir es bueno
+
+   Aprovechamos a copiar algunas de las presentaciones que se dieron
+   en el evento, como asi también el Libro /Redes Inalámbricas en los
+   Países en Desarrollo/ [fn:wndw] ya que se quedaron muy
+   entusiasmados por las charlas sobre Redes Libres [fn:redeslibres],
+   también las /ISO/ de /Huayra 1.0/ [fn:huayra10] y /Huayra
+   Live/ [fn:huayra10live] y de paso el video /Códigos
+   Cooperativos/ [fn:codigoscooperativos], porque si de algo estamos
+   seguros es que *Compartir es Bueno* y por ello este artículo, si a
+   alguno le llega a pasar este error o algo similar con =grub=, ahora
+   saben como solucionarlo en pocos pasos.
+
+   #+ATTR_HTML: width="640" height="480" alt="huayra compartir es bueno"
+   [[file:tmb/1eslmc/2013-04-06-18-41-662982-compartir.jpg]]
+
+[fn:huayra] http://huayra.conectarigualdad.gob.ar/
+[fn:1eslmc] [[file:2013-04-06-primer-encuentro-software-libre-monte-caseros.org]]
+[fn:rescatux] http://www.supergrubdisk.org/rescatux/
+[fn:sg2disk] http://www.supergrubdisk.org/super-grub2-disk/
+[fn:unetbootin] http://unetbootin.sourceforge.net/
+[fn:wndw] http://wndw.net
+[fn:redeslibres] http://wiki.redeslibres.org
+[fn:huayra10] http://huayra.educ.gob.ar/huayra-VR-1.0.iso
+[fn:huayra10live] http://huayra.educ.gob.ar/huayra-live-mate-1.0.iso
+[fn:codigoscooperativos] http://www.gcoop.coop/codigos-cooperativos

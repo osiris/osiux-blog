@@ -6,6 +6,16 @@
 #+OPTIONS:   toc:nil
 #+INCLUDE:   header.org
 
+** [[file:2013-04-06-huayra-grub-rescue-error-unknown-filesystem.org][Huayra grub rescue error unknown filesystem]]
+
+   #+ATTR_HTML: width="640" height="480" alt="huayra grub rescue error unknown filesystem"
+   file:tmb/1eslmc/2013-04-06-17-45-a4bdc1-grub-rescue-error-unknown-filesystem.jpg
+  
+** [[file:2013-04-06-primer-encuentro-software-libre-monte-caseros.org][Primer Encuentro de Software Libre en Monte Caseros]]
+
+   #+ATTR_HTML: width="640" height="480" alt="primeras jornadas de software libre en monte caseros"
+   file:tmb/1eslmc/2013-04-05-18-30-212a51.jpg
+   
 ** [[file:2013-04-02-altermesh-buenos-aires-libre-compartir-es-bueno.org][Altermesh, BuenosAiresLibre y CompartirEsBueno]]
 
    #+ATTR_HTML: width="600" height="320" alt="Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram"
@@ -62,6 +72,7 @@
     - [[file:procesos-linux.org][Procesos Linux, administrando recursos del sistema]]
     - [[file:ssh-para-gobernar-el-mundo.org][SSH para gobernar el mundo, aprendiendo a usar SSH]]
     - [[file:que-no-se-entere-nadie.org][Que no se entere nadie! Análisis de tráfico de red mediante tcpdump]]
+    - [[file:entendiendo-la-red.org][Entendiendo la red]]
 
 *** =*** GNU/Linux=
     - [[file:awesome-es-increible.org][Awesome es increíble]]

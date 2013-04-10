@@ -85,7 +85,7 @@
     Se puede definir en una sóla línea el tipo =rsa=, el archivo dónde
     se almacenará =~/.ssh/llave_rsa= y una contraseña =cambiame=:
 
-    #+BEGIN_SRC sh :session :results output
+    #+BEGIN_SRC sh :session :results output :exports both
       ssh-keygen -t rsa -f ~/.ssh/llave_rsa -Pcambiame
     #+END_SRC
 

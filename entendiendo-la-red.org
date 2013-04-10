@@ -12,13 +12,13 @@
 
      #+BEGIN_SRC ditaa :file redes-centralizadas.png :cmdline -E
        +---+             +---+
-       | A +----+   +----+ B |
-       +---+     \ /     +---+
+       | A +-----+ +-----+ B |
+       +---+     | |     +---+
                 ++-++
-                + C +
-                +--++
-       +---+     /  \    +---+
-       | D +----+    +---+ E |
+                | C |
+                ++-++
+       +---+     | |     +---+
+       | D +-----+ +-----+ E |
        +---+             +---+
      #+END_SRC
 
@@ -29,13 +29,13 @@
 
      #+BEGIN_SRC ditaa :file redes-descentralizadas.png :cmdline -E
        +---+             +---+  +---+             +---+
-       | A +----+   +----+ B |  | F +----+   +----+ G |
-       +---+     \ /     +---+  +---+     \ /     +---+
+       | A +-----+ +-----+ B |  | F +-----+ +-----+ G |
+       +---+     | |     +---+  +---+     | |     +---+
                 ++-++                    ++-++
-                + C +--------------------+ H +
-                +--++                    +--++
-       +---+     /  \    +---+  +---+     /  \    +---+
-       | D +----+    +---+ E |  | I +----+    +---+ J |
+                | C +--------------------+ H |
+                ++-++                    ++-++
+       +---+     | |     +---+  +---+     | |     +---+
+       | D +-----+ +-----+ E |  | I +-----+ +-----+ J |
        +---+             +---+  +---+             +---+
      #+END_SRC
 
@@ -46,13 +46,13 @@
 
      #+BEGIN_SRC ditaa :file redes-mesh.png :cmdline -E
        +---+             +---+  +---+             +---+
-       | A +----+   +----+ B +--+ F +-------------+ G |
-       ++-++     \ /     +++++  ++-++             +--++
-        | \     ++-++     /| \   | \     +---+       |
-        |  +----+ C +----+ |  \  |  +----+ H +-----+ |
-        |       +--++      |   \ |       +--++     | |
-       ++--+     /  \    +-+-+  ++--+     /  \    ++-++
-       | D +----+    +---+ E |  | I +----+    +---+ J |
+       | A +-----+ +-----+ B +--+ F +-------------+ G |
+       ++-++     | |     +-+-+  ++-++             +--++
+        | |     ++-++    | |     | |     +---+       |
+        | +-----+ C +----+ |     | +-----+ H +-----+ |
+        |       ++-++      |     |       ++-++     | |
+       ++--+     | |     +-+-+  ++--+     | |     ++-++
+       | D +-----+ +-----+ E |  | I +-----+ +-----+ J |
        +---+             +---+  +---+             +---+
      #+END_SRC
 
@@ -162,9 +162,34 @@
      host localhost
    #+END_SRC
 
+   #+RESULTS:
+   : localhost.gcoop.com.ar has address 127.0.0.1
+
    #+BEGIN_SRC sh :session :results output :exports both
      dig osiux.com
    #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+
+   ; <<>> DiG 9.8.4-P1 <<>> osiux.com
+   ;; global options: +cmd
+   ;; Got answer:
+   ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 12788
+   ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+   ;; QUESTION SECTION:
+   ;osiux.com.			IN	A
+
+   ;; ANSWER SECTION:
+   osiux.com.		300	IN	A	96.8.118.129
+
+   ;; Query time: 198 msec
+   ;; SERVER: 192.168.10.3#53(192.168.10.3)
+   ;; WHEN: Tue Apr  9 23:29:33 2013
+   ;; MSG SIZE  rcvd: 43
+
+#+end_example
 
 *** viendo un paquete de query dns
 
@@ -180,7 +205,6 @@
     : 	0x0020:  0001 0000 0000 0000 056f 7369 7578 0363  .........osiux.c
     : 	0x0030:  6f6d 0000 0100 01                        om.....
 
-*** analizando el query dns
 *** analizando un paquete de query dns
 
     #+BEGIN_SRC sh :session :results output :exports both
@@ -195,7 +219,7 @@
     User Datagram Protocol, Src Port: 57039 (57039), Dst Port: domain (53)
     Domain Name System (query)
 	Transaction ID: 0x9904
-	Flags: 0x0100 (Standard query)
+	Flags: 0x0100 Standard query
 	    0... .... .... .... = Response: Message is a query
 	    .000 0... .... .... = Opcode: Standard query (0)
 	    .... ..0. .... .... = Truncated: Message is not truncated
@@ -212,24 +236,23 @@
 		Type: A (Host address)
 		Class: IN (0x0001)
 
-    #+end_example
+#+end_example
 
 *** capturar consultas al dns
 
-    #+BEGIN_SRC sh :session :results output :exports code
+    #+BEGIN_EXAMPLE    
       ssh root@linksys '/usr/sbin/tcpdump -i br0 -s 0 -w - dst port 53' >linksys.pcap 
-    #+END_SRC
+    #+END_EXAMPLE
 
 *** ranking de dns
 
-    #+NAME: ranking-dns
-    #+BEGIN_SRC sh :session :results value :exports both
+    #+BEGIN_EXAMPLE
       tcpdump -r linksys.pcap -c 2000 -nnnA dst port 53 | \
       egrep -o "A+\? .*\." | sed s/".$"//g | awk '{print $2}' | \
       egrep -v "(osiux|fbcdn|akamai)" | sort | uniq -c | sort -nr | head
-    #+END_SRC
+    #+END_EXAMPLE
 
-    #+RESULTS:
+    #+NAME: ranking-dns
     | 47 | www.facebook.com         |
     | 42 | dns.msftncsi.com         |
     | 41 | su.ff.avast.com          |
@@ -273,20 +296,23 @@
 ** Túneles y Redes Privadas Virtuales VPN
 *** Redireccionar puertos con =ssh=
 
-    ssh -L 2525:localhost:25 osiux.com
+    #+BEGIN_EXAMPLE
+      ssh -L 2525:localhost:25 osiux.com    
+    #+END_EXAMPLE
 
 *** Proxy Socks mediante ssh
 
-    ssh -D 9090 osiux.com
+    #+BEGIN_EXAMPLE
+      ssh -D 9090 osiux.com    
+    #+END_EXAMPLE
 
 *** Tunel reverso con ssh
 
-    ssh -R 12345:localhost:22 osiux.com
+    #+BEGIN_EXAMPLE
+      ssh -R 12345:localhost:22 osiux.com    
+    #+END_EXAMPLE
 
 *** Redireccionar puertos con =socat=
-
-    socat
-
 ** Cómo saber la IP de un equipo?
 *** B dice, *cuál es la IP de D?*
 
@@ -327,8 +353,6 @@
     #+END_SRC
 
     #+RESULTS:
-    : Interface: eth0, datalink type: EN10MB (Ethernet)
-    : Starting arp-scan 1.8.1 with 256 hosts (http://www.nta-monitor.com/tools/arp-scan/)
     :
     : 0 packets received by filter, 0 packets dropped by kernel
     : Ending arp-scan 1.8.1: 256 hosts scanned in 1.625 seconds (157.54 hosts/sec). 0 responded
@@ -342,16 +366,16 @@
     #+RESULTS:
     #+begin_example
     PING 127.0.0.1 (127.0.0.1) 56(84) bytes of data.
-    64 bytes from 127.0.0.1: icmp_req=1 ttl=64 time=0.075 ms
+    64 bytes from 127.0.0.1: icmp_req=1 ttl=64 time=0.066 ms
     64 bytes from 127.0.0.1: icmp_req=2 ttl=64 time=0.050 ms
-    64 bytes from 127.0.0.1: icmp_req=3 ttl=64 time=0.062 ms
-    64 bytes from 127.0.0.1: icmp_req=4 ttl=64 time=0.050 ms
-    64 bytes from 127.0.0.1: icmp_req=5 ttl=64 time=0.047 ms
+    64 bytes from 127.0.0.1: icmp_req=3 ttl=64 time=0.050 ms
+    64 bytes from 127.0.0.1: icmp_req=4 ttl=64 time=0.048 ms
+    64 bytes from 127.0.0.1: icmp_req=5 ttl=64 time=0.049 ms
 
     --- 127.0.0.1 ping statistics ---
-    5 packets transmitted, 5 received, 0% packet loss, time 4000ms
-    rtt min/avg/max/mdev = 0.047/0.056/0.075/0.014 ms
-    #+end_example
+    5 packets transmitted, 5 received, 0% packet loss, time 3999ms
+    rtt min/avg/max/mdev = 0.048/0.052/0.066/0.010 ms
+#+end_example
 
 *** capturando pings
 
@@ -360,31 +384,27 @@
     #+END_SRC
 
     #+RESULTS:
-    : IP 127.0.0.1 > 127.0.0.1: ICMP echo request, id 4177, seq 41, length 64
-    : IP 127.0.0.1 > 127.0.0.1: ICMP echo reply, id 4177, seq 41, length 64
-    : IP 127.0.0.1 > 127.0.0.1: ICMP echo request, id 4177, seq 42, length 64
-    : IP 127.0.0.1 > 127.0.0.1: ICMP echo reply, id 4177, seq 42, length 64
-    : IP 127.0.0.1 > 127.0.0.1: ICMP echo request, id 4177, seq 43, length 64
 
 *** viendo un =ping=
 
-    #+BEGIN_SRC sh :session :results output
+    #+BEGIN_EXAMPLE
       sudo tcpdump -i lo -nnntvvX -c 1 -e icmp
-    #+END_SRC
+    #+END_EXAMPLE
 
-    #+RESULTS:
-    : 00:00:00:00:00:00 > 00:00:00:00:00:00, ethertype IPv4 (0x0800), length 98: (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto ICMP (1), length 84)
-    :     127.0.0.1 > 127.0.0.1: ICMP echo request, id 4177, seq 329, length 64
-    :   0x0000:  4500 0054 0000 4000 4001 3ca7 7f00 0001  E..T..@.@.<.....
-    :   0x0010:  7f00 0001 0800 a68d 1051 0149 e754 5e51  .........Q.I.T^Q
-    :   0x0020:  022f 0d00 0809 0a0b 0c0d 0e0f 1011 1213  ./..............
-    :   0x0030:  1415 1617 1819 1a1b 1c1d 1e1f 2021 2223  .............!"#
-    :   0x0040:  2425 2627 2829 2a2b 2c2d 2e2f 3031 3233  $%&'()*+,-./0123
-    :   0x0050:  3435 3637                                4567
+    #+BEGIN_EXAMPLE
+      00:00:00:00:00:00 > 00:00:00:00:00:00, ethertype IPv4 (0x0800), length 98: (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto ICMP (1), length 84)
+          127.0.0.1 > 127.0.0.1: ICMP echo request, id 4177, seq 329, length 64
+        0x0000:  4500 0054 0000 4000 4001 3ca7 7f00 0001  E..T..@.@.<.....
+        0x0010:  7f00 0001 0800 a68d 1051 0149 e754 5e51  .........Q.I.T^Q
+        0x0020:  022f 0d00 0809 0a0b 0c0d 0e0f 1011 1213  ./..............
+        0x0030:  1415 1617 1819 1a1b 1c1d 1e1f 2021 2223  .............!"#
+        0x0040:  2425 2627 2829 2a2b 2c2d 2e2f 3031 3233  $%&'()*+,-./0123
+        0x0050:  3435 3637                                4567     
+    #+END_EXAMPLE
 
 ** Red con acceso a otra red
 
-   #+BEGIN_SRC ditaa :file redes-lan-wan.png :cmdline -E
+   #+BEGIN_SRC ditaa :file redes-lan-wan.png :cmdline -E :exports result
      -----+---------+<--------+---------+-----
           |         |         |         ^
           |         v         |         |
@@ -399,8 +419,7 @@
    #+RESULTS:
    [[file:redes-lan-wan.png]]
 
-
-   #+BEGIN_SRC ditaa :file redes-lan-proxy-wan.png :cmdline -E
+   #+BEGIN_SRC ditaa :file redes-lan-proxy-wan.png :cmdline -E :exports result
      -----+---------+-------->+-------->+-----
           |         ^         |         |
           |         |         |         v
@@ -412,8 +431,8 @@
                                       +-+-+
                                       | E |
                                       +-+-+
-                            |
-                                v
+                                        |
+                                        v
    #+END_SRC
 
    #+RESULTS:
@@ -433,8 +452,12 @@
      +----------+
    #+END_SRC
 
+   #+RESULTS:
+   [[file:redes-protocolos.png]]
+
 *** Qué tiene un paquete TCP/IP?
 
+    #+BEGIN_SRC ditaa :file redes-arp-header.png :cmdline -E :exports result
      +------------------------+--------------------------+
      | MAC origen fe:ca:fe:ca | MAC destino  ca:fe:ca:fe |
      +------------------------+--------------------------+
@@ -447,14 +470,20 @@
      | U | A | P | R | S | F | GET / HTTP/1.0            |
      | R | C | S | S | Y | I |                           |
      | G | K | H | T | N | N |                           |
-     +---+---+---+---+---+---+---------------------------+
+     +---+---+---+---+---+---+---------------------------+    
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:redes-arp-header.png]]
 
 *** Ethernet header
 
     #+BEGIN_SRC ditaa :file redes-arp-header.png :cmdline -E :exports result
+      +-------------------+-------------------+-------------------+---+
       |                   |1                  |2                  |3  |
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
       |0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|
-      +---------------+---------------+-------------------------------+
+      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
       |         Hardware type         |          Protocol type        |
       +---------------+---------------+-------------------------------+
       |Hw address len.|Pr address len.|             Opcode            |
@@ -471,12 +500,17 @@
       +---------------------------------------------------------------+
     #+END_SRC
 
+    #+RESULTS:
+    [[file:redes-arp-header.png]]
+
 ** IP header
 
    #+BEGIN_SRC ditaa :file redes-ip-header.png :cmdline -E :exports result
+     +-------------------+-------------------+-------------------+---+
      |                   |1                  |2                  |3  |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
      |0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|
-     +-------+-------+---------------+-------------------------------+
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
      |Version|  IHL  | Diff.Services |     Total length              |
      +-------+-------+---------------+-----+-------------------------+
      |        Identification         |Flags|         Fragment offset |
@@ -497,9 +531,11 @@
 ** TCP header
 
    #+BEGIN_SRC ditaa :file redes-tcp-header.png :cmdline -E :exports result
+     +-------------------+-------------------+-------------------+---+
      |                   |1                  |2                  |3  |
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
      |0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|
-     +-------------------------------+-------------------------------+
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
      |          Source Port          |        Destination Port       |
      +-------------------------------+-------------------------------+
      |                        Sequence Number                        |
@@ -524,5 +560,7 @@
 ** ChangeLog
 
    - [2013-04-04 jue] primer borrador general.
+   - [2013-04-09 mar] corrijo gráficos ascii-art
 
 [fn:arp] http://www.networksorcery.com/enp/protocol/arp.htm
+   
