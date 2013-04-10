@@ -54,7 +54,7 @@
 
    Vladimir di Fiore estuvo a cargo de la instalación de Huayra en las
    netbooks que los chicos traían para actualizar, además se copiaba
-   la imagen en los pendrives de tod aquel que se animana a probarlo.
+   la imagen en los pendrives de todo aquel que se animana a probarlo.
 
    #+ATTR_HTML: width="200" height="150" alt="instalando huayra"
    [[file:img/1eslmc/2013-04-06-16-11-579919.jpg]]
