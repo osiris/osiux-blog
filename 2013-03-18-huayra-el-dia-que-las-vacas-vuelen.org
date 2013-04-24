@@ -4,10 +4,10 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+OPTIONS:   toc:nil
-#+INCLUDE:   header.org
+#+INCLUDE: "header.org"
 #+DATE:      2013-03-18
 
-#+ATTR_HTML: witdh="640" height="500" alt="Huayra"
+#+ATTR_HTML: :witdh "640" :height "500" :alt "Huayra"
 [[file:img/huayra-vaca-volando.png]]
 
 Aproximadamente en 1999 comencé a usar GNU/Linux y era algo que muy

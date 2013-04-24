@@ -3,8 +3,7 @@
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+OPTIONS:   toc:nil
-#+INCLUDE:   header.org
+#+INCLUDE: "header.org"
 #+DATE:      2013-04-02
 
 ** Migrando de =OLSR= a =Batman-adv=
@@ -215,7 +214,7 @@
     nuestra IPv6 es aquella que comienza con =fe80=, en mi caso:
     =fe80::6aa3:c4ff:fecf:b5b4=
 
-*** descubirir routers
+*** descubrir routers
 
     Se puede realizar un =ping= a una dirección especial para obtener
     respuesta de todos los equipos en la red local que son /Routers/,
@@ -384,16 +383,17 @@
    permite de manera simple y cómoda editar un archivo de texto plano
    con cada equipo para luego generar el gráfico final.
 
-   #+ATTR_HTML: width="640" height="527" alt="Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram"
-   [[file:tmb/osiux-network.png]]
+   #+ATTR_HTML: :width "640" :height "527" :alt "Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram"
+   [[file:img/osiux-network.png][file:tmb/osiux-network.png]]
 
    - Descargar imagen en alta resolución: http://osiux.com/img/osiux-network.png
 
-** Cual es el próximo paso? [1/10]
+** Cual es el próximo paso? [4/10]
 
    - [X] compartir lo aprendido.
-   - [ ] actualizar este documento.
-   - [ ] flashear MR3020.
+   - [X] actualizar este documento.
+   - [X] flashear MR3020.
+   - [X] agregar agente altermap a los APs.
    - [ ] flashear Ubiquity Bullet.
    - [ ] actualizar WR842ND con soporte USB storage.
    - [ ] agregarle un WN722N al MR3220 con antena direccional o panel.
@@ -404,6 +404,7 @@
 ** ChangeLog
 
    - [2013-04-03 mié] primer borrador, faltan agregar pasos y corregir.
+   - [2013-04-24 mié] actualizo pendientes y agrego algunas correcciones.
 
 [fn:BAL] http://www.buenosaireslibre.org
 [fn:NodoOsiux] http://wiki.buenosaireslibre.org/NodoOsiux

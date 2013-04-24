@@ -3,7 +3,7 @@
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+INCLUDE:   header.org
+#+INCLUDE: "header.org"
 
 ** ¿qué es =ssh= y para qué sirve?
 
@@ -158,7 +158,7 @@
    - NO usar *sudo*, loguearse como *root* sólo para tareas
      administrativas
    - NO permitir el login del usuario *root*
-   - Sólo permitir login por SSH desde algunas IPs
+   - Sólo permitir login por /SSH/ desde algunas IPs
 
    - OjO: aunque quitando el cable de red, basta para desconectar a
      los intrusos, hoy día casi que vuelve inservible una compu
@@ -169,7 +169,7 @@
    Si bien usamos el ejemplo de un intruso, lo más probable es que
    nosotros seamos root en muchos otros sistemas, como la compu del
    trabajo, la de casa, la de un amigo/a, etc. Y poder administrar
-   varios sistemas remotos usando SSH u una sola terminal es
+   varios sistemas remotos usando /SSH/ u una sola terminal es
    posible.
 
    Para esto instalamos *Terminator*
@@ -177,7 +177,7 @@
      sudo apt-get install terminator
    #+END_EXAMPLE
 
-   Iniciamos *Terminator* y presionando CTRL-SHIFT-E y CTRL-SHIFT-O
+   Iniciamos *Terminator* y presionando *CTRL-SHIFT-E* y *CTRL-SHIFT-O*
    podemos dividir la pantalla vertical y horizontalmente tantas
    veces como sea necesario, obteniendo muchas terminales dentro de
    una sola y eligiendo la opción *retransmitir a todas* podemos

@@ -4,7 +4,7 @@
 #+EMAIL:       osiux@osiux.com
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
-#+INCLUDE:     header.org
+#+INCLUDE: "header.org"
 #+DATE:        2012-11-06
 
 ** ¿Qué es proceso?
@@ -108,7 +108,6 @@
 	   │               ├─apache2(3140)
 	   │               ├─apache2(3141)
    #+end_example
-
 
 ** En tiempo real
 

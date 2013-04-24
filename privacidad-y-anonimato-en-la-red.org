@@ -4,7 +4,7 @@
 #+EMAIL:       <osiux@riseup.net>
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
-#+INCLUDE:     header.org
+#+INCLUDE: "header.org"
 #+LaTeX_CLASS: beamer
 #+MACRO:       BEAMERMODE presentation
 #+MACRO:       BEAMERTHEME Madrid

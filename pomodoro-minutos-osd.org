@@ -2,7 +2,7 @@
 #+AUTHOR:    Osiris Alejandro Gomez
 #+EMAIL:     osiux@osiux.com.ar
 #+LANGUAGE:  es
-#+INCLUDE:   header.org
+#+INCLUDE: "header.org"
 #+DATE:      2011-05-23
 
 * Pomodoro Minutos OSD

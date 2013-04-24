@@ -3,7 +3,7 @@
 #+EMAIL:       osiux@osiux.com
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
-#+INCLUDE:     header.org
+#+INCLUDE: "header.org"
 #+DATE:        2012-06-13
 
 Hoy desde las 16 horas los esperamos en el Centro Cultural de la

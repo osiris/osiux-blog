@@ -3,7 +3,7 @@
 #+EMAIL:       osiux@osiux.com
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
-#+INCLUDE:     header.org
+#+INCLUDE: "header.org"
 #+DATE:        2012-05-23
 
 Llevo más de seis años participando del proyecto *BuenosAiresLibre*

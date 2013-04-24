@@ -3,10 +3,10 @@
 #+EMAIL:       osiux@osiux.com
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
-#+INCLUDE:     header.org
+#+INCLUDE: "header.org"
 #+DATE:        2012-02-17
 
-#+ATTR_HTML: width="640" height="480" alt="las cooperativas construyen un mundo mejor"
+#+ATTR_HTML: :width "640" :height "480" :alt "las cooperativas construyen un mundo mejor"
 [[file:img/las-cooperativas-construyen-un-mundo-mejor.jpg][file:tmb/las-cooperativas-construyen-un-mundo-mejor.jpg]]
 
 Hoy [[http://gcoop.coop][La cooperativa de Software Libre gcoop]] cumple *5 años* y estoy

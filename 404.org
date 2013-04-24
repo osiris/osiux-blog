@@ -4,7 +4,7 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+OPTIONS:   toc:nil
-#+INCLUDE:   header.org
+#+INCLUDE: "header.org"
 
 * lo siento, la página que buscás no está!
 

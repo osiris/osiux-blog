@@ -3,12 +3,12 @@
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+INCLUDE:   header.org
+#+INCLUDE: "header.org"
 #+DATE:      2012-06-14
 
 ** Convirtiendo un CSV en un gráfico animado
 
-#+ATTR_HTML: width="640" height="480" alt="Software Libre y Economía Social"
+#+ATTR_HTML: :width "640" :height "480" :alt "Software Libre y Economía Social"
 [[file:img/2012-06-13-SLyES-2037-0114.jpg]]
 
 Ayer fue el evento *Software Libre y Economía Social* [fn:slyes2012] y
@@ -86,17 +86,17 @@ presentada ayer.
 
 ** Año 1929
 
-#+ATTR_HTML: width="640" height="360" alt="Cooperativas de Argentina Año 1929"
+#+ATTR_HTML: :width "640" :height "360" :alt "Cooperativas de Argentina Año 1929"
 [[file:img/SLyES-2012-CoopViz-1929.jpg]]
 
 ** Año 2000
 
-#+ATTR_HTML: width="640" height="360" alt="Cooperativas de Argentina Año 2000"
+#+ATTR_HTML: :width "640" :height "360" :alt "Cooperativas de Argentina Año 2000"
 [[file:img/SLyES-2012-CoopViz-2000.jpg]]
 
 ** Año 2007
 
-#+ATTR_HTML: width="640" height="360" alt="Cooperativas de Argentina Año 2007"
+#+ATTR_HTML: :width "640" :height "360" :alt "Cooperativas de Argentina Año 2007"
 [[file:img/SLyES-2012-CoopViz-2007.jpg]]
 
 ** Video Cooperativas de Argentina 1927-2008

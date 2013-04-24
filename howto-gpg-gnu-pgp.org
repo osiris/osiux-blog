@@ -2,7 +2,7 @@
 #+AUTHOR:      Mauro Lizaur
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
-#+INCLUDE:     header.org
+#+INCLUDE: "header.org"
 #+DATE:        2008-09-11
 
 ** Instalando GnuPG
