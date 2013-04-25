@@ -21,7 +21,7 @@ tengo siempre una mano en el teclado.
 En fin, durante mucho tiempo usé *fluxbox* [fn:fluxbox] y llegué a tunearlo
 bastante, se puede ver un artículo que escribí al respecto:
 
-http://osiux.com.ar/fluxbox-gtk2-root-tail-gkrellm.txt
+[[file:fluxbox-gtk2-root-tail-gkrellm.org]]
 
 Pero luego me di cuenta que pasaba mucho tiempo jugando con la ubicación de
 las ventanas, así que emprendí la búsqueda de una alternativa tan liviana y
@@ -43,9 +43,7 @@ aplicación, ya sean los datos en sí como también la interfase, también ayuda
 achicar el tamaño de la fuente. Sumado a esto luego en la mayoría de las
 aplicaciones existe la posibilidad de ocultar barras de herramientas o al
 menos sólo mostrar iconos pequeños o sólo texto y de esta manera aumentar aún
-más el espacio de trabajo. Lo mejor es ver una imagen comparativa.
-
-[[file:img/awesome/awesome-comparativa.png]]
+más el espacio de trabajo.
 
 ** El teclado es más rápido
 
@@ -90,7 +88,8 @@ otra aplicación. Si se necesita cambiar la disposición de las ventanas abierta
 basta con presionar una combinación de teclas y todo el esquema cambia de
 horizontal a vertical por ejemplo.
 
-[[file:img/awesome/awesome-mosaico.png]]
+#+ATTR_HTML: :width 640 :height 480 :alt "awesome mosaico"
+[[file:img/awesome/awesome-mosaico.png][file:tmb/awesome/awesome-mosaico.png]]
 
 ** Ventanas Flotantes
 
@@ -106,7 +105,8 @@ maximizada es que permite tener en foco qué se está haciendo, es decir una
 minimizada o mucho mejor aún en otro escritorio y alternar fácilmente entre
 varios escritorios.
 
-[[file:img/awesome/awesome-flotante.png]]
+#+ATTR_HTML: :width 640 :height 480 :alt "awesome flotante"
+[[file:img/awesome/awesome-flotante.png][file:tmb/awesome/awesome-flotante.png]]
 
 ** Un escritorio para cada tarea
 
@@ -127,7 +127,8 @@ siguiente:
 | 9 | mensajería y chat | finch                  |
 |---+-------------------+------------------------|
 
-[[file:img/awesome/awesome_800x600.png]]
+#+ATTR_HTML: :width 640 :height 480 :alt "awesome"
+[[file:img/awesome/awesome_800x600.png][file:tmb/awesome/awesome-800x600.png]]
 
 Esta distribución logra aprovechar el 100% de la resolución de pantalla para
 cada aplicación, lo cual tiene muchas ventajas, una de ellas es que puedo
@@ -138,14 +139,15 @@ cuadrado, como si tuvieras dos monitores en uno, es altamente productivo,
 tengan en cuenta que el texto encolumnado se lee mejor que una cadena muy
 larga.
 
-[[file:img/awesome/awesome-vertical_800x450.png]]
+#+ATTR_HTML: :width 640 :height 360 :alt "awesome vertical"
+[[file:img/awesome/awesome-vertical_800x450.png][file:tmb/awesome/awesome-vertical_800x450.png]]
 
 ** Una terminal de terminales
 
 A excepción del navegador =firefox=, el visor de PDF =zathura/evince= y
 algún que otro programa gráfico como =inkscape= y =gimp= el resto de las
 aplicaciones que utilizo a diario son todas aplicaciones que corren dentro de
-una terminal, con interfases de **sólo texto**, desde el editor de texto =vim=,
+una terminal, con interfases de *sólo texto*, desde el editor de texto =vim=,
 la agenda =emacs org-mode=, el reproductor de música =mocp=, el cliente de
 correo =mutt= y el cliente de mensajería instantánea y chat IRC =finch=.
 
@@ -164,7 +166,8 @@ par de teclas dividirlo en varias partes (de la misma manera que awesome) e
 inclusive subdividir casi hasta el infinito con la posibilidad de agrupar estas
 subterminales y comandarlas a todas desde una sola!
 
-[[file:img/awesome/awesome-terminator.png]]
+#+ATTR_HTML: :width 640 :height 480 :alt "awesome terminator"
+[[file:img/awesome/awesome-terminator.png][file:tmb/awesome/awesome-terminator.png]]
 
 Hay que aprenderse unas teclas básicas:
 
@@ -211,8 +214,6 @@ disponible y no sólo no ocupa mucho espacio, además no interfiere con el resto
 de las aplicaciones que tengamos abiertas. Aclaro que si te equivocás con
 suerte no pasa nada, es decir no muestra mensajes de error y con mala suerte
 se queda medio colgado por unos segundos.
-
-[[file:img/awesome/awesome-run.png]]
 
 ** Configuración del =rc.lua=
 
@@ -283,6 +284,7 @@ puede obtener una copia del archivo que está en =/etc/xdg/awesome/rc.lua=.
 ** Changelog
 
    - [2013-03-15 vie] cambio formato de rST a Org
+   - [2013-04-25 jue] agrego preview de imágenes
 
 [fn:dwm] http://en.wikipedia.org/wiki/Dwm
 [fn:i3] http://i3wm.org/
