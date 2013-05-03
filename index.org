@@ -5,7 +5,12 @@
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
 
-** [[file:2013-04-23-cluster-de-software-libre.org][Ministerio de Ciencia crea clúster de software libre]]
+** [[file:2013-04-27-flisol-2013-et10.org][FLISoL en la ET10 Villa Madero, La Matanza]]
+
+   #+ATTR_HTML: :width 600 :height 480 :alt "FLISoL 2013 ET10 Villa Madero, La Matanza"
+   [[file:tmb/flisol-2013-et10/2013-04-27-1455-268126.jpg]]
+
+** [[file:2013-04-23-cluster-de-software-libre.org][gcoop es miembro del Clúster de Software Libre]]
 
    #+ATTR_HTML: :width 600 :height 399 :alt "Ministerio de Ciencia crea clúster de software libre"
    [[file:img/2013-04-23-cluster-de-software-libre.jpg][file:tmb/2013-04-23-cluster-de-software-libre.jpg]]
