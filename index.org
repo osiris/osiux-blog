@@ -5,6 +5,11 @@
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
 
+** [[file:2013-05-06-letras-viajeras.org][gcoop libera Letras Viajeras]]
+
+   #+ATTR_HTML: :width 640 :height 388 :alt Letras Viajeras
+   [[file:img/letras-viajeras.jpg]]
+
 ** [[file:2013-04-27-flisol-2013-et10.org][FLISoL en la ET10 Villa Madero, La Matanza]]
 
    #+ATTR_HTML: :width 600 :height 480 :alt "FLISoL 2013 ET10 Villa Madero, La Matanza"

@@ -1,0 +1,41 @@
+#+TITLE:       gcoop libera "Letras Viajeras"
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE: "header.org"
+#+DATE:        2013-05-06
+
+#+ATTR_HTML: :width 640 :height 388 :alt Letras Viajeras
+[[file:img/letras-viajeras.jpg]]
+
+**Letras Viajeras** es una iniciativa de la
+**Dirección de Bibliotecas y Promoción de la Lectura del Gobierno de la Provincia de Buenos Aires**,
+que permitirá a los pasajeros de larga y media distancia tener
+acceso gratuito a libros digitales, con sus dispositivos móviles a
+través de una conexión Wi-fi que permitirá descargar libros y
+contenidos literarios seleccionados por la Dirección.
+
+El material de descarga (libros, cuentos y revistas) son materiales
+del dominio público y materiales liberados.
+
+Letras Viajeras fue desarrollado íntegramente con Software Libre por
+la /Cooperativa de trabajo gcoop/ [fn:gcoop]. La solución consiste en
+un Router Inalámbrico al que se le instala =OpenWRT= [fn:openwrt], un
+Fimware libre basado en /Linux/.
+
+Por otro lado se desarrolló una aplicación con =Flask= [fn:flask] y
+=Boostrap= [fn:boostrap] para generar el Portal web que corre en el
+Router y que permite ver y acceder a todos los materiales disponibles
+para descarga.
+
+Además de la liberación del código fuente [fn:github] se realizó un
+tutorial [fn:tutorial] con el fin de que el dispositivo (sin los
+materiales) pueda ser realizado por cualquier persona o institución.
+
+[fn:boostrap] http://twitter.github.io/bootstrap
+[fn:flask] http://flask.pocoo.org
+[fn:openwrt] http://openwrt.org
+[fn:gcoop] http://gcoop.coop
+[fn:github] https://github.com/gcoop-libre/letras_viajeras
+[fn:tutorial] https://github.com/gcoop-libre/letras_viajeras/blob/master/GUIA_INSTALACION.md
