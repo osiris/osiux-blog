@@ -13,7 +13,7 @@
    ejecutando.  Por ejemplo, si estamos en la interfase gráfica, la
    terminal sería *gnome-terminal* quien a su vez invoca al
    intérprete *bash* y desde ahí podríamos invocar a *firefox*. Esto
-   se pude visualizar de la siguiente manera:
+   se puede visualizar de la siguiente manera:
 
    #+BEGIN_EXAMPLE
      # ps fax | grep -C3 firefox

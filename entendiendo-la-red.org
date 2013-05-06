@@ -11,7 +11,7 @@
 
    - centralizada
 
-     #+BEGIN_SRC ditaa :file img/redes-centralizadas.png :cmdline -E
+     #+BEGIN_SRC ditaa :file img/redes-centralizadas.png :cmdline -E :exports result
        +---+             +---+
        | A +-----+ +-----+ B |
        +---+     | |     +---+
@@ -28,7 +28,7 @@
 
    - descentralizada
 
-     #+BEGIN_SRC ditaa :file img/redes-descentralizadas.png :cmdline -E
+     #+BEGIN_SRC ditaa :file img/redes-descentralizadas.png :cmdline -E :exports result
        +---+             +---+  +---+             +---+
        | A +-----+ +-----+ B |  | F +-----+ +-----+ G |
        +---+     | |     +---+  +---+     | |     +---+
@@ -45,14 +45,14 @@
 
    - en malla o /mesh/
 
-     #+BEGIN_SRC ditaa :file img/redes-mesh.png :cmdline -E
+     #+BEGIN_SRC ditaa :file img/redes-mesh.png :cmdline -E -S :exports result
        +---+             +---+  +---+             +---+
        | A +-----+ +-----+ B +--+ F +-------------+ G |
-       ++-++     | |     +-+-+  ++-++             +--++
-        | |     ++-++    | |     | |     +---+       |
-        | +-----+ C +----+ |     | +-----+ H +-----+ |
-        |       ++-++      |     |       ++-++     | |
-       ++--+     | |     +-+-+  ++--+     | |     ++-++
+       ++-++     | |     ++--+  +--++             +--++
+        | |     ++-++     |        |     +---+       |
+        | +-----+ C +-----+ +----+ +-----+ H +-----+ |
+        |       ++-++       |    |       ++-++     | |
+       ++--+     | |     +--++  ++--+     | |     ++-++
        | D +-----+ +-----+ E |  | I +-----+ +-----+ J |
        +---+             +---+  +---+             +---+
      #+END_SRC
@@ -73,7 +73,7 @@
      
 *** Red de 4 equipos
 
-    #+BEGIN_SRC ditaa :file img/redes-lan.png :cmdline -E
+    #+BEGIN_SRC ditaa :file img/redes-lan.png :cmdline -E :exports result
       -----+---------+---------+---------+-----
            |         |         |         |
            |         |         |         |
@@ -92,11 +92,11 @@
     - puerto destino: 67
     - dirección física: 01:12:23:34:45:bb
 
-    #+BEGIN_SRC ditaa :file img/redes-dhcp-discover.png :cmdline -E
-      <----+<--------+-------->+-------->+---->
+    #+BEGIN_SRC ditaa :file img/redes-dhcp-discover.png :cmdline -E :exports result
+      <----*---------*---------*---------*---->
            |         ^         |         |
            v         |         v         v
-         +-+-+     +-+-+     +-+-+     +-+-+
+         +-+-+     +-+-+     +---+     +---+
          | A |     | B |     | C |     | D |
          +---+     +---+     +---+     +---+
     #+END_SRC
@@ -114,7 +114,7 @@
     - dns secundario: 8.8.4.4
 
     #+BEGIN_SRC ditaa :file img/redes-dhcp-offer.png :cmdline -E :exports result
-      -----+---------+<--------+---------+-----
+      -----+---------*---------*---------*-----
            |         |         |         ^
            |         v         |         |
          +-+-+     +-+-+     +-+-+     +-+-+
@@ -130,7 +130,7 @@
     - mensaje: =DHCPREQUEST=
 
     #+BEGIN_SRC ditaa :file img/redes-dhcp-request.png :cmdline -E :exports result
-      -----+---------+-------->+-------->+-----
+      -----+---------+---------*---------*-----
            |         ^         |         |
            |         |         |         v
          +-+-+     +-+-+     +-+-+     +-+-+
@@ -146,7 +146,7 @@
     - mensaje: =DHCPACK=
 
     #+BEGIN_SRC ditaa :file img/redes-dhcp-ack.png :cmdline -E :exports result
-      -----+---------+<--------+<--------+-----
+      -----+---------*---------*---------*-----
            |         |         |         ^
            |         v         |         |
          +-+-+     +-+-+     +-+-+     +-+-+
@@ -421,15 +421,15 @@
    [[file:img/redes-lan-wan.png]]
 
    #+BEGIN_SRC ditaa :file img/redes-lan-proxy-wan.png :cmdline -E :exports result
-     -----+---------+-------->+-------->+-----
+     -----+---------*---------*---------*-----
           |         ^         |         |
           |         |         |         v
-        +-+-+     +-+-+     +-+-+     +-+-+
+        +-+-+     +-+-+     +-+-+     +---+
         | A |     | B |     | C |     | D |
         +---+     +---+     +---+     +-+-+
                                         |
                                         v
-                                      +-+-+
+                                      +---+
                                       | E |
                                       +-+-+
                                         |
@@ -479,10 +479,8 @@
 
 *** Ethernet header
 
-    #+BEGIN_SRC ditaa :file img/redes-arp-header.png :cmdline -E :exports result
-      +-------------------+-------------------+-------------------+---+
+    #+BEGIN_EXAMPLE
       |                   |1                  |2                  |3  |
-      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
       |0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|
       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
       |         Hardware type         |          Protocol type        |
@@ -499,17 +497,12 @@
       +---------------------------------------------------------------+
       |                            Data                               |
       +---------------------------------------------------------------+
-    #+END_SRC
-
-    #+RESULTS:
-    [[file:img/redes-arp-header.png]]
+    #+END_EXAMPLE
 
 ** IP header
 
-   #+BEGIN_SRC ditaa :file img/redes-ip-header.png :cmdline -E :exports result
-     +-------------------+-------------------+-------------------+---+
+   #+BEGIN_EXAMPLE
      |                   |1                  |2                  |3  |
-     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
      |0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|
      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
      |Version|  IHL  | Diff.Services |     Total length              |
@@ -524,17 +517,12 @@
      +---------------------------------------------------------------+
      |                     Options and padding                       |
      +---------------------------------------------------------------+
-   #+END_SRC
-
-   #+RESULTS:
-   [[file:img/redes-ip-header.png]]
+   #+END_EXAMPLE
 
 ** TCP header
 
-   #+BEGIN_SRC ditaa :file img/redes-tcp-header.png :cmdline -E :exports result
-     +-------------------+-------------------+-------------------+---+
+   #+BEGIN_EXAMPLE
      |                   |1                  |2                  |3  |
-     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
      |0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|
      +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
      |          Source Port          |        Destination Port       |
@@ -553,10 +541,7 @@
      +---------------------------------------------------------------+
      |                           Data                                |
      +---------------------------------------------------------------+
-   #+END_SRC
-
-   #+RESULTS:
-   [[file:img/redes-tcp-header.png]]
+   #+END_EXAMPLE
 
 ** ChangeLog
 

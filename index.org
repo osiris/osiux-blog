@@ -22,18 +22,22 @@
   
 ** [[file:2013-04-06-primer-encuentro-software-libre-monte-caseros.org][Primer Encuentro de Software Libre en Monte Caseros]]
 
-   #+ATTR_HTML: :width 640 :height 480 :alt primeras jornadas de software libre en monte caseros"
+   #+ATTR_HTML: :width 640 :height 480 :alt primeras jornadas de software libre en monte caseros
    file:tmb/1eslmc/2013-04-05-18-30-212a51.jpg
    
 ** [[file:2013-04-02-altermesh-buenos-aires-libre-compartir-es-bueno.org][Altermesh, BuenosAiresLibre y CompartirEsBueno]]
 
-   #+ATTR_HTML: :width 600 :height 320 :alt Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram"
+   #+ATTR_HTML: :width 600 :height 320 :alt "Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram"
    [[file:icn/osiux-network.png]]
+
+** [[file:2013-03-18-huayra-el-dia-que-las-vacas-vuelen.org][Huayra, el día que las vacas vuelen, llegó!]]
+
+   #+ATTR_HTML: :witdh 640 :height 500 :alt "Huayra"
+   [[file:img/huayra-vaca-volando.png]]
 
 ** =** blog=
 *** =*** 2013=
     - [[file:2013-03-31-inscripcion-cursos-de-formacion-profesional.org][03/31 Abierta la inscripción a los Cursos de Formación Profesional en Software Libre]]
-    - [[file:2013-03-18-huayra-el-dia-que-las-vacas-vuelen.org][03/18 Huayra, el día que las vacas vuelen, llegó!]]
     - [[file:2013-02-01-migrando-de-frontweb-a-org-mode.org][02/01 Migrando de frontweb a Org-mode]]
     
 *** =*** 2012=

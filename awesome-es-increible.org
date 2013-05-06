@@ -127,8 +127,8 @@ siguiente:
 | 9 | mensajería y chat | finch                  |
 |---+-------------------+------------------------|
 
-#+ATTR_HTML: :width 640 :height 480 :alt "awesome"
-[[file:img/awesome/awesome_800x600.png][file:tmb/awesome/awesome-800x600.png]]
+#+ATTR_HTML: :width 640 :height 480 :alt "awesome desktops"
+[[file:img/awesome/awesome-2400x1800.png][file:tmb/awesome/awesome-800x600.png]]
 
 Esta distribución logra aprovechar el 100% de la resolución de pantalla para
 cada aplicación, lo cual tiene muchas ventajas, una de ellas es que puedo
