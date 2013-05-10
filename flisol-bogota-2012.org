@@ -156,7 +156,7 @@
    nombre y dos sorpresas: al parecer soy *doctor* y por si fuera
    poco *fundador* de BuenosAiresLibre.org [fn:BAL]
 
-   [[file:img/flisol-bogota/flisol-doctor-fundador.jpg][[file:icn/flisol-bogota/flisol-doctor-fundador.jpg]]
+   [[file:img/flisol-bogota/flisol-doctor-fundador.jpg][file:icn/flisol-bogota/flisol-doctor-fundador.jpg]]
 
    No tengo doctorado pero me halagan! Y en cuanto a BAL, si
    consideramos que una red se funda todos los días con la
