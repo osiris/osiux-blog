@@ -11,7 +11,7 @@
 
    - centralizada
 
-     #+BEGIN_SRC ditaa :file img/redes-centralizadas.png :cmdline -E :exports result
+     #+BEGIN_SRC ditaa :file img/redes-centralizadas.png :cmdline -E :exports results
        +---+             +---+
        | A +-----+ +-----+ B |
        +---+     | |     +---+
@@ -23,12 +23,9 @@
        +---+             +---+
      #+END_SRC
 
-     #+RESULTS:
-     [[file:img/redes-centralizadas.png]]
-
    - descentralizada
 
-     #+BEGIN_SRC ditaa :file img/redes-descentralizadas.png :cmdline -E :exports result
+     #+BEGIN_SRC ditaa :file img/redes-descentralizadas.png :cmdline -E :exports results
        +---+             +---+  +---+             +---+
        | A +-----+ +-----+ B |  | F +-----+ +-----+ G |
        +---+     | |     +---+  +---+     | |     +---+
@@ -40,12 +37,9 @@
        +---+             +---+  +---+             +---+
      #+END_SRC
 
-     #+RESULTS:
-     [[file:img/redes-descentralizadas.png]]
-
    - en malla o /mesh/
 
-     #+BEGIN_SRC ditaa :file img/redes-mesh.png :cmdline -E -S :exports result
+     #+BEGIN_SRC ditaa :file img/redes-mesh.png :cmdline -E -S :exports results
        +---+             +---+  +---+             +---+
        | A +-----+ +-----+ B +--+ F +-------------+ G |
        ++-++     | |     ++--+  +--++             +--++
@@ -60,8 +54,8 @@
      #+RESULTS:
      [[file:img/redes-mesh.png]]
 
-** Protocolos ARP/IP/ICMP/UDP/TCP/IP
-** Ruteo
+** Protocolos ARP/IP/ICMP/UDP/TCP/IP                               :noexport:
+** Ruteo                                                           :noexport:
 
    - estático
    - dinámico
@@ -73,7 +67,7 @@
      
 *** Red de 4 equipos
 
-    #+BEGIN_SRC ditaa :file img/redes-lan.png :cmdline -E :exports result
+    #+BEGIN_SRC ditaa :file img/redes-lan.png :cmdline -E :exports results
       -----+---------+---------+---------+-----
            |         |         |         |
            |         |         |         |
@@ -82,9 +76,6 @@
          +---+     +---+     +---+     +---+
     #+END_SRC
 
-    #+RESULTS:
-    [[file:img/redes-lan.png]]
-
 *** =B= dice, *necesito una IP!*
 
     - mensaje: =DHCPDISCOVER=
@@ -92,7 +83,7 @@
     - puerto destino: 67
     - dirección física: 01:12:23:34:45:bb
 
-    #+BEGIN_SRC ditaa :file img/redes-dhcp-discover.png :cmdline -E :exports result
+    #+BEGIN_SRC ditaa :file img/redes-dhcp-discover.png :cmdline -E :exports results
       <----*---------*---------*---------*---->
            |         ^         |         |
            v         |         v         v
@@ -100,9 +91,6 @@
          | A |     | B |     | C |     | D |
          +---+     +---+     +---+     +---+
     #+END_SRC
-
-    #+RESULTS:
-    [[file:img/redes-dhcp-discover.png]]
 
 *** =D= dice, *yo te puedo dar IP!*
 
@@ -113,7 +101,7 @@
     - dns primario: 8.8.8.8
     - dns secundario: 8.8.4.4
 
-    #+BEGIN_SRC ditaa :file img/redes-dhcp-offer.png :cmdline -E :exports result
+    #+BEGIN_SRC ditaa :file img/redes-dhcp-offer.png :cmdline -E :exports results
       -----+---------*---------*---------*-----
            |         |         |         ^
            |         v         |         |
@@ -122,14 +110,11 @@
          +---+     +---+     +---+     +---+
     #+END_SRC
 
-    #+RESULTS:
-    [[file:img/redes-dhcp-offer.png]]
-
 *** =B= dice, confirmo recepción!
 
     - mensaje: =DHCPREQUEST=
 
-    #+BEGIN_SRC ditaa :file img/redes-dhcp-request.png :cmdline -E :exports result
+    #+BEGIN_SRC ditaa :file img/redes-dhcp-request.png :cmdline -E :exports results
       -----+---------+---------*---------*-----
            |         ^         |         |
            |         |         |         v
@@ -138,14 +123,11 @@
          +---+     +---+     +---+     +---+
     #+END_SRC
 
-    #+RESULTS:
-    [[file:img/redes-dhcp-request.png]]
-
 *** =D= dice, confirmo confirmación!
 
     - mensaje: =DHCPACK=
 
-    #+BEGIN_SRC ditaa :file img/redes-dhcp-ack.png :cmdline -E :exports result
+    #+BEGIN_SRC ditaa :file img/redes-dhcp-ack.png :cmdline -E :exports results
       -----+---------*---------*---------*-----
            |         |         |         ^
            |         v         |         |
@@ -265,7 +247,7 @@
     | 19 | www.msftncsi.com         |
     | 18 | kiwwwi.com.ar            |
 
-    #+BEGIN_SRC gnuplot :var data=ranking-dns :file img/ranking-dns.png :exports result
+    #+BEGIN_SRC gnuplot :var data=ranking-dns :file img/ranking-dns.png :exports none
       reset 
 
       set xdata time
@@ -281,16 +263,13 @@
       plot data using 2:1 with lines lw 2 lt 3 title 'data'
     #+END_SRC
 
-    #+RESULTS:
-    [[file:img/ranking-dns.png]]
-    
-** Redes Wireless
+** Redes Wireless                                                  :noexport:
     
    - Emulan a las redes cableadeas
    - infraestructura
    - ad-hoc
 
-** Sniffers nmap, dsniff
+** Sniffers nmap, dsniff                                           :noexport:
 *** nmap
 
     #+BEGIN_SRC sh :session :results output
@@ -434,10 +413,10 @@
     Nmap done: 256 IP addresses (23 hosts up) scanned in 6.43 seconds
 #+end_example
 
-** Análisis de tráfico mediante tcpdump
-** Firewall, Port Forwarding, NAT
+** Análisis de tráfico mediante tcpdump                            :noexport:
+** Firewall, Port Forwarding, NAT                                  :noexport:
 *** iptables
-** Túneles y Redes Privadas Virtuales VPN
+** Túneles y Redes Privadas Virtuales VPN                          :noexport:
 *** Redireccionar puertos con =ssh=
 
     #+BEGIN_EXAMPLE
@@ -464,7 +443,7 @@
     - Yo soy B y mi mac es *00:14:d1:18:4a:bb*
     - Todos reciben paquete ARP por difusión
 
-    #+BEGIN_SRC ditaa :file img/redes-arp-1.png :cmdline -E :exports result
+    #+BEGIN_SRC ditaa :file img/redes-arp-1.png :cmdline -E :exports results
       <----+<--------+-------->+-------->+---->
            |         ^         |         |
            v         |         v         v
@@ -473,12 +452,9 @@
          +---+     +---+     +---+     +---+
     #+END_SRC
 
-    #+RESULTS:
-    [[file:img/redes-arp-1.png]]
-
 *** D contesta, *mi IP es 10.4.14.225*
 
-    #+BEGIN_SRC ditaa :file img/redes-arp-2.png :cmdline -E :exports result
+    #+BEGIN_SRC ditaa :file img/redes-arp-2.png :cmdline -E :exports results
       -----+---------+<--------+---------+-----
            |         |         |         ^
            |         v         |         |
@@ -486,9 +462,6 @@
          | A |     | B |     | C |     | D |
          +---+     +---+     +---+     +---+
     #+END_SRC
-
-    #+RESULTS:
-    [[file:img/redes-arp-2.png]]
 
 *** Quénes están en esta red?
 
@@ -546,7 +519,7 @@
         0x0050:  3435 3637                                4567     
     #+END_EXAMPLE
 
-** Red con acceso a otra red
+** Red con acceso a otra red                                       :noexport:
 
    #+BEGIN_SRC ditaa :file img/redes-lan-wan.png :cmdline -E :exports result
      -----+---------+<--------+---------+-----
@@ -584,7 +557,7 @@
 
 ** protocolos
 
-   #+BEGIN_SRC ditaa :file img/redes-protocolos.png :cmdline -E :exports result
+   #+BEGIN_SRC ditaa :file img/redes-protocolos-1.png :cmdline -E :exports results
      +----------+
      | TCP/UDP  |
      +----------+
@@ -597,9 +570,9 @@
    #+END_SRC
 
    #+RESULTS:
-   [[file:img/redes-protocolos.png]]
+   [[file:img/redes-protocolos-1.png]]
 
-   #+BEGIN_SRC ditaa :file img/redes-protocolos.png :cmdline -E :exports resul
+   #+BEGIN_SRC ditaa :file img/redes-protocolos-2.png :cmdline -E :exports results
                                 +-------+
                                 | Data  |          <-- Aplicación
                                 |       |
@@ -620,10 +593,11 @@
    #+END_SRC
 
    #+RESULTS:
+   [[file:img/redes-protocolos-2.png]]
 
 *** Qué tiene un paquete TCP/IP?
 
-    #+BEGIN_SRC ditaa :file img/redes-arp-header.png :cmdline -E :exports result
+    #+BEGIN_EXAMPLE
      +------------------------+--------------------------+
      | MAC origen fe:ca:fe:ca | MAC destino  ca:fe:ca:fe |
      +------------------------+--------------------------+
@@ -636,11 +610,8 @@
      | U | A | P | R | S | F | GET / HTTP/1.0            |
      | R | C | S | S | Y | I |                           |
      | G | K | H | T | N | N |                           |
-     +---+---+---+---+---+---+---------------------------+    
-    #+END_SRC
-
-    #+RESULTS:
-    [[file:img/redes-arp-header.png]]
+     +---+---+---+---+---+---+---------------------------+
+    #+END_EXAMPLE
 
 *** Ethernet header
 
@@ -684,6 +655,20 @@
      +---------------------------------------------------------------+
    #+END_EXAMPLE
 
+** UPD header
+
+   #+BEGIN_EXAMPLE
+     |                   |1                  |2                  |3  |
+     |0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|2|3|4|5|6|7|8|9|0|1|
+     +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+     |          Source Port          |        Destination Port       |
+     +-------------------------------+-------------------------------+
+     |          Length               |        Checksum               |
+     +-------------------------------+-------------------------------+
+     |                           Data                                |
+     +---------------------------------------------------------------+
+   #+END_EXAMPLE
+
 ** TCP header
 
    #+BEGIN_EXAMPLE
@@ -710,8 +695,9 @@
 
 ** ChangeLog
 
-   - [2013-04-04 jue] primer borrador general.
+   - [2013-06-05 mié] simplifico y hago correcciones varias
    - [2013-04-09 mar] corrijo gráficos ascii-art
+   - [2013-04-04 jue] primer borrador general
 
 [fn:arp] http://www.networksorcery.com/enp/protocol/arp.htm
    
