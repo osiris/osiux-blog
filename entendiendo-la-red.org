@@ -291,6 +291,149 @@
    - ad-hoc
 
 ** Sniffers nmap, dsniff
+*** nmap
+
+    #+BEGIN_SRC sh :session :results output
+      nmap -sV --open 192.168.10.0/24 -p22
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+
+    Starting Nmap 5.51.6 ( http://nmap.org ) at 2013-05-22 10:29 ART
+    Nmap scan report for malbec (192.168.10.3)
+    Host is up (0.0012s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.5p1 Debian 6 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for torrontes (192.168.10.5)
+    Host is up (0.00089s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.1p1 Debian 5 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for tannat.gcoop.com.ar (192.168.10.6)
+    Host is up (0.00074s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.9p1 Debian 5ubuntu1.1 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for carpani.gcoop.com.ar (192.168.10.24)
+    Host is up (0.0016s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 6.2 (protocol 2.0)
+
+    Nmap scan report for avioncito.gcoop.com.ar (192.168.10.42)
+    Host is up (0.00054s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 6.2 (protocol 2.0)
+
+    Nmap scan report for amaretto.gcoop.com.ar (192.168.10.96)
+    Host is up (0.00048s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 6.0p1 Debian 3 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for sangria.gcoop.com.ar (192.168.10.99)
+    Host is up (0.00054s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.9p1 Debian 5ubuntu1.1 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for mysqlcentos.gcoop.com.ar (192.168.10.106)
+    Host is up (0.0012s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 4.3 (protocol 2.0)
+
+    Nmap scan report for sugar-mant.gcoop.com.ar (192.168.10.111)
+    Host is up (0.00078s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.1p1 Debian 5 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for squeeze.gcoop.com.ar (192.168.10.118)
+    Host is up (0.0014s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.5p1 Debian 6+squeeze1 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for recibos.gcoop.com.ar (192.168.10.130)
+    Host is up (0.00088s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.9p1 Debian 5ubuntu1 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for albatros.gcoop.com.ar (192.168.10.131)
+    Host is up (0.0011s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 6.0p1 Debian 3ubuntu1 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for drupales.gcoop.com.ar (192.168.10.132)
+    Host is up (0.0011s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.5p1 Debian 6+squeeze2 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for documentos.gcoop.com.ar (192.168.10.138)
+    Host is up (0.0011s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.9p1 Debian 5ubuntu1 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for adoption.gcoop.com.ar (192.168.10.140)
+    Host is up (0.0024s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.9p1 Debian 5ubuntu1 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for redmine.gcoop.com.ar (192.168.10.141)
+    Host is up (0.0024s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.5p1 Debian 3 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for trytonsantu.gcoop.com.ar (192.168.10.144)
+    Host is up (0.0021s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.8p1 Debian 1ubuntu3 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for cacharro2.gcoop.com.ar (192.168.10.145)
+    Host is up (0.0020s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 4.3p2 Debian 8ubuntu1.5 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for gitlab.gcoop.com.ar (192.168.10.184)
+    Host is up (0.0013s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.5p1 Debian 6+squeeze2 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for raven.gcoop.com.ar (192.168.10.186)
+    Host is up (0.0013s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.9p1 Debian 5ubuntu1 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for gca.gcoop.com.ar (192.168.10.193)
+    Host is up (0.00090s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.1p1 Debian 5 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Nmap scan report for fontar.gcoop.com.ar (192.168.10.197)
+    Host is up (0.00087s latency).
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 5.9p1 Debian 5ubuntu1 (protocol 2.0)
+    Service Info: OS: Linux
+
+    Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+    Nmap done: 256 IP addresses (23 hosts up) scanned in 6.43 seconds
+#+end_example
+
 ** Análisis de tráfico mediante tcpdump
 ** Firewall, Port Forwarding, NAT
 *** iptables
@@ -455,6 +598,28 @@
 
    #+RESULTS:
    [[file:img/redes-protocolos.png]]
+
+   #+BEGIN_SRC ditaa :file img/redes-protocolos.png :cmdline -E :exports resul
+                                +-------+
+                                | Data  |          <-- Aplicación
+                                |       |
+                                |       |
+                       +--------+-------+
+                       | UDP    | UDP   |          <-- Transporte
+                       | header | data  |
+                       |        |       |
+              +--------+--------+-------+
+              | IP     | IP             |          <-- Internet
+              | header | data           |
+              |        |                |
+     +--------+--------+----------------+--------+
+     | Frame  | Frame                   | Frame  | <-- Link
+     | header | data                    | footer |
+     |        |                         |        |
+     +--------+-------------------------+--------+
+   #+END_SRC
+
+   #+RESULTS:
 
 *** Qué tiene un paquete TCP/IP?
 

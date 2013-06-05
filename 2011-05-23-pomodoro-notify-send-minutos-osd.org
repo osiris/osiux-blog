@@ -9,7 +9,7 @@
 Luego de varios meses pude dedicar un par de pomodoros a documentar
 los dos scripts que uso para hacer mis pomodoros. :-)
 
-[[file:pomodoro/pomodoro-notify-send-5.png]]
+[[file:img/pomodoro/pomodoro-notify-send-5.png]]
 
 Hay dos opciones, usando OSD (On Screen Display) y el comando
 =notify-send=, ambos scripts están realizados en =bash=.

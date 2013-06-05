@@ -10,16 +10,30 @@
    [[file:img/no-soy-un-pirata-compartir-es-bueno.jpg]]
 
    Osiris Alejandro Gómez (a.k.a. OSiUX), es Programador y
-   Administrador GNU/Linux. Socio de [[http://gcoop.coop][gcoop Cooperativa de Software
-   Libre]] y miembro de [[http://altermundi.net][Altermundi]] y [[http://buenosaireslibre.org][BuenosAiresLibre]], además colabora
+   Administrador GNU/Linux. Socio de [[http://gcoop.coop][gcoop Cooperativa de Software Libre]]
+   y miembro de [[http://altermundi.net][Altermundi]] y [[http://buenosaireslibre.org][BuenosAiresLibre]], además colabora
    en [[http://usla.org.ar][USLA]] (Usuarios de Software Libre de Argentina) y [[http://cafelug.org.ar][CaFeLUG]] (Grupo
    de Usuarios GNU/Linux de la Capital Federal).
+
+** =.git=
+
+   Los archivos =*.org= de este blog se encuentran en:
+
+   - http://github.com/osiris/osiux-blog
+
+   Los archivos =*.html= junto con las imágenes en:
+
+   - https://github.com/osiris/osiris.github.com
 
 ** =gpg=
 
    Mantener las conversaciones confidenciales hoy día es una tarea
    importante ante tanto logueo y registro de los medios de
-   comunicación digitales. Es por eso que uso y recomiendo GPG.
+   comunicación digitales.
+
+   Si no sabés qué es *GPG*, lee el siguiente tutorial:
+
+   - [[file:howto-gpg-gnu-pgp.org]]
 
 *** =signature=
 

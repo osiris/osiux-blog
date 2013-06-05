@@ -1,0 +1,13 @@
+#+TITLE:     gcoop en Muchas Mentes, TenopolisTV
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+
+
+#+BEGIN_HTML
+  <iframe width="560" height="315" src="http://www.youtube.com/embed/4ocyARDnoK0" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+[fn:muchasmentes] http://www.tectv.gob.ar/index.php/series/component/content/article/77-series/141-muchas-mentes

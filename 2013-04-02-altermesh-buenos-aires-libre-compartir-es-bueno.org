@@ -383,26 +383,38 @@
    permite de manera simple y cómoda editar un archivo de texto plano
    con cada equipo para luego generar el gráfico final.
 
-   #+ATTR_HTML: :width "640" :height "527" :alt "Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram"
+   #+ATTR_HTML: :width 640 :height 527 :alt Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram
    [[file:img/osiux-network.png][file:tmb/osiux-network.png]]
 
-   - Descargar imagen en alta resolución: http://osiux.com/img/osiux-network.png
-
-** Cual es el próximo paso? [4/10]
+** Cual es el próximo paso? [5/10]
 
    - [X] compartir lo aprendido.
    - [X] actualizar este documento.
    - [X] flashear MR3020.
    - [X] agregar agente altermap a los APs.
    - [ ] flashear Ubiquity Bullet.
-   - [ ] actualizar WR842ND con soporte USB storage.
+   - [X] actualizar WR842ND con soporte USB storage.
    - [ ] agregarle un WN722N al MR3220 con antena direccional o panel.
    - [ ] actualizar versión del WDR3500, actualmente no funciona /eth0/ ni /eth1/.
    - [ ] conseguir buenas antenas para el WDR3500.
    - [ ] enlazar a NodoPlazaFlores y todo aquel que quiera conectarse.
 
+** Soporte =usb-storare=
+
+   Es posible agregar un pendrive o un disco externo en formato =ext4=
+   directamente el router y usarlo como medio de almacenamiento, sólo
+   es necesario incluir los siguientes paquetes:
+
+   #+BEGIN_EXAMPLE
+     kmod-usb-storage
+     uhttpd
+     block-mount
+     kmod-fs-ext4   
+   #+END_EXAMPLE
+
 ** ChangeLog
 
+   - [2013-06-04 mar] Agrego paquetes para almacenamiento USB
    - [2013-04-03 mié] primer borrador, faltan agregar pasos y corregir.
    - [2013-04-24 mié] actualizo pendientes y agrego algunas correcciones.
 

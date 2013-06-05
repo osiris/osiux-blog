@@ -10,7 +10,7 @@ En [[http://gcoop.coop][gcoop]], solemos auto-capacitarnos al menos
 una vez por mes, algún socio que tenga ganas de explicar algo que le
 resulte interesante compartir puede dar una charlita.
 
-#+ATTR_HTML: :width "640" :height "480" :alt "las cooperativas construyen un mundo mejor"
+#+ATTR_HTML: :width 640 :height 480 :alt las cooperativas construyen un mundo mejor
 [[file:img/de-fondo-negro-a-fondo-blanco.png][file:tmb/de-fondo-negro-a-fondo-blanco.png]]
 
 Esta vez, tuve la suerte de mostrar un breve resumen sobre cómo usar

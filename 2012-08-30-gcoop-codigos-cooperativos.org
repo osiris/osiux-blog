@@ -31,5 +31,5 @@ Este sábado a las 15.30 horas los invitamos al
 filosofía el corto tiene licencia Creative Commons por lo que pronto lo
 pondremos a circular por el mundo. Los esperamos.
 
-[[http://www.youtube.com/watch?v=sMI1HA9mOmc&feature=youtu.be][img/codigos-cooperativos.jpg]]
+[[http://www.youtube.com/watch?v%3DsMI1HA9mOmc&feature%3Dyoutu.be][file:img/codigos-cooperativos.jpg]]
 

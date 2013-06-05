@@ -1,0 +1,18 @@
+#+TITLE:     Invitación Presentación Oficial Huayra en Tecnopolis
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+DATE:      2013-06-05
+
+El *Equipo Huayra* tiene el agrado de invitar a la *presentación
+oficial* de [[http://huayra.conectarigualdad.gob.ar][huayra GNU/LinuX]] el *Sistema Operativo Libre* de [[http://conectarigualdad.gob.ar][Conectar Igualdad]].
+
+Evento *Abierto a todo público*.
+
+Es el próximo 18 de Junio a las 10:30 hs en [[http://tecnopolis.gob.ar][TECNOPOLIS]] en /La Nave de
+las Ciencias/, ingreso por calle Zufriategui y Blanco Encalada
+
+   #+ATTR_HTML: :width 640 :height 480 :alt Huayra Presentación Tecnopolis
+   [[file:tmb/huayra-invitacion-tecnopolis.png]]
