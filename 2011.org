@@ -1,0 +1,43 @@
+#+TITLE:     ABSOLUTELLY NO WARRANTY blog 2011
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+
+** =2011=
+*** =29/DIC=
+**** [[file:2011-12-29-orgmode-y-gnuplot.org][org-mode y gnuplot]]
+
+     [[file:2011-12-29-orgmode-y-gnuplot.org][file:img/org-task-by-day-2011-12.png]]
+
+*** =25/NOV=
+   - [[file:2011-11-25-fabrica-de-fallas-4to-festival-cultura-libre-copyleft.org][fábrica de fallas 4to festival cultura libre y copyleft]]
+*** =10/NOV=
+   - [[file:2011-11-10-curso-software-libre-y-programacion-conectar-igualdad.org][curso software libre y programación Conectar Igualdad]]
+*** =05/NOV=
+   - [[file:2011-11-05_bsdday-argentina-2011.org][11/05 BSDday Argentina 2011]]
+*** =24/OCT=
+   - [[file:2011-10-24-software-libre-en-monte-caseros-y-ubuntu-11.10-en-conectar-igualdad.org][software libre en monte caseros y ubuntu 11.10 en conectar igualdad]]
+*** =30/AGO=
+   - [[file:2011-09-30-ejecutar-shell-dentro-de-vim.org][Ejecutar shell dentro de Vim]]
+*** =16/JUL=
+**** [[file:2011-07-16-awesome-es-increible.org][Awesome es increíble]]
+
+     [[file:2011-07-16-awesome-es-increible.org][file:img/awesome/awesome-flotante.png]]
+
+*** =03/JUL=
+**** [[file:2011-07-03-jrrl3-fisl12.org][JRRL3 en FISL12]]
+
+     [[file:2011-07-03-jrrl3-fisl12.org][file:img/fisl12/jrrl3-apertura.jpg]]
+
+*** =23/MAY=
+**** [[file:2011-05-23-pomodoro-notify-send-minutos-osd.org][pomodoro notify send minutos osd]]
+
+     [[file:2011-05-23-pomodoro-notify-send-minutos-osd.org][file:img/pomodoro/pomodoro-notify-send-5.png]]
+
+*** =15/MAR=
+   - [[file:2011-03-15-dibujando-con-numeros-desde-la-consola.org][dibujando con números desde la consola]]
+*** =03/FEB=
+   - [[file:2011-02-03.org][Blog de prueba]]
+*** [[file:index.org][<- index]] | [[file:blog.org][blog]] | [[file:2012.org][2012]] | [[file:docs.org][docs ->]]

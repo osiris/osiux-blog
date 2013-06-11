@@ -1,0 +1,61 @@
+#+TITLE:     ABSOLUTELLY NO WARRANTY Docs
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+
+** =** Introducción a GNU/Linux y la programación=
+   - [[file:automatizando-tareas.org][Automatizando Tareas, manejo de crontab, watch y scripts]]
+   - [[file:procesos-linux.org][Procesos Linux, administrando recursos del sistema]]
+   - [[file:ssh-para-gobernar-el-mundo.org][SSH para gobernar el mundo, aprendiendo a usar SSH]]
+   - [[file:que-no-se-entere-nadie.org][Que no se entere nadie! Análisis de tráfico de red mediante tcpdump]]
+   - [[file:entendiendo-la-red.org][Entendiendo la red]]
+   - [[file:comandos-basicos-terminal-linux.org][Comandos básicos terminal linux]]
+
+** =** GNU/Linux=
+   - [[file:awesome-es-increible.org][Awesome es increíble]]
+   - [[file:curuzu-libre-2008.org][Curuzú Libre 2008]]
+   - [[file:dame-una-consola.org][dame una consola]]
+   - [[file:fluxbox-gtk2-root-tail-gkrellm.org][fluxbox gtk2 root-tail gkrellm]]
+   - [[file:privacidad-y-anonimato-en-la-red.org][Privacidad y anonimato en la red]]
+
+** =** HowTo=
+   - [[file:howto-gpg-gnu-pgp.org][Howto GPG GNU PGP]]
+   - [[file:imapsync-migrar-mails.org][Migrar mails usando imapsync]]
+   - [[file:login-sin-passwords-con-pam-usb.org][login sin passwords con pam usb]]
+   - [[file:lvm-luks-bacoop.org][Particiones Cifradas usando LVM y LUKS]] 
+   - [[file:chroot-mount-fstab-bind.org][chroot mount fstab bind]]
+   - [[file:apache-mod-rewrite-htaccess.org][Apache mod-rewrite .htaccess]]
+   - [[file:ubuntu-11.10-en-exomate-de-conectar-igualdad.org][Instalando Ubuntu 11.10 en notebook exomate de Conectar Igualdad]]
+
+** =** Redes Libres / FreeNetworks=
+   - [[file:flisol-bogota-2012.org][Redes Libres en Flisol Bogotá 2012]]
+   - [[file:la-escala-lo-cambia-todo.org][La escala lo cambia todo]]
+   - [[file:redes-libres-festival-cultura-libre-fm-latribu.org][RedesLibres Festival Cultura Libre FM LaTribu]]
+   - [[file:2012-06-01-pirate-box-floppy-disk.org][PirateBox PirateFloppy usando diskettes de 5.25"]]
+
+** =** Metodologías=
+   - [[file:pomodoro-minutos-osd.org][Técnica Pomodoro, mostrar minutos mediante OSD (On Screen Display)]]
+   - [[file:pomodoro-notify-send.org][Pomodoro notify-send]]
+   - [[file:capturar-ideas-en-papel-de-moleskine-hispterpda-pocketmod-y-libreta-artesanal.org][Capturar ideas en papel de Moleskine, Hispterpda, Pocketmod y libreta artensanal]]
+
+** =** Org-mode=
+   - [[file:visualizando-org-mode-con-gnuplot.org][Visualizando Org-mode con gnuplot]]
+
+** =** Gráficos=
+   - [[file:imagenes-magicas-imagemagick.org][Imágenes Mágicas usando ImageMagick]]
+   - [[file:visualizando-grafos-graphviz.org][Visualizando grafos mediante graphviz]]
+
+** =** Bases de datos=
+   - [[file:mysql-bash-vim-tips.org][MySQL Bash Vim tips]]
+   - [[file:mysql-not-in-versus-left-join.org]]
+
+** =** var=
+   - [[file:frontweb.org][frontweb]]
+   - [[file:gpg.org]]
+   - [[file:help.rst]]
+   - [[file:olimpiadas-informaticas-en-monte-caseros.org]]
+   - [[file:restructuredtext-blog-python-script-rest2web.org]]
+   - [[file:restructuredtext-blog-script-rst2blog.org]]
+** [[file:index.org][<- index]] | [[file:blog.org][blog ->]]

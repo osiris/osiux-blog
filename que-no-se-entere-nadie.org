@@ -5,7 +5,8 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
-    
+#+DATE:        {{{modification-time(%Y-%m-%d %H:%M)}}}
+
 ** la era de la inocencia
 
    Iniciamos Firefox como es costumbre de todos los días y empezamos

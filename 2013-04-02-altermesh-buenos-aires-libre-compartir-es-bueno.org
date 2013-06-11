@@ -386,7 +386,7 @@
    #+ATTR_HTML: :width 640 :height 527 :alt Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram
    [[file:img/osiux-network.png][file:tmb/osiux-network.png]]
 
-** Cual es el próximo paso? [5/10]
+** Cual es el próximo paso? [6/10]
 
    - [X] compartir lo aprendido.
    - [X] actualizar este documento.
@@ -395,7 +395,7 @@
    - [ ] flashear Ubiquity Bullet.
    - [X] actualizar WR842ND con soporte USB storage.
    - [ ] agregarle un WN722N al MR3220 con antena direccional o panel.
-   - [ ] actualizar versión del WDR3500, actualmente no funciona /eth0/ ni /eth1/.
+   - [X] actualizar versión del WDR3500, actualmente no funciona /eth0/ ni /eth1/.
    - [ ] conseguir buenas antenas para el WDR3500.
    - [ ] enlazar a NodoPlazaFlores y todo aquel que quiera conectarse.
 

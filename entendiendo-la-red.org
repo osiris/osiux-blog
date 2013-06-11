@@ -3,7 +3,7 @@
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+OPTIONS:   toc:nil
+#+OPTIONS:   toc:nil timestamp:nil
 #+INCLUDE: "header.org"
 #+DATE:      2013-04-04
 
