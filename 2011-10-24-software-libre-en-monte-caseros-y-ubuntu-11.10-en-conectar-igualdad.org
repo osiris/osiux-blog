@@ -9,12 +9,12 @@
 [[file:img/conectar-igualdad/2011-10-22_ubuntu-conectar-igualdad_10.jpg]]
 [[file:img/conectar-igualdad/2011-10-22_ubuntu-conectar-igualdad_14.jpg]]
 
-El viernes estuve en Monte Caseros y el sábado en Curuzú Cuatiá, el viaje tuvo
-buenos resultados, en primer lugar dí un par de charlas sobre Software Libre,
-Cooperativismo, Redes Libres y en segundo lugar instalé un Ubuntu 11.10 en las
-notebooks de Conectar Igualdad, comparto dos notas sobre cada día y espero que
-le sea útil a más de uno.
+El viernes estuve en Monte Caseros y el sábado en Curuzú Cuatiá, el
+viaje tuvo buenos resultados, en primer lugar dí un par de charlas
+sobre Software Libre, Cooperativismo, Redes Libres y en segundo lugar
+instalé un Ubuntu 11.10 en las notebooks de Conectar Igualdad,
+comparto dos notas sobre cada día y espero que le sea útil a más de
+uno.
 
-- [[file:olimpiadas-informaticas-en-monte-caseros.org]]
-- [[file:ubuntu-11.10-en-exomate-de-conectar-igualdad.org]]
-
+- [[file:olimpiadas-informaticas-en-monte-caseros.org][Software Libre en las Olimpíadas Informáticas de Monte Caseros]]
+- [[file:ubuntu-11.10-en-exomate-de-conectar-igualdad.org][Instalando Ubuntu 11.10 en Exomate de Conectar Igualdad]]

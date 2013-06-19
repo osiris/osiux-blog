@@ -11,8 +11,11 @@ oficial* de [[http://huayra.conectarigualdad.gob.ar][huayra GNU/LinuX]] el *Sist
 
 Evento *Abierto a todo público*.
 
-Es el próximo 18 de Junio a las 10:30 hs en [[http://tecnopolis.gob.ar][TECNOPOLIS]] en /La Nave de
-las Ciencias/, ingreso por calle Zufriategui y Blanco Encalada
+*SE SUSPENDIÓ* la presentación que estaba prevista para el 18 de
+Junio a las 10:30 hs en [[http://tecnopolis.gob.ar][TECNOPOLIS]] en /La Nave de las Ciencias/,
+ingreso por calle Zufriategui y Blanco Encalada
+
+*Próximamente se informará una nueva fecha*.
 
    #+ATTR_HTML: :width 640 :height 480 :alt Huayra Presentación Tecnopolis
    [[file:tmb/huayra-invitacion-tecnopolis.png]]
