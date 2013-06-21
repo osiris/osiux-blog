@@ -14,10 +14,17 @@ más disponibles es el papel, por esto conviene siempre tener alguna especie de
 libreta a mano. Si bien hace tiempo es posible utilizar algún dispositivo
 electrónico, ninguno es tan versatil y maleable como el papel.
 
-[[file:tmb/libreta_artesanal/libreta_artesanal_12.jpg]]
-[[file:tmb/libreta_artesanal/libreta_artesanal_12.jpg]]
-[[file:tmb/libreta_artesanal/libreta_artesanal_13.jpg]]
-[[file:tmb/libreta_artesanal/libreta_artesanal_14.jpg]]
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Artesanal
+[[file:img/libreta_artesanal/libreta_artesanal_11.jpg][file:tmb/libreta_artesanal/libreta_artesanal_11.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Artesanal
+[[file:img/libreta_artesanal/libreta_artesanal_12.jpg][file:tmb/libreta_artesanal/libreta_artesanal_12.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Artesanal
+[[file:img/libreta_artesanal/libreta_artesanal_13.jpg][file:tmb/libreta_artesanal/libreta_artesanal_13.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Artesanal
+[[file:img/libreta_artesanal/libreta_artesanal_14.jpg][file:tmb/libreta_artesanal/libreta_artesanal_14.jpg]]
 
 Inicialmente cuando leía acerca del método GTD [fn:GTD], pase un buen rato
 eligiendo la mejor libreta para recopilar y en esa carrera terminé comprando
@@ -41,10 +48,17 @@ tomar una hoja y dividirla en 8 partes y haciendo sólo dos cortes ya obtenés
 una mini-libreta lista para usar. Con esto jugué bastante, primero con los
 generadores web que incluyen calendarios, listas de tareas y varios templates.
 
-[[file:tmb/libreta_artesanal/libreta_pocketmod_01.jpg]]
-[[file:tmb/libreta_artesanal/libreta_pocketmod_02.jpg]]
-[[file:tmb/libreta_artesanal/libreta_pocketmod_03.jpg]]
-[[file:tmb/libreta_artesanal/libreta_pocketmod_04.jpg]]
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Pocketmod
+[[file:img/libreta_artesanal/libreta_pocketmod_01.jpg][file:tmb/libreta_artesanal/libreta_pocketmod_01.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Pocketmod
+[[file:img/libreta_artesanal/libreta_pocketmod_02.jpg][file:tmb/libreta_artesanal/libreta_pocketmod_02.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Pocketmod
+[[file:img/libreta_artesanal/libreta_pocketmod_03.jpg][file:tmb/libreta_artesanal/libreta_pocketmod_03.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Pocketmod
+[[file:img/libreta_artesanal/libreta_pocketmod_04.jpg][file:tmb/libreta_artesanal/libreta_pocketmod_04.jpg]]
 
 Como uso *Org-mode* [fn:org-mode] decidí integrarlo a la *pocketmod*,
 intenté adaptar un script para *hispterpda* que extraía citas
@@ -165,12 +179,23 @@ de 2mm de diámetro.
 
 ** Fotos Paso a Paso
 
-[[file:tmb/libreta_artesanal/libreta_artesanal_01.jpg]]
-[[file:tmb/libreta_artesanal/libreta_artesanal_02.jpg]]
-[[file:tmb/libreta_artesanal/libreta_artesanal_03.jpg]]
-[[file:tmb/libreta_artesanal/libreta_artesanal_04.jpg]]
-[[file:tmb/libreta_artesanal/libreta_artesanal_05.jpg]]
-[[file:tmb/libreta_artesanal/libreta_artesanal_06.jpg]]
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Artesanal
+[[file:img/libreta_artesanal/libreta_artesanal_01.jpg][file:tmb/libreta_artesanal/libreta_artesanal_01.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Artesanal
+[[file:img/libreta_artesanal/libreta_artesanal_02.jpg][file:tmb/libreta_artesanal/libreta_artesanal_02.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Artesanal
+[[file:img/libreta_artesanal/libreta_artesanal_03.jpg][file:tmb/libreta_artesanal/libreta_artesanal_03.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Artesanal
+[[file:img/libreta_artesanal/libreta_artesanal_04.jpg][file:tmb/libreta_artesanal/libreta_artesanal_04.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Artesanal
+[[file:img/libreta_artesanal/libreta_artesanal_05.jpg][file:tmb/libreta_artesanal/libreta_artesanal_05.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt Libreta Artesanal
+[[file:img/libreta_artesanal/libreta_artesanal_06.jpg][file:tmb/libreta_artesanal/libreta_artesanal_06.jpg]]
 
 [fn:GTD] https://es.wikipedia.org/wiki/GTD
 [fn:moleskine] https://es.wikipedia.org/wiki/Moleskine
@@ -180,4 +205,3 @@ de 2mm de diámetro.
 [fn:pdfjam] http://freshmeat.net/projects/pdfjam/
 [fn:rst2pocketmod] http://git.osiux.com.ar/?p=rst2pocketmod.git
 [fn:rst] http://osiux.com/restructuredtext-texto-re-estructurado.txt
-
