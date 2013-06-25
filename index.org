@@ -7,6 +7,11 @@
 #+OPTIONS: toc:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+** [[file:2013-06-14-odisea-cortometraje-redes-libres-en-anisacate.org][ODISEA Redes Libres en Anisacate]]
+
+   #+ATTR_HTML: :width 640 :height 360 :alt ODISEA Redes Libres en Anisacate
+   [[file:2013-06-14-odisea-cortometraje-redes-libres-en-anisacate.org][file:img/odisea-redes-libres-anisacate.jpg]]
+
 ** [[file:2013-06-14-matanza-comparte-y-redes-libres-en-plaza-ciencia-2013.org][MatanzaComparte y RedesLibres en PlazaCiencia 2013]]
 
    #+ATTR_HTML: :width 640 :height 453 :alt Redes Libres en Plaza Ciencia 2013
