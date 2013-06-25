@@ -29,6 +29,7 @@
    - [[file:apache-mod-rewrite-htaccess.org][Apache mod-rewrite .htaccess]]
    - [[file:ubuntu-11.10-en-exomate-de-conectar-igualdad.org][Instalando Ubuntu 11.10 en notebook exomate de Conectar Igualdad]]
    - [[file:modem-3g-claro.org][Como hacer andar el modem HUAWEI E166 3g de CLARO en Debian Lenny]]
+   - [[file:conectar-igualdad-empaquetando-intel-theft-deterrent-agent.org][Conectar Igualdad, empaquetando Intel Theft Deterrent Agent TDA]]
 
 ** =Redes Libres / FreeNetworks=
    - [[file:flisol-bogota-2012.org][Redes Libres en Flisol Bogotá 2012]]

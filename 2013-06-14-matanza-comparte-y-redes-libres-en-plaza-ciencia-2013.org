@@ -1,0 +1,85 @@
+#+TITLE:     MatanzaComparte y RedesLibres en Plaza Ciencia 2013
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@altermunti.net
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+DATE:      2013-06-15
+
+** La feria
+
+La Secretaría de Ciencia, Tecnología y Políticas Educativas del
+Municipio de la Matanza organiza la Segunda Muestra Municipal de
+Ciencia y Tecnología del 12 al 19 de Junio.
+
+#+ATTR_HTML: :width 640 :height 480 :alt Bienvenidos a Plaza Ciencia 2013
+file:img/plaza-ciencia-2013/2013-06-14-1421-7409b1.jpg
+
+Donde las escuelas técnicas exponen los proyectos que realizan los
+estudiantes. Es sorprendente la variedad de propuestas, desde la
+fabricación de materiales de construcción a partir de objetos
+reciclados de uso común.
+
+#+ATTR_HTML: :width 640 :height 480 :alt Materiales Reciclados en Plaza Ciencia 2013
+file:img/plaza-ciencia-2013/2013-06-14-1514-db3ea1.jpg
+
+También hubo un stand de capacitación de las diferentes herramientas
+incluídas en *Huayra GNU/Linux* [fn:huayra] y de *Conectar Igualdad* [fn:PCI]
+
+#+ATTR_HTML: :width 640 :height 480 :alt Huayra en Plaza Ciencia 2013
+file:img/plaza-ciencia-2013/2013-06-14-1447-c7b362.jpg
+
+Varios robots circulaban por los pasillos:
+
+#+ATTR_HTML: :width 640 :height 480 :alt Robot en Plaza Ciencia 2013
+file:img/plaza-ciencia-2013/2013-06-14-1518-85b0fb.jpg
+
+** MatanzaComparte
+
+Los estudiantes de la /Escuela Ténica Nro 10 de Villa Madero/, a cargo
+del profesor /Eduardo Sandulli/ presentaron un proyecto de red libre
+*MatanzaComparte* usando un panel solar para dar autonomía a un
+router =TP-Link MR3020= usando *Altermesh* [fn:altermesh].
+
+#+ATTR_HTML: :width 640 :height 480 :alt Stand MatanzaComparte en Plaza Ciencia 2013
+file:img/plaza-ciencia-2013/2013-06-14-1453-4cf1c8.jpg
+
+#+ATTR_HTML: :width 640 :height 480 :alt TpLink MR3020 Plaza Ciencia 2013
+file:img/plaza-ciencia-2013/2013-06-14-1454-c4e956.jpg
+
+#+ATTR_HTML: :width 640 :height 480 :alt Nodo Solar MatanzaComparte Plaza Ciencia 2013
+file:img/plaza-ciencia-2013/2013-06-14-1455-0ba838.jpg
+
+** Las charlas
+
+Un extenso cronograma [fn:programa] de charlas llenó el auditorio del
+evento:
+
+#+ATTR_HTML: :width 640 :height 480 :alt Gobierno Abierto en Plaza Ciencia 2013
+file:img/plaza-ciencia-2013/2013-06-14-1433-a2f579.jpg
+
+El viernes 14, junto a /María Elena Casañas/ [fn:MEC] y /Eduardo Sandulli/
+participé de un panel de *Tecnologías libres para la comunicación soberana*,
+donde se charló sobre los problemas actuales de privacidad en Internet
+y como contrapartida se mostró la alternativa para controlar nuestras
+comunicaciones ofrecidas por modelos autogestionados de
+*RedesLibres* [fn:redeslibres] como el caso del uso del firmware /Altermesh/
+generado por Altermudi [fn:altermundi].
+
+#+ATTR_HTML: :width 640 :height 480 :alt María Elena Casanas en Plaza Ciencia 2013
+file:img/plaza-ciencia-2013/2013-06-14-1644-ddff54.jpg
+
+Están disponibles los slides [fn:slides] de la presentación de
+RedesLibres:
+
+#+ATTR_HTML: :width 640 :height 453 :alt Slides RedesLibres Altermundi Altermesh Plaza Ciencia 2013
+[[http://pub.osiux.com/altermundi.pdf][file:img/plaza-ciencia-2013/altermundi.png]]
+
+[fn:huayra] http://huayra.conectarigualdad.gob.ar
+[fn:PCI] http://www.conectarigualdad.gob.ar
+[fn:programa] http://www.colectivocientifico.com.ar/plaza-ciencia-2013/6-programa-plaza-ciencia-2013
+[fn:redeslibres] http://www.redeslibres.org
+[fn:MEC] http://www.casanas.com.ar
+[fn:altermundi] http://www.altermundi.net
+[fn:altermesh] http://docs.altermundi.net/AlterMesh/
+[fn:slides] http://pub.osiux.com/altermundi.pdf

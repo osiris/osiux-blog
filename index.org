@@ -7,6 +7,11 @@
 #+OPTIONS: toc:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+** [[file:2013-06-14-matanza-comparte-y-redes-libres-en-plaza-ciencia-2013.org][MatanzaComparte y RedesLibres en PlazaCiencia 2013]]
+
+   #+ATTR_HTML: :width 640 :height 453 :alt Redes Libres en Plaza Ciencia 2013
+   [[file:2013-06-14-matanza-comparte-y-redes-libres-en-plaza-ciencia-2013.org][file:img/plaza-ciencia-2013/altermundi.png]]
+
 ** [[file:2013-06-05-invitacion-presentacion-oficial-huayra.org][Invitación Presentación Oficial Huayra]]
 
    #+ATTR_HTML: :width 640 :height 388 :alt Huayra Presentación Tecnopolis
