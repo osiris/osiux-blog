@@ -1,0 +1,44 @@
+#+TITLE:     Hacks/Hackers Buenos Aires 2013
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+OPTIONS: toc:nil
+#+DATE:      2013-09-30
+
+** MediaParty
+
+   Del 29 al 31 de Agosto de 2013, en el KONEX se realizó la edición
+   2013 del *HHBA* [fn:hhba] junto a periodistas, programadores, diseñadores,
+   nerds y geeks :-P
+
+** Taller de Antenas
+
+   *BuenosAiresLibres* [fn:bal] dió un taller de armado de antenas,
+   del cuál participé mostrando cómo armar una Omni de 4 elementos.
+
+   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Taller de Antenas
+   [[file:img/hhba-2013/hhba-2013-09-30-11.jpg][file:tmb/hhba-2013/hhba-2013-09-30-11.jpg]]
+
+   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Taller de Antenas
+   [[file:img/hhba-2013/hhba-2013-09-30-27.jpg][file:tmb/hhba-2013/hhba-2013-09-30-27.jpg]]
+
+   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Taller de Antenas
+   [[file:img/hhba-2013/hhba-2013-09-30-38.jpg][file:tmb/hhba-2013/hhba-2013-09-30-38.jpg]]
+
+   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Taller de Antenas
+   [[file:img/hhba-2013/hhba-2013-09-30-44.jpg][file:tmb/hhba-2013/hhba-2013-09-30-44.jpg]]
+
+   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Taller de Antenas
+   [[file:img/hhba-2013/hhba-2013-09-30-52.jpg][file:tmb/hhba-2013/hhba-2013-09-30-52.jpg]]
+
+   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Taller de Antenas
+   [[file:img/hhba-2013/hhba-2013-09-30-54.jpg][file:tmb/hhba-2013/hhba-2013-09-30-54.jpg]]
+
+** HowTo Antena OmniDireccional
+   
+   [[file:img/antena-omni-bal.png][file:img/antena-omni-bal.png]]
+
+[fn:hhba] http://www.mediaparty.info/
+[fn:bal] http://wiki.buenosaireslibre.org
