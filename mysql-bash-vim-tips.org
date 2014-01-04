@@ -298,3 +298,11 @@ Actualizar las llamadas de un contacto
     AND         postal REGEXP '^[A-Z]{3}[0-9]{4}$'
 #+END_SRC
 
+** RANDOM
+
+#+BEGIN_SRC sql :engine mysql :exports code
+  SELECT RAND();
+  SELECT MD5(RAND());
+  SELECT SUBSTRING(MD5(RAND()) FROM 1 FOR 8);
+#+END_SRC
+

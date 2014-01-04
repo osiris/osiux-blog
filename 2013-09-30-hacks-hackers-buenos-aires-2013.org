@@ -5,7 +5,7 @@
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
 #+OPTIONS: toc:nil
-#+DATE:      2013-09-30
+#+DATE:      2013-08-30
 
 ** MediaParty
 

@@ -7,9 +7,19 @@
 #+OPTIONS: toc:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+** [[file:2013-11-01-information-technology-conexion-libre.org][Information Technology Conexión Libre]]
+
+   #+ATTR_HTML: :width 640 :height 480 :alt Information Technology Conexión Libre
+   [[file:2013-11-01-information-technology-conexion-libre.org][file:tmb/information-technology-conexion-libre.jpg]]
+
+** [[file:2013-09-13-huayra-primer-sistema-operativo-libre-de-conectar-igualdad.org][Huayra primer sistema operativo libre de Conectar Igualdad]]
+
+   #+ATTR_HTML: :width 640 :height 480 :alt Huayra primer sistema operativo libre de Conectar Igualdad
+   [[file:2013-09-13-huayra-primer-sistema-operativo-libre-de-conectar-igualdad.org][file:tmb/huayra-oficial/2013-09-13-1115-8988a5.jpg]]
+
 ** [[file:2013-09-30-hacks-hackers-buenos-aires-2013.org][Hacks/Hackers Buenos Aires 2013]]
 
-   #+ATTR_HTML: :width 640 :height 453 :alt HHBA Hacks Hackers Buenos Aires 2013
+   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Hacks Hackers Buenos Aires 2013
    [[file:2013-09-30-hacks-hackers-buenos-aires-2013.org][file:tmb/hhba-2013/hhba-2013-09-30-44.jpg]]
 
 ** [[file:2013-06-14-odisea-cortometraje-redes-libres-en-anisacate.org][ODISEA Redes Libres en Anisacate]]

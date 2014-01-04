@@ -1,0 +1,298 @@
+#+TITLE:     Information Technology Conexión Libre
+#+AUTHOR:    Lucas Ledesma
+#+EMAIL:     ledesma punto ar en gmail punto com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+OPTIONS: toc:nil
+#+DATE:      2011-11-01
+
+En la revista Information Technology Nro. 193 de Octubre 2013, en la
+sección Actualidad/TELCOS apareció la siguiente nota:
+
+*El desarrollo de redes comunitarias.*
+
+** Conexión libre
+
+   Mediante el uso de tecnologías inalámbricas,
+   diversas experiencias facilitan el acceso a
+   internet y crean redes alternativas en áreas
+   fuera de cobertura.
+
+   /Por Lucas Ledesma/
+
+   Las redes libres están entre nosotros desde hace
+   varios años. Desde comienzos de la década pasada
+   existen en la Argentina y en el mundo distintos
+   grupos y movimientos que desarrollan redes
+   informáticas abiertas, mediante el uso de router
+   Wi-Fi con software libre. Se trata de auténticas
+   redes metropolitanas que pueden conectar
+   barrios, comunidades y hasta ciudades con
+   equipamiento de muy bajo costo. Esto facilita el
+   despliegue de redes comunitarias con
+   aplicaciones y servicios propios y permite
+   extender el acceso a Internet.
+
+   En el último tiempo, esto movimientos han
+   experimentado un resurgir de la mano de
+   AlterMundi, una organización que fomenta el uso
+   de este tipo de redes y ha desarrollado un
+   "firmware" (software embebido en un dispositivo)
+   orientado a facilitar su despliegue con
+   conocimientos mínimos.
+
+*** En el Delta
+
+    A mediados de septiembre, el Instituto Nacional
+    de Tecnología Industrial (INTI) dio a conocer
+    que un grupo de expertos del organismo estaba
+    trabajando en el diseño y testeo de una red
+    inalámbrica "que permite extender la conexión a
+    Internet en áreas que están fuera de cobertura",
+    utilizando routers con alteraciones en su
+    software en el Delta del Tigre, en la provincia
+    de Buenos Aires.
+
+    "Nos estamos basando en algo que ya está
+    bastante difundido, que es usar equipos Wi-Fi en
+    una red mallada (mesh). La ventaja que tiene
+    esto es que cada nodo nuevo permite extender un
+    poco la zona de cobertura", explica Marcelo
+    Tenorio, coordinador de la Unidad Técnica de
+    Comunicaciones del INTI. Este proyecto emplea
+    equipos Wi-Fi hogareños, pero en forma distinta.
+    Cada uno de estos equipos forma parte de una red
+    mesh, sumando cada uno un poco más de alcance.
+    "Nuestra idea es ir poniendo distintos nodos que
+    no sólo sirven para dar Internet, sino también
+    como vínculo para avanzar y llevar más lejos ese
+    servicio de datos", indica Tenorio.
+
+    Los expertos del INTI observaron que en el
+    Delta los nodos a veces experimentan
+    interferencias entre ellos. Para evitar eso,
+    alternan frecuencias. "Es decir, transmitir en
+    una frecuencia (por ejemplo en el canal 1) al
+    nodo que tengo más cercano, y si ese nodo tiene
+    que seguir transmitiendo al próximo nodo, cambia
+    y transmite en otra frecuencia para no
+    interferir con el primero y lograr rendimientos
+    más altos", detalla. Esto es posible gracias al
+    software que utilizan. En lugar de emplear el
+    "firmware" original de los equipos, utilizan una
+    distribución de Linux para routers llamada
+    OpenWRT.
+
+    Estos nodos de prueba del INTI fueron instalados
+    en una red comunitaria ya existente, creada por
+    la organización AlterMundi. Gabriel Tolón,
+    ingeniero de la Unidad Técnica de Comunicaciones
+    del INTI, apunta que se reunieron con ellos para
+    realizar estas pruebas de la doble placa y
+    aumentar la capacidad. "Y tratamos también de
+    llevarles el conocimiento que tenemos a ellos
+    también. La idea es poder transferir este
+    conocimiento a ONGs. Brindarles el conocimiento
+    para que lo puedan escalar y mantener. Este es
+    otro punto que encontramos como dificultad: hay
+    cosas que se hicieron, se instalan y, como no
+    hay un mantenimiento, después deja de ser usado.
+    El objetivo es que puedan autoinstalarse las
+    redes."
+
+*** AlterMesh
+
+    Osiris Gómez es programador, trabaja en la
+    cooperativa de software libre Gcoop y es parte
+    de la red BuenosAiresLibre y de la asociación
+    AlterMundi. Según Gómez, la propuesta de
+    AlterMundi "es básicamente el software
+    AlterMesh, un "firmware" para equipos como
+    TPLink y Ubiquiti, que está basado en OpenWRT.
+    Principalmente TPLink, porque son equipos
+    económicos y estamos trabajando con un modelo
+    que es doble banda en 2.4 GHz y 5 GHz".
+
+    En AlterMundi utilizan el protocolo de
+    enrutamiento dinámico BATMAN (Better Approach To
+    Mobile Adhoc Networking) Advanced, que permite
+    la interconexión entre equipos previo a la capa
+    de IP y genera una malla. "Entonces, si los
+    nodos se mueven de lugar, la red se reacomoda
+    sola. Es un protocolo muy dinámico y
+    transparente. Lo que se hace es potenciar las
+    antenas con unas parrillas grilladas", explica
+    el programador.
+
+    Un punto importante es que estas redes utilizan
+    un túnel IPv6 dentro de IPv4, que permite
+    asignar a cada equipos conectado una dirección
+    pública en lugar de una privada. Gracias a esto,
+    cada equipos -PC, tableta o celular- puede ser
+    encontrado desde cualquier parte del mundo, como
+    cualquier servidor web.
+
+    Uno de los atractivos principales de AlterMesh
+    es que cada uno puede "cocinar" su propia
+    versión. Desde el sitio web se puede
+    preconfigurar el firmware y bajarlo ya listo
+    para instalar en los routers, encenderlos y
+    hacerlos funcionar.
+
+    "Hasta ahora las redes libres venían con
+    entusiastas de la tecnología que le gustaba
+    desarmar routers, modificarlos y entender sobre
+    protocolos de redes. Hoy, la posibilidad que da
+    AlterMesh es que, sin ningún tipo de
+    conocimiento, se puede entrar a un sitio web,
+    elegir el modelo de router, ponerle nombre a la
+    red y que automáticamente quede todo
+    configurado. Con que uno de ellos tenga una
+    salida a Internet, ya todos van a salir a través
+    de ese nodo", explica Gómez. Este aspecto es
+    central para poder "popularizar" las redes
+    libres, extenderlas más allá de grupos de
+    técnicos y analistas de sistemas.
+
+    Pero, para que los nodos estén funcionando
+    siempre, se requiere mantenimiento, como con
+    cualquier otro dispositivo. "Los equipos se
+    pueden quemar, el viento puede girar las antenas
+    y si se corta la luz se cae la red. Es una
+    infraestructura, que por mas pequeña que sea,
+    hay que mantenerla. Por eso hacemos hincapié en
+    la capacitación, que algunos personas reciban
+    los conocimientos y las mantengan", destaca el
+    especialista.
+
+*** Poder local
+
+    Este tipo de redes puede ofrecer varias
+    ventajas. En principio, al utilizar direcciones
+    públicas y ofrecer velocidades de conexión
+    simétricas -iguales para la subida y la
+    descargar de información-, permiten compartir
+    contenidos e incluso montar sitios web,
+    aplicaciones y servicios, como por ejemplo
+    telefonía IP, utilizando software libre. También
+    permitiría mantener conectadas a las comunidades
+    a través de intranets locales, e incluso
+    interconectar la red a Internet, dejando a los
+    equipos conectados acceder a ésta, pero también
+    a los equipos de todo el mundo llegar a las
+    redes locales.
+
+    Juan Bidini, analista de sistemas, es director
+    de Cómputos en la Municipalidad de Carlos
+    Casares (provincia de Buenos Aires), profesor en
+    la Escuela Técnica Nro. 1 de esta ciudad y
+    administrador de la red digital comunitaria
+    CasaresLibre. Bidini dice que hace tres años
+    comenzó el proyecto desde la escuela, con otros
+    profesores, alumnos y ex alumnos, que en total
+    suma entre 10 y 15 personas. El grupo planea
+    inaugurar oficialmente la red, que actualmente
+    está en estado de pruebas, entre fines de este
+    año y comienzos del próximo.
+
+    "La idea es ofrecer una intranet para Carlos
+    Casares", adelanta Bidini, y explica que los
+    nodos del backbone principal funcionan en 5.8
+    GHz encriptado. Y después en 2.4 GHz libre
+    funcionan las antenas omnidireccionales, para la
+    parte de acceso. Sus antenas aprovechan la
+    infraestructura de un ISP y de la emisora de
+    radio de FM locales. La red, con un alcance de
+    unos cinco kilómetros, cubre prácticamente toda
+    la ciudad.
+
+    "A lo que apuntamos es, una vez que podamos
+    mostrar el proyecto acá en la escuela técnica, a
+    ir con el proyecto listo a las distintas
+    ciudades de la zona y compartirlo también
+    libremente", señala Bidini, Pero descarta usar
+    la red para llevar conectividad. "El proyecto de
+    CasaresLibre está muy lejos de Internet porque
+    tenemos muy buena relación con los proveedores
+    de Internet. En ningún momento se pensó como una
+    competencia ni mucho menos. Se trata más de un
+    proyecto educativo para que, por ejemplo, los
+    padres de los chicos se conecten a CasaresLibre
+    y puedan acceder a la Intranet de la escuela."
+
+    BuenosAiresLibre, en tanto, es un proyecto que
+    lleva más de diez años y Gómez está vinculado
+    desde 2006. "Por tratarse de una red
+    autogestionada, que depende del voluntariado,
+    muchos de esos nodos representan más puntos de
+    intención de tener un nodo que uno que esté
+    funcionando. Sucede algo particular: en Capital
+    Federal no hay una necesidad real de conexión de
+    una red alternativa en toda la ciudad, porque
+    abunda", opina. Y continúa: "Distinto es el caso
+    de las redes en lugares como el Delta, donde no
+    hay proveedores de Internet que estén ofreciendo
+    el servicio en las islas. Lo mismo en Quintana,
+    en Córdoba, donde hablamos de una población de
+    1500 habitantes. Las redes libres vienen a
+    funcionar bastante bien en lugares donde no hay
+    otra cosa con qué conectarse, o es muy costoso,
+    o no hay un ISP porque no lo considera
+    rentable".
+
+    Según Jesica Guidice, quien junto con su pareja,
+    Nicolás Echániz, integra Altermundi y administra
+    la red escuela QuintanaLibre, en José de la
+    Quintana, "las redes libres puede pensarse para
+    ser mantenidas de manera paralela a Internet,
+    sólo con acceso a servicios locales y a los
+    equipos de sus miembros. Sin embargo, de esta
+    manera se le niega la posibilidad a la red de
+    'ser' Internet. Si entendemos que Internet es
+    una red de redes y las redes libres también lo
+    son, podemos ir desplegando redes libres
+    interconectadas entre sí". Y se preguntan: "¿Qué
+    más soberano que tener toda una comunicación
+    formada por interconexiones de redes libres,
+    descentralizadas, con la misma posibilidad de
+    alojar servidores en medios urbanos como
+    rurales, que se permita el libre tránsito entre
+    ellas y que no se limiten artificialmente las
+    capacidades del hardware?".
+
+*** Nuevo empuje
+
+    Quienes están vinculados a estos movimientos
+    señalan que se percibe un mayor interés en torno
+    a este tipo de tecnologías. "Siento que
+    actualmente en la Argentina hay un renovado
+    interés por las redes de estas características,
+    no sólo por grupos de entusiastas de las redes,
+    sino también por otros grupos organizados como
+    radios comunitarias, comunas y municipios,
+    escuelas y cooperativas que han oído hablar del
+    tema", dice Guidice.
+
+    Sobre el interés del Estado indica que
+    "afortunadamente existe. Y de todos los niveles:
+    provincial, nacional y municipal. Comunas y
+    municipios nos han pedido recomendaciones
+    técnicas específicas para ellos, nos han
+    convocado para dar talleres y charlas para medir
+    el interés de su comunidad. También apareció el
+    interés por parte del INTI y de universidades,
+    por su potencialidad investigativa y educativa".
+
+** Redes Libres en La Argentina
+
+   Algunas de las principales redes libres y
+   proyectos que se pueden encontrar en la
+   Argentina son BuenosAiresLibre, LugroMesh
+   (Rosario, provincia de Santa Fe), QuintanaLibre
+   (José de la Quintana, provincia de Córdoba),
+   DeltaLibre, CasaresLibre (ambas en provincia de
+   Buenos Aires), AnisacateLibre y LaSerranitaLibre
+   (ambas en provincia de Córdoba) y FerNets
+   (ciudad de Córdoba).
+
