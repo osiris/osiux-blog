@@ -1,1 +1,1 @@
-[[file:index.org][index]] | [[file:osiux.org][OSiUX]] | [[file:blog.org][blog]] | [[file:docs.org][docs]]
+[[file:index.org][index]] | [[file:osiux.org][OSiUX]] | [[file:blog.org][blog]] | [[file:docs.org][docs]] | [[file:charlas.org][charlas]]

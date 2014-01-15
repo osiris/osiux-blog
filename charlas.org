@@ -1,0 +1,174 @@
+#+TITLE:     Conferencias y Capacitaciones
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+OPTIONS:   toc:nil timestamp:nil
+#+INCLUDE: "header.org"
+#+DATE:      2014-01-04
+
+** 06/2013
+*** Segunda Muestra Municipal de Ciencia y Tecnología de La Matanza
+    - Tecnologías libres para la comunicación soberana
+      - http://www.osiux.com/2013-06-14-matanza-comparte-y-redes-libres-en-plaza-ciencia-2013.html
+
+** 04/2013
+*** Escuela Técnica Nro 10, Villa Madero, La Matanza
+
+    - Festival Latinoamericano de Instalación de Software Libre
+    - Cooperativismo y Software Libre
+      - http://gcoop.coop/COOPySL.pdf
+    - Altermesh, libera tu red
+      - [[http://osiux.com/2013-04-02-altermesh-buenos-aires-libre-compartir-es-bueno.html]]
+        
+*** Curso de Formación Profesional
+
+    - Administración GNU/Linux
+    - http://cursofp.gcoop.coop
+
+*** Casa del Bicentenario, Monte Caseros, Corrientes
+**** Primer Encuentro de Software Libre
+
+     - [[http://osiux.com/2013-04-06-primer-encuentro-software-libre-monte-caseros.html]]
+
+**** Privacidad y Anonimato
+
+     - http://osiux.com/privacidad-y-anonimato-en-la-red.html
+
+**** Entendiendo la red
+
+     - http://osiux.com/entendiendo-la-red.html
+
+** 10/2012
+*** Biblioteca Nacional, Buenos Aires, Argentina
+
+    - CISL Conferencia Internacional Software Libre
+    - redes para todos
+    - http://pub.osiux.com/redes-para-todos.pdf
+
+** 09/2012
+*** Facultad de Informática, Universidad Nacional de La Plata, Argentina
+**** Congreso Nacional de Estudiantes de Ingeniería en Sistemas de Información
+
+    - http://gcoop.coop/COOPySL-CNEISI.pdf
+
+*** Facultad de Ciencias Económicas, Universidad de Buenos Aires, Argentina
+
+    - Charlas Técnicas CaFe.IN
+    - qué hice ayer, qué tengo que hacer hoy?
+    - http://pub.osiux.com/charlas/CaFeIN-que-hice-ayer-que-tengo-que-hacer-hoy.ogv
+
+*** Taller de Comunicaciones Seguras y Software Libre
+
+    - http://www.vialibre.org.ar/2012/08/25/15-de-septiembre-taller-de-seguridad-en-comunicaciones/
+    - http://pub.osiux.com/priv-y-anon.pdf
+
+** 07/2012
+*** Corferias, Bogotá, Colombia
+
+    - CampusParty CPCO5
+    - no seas un terminal de internet, creá una red libre
+    - http://pub.osiux.com/cpco5-redlibre.pdf
+    - http://youtu.be/IKO17A5Imbc
+
+** 05/2012
+*** Instituto Distrital de Recreación y Deporte, Bogotá, Colombia
+
+    - Festival Latinoamericano de Instalación de Software Libre
+    - Proyectos de Accesibilidad Digital y Reducción de Brecha Tecnológica
+    - http://pub.osiux.com/charlas/flisol-bogota-redes-libres.pdf
+
+** 04/2012
+*** Facultad de Ciencias Económicas, Universidad de Buenos Aires, Argentina.
+    
+    - Festival Latinoamericano de Instalación de Software Libre
+    - Cooperativismo y Software Libre
+    - http://gcoop.coop/COOPySL.pdf
+
+** 11/2011
+*** SysAdmin Experts
+
+    - dame una consola
+    - http://pub.osiux.com/charlas/dame-una-consola-slides.pdf
+      
+** 10/2011
+*** Escuela Técnica Pedro Ferré, Monte Caseros, Corrientes, Argentina.
+
+    - Primera Olimpíada Interescolar Informática de Nivel Secundario
+    - Introducción a las redes
+    - http://pub.osiux.com/charlas/introduccion-a-las-redes
+      
+** 07/2011
+*** Foro Internacional de Software Libre, Porto Alegre, Brasil.
+    
+    - Terceras Jornadas Regionales de Redes Libres
+    - 10 años armando una red libre en Buenos Aires
+    - http://pub.osiux.com/charlas/bal-jrrl3.pdf
+
+** 05/2011
+*** Escuela Mundo Nuevo, Ciudad de Buenos Aires, Argentina.
+    
+    - Introducción a GNU/Linux y la programación
+    - http://gcoop.coop/pdf/introduccion-gnu-linux-programacion.pdf
+
+** 04/2011
+*** Instituto Superior de Curuzú Cuatiá, Corrientes, Argentina.
+
+    - Festival Latinoamericano de Instalación de Software Libre 2011
+    - Redes Libres
+    - ftp://buenosaireslibre.org/videos/flisol-2011_redes-libres_osiux_720x576.ogv
+
+** 11/2011
+*** Universidad de Lanús, Provincia de Buenos Aires, Argentina.
+
+    - Conurbania
+    - TODO TXT | rst+org-mode
+    - http://osiux.com/todo-txt-rst+org-mode.org
+    - http://pub.osiux.com/charlas/todo-txt-rst+org-mode-slides.pdf
+
+** 04/2010
+*** Instituto Superior de Curuzú Cuatiá, Corrientes, Argentina.
+
+    - Festival Latinoamericano de Instalación de Software Libre 2010
+    - Dame una consola
+    - http://osiux.com/dame-una-consola.txt
+
+** 11/2008
+*** FM LaTribu, Ciudad de Buenos Aires, Argentina.
+
+    - Primer Festival de Cultura Libre y Copyleft
+    - Redes libres en Argentina
+    - http://osiux.com/redes-libres-festival-cultura-libre-fm-latribu.txt
+
+*** Instituto Superior de Curuzú Cuatiá, Corrientes, Argentina.
+
+    - Primeras Charlas Software Libre
+    - Curuzú Libre
+    - http://osiux.com/curuzu-libre-2008.txt
+
+** 08/2008
+*** Universidad de Belgrano, Ciudad de Buenos Aires, Argentina.
+
+    - Octavas Jornadas Regionales de Software Libre
+    - Graphviz: grafos y diagramas mediante código
+    - http://pub.osiux.com/graphviz-jrsl08/graphviz-jrsl08.pdf
+
+** 12/2007
+*** Instituto Tecnológico Buenos Aires, Argentina.
+
+    - WhyFloss Conference
+    - Una red wireless comunitaria. montada sobre FLOSS
+    - http://pub.osiux.com/charlas/WhyFLOSS-2007-BuenosAiresLibre.pdf
+
+** 09/2007
+*** Facultad de Ingeniería Universidad de Buenos Aires, Argentina.
+
+     - Jornadas 2007
+     - Buenos Aires Libre: una. red wireless comunitaria
+     - http://pub.osiux.com/charlas/lugfi-jornadas-2007/presentacion-bal.pdf
+
+[fn:Altermundi] http://altermundi.net
+[fn:BAL] http://buenosaireslibre.org
+[fn:USLA] http://usla.org.ar
+[fn:CaFeLUG] http://cafelug.org.ar
+[fn:gcoop] http://gcoop.coop

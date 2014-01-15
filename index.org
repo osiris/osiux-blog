@@ -7,74 +7,9 @@
 #+OPTIONS: toc:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
-** [[file:2013-11-01-information-technology-conexion-libre.org][Information Technology Conexión Libre]]
+** =15/ENE=
 
-   #+ATTR_HTML: :width 640 :height 480 :alt Information Technology Conexión Libre
-   [[file:2013-11-01-information-technology-conexion-libre.org][file:tmb/information-technology-conexion-libre.jpg]]
+   - [[file:todo-txt-rst%2Borg-mode.org][TODO TXT rst + org-mode]]
+   - [[file:tengo-el-titulo-de-la-charla-y-ahora-como-hago-los-slides.org][tengo el título de la charla y ahora cómo hago los slides?]]
 
-** [[file:2013-09-13-huayra-primer-sistema-operativo-libre-de-conectar-igualdad.org][Huayra primer sistema operativo libre de Conectar Igualdad]]
-
-   #+ATTR_HTML: :width 640 :height 480 :alt Huayra primer sistema operativo libre de Conectar Igualdad
-   [[file:2013-09-13-huayra-primer-sistema-operativo-libre-de-conectar-igualdad.org][file:tmb/huayra-oficial/2013-09-13-1115-8988a5.jpg]]
-
-** [[file:2013-09-30-hacks-hackers-buenos-aires-2013.org][Hacks/Hackers Buenos Aires 2013]]
-
-   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Hacks Hackers Buenos Aires 2013
-   [[file:2013-09-30-hacks-hackers-buenos-aires-2013.org][file:tmb/hhba-2013/hhba-2013-09-30-44.jpg]]
-
-** [[file:2013-06-14-odisea-cortometraje-redes-libres-en-anisacate.org][ODISEA Redes Libres en Anisacate]]
-
-   #+ATTR_HTML: :width 640 :height 360 :alt ODISEA Redes Libres en Anisacate
-   [[file:2013-06-14-odisea-cortometraje-redes-libres-en-anisacate.org][file:img/odisea-redes-libres-anisacate.jpg]]
-
-** [[file:2013-06-14-matanza-comparte-y-redes-libres-en-plaza-ciencia-2013.org][MatanzaComparte y RedesLibres en PlazaCiencia 2013]]
-
-   #+ATTR_HTML: :width 640 :height 453 :alt Redes Libres en Plaza Ciencia 2013
-   [[file:2013-06-14-matanza-comparte-y-redes-libres-en-plaza-ciencia-2013.org][file:img/plaza-ciencia-2013/altermundi.png]]
-
-** [[file:2013-06-05-invitacion-presentacion-oficial-huayra.org][Invitación Presentación Oficial Huayra]]
-
-   #+ATTR_HTML: :width 640 :height 388 :alt Huayra Presentación Tecnopolis
-   [[file:2013-06-05-invitacion-presentacion-oficial-huayra.org][file:tmb/huayra-invitacion-tecnopolis.png]]
-
-** [[file:2013-05-31-gcoop-muchas-mentes-tecnopolis-tv.org][gcoop en Muchas Mentes, TecnopolisTV]]
-
-   #+ATTR_HTML: :width 640 :height 480 :alt gcoop Muchas Mentes Tecnopolis TV
-   [[file:2013-05-31-gcoop-muchas-mentes-tecnopolis-tv.org][file:img/gcoop-muchas-mentes-tecnopolis-tv.png]]
-
-** [[file:2013-05-06-letras-viajeras.org][gcoop libera Letras Viajeras]]
-
-   #+ATTR_HTML: :width 640 :height 388 :alt Letras Viajeras
-   [[file:2013-05-06-letras-viajeras.org][file:img/letras-viajeras.jpg]]
-
-** [[file:2013-04-27-flisol-2013-et10.org][FLISoL en la ET10 Villa Madero, La Matanza]]
-
-   #+ATTR_HTML: :width 624 :height 468 :alt FLISoL 2013 ET10 Villa Madero, La Matanza
-   [[file:2013-04-27-flisol-2013-et10.org][file:tmb/flisol-2013-et10/2013-04-27-1455-268126.jpg]]
-
-** [[file:2013-04-23-cluster-de-software-libre.org][gcoop es miembro del Clúster de Software Libre]]
-
-   #+ATTR_HTML: :width 640 :height 480 :alt Ministerio de Ciencia crea clúster de software libre
-   [[file:2013-04-23-cluster-de-software-libre.org][file:tmb/2013-04-23-cluster-de-software-libre.jpg]]
-
-** [[file:2013-04-06-huayra-grub-rescue-error-unknown-filesystem.org][Huayra grub rescue error unknown filesystem]]
-
-   #+ATTR_HTML: :width 640 :height 480 :alt huayra grub rescue error unknown filesystem
-   [[file:2013-04-06-huayra-grub-rescue-error-unknown-filesystem.org][file:tmb/1eslmc/2013-04-06-17-45-a4bdc1-grub-rescue-error-unknown-filesystem.jpg]]
-  
-** [[file:2013-04-06-primer-encuentro-software-libre-monte-caseros.org][Primer Encuentro de Software Libre en Monte Caseros]]
-
-   #+ATTR_HTML: :width 640 :height 480 :alt primeras jornadas de software libre en monte caseros
-   [[file:2013-04-06-primer-encuentro-software-libre-monte-caseros.org][file:tmb/1eslmc/2013-04-05-18-30-212a51.jpg]]
-   
-** [[file:2013-04-02-altermesh-buenos-aires-libre-compartir-es-bueno.org][Altermesh, BuenosAiresLibre y CompartirEsBueno]]
-
-   #+ATTR_HTML: :width 640 :height 480 :alt Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram
-   [[file:2013-04-02-altermesh-buenos-aires-libre-compartir-es-bueno.org][file:icn/osiux-network.png]]
-
-** [[file:2013-03-18-huayra-el-dia-que-las-vacas-vuelen.org][Huayra, el día que las vacas vuelen, llegó!]]
-
-   #+ATTR_HTML: :witdh 640 :height 500 :alt Huayra, el día que las vacas vuelen, llegó
-   [[file:2013-03-18-huayra-el-dia-que-las-vacas-vuelen.org][file:img/huayra-vaca-volando.png]]
-   
-*** [[file:blog.org][<- blog]] | [[file:docs.org][docs ->]]
+*** [[file:blog.org][<- blog]] | [[file:2013.org][2013]] | [[file:2012.org][2012]] | [[file:2011.org][2011]] | [[file:docs.org][docs ->]]

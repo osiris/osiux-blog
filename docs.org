@@ -44,6 +44,7 @@
 
 ** =Org-mode=
    - [[file:visualizando-org-mode-con-gnuplot.org][Visualizando Org-mode con gnuplot]]
+   - [[file:todo-txt-rst%2Borg-mode.org][TODO TXT rst + org-mode]]
 
 ** =Gráficos=
    - [[file:imagenes-magicas-imagemagick.org][Imágenes Mágicas usando ImageMagick]]

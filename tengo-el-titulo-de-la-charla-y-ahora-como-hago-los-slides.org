@@ -1,0 +1,141 @@
+#+TITLE:     tengo el título de la charla y ahora cómo hago los slides?
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+OPTIONS: toc:nil
+#+DATE:      2013-01-15
+
+Hace varios años que me aventuré a dar charlas del proyecto
+*BuenosAiresLibre.org* [fn:BAL], recuerdo que me preguntaron
+"*y qué vas a decir?*" a lo cual contesté "*lo que dice en el wiki*"
+:-)
+
+** yendo de Beamer a Pinpoint, pasando por rST y HTML
+
+   Asi fue que mis primeros slides fueron usando *Beamer*, mi primer
+   contacto con el mundo *LaTeX*, me costó un poco agarrarle la mano
+   pero resultó muy fácil editar el contenido de la charla [fn:tex] ya
+   que se trataba de un archivo de texto plano, el cual lo podía
+   convertir a *PDF* [fn:pdf] presionando =F2= y =F6= en el editor
+   *Kile*.
+   
+   Siempre detesté aplicaciones para presentaciones, porque te la
+   pasás perdiendo el tiempo decidiendo la *negrita*, /itálica/, etc,
+   en lugar de escribir el contenido, para aclarar este tema un texto
+   imprescindible de leer es /Procesadores de texto, estúpidos e
+   ineficientes/ [fn:txt].
+   
+   Luego descubrí *reStructuredText* [fn:rst] o mejor conocido como
+   *reST* que también parte de escribir un archivo de texto plano y
+   luego poder convertirlo en un bonito *HTML*, un *PDF* o incluso un
+   *HTML S5* [fn:s5] apto para presentaciones!
+   
+   Hice muchísimas presentaciones con *reST*, mayormente generando
+   *PDF* a los cuales les daba un poco de vida armando fondos alusivos
+   al tema de la charla o al logo y colores del evento de la misma,
+   entonces escribir el contenido de la charla era sólo cuestión de
+   editar un texto y ejecutando =make= se procesaban las imágenes que
+   fueran necesarias y finalmente el archivo *TXT* convirtiéndolo en
+   un bonito *PDF*.
+   
+   Para una charla en particular, utilizé *DZSlides* [fn:dz], que no
+   es más que un *HTML* con unas clases y un *Javascript* que lo hace
+   navegable, como siempre el formato *HTML* tiene la ventaja de
+   necesitar sólo un *Firefox*, ser liviano y permitir publicarlo
+   fácilmente.
+   
+   Desde que uso *org-mode*, también tengo la posibilidad de generar
+   rápidamente slides con *Beamer* desde archivos de *org-mode*.
+   
+   Para las últimas charlas estuve usando *PinPoint* [fn:pin] que
+   también parte de un archivo de texto plano y que aprovecha las
+   capacidades 3D de las modernas placas de video actuales, con lo
+   cual se consiguen vistosos efectos en las transiciones y permite
+   cambiar fácilmente los fondos de cada slide, algo que no era muy
+   cómodo usando *reST* o *Beamer*. *PinPoint* exporta muy fácilmente
+   a un archivo *PDF* y es muy práctico, lo invoco desde *Vim*
+   presionando =F4= a medida que voy escribiendo el contenido de la
+   charla y me resulta muy versatil.
+
+   Agregar en =.vimrc=:
+
+   #+BEGIN_EXAMPLE
+     augroup filetypedetect
+       au BufNewFile,BufRead *.pin map <F4> :w<CR>:!pinpoint -f %<CR>
+     augroup END
+   #+END_EXAMPLE
+
+** la verdad de la milanesa
+
+   1. siempre, pero siempre, el día de la charla, el proyector no
+      funciona, o mejor dicho funciona (claro, cuando hay proyector)
+      pero no toma el modo de video que tenés en la notebook, con
+      suerte anda en 800x600.
+
+   2. te quedaste hasta la madrugada haciendo los slides y un par de
+      minutos antes de la charla, sin querer borraste los archivos y
+      con suerte tenés una versión previa muy distinta a la última que
+      te había quedado espectacular. Asi que si te quedan unos minutos
+      intentás arreglarla o al menos agregarle una foto impactante.
+
+   3. el visualizador de PDFs decide dejar de funcionar sin pre-aviso,
+      intentás usar otro y se cuelga o muestra los slides en otro
+      orden o en realidad no sabés si estás presionando las teclas
+      correctas porque estabas acostumbrado a otro visor.
+      
+   4. no se ve un pomo de lo que hiciste! si esos degrades, grises y
+      celestitos tan bonitos que elegiste con cuidado no están en la
+      pantalla, lo mirás al proyector con cara de qué corno estás
+      proyectando?
+      
+   5. te ponés nervioso a la primer tecla que le errás y empezás a
+      hablar apurado, nada de lo que hacés todos los días te sale,
+      hasta el comando más boludo, no encontrás lo que querés mostrar,
+      y las teclas que tocás ahora hacen otra cosa y te quedás con
+      cara de no entender nada.
+
+   6. internet no existe! no funciona, o anda tan pero tan lento que
+      no te permite mostrar nada de lo que tenías pensando mostrar.
+
+** estar preparado para dar pelea
+
+   Seguramente algo falló al hacer una presentación, es natural,
+   siempre algo sucede, pero no hace falta que te golpees la cabeza
+   contra la pared, lo mejor es aprender de los errores de la última
+   charla para mejorar la próxima presentación, lo mejor es filmarse,
+   asi podés mirar con ojo crítico que hiciste y que se puede mejorar!
+
+** algunos consejos
+
+   1. hacer la menor cantidad de slides, menos de 20 para 50 minutos.
+   2. monólogo de 15 minutos y diálogo de 35 minutos.
+   3. poco texto, letras grandes, mucha imagen.
+   4. tener todo offline, no depender ni siquiera de tu notebook.
+   5. publicar el PDF antes de dar la charla, copiarlo a un pendrive.
+
+** mis charlas
+
+   Todo el material utilizado en cada una de mis presentaciones está
+   disponible en: [[http://pub.osiux.com/charlas][http://pub.osiux.com/charlas]]
+
+   No sólo están los =pdf=, además están disponibles las imágenes
+   =.jpg=, =.png= y los archivos de diseño =.svg= como asi también el
+   código que los genera ya sea en formato =.tex=, =.rst=, =.org= y
+   otros.
+
+   Un listado cronológico se encuentra en: [[file:charlas.org]]
+
+   Espero sirva de ayuda a todo aquél que tenga ganas de compartir ya
+   que todas están bajo licencia *CC-BY-SA* [fn:CC] o similar.
+
+[fn:BAL] http://wiki.buenosaireslibre.org
+[fn:tex] http://pub.osiux.com/charlas/lugfi-jornadas-2007/presentacion-bal.tex
+[fn:pdf] http://pub.osiux.com/charlas/lugfi-jornadas-2007/presentacion-bal.pdf
+[fn:txt] http://osiux.com/procesadores-de-texto-estupidos-e-ineficientes
+[fn:rst] http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
+[fn:s5]  http://docutils.sourceforge.net/docs/user/slide-shows.s5.html
+[fn:dz]  http://paulrouget.com/dzslides
+[fn:pin] https://wiki.gnome.org/Pinpoint
+[fn:CC]  http://creativecommons.org/licenses/by-sa/4.0/deed.es_AR

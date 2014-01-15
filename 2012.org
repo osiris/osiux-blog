@@ -1,4 +1,4 @@
-#+TITLE:     ABSOLUTELLY NO WARRANTY blog
+#+TITLE:     ABSOLUTELLY NO WARRANTY blog 2012
 #+AUTHOR:    Osiris Alejandro Gómez
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
@@ -99,4 +99,5 @@
 
      [[file:2012-02-14-de-fondo-negro-a-fondo-blanco.org][file:tmb/de-fondo-negro-a-fondo-blanco.png]]
 
-*** [[file:index.org][<- index]] | [[file:blog.org][blog]] | [[file:2011.org][2011]] | [[file:docs.org][docs ->]]
+
+*** [[file:index.org][<- index]] | [[file:blog.org][blog]] | [[2013.org][2013]] | [[file:2011.org][2011]] | [[file:docs.org][docs ->]]

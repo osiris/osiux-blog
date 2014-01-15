@@ -4,13 +4,8 @@
 #+EMAIL:       <osiux@riseup.net>
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
-#+INCLUDE: "header.org"
-#+LaTeX_CLASS: beamer
-#+MACRO:       BEAMERMODE presentation
-#+MACRO:       BEAMERTHEME Madrid
-#+MACRO:       BEAMERCOLORTHEME default
-#+MACRO:       BEAMERSUBJECT RMRF
-#+MACRO:       BEAMERINSTITUTE gcoop | Cooperativa de Software Libre
+[[file:index.org][index]] | [[file:osiux.org][OSiUX]] | [[file:blog.org][blog]] | [[file:docs.org][docs]] | [[charlas.org][charlas]]
+#+EXCLUDE_TAGS: noexport
 
 * Seguridad de la Información
 
@@ -170,101 +165,14 @@
 
   http://pub.osiux.com/priv-y-anon.pdf
 
-* diagramas                            :noexport:
-** navegar sin proxy 						   :noexport:
+* diagramas
+** navegar sin proxy                                               :noexport:
 
-   #+BEGIN_SRC ditaa :file navegar-sin-proxy.png :cmdline -E :exports none
-     /-------\                   /-------\ /--------------\
-     |       |                   |       | |              |
-     |firefox|                   |  DNS  | |  osiux.com   |
-     |   cRED|                   |   cYEL| |          cBLU|
-     |1.2.3.4|                   |8.8.8.8| |67.208.113.123|
-     |:5678  |                   |    :53| |           :80|
-     \-+-----/                   \------+/ \---------+----/
-       :                                :            :
-       | soy 1.2.3.4 resolver osiux.com |            |
-       |------------------------------->|----\       |
-       |                                |    |       |
-       |                                |  +-+-+     |
-       | osiux.com es 67.208.113.123    |  |{s}|     |
-       |<-------------------------------|--+log|     |
-       |                                |  +---+     |
-       |                                |            |
-       | soy 1.2.3.4 UserAgent GET / HTTP/1.1        |
-       |-------------------------------------------->|----\
-       |                                             |    |
-       |                                             |  +-+-+
-       | HTTP/1.1 200 OK ContentType text/html       |  |{s}|
-       |<--------------------------------------------|--+log|
-       |                                             |  +---+
-   #+END_SRC
+** navegar con proxy                                               :noexport:
 
-   #+RESULTS:
-   [[file:navegar-sin-proxy.png]]
+** navegar sin proxy uml                                           :noexport:
 
-** navegar con proxy						   :noexport:
-
-    #+BEGIN_SRC ditaa :file navegar-con-proxy.png :cmdline -E :exports none
-     /-------\           /-------\            /-------\ /--------------\
-     |       |           |       |            |       | |              |
-     |firefox|           |  proxy|            |  DNS  | |  osiux.com   |
-     |   cRED|           |   cGRE|            |  cYEL | |         cBLU |
-     |1.2.3.4|           |2.2.2.2|            |8.8.8.8| |67.208.113.123|
-     |:5678  |           |  :8123|            |    :53| |           :80|
-     \-+-----/           \-----+-/            \------+/ \---------+----/
-       :                       :                     :            :
-       | soy 1.2.3.4           |                     |            |
-       | resolver osiux.com    | soy 2.2.2.2         |            |
-       |---------------------->| resolver osiux.com  |            |
-       |                       |-------------------->|----\       |
-       |                       |                     |    |       |
-       |                       | osiux.com es        |  +-+-+     |
-       | osiux.com es          | 67.208.113.123      |  |{s}|     |
-       | 67.208.113.123        |<--------------------|--+log|     |
-       |<----------------------|                        +---+     |
-       |                       |                                  |
-       | soy 1.2.3.4           |                                  |
-       | GET / HTTP/1.1        | soy 2.2.2.2                      |
-       |---------------------->| GET / HTTP/1.1                   |
-       |                       |--------------------------------->|----\
-       |                       |                                  |    |
-       |                       | HTTP/1.1 200 OK                  |  +-+-+
-       | HTTP/1.1 200 OK       | ContentType text/html            |  |{s}|
-       | ContentType text/html |<---------------------------------|--+log|
-       |<----------------------|                                  |  +---+
-       |                       |                                  |
-    #+END_SRC
-
-    #+RESULTS:
-    [[file:navegar-con-proxy.png]]
-
-** navegar sin proxy uml					   :noexport:
-
-   #+BEGIN_SRC plantuml :file secuencia-sin-proxy.png :exports none
-      skinparam sequenceParticipantFontName Monospaced
-      skinparam sequenceParticipantBorderColor black
-      skinparam sequenceLifeLineBorderColor black
-      skinparam sequenceArrowFontName Monospaced
-      skinparam sequenceArrowColor blue
-
-      participant "firefox\n1.2.3.4:4321" as firefox #orange
-      participant "DNS\n8.8.8.8:53" as DNS #yellow
-      participant "google.com\n6.6.6.6:80" as google #red
-      hide footbox
-      autonumber "<b>[0]"
-
-      firefox -> DNS: cuál es la IP de <b>google.com</b>
-      DNS -> DNS: log
-      DNS --> firefox: es la IP <b>6.6.6.6</b>
-      firefox -> google: mi IP es <b>1.2.3.4</b> + UserAgent + GET /
-      google -> google: log
-      google --> firefox: HTML
-   #+END_SRC
-
-   #+RESULTS:
-   [[file:secuencia-sin-proxy-4.png]]
-
-** navegar con proxy uml					   :noexport:
+** navegar con proxy uml                                           :noexport:
 
    #+BEGIN_SRC plantuml :file secuencia-con-proxy.png :exports none
       skinparam sequenceParticipantFontName Monospaced
@@ -287,5 +195,3 @@
       google -> google: log
       google --> firefox: HTML
    #+END_SRC
-
-   #+RESULTS:

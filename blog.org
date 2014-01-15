@@ -5,9 +5,109 @@
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
 
-** =2013=
+** [[file:2013.org][2013]]
+*** =01/NOV=
+**** [[file:2013-11-01-information-technology-conexion-libre.org][information technology conexion libre]]
+*** =30/SEP=
+**** [[file:2013-09-30-hacks-hackers-buenos-aires-2013.org][hacks hackers buenos aires 2013]]
+*** =13/SEP=
+**** [[file:2013-09-13-huayra-primer-sistema-operativo-libre-de-conectar-igualdad.org][huayra primer sistema operativo libre de conectar igualdad]]
+*** =14/JUN=
+**** [[file:2013-06-14-odisea-cortometraje-redes-libres-en-anisacate.org][odisea cortometraje redes libres en anisacate]]
+*** =14/JUN=
+**** [[file:2013-06-14-matanza-comparte-y-redes-libres-en-plaza-ciencia-2013.org][matanza comparte y redes libres en plaza ciencia 2013]]
+*** =05/JUN=
+**** [[file:2013-06-05-invitacion-presentacion-oficial-huayra.org][invitacion presentacion oficial huayra]]
 *** =31/MAY=
-   - [[file:2013-03-31-inscripcion-cursos-de-formacion-profesional.org][Abierta la inscripción a los Cursos de Formación Profesional en Software Libre]]
+**** [[file:2013-05-31-gcoop-muchas-mentes-tecnopolis-tv.org][gcoop muchas mentes tecnopolis tv]]
+**** [[file:2013-03-31-inscripcion-cursos-de-formacion-profesional.org][Abierta la inscripción a los Cursos de Formación Profesional en Software Libre]]
+*** =06/MAY=
+**** [[file:2013-05-06-letras-viajeras.org][letras viajeras]]
+*** =27/ABR=
+**** [[file:2013-04-27-flisol-2013-et10.org][flisol 2013 et10]]
+*** =23/ABR=
+**** [[file:2013-04-23-cluster-de-software-libre.org][cluster de software libre]]
+*** =06/ABR=
+**** [[file:2013-04-06-primer-encuentro-software-libre-monte-caseros.org][primer encuentro software libre monte caseros]]
+*** =06/ABR=
+**** [[file:2013-04-06-huayra-grub-rescue-error-unknown-filesystem.org][huayra grub rescue error unknown filesystem]]
+*** =02/ABR=
+**** [[file:2013-04-02-altermesh-buenos-aires-libre-compartir-es-bueno.org][altermesh buenos aires libre compartir es bueno]]
+*** =31/MAR=
+**** [[file:2013-03-31-inscripcion-cursos-de-formacion-profesional.org][inscripcion cursos de formacion profesional]]
+*** =18/MAR=
+**** [[file:2013-03-18-huayra-el-dia-que-las-vacas-vuelen.org][huayra el dia que las vacas vuelen]]
 *** =01/FEB=
-   - [[file:2013-02-01-migrando-de-frontweb-a-org-mode.org][Migrando de frontweb a Org-mode]]   
-*** [[file:index.org][<- index]] | [[file:2012.org][2012]] | [[file:2011.org][2011]] | [[file:docs.org][docs ->]]
+**** [[file:2013-02-01-migrando-de-frontweb-a-org-mode.org][migrando de frontweb a org mode]]
+** [[file:2012.org][2012]]
+*** =15/OCT=
+**** [[file:2012-10-15-cisl-conferencia-internacional-software-libre.org][cisl conferencia internacional software libre]]
+*** =29/SEP=
+**** [[file:2012-09-29-que-hice-ayer-que-tengo-que-hacer-hoy.org][que hice ayer que tengo que hacer hoy]]
+*** =07/SEP=
+**** [[file:2012-09-07-gcoop-gano-concurso-imagenes-del-cooperativismo.org][gcoop gano concurso imagenes del cooperativismo]]
+*** =30/AGO=
+**** [[file:2012-08-30-gcoop-codigos-cooperativos.org][gcoop codigos cooperativos]]
+*** =27/AGO=
+**** [[file:2012-08-27-proximas-charlas-y-eventos.org][proximas charlas y eventos]]
+*** =06/JUL=
+**** [[file:2012-07-06-free-software-is-cooperative.org][free software is cooperative]]
+*** =05/JUL=
+**** [[file:2012-07-05-sslh-ssl-ssh-shellinabox.org][sslh ssl ssh shellinabox]]
+*** =30/JUN=
+**** [[file:2012-06-30-hackbo-jrrl4-flash-tplink-mr3220-batman-mesh.org][hackbo jrrl4 flash tplink mr3220 batman mesh]]
+*** =26/JUN=
+**** [[file:2012-06-26-campus-party-bogota-cpco5.org][campus party bogota cpco5]]
+*** =15/JUN=
+**** [[file:2012-06-15-hackaton-SLyES-en-28-segundos.org][hackaton SLyES en 28 segundos]]
+*** =14/JUN=
+**** [[file:2012-06-14-visualizando-cooperativas-de-argentina.org][visualizando cooperativas de argentina]]
+*** =13/JUN=
+**** [[file:2012-06-13-SLyES-software-libre-y-economia-social-2012.org][SLyES software libre y economia social 2012]]
+*** =01/JUN=
+**** [[file:2012-06-01-pirate-box-floppy-disk.org][pirate box floppy disk]]
+*** =28/MAY=
+**** [[file:2012-05-28-como-automatizar-vlc-para-grabar-programa-television-digital-abierta.org][como automatizar vlc para grabar programa television digital abierta]]
+*** =25/MAY=
+**** [[file:2012-05-25-buenos-aires-libre-en-el-medio-digital.org][buenos aires libre en el medio digital]]
+*** =24/MAY=
+**** [[file:2012-05-24-carta-abierta-software-libre-con-cfk.org][carta abierta software libre con cfk]]
+*** =23/MAY=
+**** [[file:2012-05-23-la-escala-lo-cambia-todo.org][la escala lo cambia todo]]
+*** =18/MAY=
+**** [[file:2012-05-18-en-el-medio-digital-software-libre.org][en el medio digital software libre]]
+*** =05/MAY=
+**** [[file:2012-05-05-flisol-bogota.org][flisol bogota]]
+*** =28/ABR=
+**** [[file:2012-04-28-flisol-cooperativismo-y-software-libre.org][flisol cooperativismo y software libre]]
+*** =05/MAR=
+**** [[file:2012-03-05-redes-abiertas-versus-redes-cerradas.org][redes abiertas versus redes cerradas]]
+*** =29/FEB=
+**** [[file:2012-02-29-gcoop-cartoon.org][gcoop cartoon]]
+*** =17/FEB=
+**** [[file:2012-02-17-las-cooperativas-construyen-un-mundo-mejor.org][las cooperativas construyen un mundo mejor]]
+*** =14/FEB=
+**** [[file:2012-02-14-de-fondo-negro-a-fondo-blanco.org][de fondo negro a fondo blanco]]
+** [[file:2011.org][2011]]
+*** =29/DIC=
+**** [[file:2011-12-29-orgmode-y-gnuplot.org][orgmode y gnuplot]]
+*** =25/NOV=
+**** [[file:2011-11-25-fabrica-de-fallas-4to-festival-cultura-libre-copyleft.org][fabrica de fallas 4to festival cultura libre copyleft]]
+*** =10/NOV=
+**** [[file:2011-11-10-curso-software-libre-y-programacion-conectar-igualdad.org][curso software libre y programacion conectar igualdad]]
+*** =05/NOV=
+**** [[file:2011-11-05_bsdday-argentina-2011.org][bsdday argentina 2011]]
+*** =24/OCT=
+**** [[file:2011-10-24-software-libre-en-monte-caseros-y-ubuntu-11.10-en-conectar-igualdad.org][software libre en monte caseros y ubuntu 11.10 en conectar igualdad]]
+*** =30/SEP=
+**** [[file:2011-09-30-ejecutar-shell-dentro-de-vim.org][ejecutar shell dentro de vim]]
+*** =16/JUL=
+**** [[file:2011-07-16-awesome-es-increible.org][awesome es increible]]
+*** =03/JUL=
+**** [[file:2011-07-03-jrrl3-fisl12.org][jrrl3 fisl12]]
+*** =23/MAY=
+**** [[file:2011-05-23-pomodoro-notify-send-minutos-osd.org][pomodoro notify send minutos osd]]
+*** =15/MAR=
+**** [[file:2011-03-15-dibujando-con-numeros-desde-la-consola.org][dibujando con numeros desde la consola]]
+
+*** [[file:index.org][<- index]] | [[file:2013.org][2013]] | [[file:2012.org][2012]] | [[file:2011.org][2011]] | [[file:docs.org][docs ->]]
