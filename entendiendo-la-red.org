@@ -263,6 +263,9 @@
       plot data using 2:1 with lines lw 2 lt 3 title 'data'
     #+END_SRC
 
+    #+RESULTS:
+    [[file:img/ranking-dns.png]]
+
 ** Redes Wireless                                                  :noexport:
     
    - Emulan a las redes cableadeas
@@ -273,7 +276,7 @@
 *** nmap                                                           :noexport:
 
     #+BEGIN_SRC sh :session :results output
-      nmap -sV --open 10.4.14.0/24 -p22
+      nmap -sV --open 192.168.10.0/24 -p22 | head
     #+END_SRC
 
     #+RESULTS:

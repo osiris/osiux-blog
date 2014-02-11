@@ -8,26 +8,26 @@
 
 ** Crear Base y Usuario
 
-#+BEGIN_EXAMPLE
+   #+BEGIN_EXAMPLE
     CREATE DATABASE sugar CHARACTER SET utf8 COLLATE utf8_general_ci;
     CREATE user sugar;
     GRANT ALL ON sugar.* TO 'sugar'@'%';
     SET PASSWORD FOR 'sugar'@'%'=PASSWORD('sugar');
-#+END_EXAMPLE
+   #+END_EXAMPLE
 
 ** UTF8
 
-Definir UTF8 en el cliente
+   Definir UTF8 en el cliente
 
-#+BEGIN_EXAMPLE
-    mysql --default-character-set=utf8
-#+END_EXAMPLE
+   #+BEGIN_EXAMPLE
+     mysql --default-character-set=utf8
+   #+END_EXAMPLE
 
-Definir UTF8
+   Definir UTF8
 
-#+BEGIN_EXAMPLE
-    SET NAMES utf8; SELECT * FROM contacts;
-#+END_EXAMPLE
+   #+BEGIN_EXAMPLE
+     SET NAMES utf8; SELECT * FROM contacts;
+   #+END_EXAMPLE
 
 ** MySQL de Bash
 
@@ -68,7 +68,6 @@ Vaciar todas las tablas que contengan la palabra *calls*
 #+BEGIN_EXAMPLE
     sugar < $(echo "show tables" | sugar | grep calls | while read t;do echo "TRUNCATE table $t;";done)
 #+END_EXAMPLE
-
 
 ** MySQL desde Vim
 
@@ -111,7 +110,6 @@ Usar diccionarios
 #+END_EXAMPLE
 
 ** Reemplazar Texto
-
 *** Traducir valores
 
 #+BEGIN_SRC sql :engine mysql :exports code
@@ -152,7 +150,6 @@ Usar diccionarios
     HAVING      total > 500
     ORDER BY    total DESC;
 #+END_SRC
-
 
 ** Cruzando tablas
 

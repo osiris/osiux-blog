@@ -1,0 +1,58 @@
+#+TITLE:       Instalar y Configurar Apache
+#+AUTHOR:      Osiris Alejandro Gómez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+OPTIONS:   toc:nil timestamp:nil
+#+INCLUDE: "header.org"
+#+DATE:        2014-02-10
+
+**** Instalar Apache
+
+     #+BEGIN_SRC sh :exports code 
+       apt-get install apache2-mpm-prefork libapache2-mod-php5     
+     #+END_SRC
+
+**** Crear un VirtualHost
+
+     Primero se debe crear un archivo preferentemente con el nombre
+     del dominio y ubicarlo en =sites-available=.
+
+     #+BEGIN_SRC sh :exports code
+       vi /etc/apache2/sites-available/sitioweb.com
+     #+END_SRC
+
+     El contenido debe tener al menos los siguientes parámetros:
+
+     #+BEGIN_EXAMPLE
+       <VirtualHost *:80>
+               ServerName  sitioweb.com
+               ServerAlias www.sitioweb.com
+               DocumentRoot /var/www/sitioweb
+               <Directory /var/www/>
+                       Options Indexes FollowSymLinks MultiViews
+                       AllowOverride None
+                       Order allow,deny
+                       allow from all
+               </Directory>
+               ErrorLog /var/log/apache2/error.log
+               LogLevel warn
+               CustomLog /var/log/apache2/access.log combined
+       </VirtualHost>
+     #+END_EXAMPLE
+
+     Luego se debe habilitar el sitio, de la siguiente manera:
+
+     #+BEGIN_SRC sh :exports code
+       a2ensite sitioweb.com     
+     #+END_SRC
+
+**** Iniciar, Detener y Reiniciar Apache
+
+     Los cambios en los VirtualHost son aplicados sólo cuando se
+     reinicia el servicio, es posible hacerlo de dos maneras:
+
+     #+BEGIN_SRC sh :exports code
+       /etc/init.d/apache2 start|stop|restart
+       apache2ctl stop|start|graceful
+     #+END_SRC

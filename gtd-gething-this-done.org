@@ -1,0 +1,34 @@
+#+TITLE:       GTD - Gething This Done - Cómo hacer las cosas
+#+AUTHOR:      Osiris Alejandro Gómez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+OPTIONS:   toc:nil timestamp:nil
+#+INCLUDE: "header.org"
+#+DATE:        2014-02-10
+
+** Gething This Done
+
+   Es un método de gestión de las actividades y el título de un libro
+   de David Allen [fn:allen], libro que en español se ha editado con
+   el título *Organízate con eficacia* [fn:librogtd].
+   
+   *GTD* se basa en el principio de que una persona necesita borrar de
+   su mente todas las tareas que tiene pendientes guardándolas en un
+   lugar específico. De este modo, se libera a la mente del trabajo de
+   recordar todo lo que hay que hacer, y se puede concentrar en la
+   efectiva realización de aquellas tareas.
+   
+   A diferencia de otros expertos en gestión del tiempo, *Allen* no se
+   centra en el establecimiento de prioridades. En su lugar, él insta a
+   la creación de listas de tareas específicas para cada contexto, por
+   ejemplo, una lista de llamadas telefónicas pendientes o recados que
+   hacer en la ciudad. También sugiere que cualquier nueva tarea que
+   pueda ser completada en menos de dos minutos debería ser hecha
+   inmediatamente.
+   
+*** Workflow
+
+    #+ATTR_HTML: :width 640 :height 480 :alt GTD Workflow
+    [[file:img/gtd-workflow.png]]
+

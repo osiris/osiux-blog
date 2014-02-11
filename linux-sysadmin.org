@@ -1,0 +1,1136 @@
+#+TITLE:       Administrador de Sistemas GNU/Linux
+#+AUTHOR:      Osiris Alejandro Gómez
+#+EMAIL:       osiris@gcoop.coop
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+DATE:        2014-01-20
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="print.css" />
+
+* Filosofía UNIX
+
+  UNIX incorpora un conjunto de herramientas que guardan cierta
+  analogía con una navaja multiusos. Son simples, pero hacen muy bien
+  su trabajo. En lugar de construir programas muy complejos, UNIX
+  proporcionaba muchas pequeñas herramientas, y un esquema para poder
+  combinarlas de forma efectiva. Este diseño escala muy bien,
+  permitiendo al sistema crecer, incorporar nuevas herramientas y, a la
+  vez, ser compatible hacia atrás.
+
+  Los objetivos con que se creó determinaron una "filosofía" de UNIX
+  caracterizada por:
+
+  - comandos cortos, simples, específicos y muy eficientes, que "hacen
+    una sola cosa pero la hacen muy bien".
+
+  - entrada y salida estandarizadas que permiten la interconexión de
+    comandos. Esto se llama entubamiento ("pipelining"): la salida de
+    un comando es tomada por el siguiente como entrada.
+
+  Algunas directivas son:
+
+  - Escribe programas que hagan una sola cosa y la hagan bien: esto
+    quiere decir que los programas deben de ser lo más atómicos posible
+    y que se compruebe mucho su rendimiento y funcionamiento para
+    hacerlo lo mejor posible.
+
+  - Escribe programas que trabajen juntos: de nada sirve escribir
+    programas que sirvan para una tarea específica y que, después,
+    cuando esa tarea se modifique de cierta forma, haya que reescribir
+    todo el programa.
+
+  - Es mejor dividir el problema en varios programas y después desechar
+    o reescribir solo uno de esos pequeños programas, cuando se
+    necesite, o incluso hacer nuevos.
+
+  - Escribe programas que manejen flujos de texto, pues esa es la
+    interfaz universal: todo lo que se hace con entrada y salida en
+    formato textual es más fácil de enlazar con otros programas, así
+    como reutilizarla en el pasado, presente y futuro.
+
+  En estos conceptos se basa la mayoría de software libre que existe,
+  por lo que servidores como sendmail o postfix, se basan en pequeños
+  servidores y/o programas que hacen partes de todo un proceso y,
+  mediante sus ficheros de configuración, se pueden enlazar de una u
+  otra forma, así como usar otros programas y/o servidores en lugar de
+  los que vienen por defecto y, así, extender su funcionalidad.
+
+  Sobre filosofía Unix, de una forma más extensa, Mike Gancarz, escribe
+  las siguientes líneas:
+
+  - Lo pequeño es hermoso.
+  - Haz que cada programa haga una sola cosa, pero que la haga bien.
+  - Construye un prototipo lo antes posible.
+  - Elige portabilidad sobre eficiencia.
+  - Guarda los datos en archivos de texto plano.
+  - Aprovecha funcionalidades del software.
+  - Usa scripts de shell para aumentar la funcionalidad y portabilidad.
+  - Evita interfaces de usuario captivas.
+  - Haz de cada programa un filtro.
+
+  La Filosofía UNIX supone crear programas rápidos, simples, con poca
+  intervención por parte del usuario, o en caso de necesitarla, esta se
+  produzca al principìo o lo más mínima posible. Esta se acopla
+  perfectamente a las necesidades de computación de los laboratorios
+  cientificos, puesto que Unix fue originalmente desarrollado en uno de
+  estos.
+
+  A continuación algunas premisas:
+
+  - Que cada programa realice unicamente la tarea para la que fue
+    creado y la haga bien.
+  - Para llevar a cabo una nueva tarea escribe un programa nuevo. No
+    compliques uno viejo añadiendo nueva funcionalidad.
+  - Escribe tu programa teniendo en cuenta que su salida probablemente
+    sea la entrada de otro programa.
+  - Guarda los datos en archivos de texto plano. Si necesitas
+    seguridad, confía en los permisos.
+  - Usa nombres cortos y en minúscula.
+  - En la manera de lo posible haz que el usuario suministre los datos
+    por línea de comandos en la llamada.
+  - Haz partes simples conectadas mediante interfaces limpias y bien
+    definidas.
+  - Céntrate en los datos.
+  - Claridad mejor que complejidad. La solución más simple es
+    frecuentemente la mejor.
+  - Portabilidad mejor que eficiencia.
+  - Piensa en paralelo. Hay otros procesos en el mundo, incluso
+    instancias de tu mismo programa funcionando al mismo tiempo.
+  - Hacer programas grandes, solo cuando se demuestre que no se puede
+    realizar con uno pequeño.
+  - Si no hay nada interesante que decir, que el programa mejor no diga
+    nada.
+  - Para cada problema existen múltiples soluciones.
+  - Diseña pensando en el futuro (esta cercano). Esto nos ofrece
+    compatibilidad y mayor tiempo de utilización.
+  - Programa de abajo hacia arriba y de conocimiento pragmático.
+  - Progama basado en el conocimiento Empírico o Experiencia.
+  - No se encuentra en los métodos y las normas oficiales, sino en el
+    medio-reflexivo implícito, el conocimiento.
+
+  En resumidas cuentas la filosofía Unix se puede describir como bien
+  lo dice Doug Mcllroy:
+
+  "Escribe programas que hagan una cosa y la hagan bien, que trabajen
+  en armonía con otros y que manejen flujos de texto, pues esta es una
+  interfaz universal." - Doug Mcllroy
+
+  "Aquellos que no pueden entender UNIX, estan condenados a
+  reinventarlo, pobremente." - Henry Spencer, 1987
+
+* Linux por dentro, jerarquías de directorios
+
+  #+BEGIN_EXAMPLE
+    / 
+    +-- bin         binarios
+    +-- boot        inicio del sistema, imágenes del kernel
+    +-- dev         dispositivos, presentes y futuros
+    +-- etc         configuraciones
+    +-- home        directorios personales de los usuarios
+    +-- lib         bibliotecas
+    +-- lost+found  archivos y/o cadenas perdidas
+    +-- media       dispositivos extraibles
+    +-- mnt         dispositivos montados
+    +-- opt         binarios fuera de la distro
+    +-- proc        procesos en ejecución
+    +-- root        directorio personal del root
+    +-- run         archivos de procesos en ejecución
+    +-- sbin        binarios del sistema
+    +-- selinux     secure linux
+    +-- srv         servicios ej: ftp
+    +-- sys         system
+    +-- tmp         temporales
+    +-- usr         archivos compartidos
+    +-- var         archivos que varían de tamaño, ej: logs
+  #+END_EXAMPLE
+
+* Todo es un archivo, conociendo /proc y /dev
+** =/proc=
+
+   Es un pseudo-sistema de ficheros que se usa como interfaz para las
+   estructuras de datos del núcleo en lugar de leer e interpretar
+   /dev/kmem. La mayor parte de este sistema de ficheros es de sólo
+   lectura, pero algunos ficheros permiten cambiar variables del
+   núcleo.
+
+*** =/proc/partitions=
+
+    Podemos ver las particiones que leyó el *kernel*:
+
+    #+BEGIN_SRC sh :session :results output
+      cat /proc/partitions
+    #+END_SRC
+
+    #+RESULTS:
+    : major minor  #blocks  name
+    : 
+    :    8        0  488386584 sda
+    :    8        1   52428800 sda1
+    :    8        2   52428800 sda2
+    :    8        3  383527960 sda3
+    :   11        0    1048575 sr0
+    :  254        0  383525912 dm-0
+
+*** =/proc/uptime=
+
+    El =uptime= de nuestro equipo puede ser consultado directamente en
+    =/proc/uptime=, 
+
+    #+BEGIN_SRC sh :session :results output
+      cat /proc/uptime
+    #+END_SRC
+
+    #+RESULTS:
+    : 1901728.32 3010323.20
+
+    Si utilizamos el comando =uptime=, éste lee el valor expresado en
+    *epoc* (segundos que pasaron desde el 01/01/1970) y nos informa
+    hace cuántos días y horas nuestro servidor está prendido, además
+    de informar otros valores, como la cantidad de usuarios y el
+    *average*:
+
+    #+BEGIN_SRC sh :session :results output
+      uptime
+    #+END_SRC
+
+    #+RESULTS:
+    :  10:53:05 up 22 days, 15 min,  6 users,  load average: 1,63, 1,70, 1,58
+
+** =/dev=
+
+   Aquí se encuentran todos los dispositivos del sistema, presentes y
+   futuros.
+
+*** =/dev/null=
+
+    Este dispositivo es muy especial y sumamente útil, es un agujero
+    negro, todo lo que se envía a =/dev/null= desaparece
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      ls -lh /dev/null
+    #+END_SRC
+
+    #+RESULTS:
+    : crw-rw-rw- 1 root root 1, 3 ene 20 10:37 /dev/null
+
+    Si enviamos algo y luego miramos con un =ls= no vemos que se
+    incremente el tamaño del archivo:
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      echo "hola" >/dev/null
+      ls -lh /dev/null   
+    #+END_SRC
+
+    #+RESULTS:
+    : crw-rw-rw- 1 root root 1, 3 ene 20 10:37 /dev/null
+
+*** =/dev/sdX=
+
+    Los discos están identificados con el prefijo =sd=, luego una
+    letra =a,b,c,etc= y finalmente un número =1,2,3, etc= que
+    identifica la partición:
+
+    Listamos el disco =sda=
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      ls /dev/sda*
+    #+END_SRC
+
+    #+RESULTS:
+    : /dev/sda
+    : /dev/sda1
+    : /dev/sda2
+    : /dev/sda3
+
+    Vemos si esta montado =sda=:
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      mount | grep sda
+    #+END_SRC
+
+    #+RESULTS:
+    : /dev/sda1 on /mnt/sda1 type ext4 (rw,relatime,user_xattr,barrier=1,data=ordered)
+
+    Visualizamos el espacio disponible:
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      df -h | grep sda
+    #+END_SRC
+
+    #+RESULTS:
+    : /dev/sda1                                                 50G    14G   34G  29% /mnt/sda1
+
+* Comandos básicos de terminal
+** Directorios:
+
+   El separador de archivos y directorios es la barra =/=
+   
+   ejemplos:
+   
+   /              directorio raíz (*root*)
+   /etc           directorio usr (sub-directorio de la raíz =/=)
+   /etc/apache2   apache2 subdirectorio de /etc
+   
+*** Moviendose en el sistema de archivos:
+   
+    pwd
+        Muestra el directorio actual.
+    cd
+        Cambia al directorio definido en =HOME=
+    cd /etc/php5
+        Cambia el directorio actual a =/etc/php5=
+    cd conf.d
+        Cambia al subdirectorio =conf.d= del directorio actual
+    cd ..
+        Cambia al directorio inmediato superior
+    cd $HOME
+        Cambia al directorio definid en la variable =HOME=
+    cd ~osiris
+        Cambial al directorio del usuario osiris
+   
+*** Listar directorios:
+   
+    ls
+        Listar directorio actual
+    ls -l
+        Listar directorio actual en formato ancho
+    ls -a
+        Listar directorio actual incluyendo archivos ocultos (comienzan
+        con =.=)
+    
+    #+BEGIN_EXAMPLE
+      $ ls -l
+      -rw-rw-r-- 1 osiris www-data      612 nov  1 19:29 redes.html
+      -rw-rw-r-- 1 osiris www-data    11457 nov  1 19:31 scrum.html
+      -rw-rw-r-- 1 osiris www-data     6556 abr 24  2013 ssh.org
+      -rw-rw-r-- 1 osiris www-data      609 abr 24  2013 graphviz.org
+      -rw-rw-r-- 1 osiris www-data    17326 abr 24  2013 gnuplot.org
+      -rw-rw-r-- 1 osiris www-data    11457 nov  1 19:31 tmp
+      ^ ^  ^  ^  ^ ^           ^          ^ ^      ^     ^
+      | |  |  |  | |           |          | |      |     |
+      | |  |  |  | propietario grupo tamaño fecha  hora  nombre
+      | |  |  |  número de links al archivo o contenido del directorio
+      | |  |  permisos para todos
+      | |  permisos para miembros del grupo
+      | permisos para el propietario del archivo:
+      |   r     lectura
+      |   w     escritura
+      |   x     ejecutar
+      |   -     ninguno
+      tipo de archivo:
+        -   archivo normal
+        d   directorio
+        l   enlace simbolico
+    #+END_EXAMPLE
+   
+   ls -ld *     List all the file and directory names in the current directory using
+                long format. Without the "d" option, ls would list the contents
+                of any sub-directory of the current. With the "d" option, ls
+                just lists them like regular files.
+
+** Cambiando permisos y atributos
+
+   #+BEGIN_EXAMPLE
+     r = read        4
+     w = write       2
+     x = execute     1
+
+     propietario   7 = rwx lectura, escritura y ejecución
+     grupo         5 = rx- lectura y ejecución
+     todos         0 = --- ningún permiso   
+   #+END_EXAMPLE
+
+    Es necesario ser el propietario del archivo/directorio (o =root=)
+    para realizar el cambio de =usuario= o =grupo=.
+
+*** =chmod 750 archivo=
+
+    Listamos los permisos del archivo =~/.bash_history=
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      ls -l ~/.bash_history
+    #+END_SRC
+
+    #+RESULTS:
+    : -rwxr-x--- 1 osiris osiris 326316 feb 10 21:55 /home/osiris/.bash_history
+
+    Cambiamos el permiso a =750= y volvemos a listar:
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      chmod 750 ~/.bash_history
+      ls -l ~/.bash_history
+    #+END_SRC
+
+    #+RESULTS:
+    : -rwxr-x--- 1 osiris osiris 326316 feb 10 21:55 /home/osiris/.bash_history
+
+    Finalmente cambiamos el permiso a =600= y volvemos a listar:
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      chmod 600 ~/.bash_history
+      ls -l ~/.bash_history
+    #+END_SRC
+
+    #+RESULTS:
+    : -rw------- 1 osiris osiris 326316 feb 10 21:55 /home/osiris/.bash_history
+   
+*** =chgrp grupo archivo=
+
+    establece el grupo al archivo
+
+*** =chown usuario archivo=
+
+    establece el usuario como propietario del archivo
+
+*** =chown usuario archivo=
+
+    establece el usuario como propietario del directorio y todo su contenido recursivamente.
+ 
+** Moviendo, renombrando y copiando archivos:o
+
+   Copiamos el archivo =~/.bash_history= a =~/.bash_history.bak= y
+   verificamos que sea igual:
+
+   #+BEGIN_SRC sh :session :results output :exports both
+     ls -lh ~/.bash_history
+     cp ~/.bash_history ~/.bash_history.bak
+     ls -lh ~/.bash_history
+     md5sum ~/.bash_history ~/.bash_history.bak
+   #+END_SRC
+
+   #+RESULTS:
+   : -rw------- 1 osiris osiris 310K feb 11 11:07 /home/osiris/.bash_history
+   : -rw------- 1 osiris osiris 310K feb 11 11:07 /home/osiris/.bash_history
+   : 7b862a967fc7096882583f9a6f662230  /home/osiris/.bash_history
+   : 7b862a967fc7096882583f9a6f662230  /home/osiris/.bash_history.bak
+
+   #+END_SRC
+
+   Movemos el archivo =~/.bash_history.bak= a =~/historial.bak=:
+
+   #+BEGIN_SRC sh :session :results output :exports both
+     mv -vi ~/.bash_history.bak ~/historial.bak
+     ls -l ~/.bash_history ~/historial.bak
+   #+END_SRC
+
+   #+RESULTS:
+   : «/home/osiris/.bash_history.bak» -> «/home/osiris/historial.bak»
+   : -rw------- 1 osiris osiris   316801 feb 11 11:07 /home/osiris/.bash_history
+   : -rw------- 1 osiris www-data 316801 feb 11 11:13 /home/osiris/historial.bak
+
+
+   Renombramos el archivo =~/historial.bak= a =~/historial.log=
+
+   #+BEGIN_SRC sh :session :results output :exports both
+     mv -vi ~/historial.bak ~/historial.log
+     ls -l ~/historial.log
+   #+END_SRC
+
+   #+RESULTS:
+   : «/home/osiris/historial.bak» -> «/home/osiris/historial.log»
+   : -rw------- 1 osiris www-data 316801 feb 11 11:13 /home/osiris/historial.log
+
+** Ver y editar arhivos:
+
+*** =cat=
+
+    #+BEGIN_SRC sh :session :results output
+      cat /etc/issue
+    #+END_SRC
+
+    #+RESULTS:
+    : Debian GNU/Linux 7.0 \n \l
+    : 
+
+*** =head=
+
+    #+BEGIN_SRC sh :session :results output
+      head /proc/meminfo | head
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+    MemTotal:        2062464 kB
+    MemFree:          872100 kB
+    Buffers:           56052 kB
+    Cached:           642468 kB
+    SwapCached:        10928 kB
+    Active:           520204 kB
+    Inactive:         570096 kB
+    Active(anon):     366124 kB
+    Inactive(anon):   211844 kB
+    Active(file):     154080 kB
+    #+end_example
+
+*** =head -2=
+
+    #+BEGIN_SRC sh :session :results output
+      head /proc/meminfo | head -2
+    #+END_SRC
+
+    #+RESULTS:
+    : MemTotal:        2062464 kB
+    : MemFree:          871860 kB
+
+*** =tail=
+
+    #+BEGIN_SRC sh :session :results output
+      tail /etc/passwd
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+    hplip:x:106:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+    pulse:x:107:114:PulseAudio daemon,,,:/var/run/pulse:/bin/false
+    saned:x:108:118::/home/saned:/bin/false
+    Debian-gdm:x:109:119:Gnome Display Manager:/var/lib/gdm3:/bin/false
+    alumno:x:1001:1000:alumno,,,:/home/alumno:/bin/bash
+    osiris:x:2222:33:OSiRiS,,,:/home/osiris:/bin/bash
+    sshd:x:110:65534::/var/run/sshd:/usr/sbin/nologin
+    postfix:x:111:120::/var/spool/postfix:/bin/false
+    rodrigo:x:1002:1001:Rodrigo Fernandez,,,:/mnt/data/musica:/bin/bash
+    davfs2:x:112:122::/var/cache/davfs2:/bin/false
+    #+end_example
+
+    #+BEGIN_SRC sh :session :results output
+      tail -2 /etc/passwd
+    #+END_SRC
+
+    #+RESULTS:
+    : rodrigo:x:1002:1001:Rodrigo Fernandez,,,:/mnt/data/musica:/bin/bash
+    : davfs2:x:112:122::/var/cache/davfs2:/bin/false
+
+*** =sed=
+
+    #+BEGIN_SRC sh :session :results output
+      cat /etc/issue
+      sed s/"7.0"/"8.0"/g /etc/issue
+      cat /etc/issue
+    #+END_SRC
+
+    #+RESULTS:
+    : Debian GNU/Linux 7.0 \n \l
+    : 
+    : Debian GNU/Linux 8.0 \n \l
+    : 
+    : Debian GNU/Linux 7.0 \n \l
+    : 
+
+** Expresiones regulares
+
+   Se utilizan para definir patrones para la búsqueda y filtrado:
+
+   =[a-z]=
+
+       rango de la *a* a la *z*
+
+   =[A-Z]=
+
+       rango de la *A* a la *Z*
+
+   =[0-9]=
+
+       rango de 0 a 9
+       
+   =[^..]=
+
+       negación
+       
+   =^=
+
+       principio de línea
+
+   =$=
+   
+       fin de línea
+
+   =.=
+
+       cualquier caracter
+       
+   =?=
+
+       cero o una aparición
+       
+   =*=
+
+       ninguna o muchas repeticiones
+
+   =+=
+   
+       una o mas repeticiones
+
+* Salida standard y tuberías
+
+** stdout
+
+   Buscar el texto *model* en el archivo =/proc/cpuinfo= y enviar el
+   resultado a un nuevo archivo llamado =/tmp/cpu= que contendrá
+   únicamente las líneas que coinciden con el texto *model*:
+
+   #+BEGIN_SRC sh :session :results output :exports both
+     grep model /proc/cpuinfo > /tmp/cpu
+     cat /tmp/cpu
+   #+END_SRC
+
+   #+RESULTS:
+   : model		: 28
+   : model name	: Intel(R) Atom(TM) CPU D425   @ 1.80GHz
+   : model		: 28
+   : model name	: Intel(R) Atom(TM) CPU D425   @ 1.80GHz
+
+   Buscar el texto *cache* en el archivo =/proc/cpuinfo= y agregar el
+   resultado al archivo =/tmp/cpu=
+
+   #+BEGIN_SRC sh :session :results output :exports both
+     grep cache /proc/cpuinfo >> /tmp/cpu
+     cat /tmp/cpu
+   #+END_SRC
+
+   #+RESULTS:
+   : model		: 28
+   : model name	: Intel(R) Atom(TM) CPU D425   @ 1.80GHz
+   : model		: 28
+   : model name	: Intel(R) Atom(TM) CPU D425   @ 1.80GHz
+   : cache size	: 512 KB
+   : cache_alignment	: 64
+   : cache size	: 512 KB
+   : cache_alignment	: 64
+
+** stderr
+
+   Enviar la salida con errores a =/dev/null=:
+
+   #+BEGIN_EXAMPLE
+     xkcd 2>/dev/null   
+   #+END_EXAMPLE
+
+   Redireccionar la salida con errores a la salida estandar:
+
+   #+BEGIN_EXAMPLE
+     echo "xkcd" | grep 2>&1
+   #+END_EXAMPLE
+
+** pipes
+
+   El símbolo =|= es usado para redireccionar la salida de un comando
+   a la entrada de otro comando.
+
+   Ejemplo:
+
+     lista el directorio =/var/log= ordenando los archivos más nuevos
+     al principio y muestra sólo las primeras 10 líneas mediante el
+     comando =head=
+
+     #+BEGIN_SRC sh :session :results output :exports both
+       ls -lht /var/log | head
+     #+END_SRC
+
+     #+RESULTS:
+     #+begin_example
+     total 14M
+     -rw-rw-r-- 1 root              utmp       107K feb 10 20:46 wtmp
+     -rw-r----- 1 root              adm        769K feb 10 20:45 mail.info
+     -rw-r----- 1 root              adm        769K feb 10 20:45 mail.log
+     -rw-r----- 1 root              adm        356K feb 10 20:45 syslog
+     -rw-r----- 1 root              adm        337K feb 10 20:45 auth.log
+     -rw-r----- 1 root              adm        3,1K feb 10 19:49 messages
+     -rw-r----- 1 root              adm        2,9K feb 10 19:49 kern.log
+     -rw-r--r-- 1 root              root        29K feb 10 16:42 Xorg.0.log
+     -rw-r----- 1 root              adm        1,9K feb 10 16:42 daemon.log
+     #+end_example
+     
+     lista el directorio =/var/log= mostrando el tamaño de cada
+     archivo, se filtra el resultando por Megabytes (=M=), luego
+     ordena de mayor a menor y finalmente limita la lista a los
+     primeros 10 archivos que más espacio ocupan, incluyendo el total
+     del directorio:
+
+     #+BEGIN_SRC sh :session :results output :exports both
+       cd /var/log;du -ch *  | grep M | sort -nr | head
+     #+END_SRC
+
+     #+RESULTS:
+     : 496M	total
+     : 468M	atop
+     : 15M	installer
+     : 14M	installer/cdebconf
+     : 3,3M	mail.log.1
+     : 3,3M	mail.info.1
+     : 1,5M	auth.log.1
+
+* Acceso remoto usando ssh
+
+  #+INCLUDE: "ssh-para-gobernar-el-mundo.org" :lines "10-"
+
+* Entornos gráficos, ejecución remota de aplicaciones gráficas
+** =ssh -X=
+
+   Es posible ejecutar una aplicación gráfica de un servidor remoto
+   visualizando en el equipo local por medio de =ssh=, solo es
+   necesario incluir el parámetro =-X= y el servidor *X* se
+   redireciona a nuestro *host*
+
+   #+BEGIN_EXAMPLE
+     ssh -X caipiroska 'gnome-calculator'
+   #+END_EXAMPLE
+
+** =DISPLAY\=:0=
+
+   Utilizando la aplicación =notify-send= se puede enviar un mensaje
+   de notificación, normalmente es utilizado para visualizar eventos
+   del sistema, y estoy lo podemos hacer en un equipo remoto mediante
+   =ssh=:
+
+   #+BEGIN_SRC sh :session :results output :exports code
+     ssh -X osiris@localhost "DISPLAY=:0 notify-send 'hola!'"
+   #+END_SRC
+
+   #+RESULTS:
+
+** =vnc4server=
+
+   Habitualmente se utiliza *VNC* para compartir la sesion actual,
+   pero también se pueden levantar instancias nuevas, pudiendo tener
+   entornos gráficos diferentes en cada sesion de usuario en el mismo
+   servidor.
+
+   Es necesario ejecutar en el servidor:
+
+   #+BEGIN_EXAMPLE
+     vnc4server
+   #+END_EXAMPLE
+
+* Procesos
+
+  #+INCLUDE: "procesos-linux.org" :lines "10-"
+
+* Automatizando tareas: sleep, jobs, crontab
+
+  #+INCLUDE: "automatizando-tareas.org" :lines "10-"
+
+* Análisis de tráfico de red con tcpdump y Wireshark
+
+  #+INCLUDE: "que-no-se-entere-nadie.org" :lines "10-"
+
+* Introducción a las redes TCP/IP
+  
+  #+INCLUDE: "entendiendo-la-red.org" :lines "10-"
+
+* Configuración de servicios básicos
+** Apache
+
+  #+INCLUDE: "instalar-y-configurar-apache.org" :lines "10-"
+
+** PHP
+
+  #+INCLUDE: "instalar-y-configurar-php5.org" :lines "10-"
+
+** MySQL
+
+  #+INCLUDE: "~/blog/mysql-bash-vim-tips.org" :lines "10-"
+
+** Postfix
+
+   =TODO=
+
+** DHCP
+*** =dhcp3=
+**** configuración
+
+     Es muy simple la sintaxis del archivo =/etc/dhcp3/dhcpd.conf= donde podemos
+     especificar los sevidores de dns (*domain-name-servers*) entre
+     otros parámetros, lo importante es definir la subred, en el caso
+     de tratarse de una LAN es muy común la siguiente configuración:
+
+     #+BEGIN_EXAMPLE
+       dns-update-style none;
+       option domain-name-servers 200.45.191.35,200.45.48.233;
+       default-lease-time 6000;
+       max-lease-time 7200;
+       log-facility local7;
+
+       subnet 192.168.0.0 netmask 255.255.255.0 {
+         range 192.168.0.100 192.168.0.150;
+         option routers 192.168.0.1;
+       }    
+     #+END_EXAMPLE
+
+     - Se trata de una red =/24=, es decir que los primeros tres
+       octetos están fijos, tal como indica la máscara de red
+       =255.255.255.0=.
+     - Se entregarán IPs dinámicamente desde la =192.168.0.100= a la
+       =192.168.0.150=, siendo =192.168.0.1= la IP del =gateway=.
+
+     En el mismo archivo se pueden asignar IPs fijas, ingresando la
+     dirección física (*MAC Address*) y la IP elegida:
+
+     #+BEGIN_EXAMPLE
+       host syrah {
+               hardware ethernet 00:AC:DC:00:CA:FE;
+               fixed-address 192.168.0.4;
+       }
+     #+END_EXAMPLE
+
+**** iniciar y detener el servicio
+
+     #+BEGIN_EXAMPLE
+       /etc/init.d/dhcp start
+       /etc/init.d/dhcp stop
+     #+END_EXAMPLE
+
+* Metodologías ágiles de trabajo
+** Time Management for System Administrators
+   - http://www.tomontime.com/
+** GTD
+
+   #+INCLUDE: "~/blog/gtd-gething-this-done.org" :lines "10-"
+   
+** Scrum
+
+   =TODO=
+
+**** DONE Sprint <2012-08-06 lun>--<2012-08-10 vie>
+     CLOSED: [2012-08-11 sb 18:17]
+     :LOGBOOK:
+     - State "DONE"       from ""           [2012-08-11 sb 18:17]
+     :END:
+     :PROPERTIES:
+     :ID:       SPRINT_2012-08-06
+     :END:
+
+***** disponibilidad horaria estimada
+
+      |        |  lun | mar | mie | jue | vie |  tot |
+      |--------+------+-----+-----+-----+-----+------|
+      | diego  |  2.5 |   3 |   0 | 1.5 |   3 |  10. |
+      | joac   |    3 |   3 |   0 | 1.5 |   3 | 10.5 |
+      | jose   |    6 |   6 |   0 |   3 |   6 |   21 |
+      | hugo   |    4 |   0 |   0 |   3 |   6 |   13 |
+      | osiris |    3 |   3 |   0 |   3 |   6 |   15 |
+      |--------+------+-----+-----+-----+-----+------|
+      |        | 18.5 |  15 |   0 | 12. |  24 | 69.5 |
+      #+TBLFM: $7=vsum($2..$6)::@>=vsum(@I..@II)
+
+***** disponibilidad horaria real
+
+      |        |  lun | mar | mie | jue | vie |  tot |
+      |--------+------+-----+-----+-----+-----+------|
+      | diego  |  2.5 |   3 |   0 | 1.5 |   3 |  10. |
+      | joac   |    3 |   3 |   0 | 1.5 |   3 | 10.5 |
+      | jose   |    6 |   6 |   0 |   3 |   6 |   21 |
+      | hugo   |    4 |   0 |   0 |   3 |   6 |   13 |
+      | osiris |    3 |   3 |   0 |   3 |   6 |   15 |
+      |--------+------+-----+-----+-----+-----+------|
+      |        | 18.5 |  15 |   0 | 12. |  24 | 69.5 |
+      #+TBLFM: $7=vsum($2..$6)::@>=vsum(@I..@II)
+
+***** estimado versus real
+
+      #+tblname: scrum-2012-08-06
+      |      fecha |  est | real | pend est | pend real |
+      |------------+------+------+----------+-----------|
+      | 2012-08-05 |    0 |    0 |    34.75 |     34.75 |
+      | 2012-08-06 | 9.25 |    9 |     25.5 |     25.75 |
+      | 2012-08-07 |  7.5 |  7.5 |      18. |     18.25 |
+      | 2012-08-08 |    0 |    0 |      18. |     18.25 |
+      | 2012-08-09 |    6 |    6 |      12. |     12.25 |
+      | 2012-08-10 |   12 |    4 |       0. |      8.25 |
+      |------------+------+------+----------+-----------|
+      #+TBLFM: $4=@-1-$2::@2$4=vsum(@I$2..@II$2)-$2::@3$2=18.5/2::@3$5=@-1-$3::@4$2=15/2::@4$5=@-1-$3::@5$5=@-1-$3::@6$5=@-1-$3::@7$5=@-1-$3
+
+***** plot-scrum                                                   :noexport:
+
+      #+begin_src gnuplot :var data=scrum-2012-08-06 :file gca-scrum-2012-08-06.png :exports none
+      reset
+
+      set xdata time
+      set timefmt x "%Y-%m-%d"
+      set format x "%d/%m" font "Inconsolata,8"
+
+      set title "gca sprint 2012-08-06 al 2012-08-10 "
+      set xlabel "das"
+      set ylabel "horas"
+
+      set xtics 60*60*24 font "Inconsolata,8" nomirror rotate by right at 0.5,0
+      set ytics nomirror
+      set tics font "Inconsolata,8" nomirror
+      set mytics
+      set grid lc rgb "#d5e0c9"
+
+      plot data using 1:4 with lines lw 2 lt 3 title 'pend. estimado', \
+       data using 1:5 with lines lw 2 lt 1 title 'pend. real', \
+       data using 1:2 with lines lw 2 lt 2 title 'hs. estimadas x da', \
+       data using 1:3 with lines lw 2 lt 4 title 'hs. reales x da'
+
+      #+end_src
+
+      #+RESULTS:
+      [[file:gca-scrum-2012-08-06.png]]
+
+***** burndown
+
+      [[file:gca-scrum-2012-08-06.png]]
+
+** Pomodoro
+   
+   =TODO=
+
+** Autofocus
+
+   =TODO=
+
+** Kanban
+
+   =TODO=
+
+* Aplicaciones de Consola
+
+** chat
+    - irssi
+    - centerim
+    - finch
+** copias
+    - rdiffbackup
+    - rsync
+    - scp
+** correo
+    - alpine
+    - mutt
+    - sup
+** descargas
+    - axel
+    - rtorrent
+    - wget
+    - ncftp
+** disco
+    - ncdu
+** editores
+    - emacs
+    - vim
+** explorador de archivos
+    - mc
+    - ranger
+    - vifm
+** monitoreo
+*** =top=
+*** =atop=
+
+    Es posible consultar el registro de un día en particular, por
+    ejemplo qué procesos estaban consumiendo mayor acceso a disco el
+    24/01/2014 en el servidor tempranillo entre las 10 y 12hs:
+
+    #+BEGIN_SRC sh :session :results output
+      ssh tempranillo atop -r /var/log/atop/atop_20140121 -b 10:00 -e 12:00 -D | head -30
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+
+
+    ATOP - tempranillo       2014/01/21  10:00:02       ------         10m0s elapsed
+    PRC | sys    4.15s | user   7.35s | #proc    255 | #zombie    0 | #exit    330 |
+    CPU | sys       1% | user      1% | irq       0% | idle    798% | wait      0% |
+    cpu | sys       0% | user      0% | irq       0% | idle     99% | cpu000 w  0% |
+    cpu | sys       0% | user      0% | irq       0% | idle    100% | cpu001 w  0% |
+    cpu | sys       0% | user      0% | irq       0% | idle    100% | cpu005 w  0% |
+    cpu | sys       0% | user      0% | irq       0% | idle    100% | cpu002 w  0% |
+    cpu | sys       0% | user      0% | irq       0% | idle    100% | cpu007 w  0% |
+    cpu | sys       0% | user      0% | irq       0% | idle    100% | cpu006 w  0% |
+    cpu | sys       0% | user      0% | irq       0% | idle    100% | cpu004 w  0% |
+    cpu | sys       0% | user      0% | irq       0% | idle    100% | cpu003 w  0% |
+    CPL | avg1    0.00 | avg5    0.01 | avg15   0.05 | csw   137938 | intr  135127 |
+    MEM | tot     3.8G | free   44.8M | cache   2.1G | buff  258.7M | slab  225.9M |
+    SWP | tot     4.0G | free    3.9G |              | vmcom   2.3G | vmlim   5.9G |
+    PAG | scan      84 | stall      0 |              | swin       0 | swout      0 |
+    DSK |         xvdb | busy      0% | read     171 | write    923 | avio 0.83 ms |
+    DSK |         xvda | busy      0% | read       8 | write   1095 | avio 0.22 ms |
+    NET | transport    | tcpi    3900 | tcpo    3845 | udpi     351 | udpo     372 |
+    NET | network      | ipi     4312 | ipo     3829 | ipfrw      0 | deliv   4295 |
+    NET | eth0    ---- | pcki    2153 | pcko    1670 | si    3 Kbps | so   18 Kbps |
+    NET | lo      ---- | pcki    2160 | pcko    2160 | si    5 Kbps | so    5 Kbps |
+
+      PID  SYSCPU  USRCPU  VGROW  RGROW  RDDSK  WRDSK ST EXC S  DSK CMD            
+     3595   0.43s   0.61s     0K    28K     0K  2856K --   - S  19% mysqld         
+     4400   0.02s   0.07s  1876K   152K  2180K    56K --   - S  15% imap           
+     2573   0.01s   0.00s     0K     0K     0K  2164K --   - S  15% jbd2/xvdb-8    
+     1358   0.01s   0.00s     0K     0K     0K  1732K --   - S  12% kjournald      
+     2238   0.25s   0.89s   552K   596K     0K  1676K --   - R  11% /usr/sbin/amav 
+#+end_example
+
+*** =htop=
+*** =iftop=
+*** =iotop=
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      ssh malbec 'sudo iotop -b -o -n 2 -d 5'
+    #+END_SRC
+
+    #+RESULTS:
+    : Total DISK READ: 0.00 B/s | Total DISK WRITE: 0.00 B/s
+    :   TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+    : Total DISK READ: 0.00 B/s | Total DISK WRITE: 0.00 B/s
+    :   TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN      IO    COMMAND
+    :  1552 be/4 root        0.00 B/s  815.89 B/s  0.00 %  0.00 % syslogd
+
+*** =ioping=
+
+    #+BEGIN_SRC sh :session :results output
+      ioping -c 5 /mnt/data
+    #+END_SRC
+
+    #+RESULTS:
+    : 4096 bytes from /mnt/data (xfs /dev/mapper/data): request=1 time=20.8 ms
+    : 4096 bytes from /mnt/data (xfs /dev/mapper/data): request=2 time=0.6 ms
+    : 4096 bytes from /mnt/data (xfs /dev/mapper/data): request=3 time=0.6 ms
+    : 4096 bytes from /mnt/data (xfs /dev/mapper/data): request=4 time=0.6 ms
+    : 4096 bytes from /mnt/data (xfs /dev/mapper/data): request=5 time=0.6 ms
+    : 
+    : --- /mnt/data (xfs /dev/mapper/data) ioping statistics ---
+    : 5 requests completed in 4023.8 ms, 216 iops, 0.8 mb/s
+    : min/avg/max/mdev = 0.6/4.6/20.8/8.1 ms
+
+*** mon
+*** monit
+*** munin
+*** sysstat
+*** =vnstat=
+**** top 10
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      ssh vodka 'vnstat -i venet0 -t'
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+
+     venet0  /  top 10
+
+        #      day          rx      |     tx      |    total    |   avg. rate
+       -----------------------------+-------------+-------------+---------------
+        1   03/19/13       4.09 GiB |   64.21 GiB |   68.30 GiB |    6.63 Mbit/s
+        2   03/20/13     930.99 MiB |   23.57 GiB |   24.48 GiB |    2.38 Mbit/s
+        3   11/09/13       3.58 GiB |   18.64 GiB |   22.23 GiB |    2.16 Mbit/s
+        4   03/26/13       1.02 GiB |   18.19 GiB |   19.22 GiB |    1.87 Mbit/s
+        5   03/25/13     735.60 MiB |   16.55 GiB |   17.27 GiB |    1.68 Mbit/s
+        6   03/27/13     695.73 MiB |   13.61 GiB |   14.29 GiB |    1.39 Mbit/s
+        7   03/21/13     700.46 MiB |   13.58 GiB |   14.26 GiB |    1.38 Mbit/s
+        8   04/09/13     648.98 MiB |   13.32 GiB |   13.95 GiB |    1.35 Mbit/s
+        9   01/07/14      13.21 GiB |  356.93 MiB |   13.56 GiB |    1.32 Mbit/s
+       10   07/03/13     830.55 MiB |   12.69 GiB |   13.50 GiB |    1.31 Mbit/s
+       -----------------------------+-------------+-------------+---------------
+#+end_example
+
+**** vista mensual
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      ssh vodka 'vnstat -i venet0 -m'
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+
+     venet0  /  monthly
+
+           month        rx      |     tx      |    total    |   avg. rate
+        ------------------------+-------------+-------------+---------------
+          Mar '13     16.50 GiB |  190.62 GiB |  207.12 GiB |  648.70 kbit/s
+          Apr '13     20.32 GiB |  125.04 GiB |  145.36 GiB |  470.42 kbit/s
+          May '13     15.09 GiB |    6.23 GiB |   21.33 GiB |   66.79 kbit/s
+          Jun '13     15.15 GiB |   10.28 GiB |   25.43 GiB |   82.29 kbit/s
+          Jul '13     19.02 GiB |   19.53 GiB |   38.55 GiB |  120.75 kbit/s
+          Aug '13     24.59 GiB |   21.24 GiB |   45.83 GiB |  143.53 kbit/s
+          Sep '13     15.25 GiB |    8.18 GiB |   23.43 GiB |   75.84 kbit/s
+          Oct '13     26.23 GiB |   25.19 GiB |   51.42 GiB |  161.03 kbit/s
+          Nov '13     10.20 GiB |   30.08 GiB |   40.28 GiB |  130.36 kbit/s
+          Dec '13      1.67 GiB |    9.41 GiB |   11.08 GiB |   34.69 kbit/s
+          Jan '14     25.88 GiB |    7.73 GiB |   33.61 GiB |  105.25 kbit/s
+          Feb '14      4.46 GiB |    2.76 GiB |    7.22 GiB |   70.61 kbit/s
+        ------------------------+-------------+-------------+---------------
+        estimated     12.57 GiB |    7.79 GiB |   20.36 GiB |
+#+end_example
+
+**** vista semanal    
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      ssh vodka 'vnstat -i venet0 -w'
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+
+     venet0  /  weekly
+
+                          rx      |     tx      |    total    |   avg. rate
+       ---------------------------+-------------+-------------+---------------
+        last 7 days      3.16 GiB |    2.30 GiB |    5.46 GiB |   76.48 kbit/s
+          last week      3.19 GiB |    2.19 GiB |    5.39 GiB |   74.70 kbit/s
+       current week    418.63 MiB |  265.81 MiB |  684.44 MiB |   70.05 kbit/s
+       ---------------------------+-------------+-------------+---------------
+          estimated      3.12 GiB |    1.98 GiB |    5.09 GiB |
+    #+end_example
+
+**** vista por horas
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      ssh vodka 'vnstat -i venet0 -h'
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+     venet0                                                                   22:14 
+      ^                                                                       r     
+      |                                                                       r     
+      |  r  r  r  r  r  r  r  r  r  r                                         r     
+      |  r  r  r  r  rt r  r  r  r  r                                         r     
+      |  r  r  r  r  rt r  r  r  r  r                           t             r     
+      |  r  r  r  r  rt r  r  r  r  rt                          t        t    r     
+      |  rt r  r  r  rt r  rt r  r  rt                          t  t     t    r     
+      |  rt r  r  r  rt r  rt rt r  rt                       t  t  t     t    r     
+      |  rt rt rt r  rt r  rt rt r  rt              t  t     t  t  t     t    r     
+      |  rt rt rt r  rt r  rt rt r  rt        t  t  t  t  t  t  t rt  t  t  t r     
+     -+---------------------------------------------------------------------------> 
+      |  23 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22    
+
+     h  rx (KiB)   tx (KiB)      h  rx (KiB)   tx (KiB)      h  rx (KiB)   tx (KiB) 
+    23      38043      18600    07      39022       3080    15       1618       6379
+    00      39348       9530    08      38429      23452    16       2715      17279
+    01      39080      10637    09       1997       3372    17       3533      27827
+    02      38853       3011    10       2148       3307    18       4522      21075
+    03      38293      32727    11       1117       5484    19       2201       6809
+    04      38632       4056    12       2979       7545    20       4449      23659
+    05      39518      18170    13       2040      10555    21       2587       8113
+    06      37873      14265    14       3063      10136    22      44656       1721
+#+end_example
+
+*** multitail
+*** logcheck
+** musica
+    - moc
+** navegadores web
+    - elinks
+    - links
+    - lynx
+    - w3m
+** red
+    - wicd-curses
+    - tshark
+    - tcpdump
+    - netcat
+    - nmap
+** rss
+    - newsbeuter
+** seguridad
+    - chrootkit
+    - cron-apt
+    - fail2ban
+    - rkhunter
+** utilitarios
+    - screen
+    - tmux
+** versionado
+    - etckeeper
+    - git-core
+    - mercurial
+    - subversion
+    - tig
+
