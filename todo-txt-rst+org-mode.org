@@ -525,67 +525,7 @@
 
 ** Gething This Done
 
-   Es un método de gestión de las actividades y el título de un libro
-   de David Allen [fn:allen], libro que en español se ha editado con
-   el título *Organízate con eficacia* [fn:librogtd].
-   
-   *GTD* se basa en el principio de que una persona necesita borrar de
-   su mente todas las tareas que tiene pendientes guardándolas en un
-   lugar específico. De este modo, se libera a la mente del trabajo de
-   recordar todo lo que hay que hacer, y se puede concentrar en la
-   efectiva realización de aquellas tareas.
-   
-   A diferencia de otros expertos en gestión del tiempo, *Allen* no se
-   centra en el establecimiento de prioridades. En su lugar, él insta a
-   la creación de listas de tareas específicas para cada contexto, por
-   ejemplo, una lista de llamadas telefónicas pendientes o recados que
-   hacer en la ciudad. También sugiere que cualquier nueva tarea que
-   pueda ser completada en menos de dos minutos debería ser hecha
-   inmediatamente.
-   
-*** Workflow
-
-    #+ATTR_HTML: :width 640 :height 480 :alt GTD Workflow
-    [[file:img/gtd-workflow.png]]
-
-**** Recopilar
-
-     - Capturar todo en **INBOX** y seguir trabajando
-       - Ideas
-       - Tareas
-       - Recordatorios
-       - Cosas por hacer en general
-     - Utilizar una herramienta de captura ágil
-     - Capturar... y olvidarse de momento
-     - Aplicar *regla de los 2 minutos*
-
-**** Procesar
-
-     - Procesar por completo el *INBOX*
-       - Si requiere actuar
-       - Delegar a alguien
-         - Asignar a carpeta (sólo si depende de mi)
-       - No requiere actuar
-         - Eliminar
-         - Archivar
-     - Procesar de manera ágil, tomar decisiones rápidas
-     - Aislarse de las distracciones
-     - Aplicar *regla de los 2 minutos*
-
-**** Organizar
-
-     - Asignar acciones a una carpeta
-       - *PRÓXIMO*, a realizar en un lapso de tiempo corto
-       - *PROYECTO*, cosas a realizar dentro de un proyecto
-       - *EN ESPERA*, depende de otra persona
-       - *ALGÚN DÍA*, no tiene prioridad temporal
-
-**** Revisar
-
-     - Fijar un momento para la revisión
-     - Revisión ágil y diligente
-     - Localizar y cuidar las tareas clave
-     - Las acciones cambian de carpeta
+   #+INCLUDE: "gtd-gething-this-done.org" :lines "10-"
 
 ** Emacs
 
@@ -1104,7 +1044,5 @@ http://pub.osiux.com/charlas
 [fn:GTD] http://es.wikipedia.org/Getting_Things_Done
 [fn:Moolenaar] http://www.moolenaar.net/vim.html
 [fn:Joy] http://en.wikipedia.org/wiki/Bill_Joy
-[fn:librogtd] http://www.cuspide.com/isbn/849662708X
-[fn:allen] http://davidco.com
 [fn:frontweb] http://frontweb.com.ar
 [fn:conurbania] http://conurbania.org.ar

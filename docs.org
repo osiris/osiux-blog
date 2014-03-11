@@ -12,6 +12,7 @@
    - [[file:que-no-se-entere-nadie.org][Que no se entere nadie! Análisis de tráfico de red mediante tcpdump]]
    - [[file:entendiendo-la-red.org][Entendiendo la red]]
    - [[file:comandos-basicos-terminal-linux.org][Comandos básicos terminal linux]]
+   - [[file:linux-sysadmin.org][Administrador GNU/Linux]]
 
 ** =GNU/Linux=
    - [[file:awesome-es-increible.org][Awesome es increíble]]
@@ -49,6 +50,7 @@
 ** =Gráficos=
    - [[file:imagenes-magicas-imagemagick.org][Imágenes Mágicas usando ImageMagick]]
    - [[file:visualizando-grafos-graphviz.org][Visualizando grafos mediante graphviz]]
+   - [[file:graficar-desde-consola.org][Graficar desde consola]]
 
 ** =Bases de datos=
    - [[file:mysql-bash-vim-tips.org][MySQL Bash Vim tips]]

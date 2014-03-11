@@ -405,6 +405,80 @@
         0x0050:  3435 3637                                4567     
     #+END_EXAMPLE
 
+** traceroute
+
+   #+BEGIN_SRC sh :session :results output :exports both
+     traceroute -m 100 216.81.59.173
+   #+END_SRC
+
+   #+RESULTS:
+   #+begin_example
+   traceroute to 216.81.59.173 (216.81.59.173), 100 hops max, 60 byte packets
+    1  malbec (192.168.10.3)  0.107 ms  0.087 ms  0.083 ms
+    2  10.29.64.1 (10.29.64.1)  9.180 ms  9.206 ms  9.190 ms
+    3  cpe-181-47-254-17.telecentro-reversos.com.ar (181.47.254.17)  9.645 ms  9.653 ms  9.706 ms
+    4  telecentro.baires1.bai.seabone.net (195.22.220.33)  10.882 ms  10.307 ms  10.762 ms
+    5  bundle-ether1.baires1.bai.seabone.net (195.22.220.32)  15.964 ms  16.074 ms  15.974 ms
+    6  * * *
+    7  xe-1-2-0.mia10.ip4.tinet.net (77.67.71.97)  142.397 ms  139.703 ms  142.354 ms
+    8  xe-2-1-0.atl11.ip4.tinet.net (89.149.184.21)  156.811 ms xe-3-0-0.atl11.ip4.tinet.net (89.149.180.202)  158.695 ms  158.561 ms
+    9  epik-networks-gw.ip4.tinet.net (77.67.69.158)  159.786 ms  159.491 ms  159.581 ms
+   10  po0-3.dsr2.atl.epikip.net (216.81.59.2)  176.330 ms  176.462 ms  176.281 ms
+   11  * * *
+   12  Episode.IV (206.214.251.1)  224.463 ms  226.258 ms  220.950 ms
+   13  A.NEW.HOPE (206.214.251.6)  250.974 ms  247.808 ms  259.092 ms
+   14  It.is.a.period.of.civil.war (206.214.251.9)  259.944 ms  250.907 ms  255.839 ms
+   15  Rebel.spaceships (206.214.251.14)  218.522 ms  226.211 ms  219.834 ms
+   16  striking.from.a.hidden.base (206.214.251.17)  241.201 ms  236.375 ms  232.261 ms
+   17  have.won.their.first.victory (206.214.251.22)  241.703 ms  236.591 ms  224.864 ms
+   18  against.the.evil.Galactic.Empire (206.214.251.25)  216.832 ms  216.318 ms  214.477 ms
+   19  During.the.battle (206.214.251.30)  208.949 ms  210.051 ms  208.008 ms
+   20  Rebel.spies.managed (206.214.251.33)  212.787 ms  212.294 ms  212.273 ms
+   21  to.steal.secret.plans (206.214.251.38)  255.908 ms  258.825 ms  257.972 ms
+   22  to.the.Empires.ultimate.weapon (206.214.251.41)  213.769 ms  213.009 ms  216.689 ms
+   23  the.DEATH.STAR (206.214.251.46)  218.461 ms  218.095 ms  219.359 ms
+   24  an.armored.space.station (206.214.251.49)  209.458 ms  211.553 ms  213.325 ms
+   25  with.enough.power.to (206.214.251.54)  216.680 ms  215.119 ms  215.551 ms
+   26  destroy.an.entire.planet (206.214.251.57)  229.043 ms  225.637 ms  225.987 ms
+   27  Pursued.by.the.Empires (206.214.251.62)  217.677 ms  217.609 ms  221.162 ms
+   28  sinister.agents (206.214.251.65)  212.421 ms  218.351 ms  217.477 ms
+   29  Princess.Leia.races.home (206.214.251.70)  217.438 ms  215.519 ms  215.707 ms
+   30  aboard.her.starship (206.214.251.73)  208.869 ms  211.286 ms  209.410 ms
+   31  custodian.of.the.stolen.plans (206.214.251.78)  254.545 ms  257.170 ms  257.258 ms
+   32  that.can.save.her (206.214.251.81)  230.703 ms  226.975 ms  224.884 ms
+   33  people.and.restore (206.214.251.86)  213.461 ms  212.716 ms  210.437 ms
+   34  freedom.to.the.galaxy (206.214.251.89)  240.426 ms  238.993 ms  238.415 ms
+   35  0-----I-------I-----0 (206.214.251.94)  225.745 ms  228.150 ms  227.564 ms
+   36  0------------------0 (206.214.251.97)  239.726 ms  242.001 ms  241.268 ms
+   37  0-----------------0 (206.214.251.102)  216.268 ms  217.171 ms  219.559 ms
+   38  0----------------0 (206.214.251.105)  213.450 ms  212.874 ms  210.651 ms
+   39  0---------------0 (206.214.251.110)  211.686 ms  212.642 ms  213.635 ms
+   40  0--------------0 (206.214.251.113)  243.655 ms  241.858 ms  238.552 ms
+   41  0-------------0 (206.214.251.118)  218.823 ms  217.698 ms  217.625 ms
+   42  0------------0 (206.214.251.121)  221.651 ms  217.936 ms  217.573 ms
+   43  0-----------0 (206.214.251.126)  254.899 ms  255.905 ms  253.906 ms
+   44  0----------0 (206.214.251.129)  219.658 ms  214.849 ms  218.945 ms
+   45  0---------0 (206.214.251.134)  254.542 ms  255.310 ms  258.304 ms
+   46  0--------0 (206.214.251.137)  221.805 ms  218.502 ms  216.293 ms
+   47  0-------0 (206.214.251.142)  218.543 ms  219.614 ms  218.705 ms
+   48  0------0 (206.214.251.145)  213.497 ms  216.123 ms  215.188 ms
+   49  0-----0 (206.214.251.150)  250.876 ms  250.727 ms  253.698 ms
+   50  0----0 (206.214.251.153)  217.614 ms  218.582 ms  219.936 ms
+   51  0---0 (206.214.251.158)  216.849 ms  214.232 ms  212.980 ms
+   52  0--0 (206.214.251.161)  217.178 ms  216.413 ms  215.734 ms
+   53  0-0 (206.214.251.166)  228.141 ms  231.885 ms  226.433 ms
+   54  00 (206.214.251.169)  255.405 ms  258.888 ms  258.736 ms
+   55  I (206.214.251.174)  239.065 ms  241.727 ms  241.572 ms
+   56  By.Ryan.Werber (206.214.251.177)  228.102 ms  226.607 ms  228.030 ms
+   57  Blizzards.Breed.CCIE.Creativity (206.214.251.182)  239.656 ms  238.884 ms  239.301 ms
+   58  Please.Try.Again.Tracerote.to.obiwan.scrye.net (206.214.251.185)  215.164 ms  215.725 ms  216.688 ms
+   59  read.more.at.beaglenetworks.net (206.214.251.190)  228.818 ms * *
+#+end_example
+
+   #+BEGIN_SRC sh :session :results output
+     traceroute -m 255 obiwan.scrye.net|awk {'print $2'}
+   #+END_SRC
+
 ** Red con acceso a otra red                                       :noexport:
 
    #+BEGIN_SRC ditaa :file img/redes-lan-wan.png :cmdline -E :exports result
