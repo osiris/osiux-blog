@@ -7,9 +7,15 @@
 #+OPTIONS: toc:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+** =11/MAR=
+*** [[file:2014-03-11-se-viene-la-sasoconf.org][Se viene a la SASOConf]]
+
+    #+ATTR_HTML: :width 640 :height 358 :alt Se viene la SASOConf
+    [[file:2014-03-11-se-viene-la-sasoconf.org][file:tmb/SASOConf.png]]
+
 ** =15/ENE=
 
-   - [[file:todo-txt-rst%2Borg-mode.org][TODO TXT rst + org-mode]]
+   - [[file:todo-txt-rst+org-mode.org][TODO TXT rst + org-mode]]
    - [[file:tengo-el-titulo-de-la-charla-y-ahora-como-hago-los-slides.org][tengo el título de la charla y ahora cómo hago los slides?]]
 
 *** [[file:blog.org][<- blog]] | [[file:2013.org][2013]] | [[file:2012.org][2012]] | [[file:2011.org][2011]] | [[file:docs.org][docs ->]]
