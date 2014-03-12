@@ -7,6 +7,12 @@
 #+OPTIONS: toc:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+** =12/MAR=
+*** [[file:2014-03-12-hardware-freedom-day-2014.org][Hardware Freedom Day 2014]]
+
+    #+ATTR_HTML: :width 640 :height 346 :alt Hardware Freedom Day 2014
+    [[file:2014-03-12-hardware-freedom-day-2014.org][file:tmb/Hardware-Freedom-Day-2014.png]]
+
 ** =11/MAR=
 *** [[file:2014-03-11-se-viene-la-sasoconf.org][Se viene a la SASOConf]]
 
