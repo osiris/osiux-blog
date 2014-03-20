@@ -7,6 +7,12 @@
 #+OPTIONS: toc:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+** =20/MAR=
+*** [[file:2014-03-14-saso-conf-curuzu-cuatia.org][SASOConf en Curuzú Cuatiá]]
+
+    #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Curuzú Cuatiá
+    [[file:2014-03-14-saso-conf-curuzu-cuatia.org][file:tmb/sasoconf/SASOConf-2014-03-14-1143-d2c88a.jpg]]
+
 ** =12/MAR=
 *** [[file:2014-03-12-hardware-freedom-day-2014.org][Hardware Freedom Day 2014]]
 

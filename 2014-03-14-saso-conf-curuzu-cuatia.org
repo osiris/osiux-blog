@@ -1,0 +1,37 @@
+#+TITLE:     SASOConf en Curuzú Cuatiá
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+OPTIONS: toc:nil
+#+DATE:      2014-03-20
+
+#+ATTR_HTML: :width 640 :height 480 :alt SASOConf en Curuzú Cuatiá
+[[file:img/sasoconf/SASOConf-2014-03-14-1143-d2c88a.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1143-d2c88a.jpg]]
+
+El 14 y 15 de Marzo de 2014 se realizó en Curuzú Cuatiá la primer
+edición de la Conferencia Informática Software Libre, Redes Libres y
+Seguridad llamada SASOConf [fn:sasoconf]
+
+** SASOConf Declarada de Interés Municipal
+#+ATTR_HTML: :width 640 :height 480 :alt SASOConf Conferencia Informática Software Libre, Redes Libres y Seguridad
+[[file:img/sasoconf/SASOConf-2014-03-14-0842-b95560.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0842-b95560.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt SASOConf Declarado de Interés Municipal
+[[file:img/sasoconf/SASOConf-2014-03-14-0926-94bfdd.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0926-94bfdd.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt SASOConf en Casa del Bicentenario Curuzú Cuatiá
+[[file:img/sasoconf/SASOConf-2014-03-14-0845-42a761.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0845-42a761.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt SASOConf Huayra
+[[file:img/sasoconf/SASOConf-2014-03-14-1033-7b5ac1.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1033-7b5ac1.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt SASOConf Voip
+[[file:img/sasoconf/SASOConf-2014-03-14-1102-f8b526.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1102-f8b526.jpg]]
+
+#+ATTR_HTML: :width 640 :height 480 :alt SASOConf Almuerzo
+[[file:img/sasoconf/SASOConf-2014-03-14-1215-144531.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1215-144531.jpg]]
+
+[fn:sasoconf] http://sasoconf.com.ar
+[fn:curuzusaso] http://www.curuzusaso.org.ar
