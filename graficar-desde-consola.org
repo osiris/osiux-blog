@@ -9,24 +9,71 @@
 
 ** barra
 
-   #+BEGIN_SRC sh :session :results output :exports both
-     ssh vodka 'cat osiux.com-access.log | egrep -o "GET /.*HTTP" | sed s/HTTP//g | cut -c 5- | egrep -v "(img|tmb|css|robots|ico)" | sort | uniq -c | sort -nr | head' | barra
-   #+END_SRC
+    Páginas más solicitadas
 
-   #+RESULTS:
-   #+begin_example
-    60.22 %  60.22 %       430 ██████████████████████████████ /
-    76.33 %  16.11 %       115 ████████ /feed
-    79.69 %   3.36 %        24 █ /painless-backups-using-rdiff-backup
-    83.05 %   3.36 %        24 █ /index.html
-    86.13 %   3.08 %        22 █ /visualizando-org-mode-con-gnuplot.html
-    89.08 %   2.94 %        21 █ /que-no-se-entere-nadie.html
-    92.02 %   2.94 %        21 █ /docs.html
-    94.82 %   2.80 %        20 █ /todo-txt-rst+org-mode.html
-    97.48 %   2.66 %        19 █ /blog.html
-   100.00 %   2.52 %        18 █ /2012-06-01-pirate-box-floppy-disk.html
-                           714
-   #+end_example
+    #+BEGIN_SRC sh :session :results output :exports both
+      ssh vodka 'cat osiux.com-access.log | egrep -o "GET /.*HTTP" | sed s/HTTP//g | cut -c 5- | egrep -v "(img|tmb|css|robots|ico)" | sort | uniq -c | sort -nr | head' | barra
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+     60.18 %  60.18 %       461 ██████████████████████████████ / 
+     75.98 %  15.80 %       121 ████████ /feed 
+     79.77 %   3.79 %        29 ██ /2014-03-14-saso-conf-curuzu-cuatia.html 
+     83.03 %   3.26 %        25 █ /index.html 
+     86.16 %   3.13 %        24 █ /painless-backups-using-rdiff-backup 
+     89.16 %   3.00 %        23 █ /visualizando-org-mode-con-gnuplot.html 
+     92.04 %   2.87 %        22 █ /docs.html 
+     94.78 %   2.74 %        21 █ /que-no-se-entere-nadie.html 
+     97.39 %   2.61 %        20 █ /todo-txt-rst+org-mode.html 
+    100.00 %   2.61 %        20 █ /blog.html 
+                            766
+    #+end_example
+
+    Códigos de error HTTP
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      ssh vodka 'cat osiux.com-access.log | egrep -o " [0-9]{3} "' | sort | uniq -c | sort -nr | barra
+    #+END_SRC
+
+    #+RESULTS:
+    :  66.78 %  66.78 %      3225 █████████████████████████████████ 200 
+    :  86.75 %  19.96 %       964 ██████████ 404 
+    :  99.34 %  12.59 %       608 ██████ 304 
+    :  99.98 %   0.64 %        31 ▌ 206 
+    : 100.00 %   0.02 %         1 ▌ 400 
+    :                        4829
+
+    Análisis de =user-agent=
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      ssh vodka 'cat osiux.com-access.log | cut -d\" -f6 | cut -d" " -f1 | sort | uniq -c | sort -nr' | head -20 | barra
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+     86.82 %  86.82 %      4188 ███████████████████████████████████████████ Mozilla/5.0 
+     90.84 %   4.02 %       194 ██ Mozilla/4.0 
+     93.06 %   2.22 %       107 █ msnbot-media/1.1 
+     95.02 %   1.97 %        95 █ Googlebot-Image/1.0 
+     96.64 %   1.62 %        78 █ Opera/9.80 
+     97.53 %   0.89 %        43 ▌ Claws 
+     97.97 %   0.44 %        21 ▌ SAMSUNG-SGH-E250/1.0 
+     98.38 %   0.41 %        20 ▌ DoCoMo/2.0 
+     98.63 %   0.25 %        12 ▌ Sogou 
+     98.86 %   0.23 %        11 ▌ www.adressendeutschland.de 
+     99.07 %   0.21 %        10 ▌ Feedly/1.0 
+     99.25 %   0.19 %         9 ▌ - 
+     99.42 %   0.17 %         8 ▌ Python-urllib/2.6 
+     99.59 %   0.17 %         8 ▌ Googlebot/2.1 
+     99.67 %   0.08 %         4 ▌ WebIndex 
+     99.75 %   0.08 %         4 ▌ Google-HTTP-Java-Client/1.17.0-rc 
+     99.83 %   0.08 %         4 ▌ facebookexternalhit/1.0 
+     99.90 %   0.06 %         3 ▌ facebookexternalhit/1.1 
+     99.96 %   0.06 %         3 ▌ curl/7.21.0 
+    100.00 %   0.04 %         2 ▌ W3C_Validator/1.3 
+                           4824
+    #+end_example
 
 ** block-diag
 
