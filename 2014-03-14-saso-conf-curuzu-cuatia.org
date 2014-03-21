@@ -7,9 +7,6 @@
 #+OPTIONS: toc:nil
 #+DATE:      2014-03-20
 
-#+ATTR_HTML: :width 640 :height 480 :alt SASOConf en Curuzú Cuatiá
-[[file:img/sasoconf/SASOConf-2014-03-14-1143-d2c88a.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1143-d2c88a.jpg]]
-
 El 14 y 15 de Marzo de 2014 se realizó en /Curuzú Cuatiá/ la primera
 edición de la *Conferencia Informática Software Libre, Redes Libres y
 Seguridad* llamada *SASOConf* [fn:sasoconf]. Gracias a la organización
@@ -17,6 +14,11 @@ de /Rodolfo Debona/ de *Informática Curuzú* [fn:informatica] y la
 colaboración de /Liliana Arbelo/ entre muchos otros que dieron una
 mano, el evento contó con excelente calidad de oradores de distintos
 puntos del país.
+
+** Los disertantes
+
+   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf en Curuzú Cuatiá
+   [[file:img/sasoconf/SASOConf-2014-03-14-1143-d2c88a.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1143-d2c88a.jpg]]
 
 ** Recién llegados!
 
@@ -31,7 +33,7 @@ puntos del país.
 
 ** La casa del Bicentenario
 
-   El lugar elegido fue la casa del Bicentenario
+   El lugar elegido fue la casa del Bicentenario.
 
    #+ATTR_HTML: :width 640 :height 480 :alt SASOConf en Casa del Bicentenario Curuzú Cuatiá
    [[file:img/sasoconf/SASOConf-2014-03-14-0845-42a761.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0845-42a761.jpg]]
@@ -56,6 +58,12 @@ puntos del país.
    #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Huayra
    [[file:img/sasoconf/SASOConf-2014-03-14-1033-7b5ac1.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1033-7b5ac1.jpg]]
 
+   El cronograma completo de charlas se puede visualizar en:
+   http://www.sasoconf.com.ar/index.php/actividades/
+
+   No pude asistir a todas las charlas, pero estan todas filmadas asi
+   que pronto se publicarán y todos podremos disfrutarlas!
+
    #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Voip
    [[file:img/sasoconf/SASOConf-2014-03-14-1102-f8b526.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1102-f8b526.jpg]]
 
@@ -65,15 +73,30 @@ puntos del país.
 
 ** Hospedaje
 
+   Todos quedaron muy cómodamente en el /Hotel Continental/ dónde se
+   disfrutó de un cordial almuerzo.
+
    #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Almuerzo
    [[file:img/sasoconf/SASOConf-2014-03-14-1215-144531.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1215-144531.jpg]]
 
-** Tornado y Tormenta
+** Resistimos Tornado y Tormenta
 
    Por la tarde del viernes 14 un pequeño tornado arrasó con árboles,
    levantó chapas y cuanto objeto se interpuso, por suerte no hubo
    ningún daño mayor que los materiales, y por esto se debieron
    suspender las últimas charlas.
+
+   La actividad retomó el sábado 15 sin mayores inconvenientes y por
+   la noche hubo cierre y festejo, lamentablemente me perdí el último
+   día por asuntos familiares, pero hasta donde sé, todos la pasaron
+   muy bien y con ganas de volver, y para cerrar el fin de semana, el
+   domingo 16 fue todo un día de lluvias intensas...
+
+** Gracias!
+
+   Si a todos los que formaron parte, en la organización, la previa,
+   el envento en si mismo y los que se quedaron hasta altas horas
+   festejando! Y son todos bienvenidos a la próxima *SASOConf*.
 
 [fn:sasoconf] http://sasoconf.com.ar
 [fn:curuzusaso] http://www.curuzusaso.org.ar

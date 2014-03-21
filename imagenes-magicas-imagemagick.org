@@ -10,47 +10,40 @@
 ** Descripción breve
 
    Resolución a problemas comunes en la manipulación de imágenes
-   mediante la generación de scripts usando ImageMagick y otras
+   mediante la generación de scripts usando *ImageMagick* y otras
    utilidades. Creación y edición de imágenes sin usar un editor
-   gráfico, directamente desde una consola. Generar un video a partir de
-   fotografías.
+   gráfico, directamente desde una consola. Generar un video a partir
+   de fotografías.
 
 ** Crear Imagen
 
    #+BEGIN_SRC sh :session :results none :exports both
-     convert -size 640x480 xc:green green.png
+     convert -size 640x480 xc:green img/green.png
    #+END_SRC
 
    [[file:green.png]]
 
-   #+BEGIN_SRC sh :session :results output :exports none
-     pqiv -i green.png
-   #+END_SRC
-
-   #+RESULTS:
-
 ** identify
 
    #+BEGIN_SRC sh :session :results output :exports both
-     identify green.png
+     identify img/green.png
    #+END_SRC
 
    #+RESULTS:
-   : green.png PNG 640x580 640x580+0+0 8-bit PseudoClass 1c 259B 0.000u 0:00.000
+   : img/green.png PNG 640x480 640x480+0+0 8-bit PseudoClass 1c 252B 0.000u 0:00.000
 
 ** Creative Commons
 
    #+BEGIN_SRC sh :session :results none :exports code
-    convert green.png -fill white \
-    -font ~/bin/cc-icons.ttf \
-    -pointsize 32 -gravity SouthEast \
-    -annotate 0 'cb' \
-    green-cc-by.jpg
+     cd img
+     convert green.png -fill white \
+     -font ~/bin/cc-icons.ttf \
+     -pointsize 32 -gravity SouthEast \
+     -annotate 0 'cb' \
+     green-cc-by.jpg
    #+END_SRC
 
-   #+BEGIN_SRC sh :session :results none
-     pqiv -i green-cc-by.jpg
-   #+END_SRC
+   [[file:img/green-cc-by.jpg]]
 
 ** dark
 
@@ -59,13 +52,9 @@
      green-cc-by.jpg dark-green.jpg
    #+END_SRC
 
-   #+BEGIN_SRC sh :session :results none :exports none
-     pqiv -i dark-green.jpg
-   #+END_SRC
-
 ** font
 
-   #+BEGIN_SRC sh :session :results output
+   #+BEGIN_SRC sh :session :results none :exports both
      convert dark-green.jpg -fill white \
      -font /usr/share/fonts/truetype/ttf-lucida/LucidaSansRegular.ttf \
      -pointsize 32 -gravity NorthWest \
@@ -73,108 +62,58 @@
      green-font.jpg
    #+END_SRC
 
-   #+RESULTS:
-
-   #+BEGIN_SRC sh :session :results output
-     pqiv -i green-font.jpg
-   #+END_SRC
-
-   #+RESULTS:
-
-** rename
-
-.. code-block:: bash
-
-    renombrar.sh
-    #!/bin/bash
-    c=0;ls | grep jpg | while read f; \
-    do mv -v $f $'monte-hermoso-2010-'$c$'.jpg'; \
-    c=$[$c+1];done
-
-** #+RESNAME:
-   
-ize
-
-.. code-block:: bash
-
-    resize.sh
-    #!/bin/bash
-    ls | grep jpg | while read f;do echo $f; \
-    convert -filter cubic -resize 640 $f $'mini-'$f;done
+   [[file:green-font.jpg]]
 
 ** gray
 
-.. code-block:: bash
-
-    convert osiux-color.jpg +dither -colors 2 -colorspace gray -contrast-stretch 0 osiux-2-grises.jpg
-    convert osiux-color.jpg +dither -colors 4 -colorspace gray -contrast-stretch 0 osiux-4-grises.jpg
-    convert osiux-color.jpg +dither -colors 8 -colorspace gray -contrast-stretch 0 osiux-8-grises.jpg
-
-    convert +append osiux-color.jpg osiux-2-grises.jpg osiux-4-grises.jpg osiux-8-grises.jpg
-
-.. image:: img/osiux-dither-colorspace-gray.jpg
+   #+BEGIN_EXAMPLE
+     convert osiux-color.jpg +dither -colors 2 -colorspace gray -contrast-stretch 0 osiux-2-grises.jpg
+     convert osiux-color.jpg +dither -colors 4 -colorspace gray -contrast-stretch 0 osiux-4-grises.jpg
+     convert osiux-color.jpg +dither -colors 8 -colorspace gray -contrast-stretch 0 osiux-8-grises.jpg
+     convert +append osiux-color.jpg osiux-2-grises.jpg osiux-4-grises.jpg osiux-8-grises.jpg
+   #+END_EXAMPLE
 
 ** edge
 
-   #+BEGIN_SRC sh :session :results output
-     convert img/no-soy-un-pirata-compartir-es-bueno.jpg -colorspace Gray -edge 1 gris-edge.jpg
+   #+BEGIN_SRC sh :session :results none :exports code
+     cd img
+     convert no-soy-un-pirata-compartir-es-bueno.jpg -colorspace Gray -edge 1 gris-edge.jpg
    #+END_SRC
 
-   #+RESULTS:
-
-   #+BEGIN_SRC sh :session :results output
-     pqiv -i gris-edge.jpg
-   #+END_SRC
-
-   #+RESULTS:
+   [[file:img/gris-edge.jpg]]
 
 ** edge + Negate
 
-   #+BEGIN_SRC sh :session :results output
-     convert img/no-soy-un-pirata-compartir-es-bueno.jpg -colorspace Gray -edge 1 -negate gris-edge-negate.jpg
+   #+BEGIN_SRC sh :session :results none :exports code
+     cd img
+     convert no-soy-un-pirata-compartir-es-bueno.jpg -colorspace Gray -edge 1 -negate gris-edge-negate.jpg
    #+END_SRC
 
-   #+RESULTS:
-
-   #+BEGIN_SRC sh :session :results output
-     pqiv -i gris-edge-negate.jpg
-   #+END_SRC
-
-   #+RESULTS:
+   [[file:img/gris-edge-negate.jpg]]
 
 ** edge + negate + blur
 
-.. code-block:: bash
-
+   #+BEGIN_EXAMPLE
     for i in {1..4};do convert osiux-edge-$i-negate.jpg -blur 0x1 osiux-edge-$i-negate-blur.jpg;done
     convert +append osiux-edge-1-negate-blur.jpg osiux-edge-2-negate-blur.jpg osiux-edge-3-negate-blur.jpg osiux-edge-4-negate-blur.jpg osiux-edge-negate-blur.jpg
-
-.. image:: img/osiux-edge-negate-blur.jpg
+   #+END_EXAMPLE
 
 ** charcoal (edge + negate + blur)
 
-.. code-block:: bash
-
-    for i in {1..4};do convert osiux-color.jpg -charcoal $i osiux-charcoal-$i.jpg;done
-    convert +append osiux-charcoal-1.jpg osiux-charcoal-2.jpg osiux-charcoal-3.jpg osiux-charcoal-4.jpg osiux-charcoal.jpg
-
-.. image:: img/osiux-charcoal.jpg
-
+   #+BEGIN_EXAMPLE
+     for i in {1..4};do convert osiux-color.jpg -charcoal $i osiux-charcoal-$i.jpg;done
+     convert +append osiux-charcoal-1.jpg osiux-charcoal-2.jpg osiux-charcoal-3.jpg osiux-charcoal-4.jpg osiux-charcoal.jpg
+   #+END_EXAMPLE
 
 ** append
 
-   #+BEGIN_SRC sh :session :results output
-     convert -append img/no-soy-un-pirata-compartir-es-bueno.jpg gris-edge.jpg gris-edge-negate.jpg append.jpg
+   #+BEGIN_SRC sh :session :results none :exports code
+     cd img
+     convert -append no-soy-un-pirata-compartir-es-bueno.jpg gris-edge.jpg gris-edge-negate.jpg append.jpg
      convert +append append.jpg append.jpg 3x3.jpg
    #+END_SRC
 
-   #+RESULTS:
-
-   #+BEGIN_SRC sh :session :results output
-     pqiv -i 3x3.jpg
-   #+END_SRC
-
-   #+RESULTS:
+   [[file:img/3x3.jpg]]
 
 
 
