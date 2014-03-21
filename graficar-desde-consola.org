@@ -10,22 +10,22 @@
 ** barra
 
    #+BEGIN_SRC sh :session :results output :exports both
-     ssh vodka 'cat osiux.com-access.log | egrep -o "GET /.*HTTP" | sed s/HTTP//g | cut -c 5- | sort | uniq -c | sort -nr | head' | barra
+     ssh vodka 'cat osiux.com-access.log | egrep -o "GET /.*HTTP" | sed s/HTTP//g | cut -c 5- | egrep -v "(img|tmb|css|robots|ico)" | sort | uniq -c | sort -nr | head' | barra
    #+END_SRC
 
    #+RESULTS:
    #+begin_example
-    37.13 %  37.13 %       225 ██████████████████ /
-    60.73 %  23.60 %       143 ████████████ /robots.txt
-    69.64 %   8.91 %        54 ████ /osiux.css
-    77.89 %   8.25 %        50 ████ /favicon.ico
-    85.31 %   7.43 %        45 ███ /feed
-    89.77 %   4.46 %        27 ██ /img/flisol-bogota/ciudad-bolivar-1.jpg
-    92.57 %   2.81 %        17 █ /blog.html
-    95.21 %   2.64 %        16 █ /osiux.html
-    97.69 %   2.48 %        15 █ /index.html
-   100.00 %   2.31 %        14 █ /todo-txt-rst%2Borg-mode.html
-                           606
+    60.22 %  60.22 %       430 ██████████████████████████████ /
+    76.33 %  16.11 %       115 ████████ /feed
+    79.69 %   3.36 %        24 █ /painless-backups-using-rdiff-backup
+    83.05 %   3.36 %        24 █ /index.html
+    86.13 %   3.08 %        22 █ /visualizando-org-mode-con-gnuplot.html
+    89.08 %   2.94 %        21 █ /que-no-se-entere-nadie.html
+    92.02 %   2.94 %        21 █ /docs.html
+    94.82 %   2.80 %        20 █ /todo-txt-rst+org-mode.html
+    97.48 %   2.66 %        19 █ /blog.html
+   100.00 %   2.52 %        18 █ /2012-06-01-pirate-box-floppy-disk.html
+                           714
    #+end_example
 
 ** block-diag
@@ -90,15 +90,41 @@
 
 ** graphviz
 
+*** =dot=
+
    #+BEGIN_SRC dot :file img/graphviz-01.png :cmdline -Kdot -Tpng :exports both
-     digraph x {
-     a -> b;
-     b -> c;
+     digraph dot {
+        node [fontname=monospace,fontsize=8];
+        nodo1 -> nodo2;
+        nodo2 -> nodo3;
+        nodo2 -> nodo4;
+        nodo1 -> nodo5;
+        nodo5 -> nodo6;
+        nodo5 -> nodo7;
+        nodo1 -> nodo8;
      }
    #+END_SRC
 
    #+RESULTS:
    [[file:img/graphviz-01.png]]
+
+*** =neato=
+
+   #+BEGIN_SRC dot :file img/graphviz-02.png :cmdline -Kneato -Tpng :exports both
+     graph dot {
+        node [fontname=monospace,fontsize=8];
+        nodo1 -- nodo2;
+        nodo2 -- nodo3;
+        nodo2 -- nodo4;
+        nodo1 -- nodo5;
+        nodo5 -- nodo6;
+        nodo5 -- nodo7;
+        nodo1 -- nodo8;
+     }
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:img/graphviz-02.png]]
 
 ** image-magick
 

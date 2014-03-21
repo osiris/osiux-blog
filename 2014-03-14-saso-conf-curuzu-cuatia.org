@@ -23,7 +23,8 @@ puntos del país.
 ** Recién llegados!
 
    Mientras se ajustaban detalles de último minuto, nos re-encontramos
-   con muchos militantes y entusiastas del Software Libre que recién
+   con muchos militantes del Software Libre, entusiastas de las Redes
+   Libres y profesionales de la Seguridad Informática que recién
    llegados a la ciudad estaban dispuestos a participar del evento y
    no sólo dando charlas sino que además todos colaboraron con la
    organización del evento en general.
@@ -94,9 +95,9 @@ puntos del país.
 
 ** Gracias!
 
-   Si a todos los que formaron parte, en la organización, la previa,
-   el envento en si mismo y los que se quedaron hasta altas horas
-   festejando! Y son todos bienvenidos a la próxima *SASOConf*.
+   A todos los que formaron parte, en la organización, la previa, el
+   evento en si mismo y los que se quedaron hasta altas horas
+   festejando! Y son todos bienvenidos a la próxima SASOConf.
 
 [fn:sasoconf] http://sasoconf.com.ar
 [fn:curuzusaso] http://www.curuzusaso.org.ar
