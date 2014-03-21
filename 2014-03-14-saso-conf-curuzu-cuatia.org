@@ -10,28 +10,73 @@
 #+ATTR_HTML: :width 640 :height 480 :alt SASOConf en Curuzú Cuatiá
 [[file:img/sasoconf/SASOConf-2014-03-14-1143-d2c88a.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1143-d2c88a.jpg]]
 
-El 14 y 15 de Marzo de 2014 se realizó en Curuzú Cuatiá la primer
-edición de la Conferencia Informática Software Libre, Redes Libres y
-Seguridad llamada SASOConf [fn:sasoconf]
+El 14 y 15 de Marzo de 2014 se realizó en /Curuzú Cuatiá/ la primera
+edición de la *Conferencia Informática Software Libre, Redes Libres y
+Seguridad* llamada *SASOConf* [fn:sasoconf]. Gracias a la organización
+de /Rodolfo Debona/ de *Informática Curuzú* [fn:informatica] y la
+colaboración de /Liliana Arbelo/ entre muchos otros que dieron una
+mano, el evento contó con excelente calidad de oradores de distintos
+puntos del país.
+
+** Recién llegados!
+
+   Mientras se ajustaban detalles de último minuto, nos re-encontramos
+   con muchos militantes y entusiastas del Software Libre que recién
+   llegados a la ciudad estaban dispuestos a participar del evento y
+   no sólo dando charlas sino que además todos colaboraron con la
+   organización del evento en general.
+
+   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Conferencia Informática Software Libre, Redes Libres y Seguridad
+   [[file:img/sasoconf/SASOConf-2014-03-14-0842-b95560.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0842-b95560.jpg]]
+
+** La casa del Bicentenario
+
+   El lugar elegido fue la casa del Bicentenario
+
+   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf en Casa del Bicentenario Curuzú Cuatiá
+   [[file:img/sasoconf/SASOConf-2014-03-14-0845-42a761.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0845-42a761.jpg]]
 
 ** SASOConf Declarada de Interés Municipal
-#+ATTR_HTML: :width 640 :height 480 :alt SASOConf Conferencia Informática Software Libre, Redes Libres y Seguridad
-[[file:img/sasoconf/SASOConf-2014-03-14-0842-b95560.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0842-b95560.jpg]]
 
-#+ATTR_HTML: :width 640 :height 480 :alt SASOConf Declarado de Interés Municipal
-[[file:img/sasoconf/SASOConf-2014-03-14-0926-94bfdd.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0926-94bfdd.jpg]]
+   La apertura del evento fue realizada nada menos que por el
+   intendente /Ernesto Gabriel Domínguez/ quien destacó la importancia
+   de difundir el conocimiento sobre Software Libre. La Municipalidad
+   no sólo declaró de Interés Municipal al evento, además dió el apoyo
+   para el traslado y hospedaje de los disertantes.
 
-#+ATTR_HTML: :width 640 :height 480 :alt SASOConf en Casa del Bicentenario Curuzú Cuatiá
-[[file:img/sasoconf/SASOConf-2014-03-14-0845-42a761.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0845-42a761.jpg]]
+   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Declarado de Interés Municipal
+   [[file:img/sasoconf/SASOConf-2014-03-14-0926-94bfdd.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0926-94bfdd.jpg]]
 
-#+ATTR_HTML: :width 640 :height 480 :alt SASOConf Huayra
-[[file:img/sasoconf/SASOConf-2014-03-14-1033-7b5ac1.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1033-7b5ac1.jpg]]
+** Muuuchas Charlas
 
-#+ATTR_HTML: :width 640 :height 480 :alt SASOConf Voip
-[[file:img/sasoconf/SASOConf-2014-03-14-1102-f8b526.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1102-f8b526.jpg]]
+   Se contó con la presencia de integrante del equipo que desarrolla
+   la distribución Huayra GNU/Linux del Programa Conectar Igualdad,
+   quienes mostraron las nuevas herramientas implementadas.
 
-#+ATTR_HTML: :width 640 :height 480 :alt SASOConf Almuerzo
-[[file:img/sasoconf/SASOConf-2014-03-14-1215-144531.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1215-144531.jpg]]
+   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Huayra
+   [[file:img/sasoconf/SASOConf-2014-03-14-1033-7b5ac1.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1033-7b5ac1.jpg]]
+
+   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Voip
+   [[file:img/sasoconf/SASOConf-2014-03-14-1102-f8b526.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1102-f8b526.jpg]]
+
+   Por mi parte, dí dos charlas el día viernes, por la mañana hablé
+   sobre /Cooperativismo y Software Libre/ [fn:COOPySL] y por la tarde
+   mostré cómo es posible [[file:graficar-desde-consola.org][Graficar desde Consola]] [fn:grafconsola]
+
+** Hospedaje
+
+   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Almuerzo
+   [[file:img/sasoconf/SASOConf-2014-03-14-1215-144531.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1215-144531.jpg]]
+
+** Tornado y Tormenta
+
+   Por la tarde del viernes 14 un pequeño tornado arrasó con árboles,
+   levantó chapas y cuanto objeto se interpuso, por suerte no hubo
+   ningún daño mayor que los materiales, y por esto se debieron
+   suspender las últimas charlas.
 
 [fn:sasoconf] http://sasoconf.com.ar
 [fn:curuzusaso] http://www.curuzusaso.org.ar
+[fn:informatica] http://www.informaticacuruzu.com.ar/
+[fn:COOPySL] http://pub.osiux.com/COOPySL.pdf
+[fn:grafconsola] http://osiux.com/graficar-desde-consola.html
