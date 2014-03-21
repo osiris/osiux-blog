@@ -29,64 +29,38 @@
    #+end_example
 
 ** block-diag
+
+   - FIXME
+
 ** ditaa
 
    #+BEGIN_SRC ditaa :file img/ditaa-der.png :cmdline -E :exports both
-     +------------------------+   +------------+   +------------------------+   +----------------+
-     | gcoop_salesopportunity |   | campaigns  |   | securitygroups_records |   | securitygroups |
-     +------------------------+   +------------+   +------------------------+   +----------------+
-     | campaign_id            |-->| id         |-->| record_id              |   | name           |
-     | id                     |   +------------+   | securitygroup_id       |-->| id             |
-     +------------------------+                    +------------------------+   +----------------+
+     +------------------------+   +------------+                             
+     | gcoop_salesopportunity |   | campaigns  |                             
+     +------------------------+   +------------+                             
+     | campaign_id            |-->| id         |--+                          
+     | id                     |   +------------+  |                          
+     +------------------------+                   |                          
+                                                  |                          
+                +------------------------+        |                          
+                | securitygroups_records |        |                          
+                +------------------------+        |                          
+                | record_id              |<-------+                          
+            +-->| securitygroup_id       |                                   
+            |   +------------------------+                                   
+            |                                                                
+            |   +----------------+                                           
+            |   | securitygroups |                                           
+            |   +----------------+                                           
+            |   | name           |                                           
+            +---| id             |                                           
+                +----------------+   
    #+END_SRC
 
    #+RESULTS:
    [[file:img/ditaa-der.png]]
 
 ** gnuplot
-
-   #+BEGIN_SRC sh :session :results file :exports both
-     cd ~/data/bcc/gca/cct-2797
-     egrep "0895.*Query Execution Time:[0-9\.]+" sugarcct6.log | awk '{print $4"\t"$9}' | sed s/"Time:"//g | awk '{if ($2>h[$1]) h[$1]=$2} END {for (hh in h) print hh,h[hh]}' | sort  | tee 0895-query-execution-time.dat
-   #+END_SRC
-
-   #+RESULTS:
-   | 12:17:08 |  0.0302698612213 |
-   | 12:17:11 | 0.00952696800232 |
-   | 12:17:21 |  0.0434710979462 |
-   | 12:17:22 |    0.01877784729 |
-   | 12:17:25 |  0.0104238986969 |
-   | 12:17:26 |  0.0150380134583 |
-   | 12:17:28 |    1.61865592003 |
-   | 12:17:29 |   0.022381067276 |
-   | 12:17:30 | 0.00826001167297 |
-   | 12:17:50 | 0.00913214683533 |
-   | 12:17:51 |  0.0108060836792 |
-
-   #+BEGIN_SRC gnuplot :var data='~/data/bcc/gca/cct-2797/0895-query-execution-time.dat' :file img/0895-query-execution-time.png :exports both
-   reset
-   set terminal png size 800,600
-   set lmargin 10
-   set bmargin 5
-   set rmargin 5
-   set title "Máximo Tiempo de ejecución Queries usuario 0895\nsugarcct6.log" font "Inconsolata,10"
-   set xdata time
-   set timefmt x '%H:%M:%S'
-   set format x '%H:%M:%S'
-   set xtics font 'Inconsolata,8' rotate
-   set mxtics
-   set key off
-   set tics font "Inconsolata,8" nomirror
-   set mytics
-   set grid ytics
-   set xlabel "horario" font "Inconsolata,9"
-   set ylabel "tiempo en segundos" font "Inconsolata,9"
-
-   plot data u 1:2 lw 5 w i
-   #+END_SRC
-
-   #+RESULTS:
-   [[file:img/0895-query-execution-time.png]]
 
 ** graphviz
 
@@ -199,25 +173,89 @@
     [[file:img/secuencia-con-proxy.png]]
 
 ** gnuplot
+*** desde un archivo de datos
 
-   #+BEGIN_SRC gnuplot :var data='~/data/bcc/gca/asterisk/asterisk1-bean-query-20.dat' :file img/asterisk1-bean-query-20.png :exports both
-     reset
-     set term png size 800,600
-     set title "sqlsoap_server bean vs query"
-     set xlabel "requests" font "Inconsolata,10"
-     set ylabel "tiempo en segundos" font "Inconsolata,10"
-     set tics out nomirror
-     set grid ytics
-     set xtics font "Inconsolata,8" nomirror rotate by right at 0.5,0
-     set ytics nomirror
-     set tics font "Inconsolata,8" nomirror
-     set mytics
-     set grid lc rgb "#d5e0c9"
+    #+BEGIN_SRC sh :session :results output :exports both
+      head ~/data/bcc/gca/asterisk/asterisk1-bean-query-20.dat
+    #+END_SRC
 
-     plot data using 1:2 with lines lw 1 lt 3 title 'bean', \
-          data using 1:3 with lines lw 1 lt 4 title 'query'
+    #+RESULTS:
+    #+begin_example
+         1	1.4569969177246	11.918306112289
+         2	1.2775399684906	3.2772920131683
+         3	1.1570041179657	2.124370098114
+         4	1.2286741733551	2.1695129871368
+         5	1.1820800304413	2.1903049945831
+         6	1.3336930274963	1.7454440593719
+         7	1.2775030136108	1.8959369659424
+         8	1.2779738903046	2.9318058490753
+         9	1.6264469623566	2.3969349861145
+        10	1.280650138855	2.1734149456024
+    #+end_example
 
-   #+END_SRC
+    #+BEGIN_SRC gnuplot :var data='~/data/bcc/gca/asterisk/asterisk1-bean-query-20.dat' :file img/asterisk1-bean-query-20.png :exports both
+      reset
+      set term png size 800,600
+      set title "sqlsoap_server bean vs query"
+      set xlabel "requests" font "Inconsolata,10"
+      set ylabel "tiempo en segundos" font "Inconsolata,10"
+      set tics out nomirror
+      set grid ytics
+      set xtics font "Inconsolata,8" nomirror rotate by right at 0.5,0
+      set ytics nomirror
+      set tics font "Inconsolata,8" nomirror
+      set mytics
+      set grid lc rgb "#d5e0c9"
 
-   #+RESULTS:
-   [[file:img/asterisk1-bean-query-20.png]]
+      plot data using 1:2 with lines lw 1 lt 3 title 'bean', \
+           data using 1:3 with lines lw 1 lt 4 title 'query'
+
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:img/asterisk1-bean-query-20.png]]
+
+*** procesar un log, generar el archivo y graficar
+
+    #+BEGIN_SRC sh :session :results file :exports both
+      cd ~/data/bcc/gca/cct-2797
+      egrep "0895.*Query Execution Time:[0-9\.]+" sugarcct6.log | awk '{print $4"\t"$9}' | sed s/"Time:"//g | awk '{if ($2>h[$1]) h[$1]=$2} END {for (hh in h) print hh,h[hh]}' | sort  | tee 0895-query-execution-time.dat
+    #+END_SRC
+
+    #+RESULTS:
+    | 12:17:08 |  0.0302698612213 |
+    | 12:17:11 | 0.00952696800232 |
+    | 12:17:21 |  0.0434710979462 |
+    | 12:17:22 |    0.01877784729 |
+    | 12:17:25 |  0.0104238986969 |
+    | 12:17:26 |  0.0150380134583 |
+    | 12:17:28 |    1.61865592003 |
+    | 12:17:29 |   0.022381067276 |
+    | 12:17:30 | 0.00826001167297 |
+    | 12:17:50 | 0.00913214683533 |
+    | 12:17:51 |  0.0108060836792 |
+
+    #+BEGIN_SRC gnuplot :var data='~/data/bcc/gca/cct-2797/0895-query-execution-time.dat' :file img/0895-query-execution-time.png :exports both
+      reset
+      set terminal png size 800,600
+      set lmargin 10
+      set bmargin 5
+      set rmargin 5
+      set title "Máximo Tiempo de ejecución Queries usuario 0895\nsugarcct6.log" font "Inconsolata,10"
+      set xdata time
+      set timefmt x '%H:%M:%S'
+      set format x '%H:%M:%S'
+      set xtics font 'Inconsolata,8' rotate
+      set mxtics
+      set key off
+      set tics font "Inconsolata,8" nomirror
+      set mytics
+      set grid ytics
+      set xlabel "horario" font "Inconsolata,9"
+      set ylabel "tiempo en segundos" font "Inconsolata,9"
+
+      plot data u 1:2 lw 5 w i
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:img/0895-query-execution-time.png]]
