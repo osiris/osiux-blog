@@ -6,6 +6,7 @@
 #+INCLUDE: "header.org"
 
 ** =Introducción a GNU/Linux y la programación=
+   - [[file:introduccion-al-software-libre.org][Introducción al Software Libre]]
    - [[file:automatizando-tareas.org][Automatizando Tareas, manejo de crontab, watch y scripts]]
    - [[file:procesos-linux.org][Procesos Linux, administrando recursos del sistema]]
    - [[file:ssh-para-gobernar-el-mundo.org][SSH para gobernar el mundo, aprendiendo a usar SSH]]

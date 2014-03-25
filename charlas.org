@@ -7,6 +7,15 @@
 #+INCLUDE: "header.org"
 #+DATE:      2014-01-04
 
+** 03/2014
+*** Casa del Bicentenario, Curuzú Cuatiá, Corrientes
+**** SASOConf - Conferencia Informática Software Libre, Redes Libres y Seguridad
+
+     - Cooperativismo y Software Libre
+       - http://gcoop.coop/COOPySL.pdf
+     - Graficar desde consola
+       - http://osiux.com/graficar-desde-consola.html
+
 ** 06/2013
 *** Segunda Muestra Municipal de Ciencia y Tecnología de La Matanza
     - Tecnologías libres para la comunicación soberana

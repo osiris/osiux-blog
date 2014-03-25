@@ -77,7 +77,73 @@
 
 ** block-diag
 
-   - FIXME
+   #+BEGIN_EXAMPLE
+   diagram {
+    #default_node_color = black;
+    #default_linecolor = #cfff00;
+    #default_textcolor = #cfff00;
+    default_fontsize = 14;
+    span_width = 100;
+    span_height = 60;
+    node_height = 40;
+    node_width = 130;
+
+    inet [shape = cloud];
+    inet -- osiux;
+
+    network BuenosAiresLibre {
+        address = "10.4.14.x/224"
+        osiux [address = "10.4.14.225"]
+        aleosi [address = "10.4.14.251"]
+        eosial [address = "10.4.14.250"]
+        osiale [address = "10.4.14.226"]
+        ovislink [address = "10.4.14.228"]
+    }
+    network CompartirEsBueno-IPv6 {
+        address = "2a00:1508:1:f00f::1/64"
+        aleosi [address = "::1"]
+        caipiroska [address = ":a9f9:af72:93a2:c94c"]
+        leosia [address = ":6670:2ff:fe3d:9173"]
+    }
+    network CompartirEsBueno-IPv4 {
+        address = "10.254.x.x/16"
+        aleosi [address = "10.254.104.161"]
+        caipiroska [address = "10.254.104.182"]
+        eosial [address = "10.254.111.107"]
+        leosia [address = "10.254.47.64"]
+        sialeo [address = "10.254.157.127"]
+    }
+    network linklocal-wan {
+        address = "fe80::"
+        aleosi [address = "::a2f3:c1ff:fe9d:2579"]
+        eosial [address = "::fad1:11ff:fe7a:61b3"]
+    }
+    network linklocal-wlan {
+        address = "fe80::"
+        caipiroska [address = "::1e4b:d6ff:fed2:f99"]
+        aleosi [address = "::a0f3:c1ff:fe9d:257a"]
+        eosial [address = "::f8d1:11ff:fe7a:61b4"]
+        leosia [address = "::6470:2ff:fe3d:9175"]
+        sialeo [address = "::90f6:52ff:fe6a:7dee"]
+    }
+    network librenet6 {
+        address = "fe80::"
+        aleosi [address = "::c8e1:c2ff:fe9c:cfe4"]
+    }
+    network librevpn {
+        address = "192.168.9.x/24"
+        caipiroska [address = "192.168.9.70"]
+    }
+    network linklocal-lan {
+        address = "fe80::"
+        aleosi [address = "::a2f3:c1ff:fe9d:2577"]
+        eosial [address = "::fad1:11ff:fe7a:61b1"]
+        leosia [address = "::68d3:ecff:fefb:d060"]
+        osiale [address = "::214:85ff:fe3c:5a9f"]
+        sialeo [address = "::92f6:52ff:fe6a:7dec"]
+    }
+   }
+   #+END_EXAMPLE
 
 ** ditaa
 

@@ -4,7 +4,7 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+DATE:        2014-01-20
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="print.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="print.css" media="print"> />
 
 * Filosofía UNIX
 
