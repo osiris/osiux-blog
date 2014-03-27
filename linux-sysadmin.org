@@ -4,7 +4,8 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+DATE:        2014-01-20
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+
+
 
 * Filosofía UNIX
 
@@ -16,14 +17,14 @@
   permitiendo al sistema crecer, incorporar nuevas herramientas y, a la
   vez, ser compatible hacia atrás.
 
-  Los objetivos con que se creó determinaron una /"filosofía"/ de /UNIX/
+  Los objetivos con que se creó determinaron una /filosofía/ de /UNIX/
   caracterizada por:
 
   - comandos cortos, simples, específicos y muy eficientes, que "hacen
     una sola cosa pero la hacen muy bien".
 
   - entrada y salida estandarizadas que permiten la interconexión de
-    comandos. Esto se llama entubamiento (/"pipelining"/): la salida de
+    comandos. Esto se llama entubamiento (/pipelining/): la salida de
     un comando es tomada por el siguiente como entrada.
 
   Algunas directivas son:
@@ -258,6 +259,297 @@
 
     #+RESULTS:
     : /dev/sda1                                                 50G    14G   34G  29% /mnt/sda1
+
+* Entrada estándar, Salida estándar y Tuberías
+** Descriptores de archivos
+
+   Existen 3 descriptores básicos de archivos:
+   
+   | =0= | =stdin=  | entrada estándar  |
+   | =1= | =stdout= | salida estándar   |
+   | =2= | =stderr= | salida de errores |
+
+  #+BEGIN_SRC ditaa :file img/stdin-stdout-stderr.png :cmdline -E :exports results
+    +---+      +-----------+
+    | 0 |----->| /dev/tty0 |
+    +---+      +-----------+
+
+    +---+      +-----------+
+    | 1 |----->| /dev/tty0 |
+    +---+      +-----------+
+
+    +---+      +-----------+
+    | 2 |----->| /dev/tty0 |
+    +---+      +-----------+
+  #+END_SRC
+
+  Es posible redireccionar cada uno de éstos descriptores mediante los
+  operadores =>=, =<= y =|=
+
+** Enviar la salida estándar a un archivo
+
+   #+BEGIN_SRC ditaa :file img/stdout-file.png :cmdline -E :exports results
+     +---+      +-----------+
+     | 0 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |----->| /tmp/file |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 2 |----->| /dev/tty0 |
+     +---+      +-----------+
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:img/stdout-file.png]]
+
+** Enviar la salida de errores a un archivo
+
+   #+BEGIN_SRC ditaa :file img/stderr-file.png :cmdline -E :exports results
+     +---+      +-----------+
+     | 0 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 2 |----->| /tmp/file |
+     +---+      +-----------+
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:img/stderr-file.png]]
+
+** Enviar la salida estándar y la salida de errores a un mismo archivo
+
+   #+BEGIN_SRC ditaa :file img/stderr-stdout-file.png :cmdline -E :exports results
+     +---+      +-----------+
+     | 0 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |--+-->| /tmp/file |
+     +---+  |   +-----------+
+            |
+     +---+  |
+     | 2 |--+
+     +---+
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:img/stderr-stdout-file.png]]
+
+** Enviar la salida de errores a la salida estándar
+
+   #+BEGIN_SRC ditaa :file img/stderr-stdout.png :cmdline -E :exports results
+     +---+      +-----------+
+     | 0 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |--+-->| /dev/tty0 |
+     +---+  |   +-----------+
+            |
+     +---+  |
+     | 2 |--+
+     +---+
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:img/stderr-stdout.png]]
+
+** Enviar la salida de estándar a =/dev/null=
+
+   #+BEGIN_SRC ditaa :file img/stdout-dev-null.png :cmdline -E :exports results
+     +---+      +-----------+
+     | 0 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |----->| /dev/null |
+     +---+      +-----------+
+            
+     +---+      +-----------+
+     | 2 |------| /dev/tty0 |
+     +---+      +-----------+
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:img/stdout-dev-null.png]]
+
+** Enviar la salida de estándar y la salida de errores a =/dev/null=
+
+   #+BEGIN_SRC ditaa :file img/stderr-stdout-dev-null.png :cmdline -E :exports results
+     +---+      +-----------+
+     | 0 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |--+-->| /dev/null |
+     +---+  |   +-----------+
+            |
+     +---+  |
+     | 2 |--+
+     +---+
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:img/stderr-stdout-dev-null.png]]
+
+** Enviar un archivo a la entrada estándar
+
+   #+BEGIN_SRC ditaa :file img/stdin-file.png :cmdline -E :exports results
+     +---+      +-----------+
+     | 0 |----->| /tmp/file |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |----->| /dev/tty0 |
+     +---+      +-----------+
+            
+     +---+      +-----------+
+     | 2 |------| /dev/tty0 |
+     +---+      +-----------+
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:img/stdin-file.png]]
+
+** Enviar la salida estándar a un archivo y a la salida estándar
+
+   #+BEGIN_SRC ditaa :file img/tee-stdout-file.png :cmdline -E :exports results
+     +---------+      +-----------+      +-----------+
+     | comando |----->|    tee    |----->| /dev/tty0 |
+     +---------+      +-----------+      +-----------+
+                            |
+                            v    
+                      +-----------+
+                      | /tmp/file |
+                      +-----------+
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:img/tee-stdout-file.png]]
+
+** Enviar la salida estándar de un comando como la entrada estándar de otro comando
+
+   #+BEGIN_SRC ditaa :file img/stdout-pipe-stdin.png :cmdline -E :exports results
+     +---+      +------------+      +---+      +------------+ 
+     | 0 |----->| /dev/tty0  |  +-->| 0 |----->| pipe read  |
+     +---+      +------------+  |   +---+      +------------+
+                                |                          
+     +---+      +------------+  |   +---+      +------------+
+     | 1 |----->| pipe write |--+   | 1 |----->| /dev/tty0  |
+     +---+      +------------+      +---+      +------------+
+                                         
+     +---+      +------------+      +---+      +------------+
+     | 2 |------| /dev/tty0  |      | 2 |------| /dev/tty0  |
+     +---+      +------------+      +---+      +------------+
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:img/stdout-pipe-stdin.png]]
+
+** =stdout=
+
+   Buscar el texto *model* en el archivo =/proc/cpuinfo= y enviar el
+   resultado a un nuevo archivo llamado =/tmp/cpu= que contendrá
+   únicamente las líneas que coinciden con el texto *model*:
+
+   #+BEGIN_SRC sh :session :results output :exports both
+     grep model /proc/cpuinfo > /tmp/cpu
+     cat /tmp/cpu
+   #+END_SRC
+
+   #+RESULTS:
+   : model		: 28
+   : model name	: Intel(R) Atom(TM) CPU D425   @ 1.80GHz
+   : model		: 28
+   : model name	: Intel(R) Atom(TM) CPU D425   @ 1.80GHz
+
+   Buscar el texto *cache* en el archivo =/proc/cpuinfo= y agregar el
+   resultado al archivo =/tmp/cpu=
+
+   #+BEGIN_SRC sh :session :results output :exports both
+     grep cache /proc/cpuinfo >> /tmp/cpu
+     cat /tmp/cpu
+   #+END_SRC
+
+   #+RESULTS:
+   : model		: 28
+   : model name	: Intel(R) Atom(TM) CPU D425   @ 1.80GHz
+   : model		: 28
+   : model name	: Intel(R) Atom(TM) CPU D425   @ 1.80GHz
+   : cache size	: 512 KB
+   : cache_alignment	: 64
+   : cache size	: 512 KB
+   : cache_alignment	: 64
+
+** =stderr=
+
+   Enviar la salida con errores a =/dev/null=:
+
+   #+BEGIN_EXAMPLE
+     xkcd 2>/dev/null
+   #+END_EXAMPLE
+
+   Redireccionar la salida con errores a la salida estandar:
+
+   #+BEGIN_EXAMPLE
+     echo "xkcd" | grep 2>&1
+   #+END_EXAMPLE
+
+** pipes
+
+   El símbolo =|= es usado para redireccionar la salida de un comando
+   a la entrada de otro comando.
+
+   Ejemplo:
+
+     Lista el directorio =/var/log= ordenando los archivos más nuevos
+     al principio y muestra sólo las primeras 10 líneas mediante el
+     comando =head=
+
+     #+BEGIN_SRC sh :session :results output :exports both
+       ls -lht /var/log | head
+     #+END_SRC
+
+     #+RESULTS:
+     #+begin_example
+     total 14M
+     -rw-rw-r-- 1 root              utmp       107K feb 10 20:46 wtmp
+     -rw-r----- 1 root              adm        769K feb 10 20:45 mail.info
+     -rw-r----- 1 root              adm        769K feb 10 20:45 mail.log
+     -rw-r----- 1 root              adm        356K feb 10 20:45 syslog
+     -rw-r----- 1 root              adm        337K feb 10 20:45 auth.log
+     -rw-r----- 1 root              adm        3,1K feb 10 19:49 messages
+     -rw-r----- 1 root              adm        2,9K feb 10 19:49 kern.log
+     -rw-r--r-- 1 root              root        29K feb 10 16:42 Xorg.0.log
+     -rw-r----- 1 root              adm        1,9K feb 10 16:42 daemon.log
+     #+end_example
+
+     lista el directorio =/var/log= mostrando el tamaño de cada
+     archivo, se filtra el resultando por Megabytes (=M=), luego
+     ordena de mayor a menor y finalmente limita la lista a los
+     primeros 10 archivos que más espacio ocupan, incluyendo el total
+     del directorio:
+
+     #+BEGIN_SRC sh :session :results output :exports both
+       cd /var/log;du -ch *  | grep M | sort -nr | head
+     #+END_SRC
+
+     #+RESULTS:
+     : 496M	total
+     : 468M	atop
+     : 15M	installer
+     : 14M	installer/cdebconf
+     : 3,3M	mail.log.1
+     : 3,3M	mail.info.1
+     : 1,5M	auth.log.1
 
 * Comandos básicos de terminal
 ** Directorios:
@@ -564,270 +856,6 @@
 *** =*= ninguna o muchas repeticiones
 
 *** =+= una o más repeticiones
-
-* Entrada estándar, Salida estándar y Tuberías
-** Descriptores de archivos
-
-   Existen 3 descriptores básicos de archivos:
-   
-   | =0= | =stdin=  | entrada estándar  |
-   | =1= | =stdout= | salida estándar   |
-   | =2= | =stderr= | salida de errores |
-
-  #+BEGIN_SRC ditaa :file img/stdin-stdout-stderr.png :cmdline -E :exports both
-    +---+      +-----------+
-    | 0 |----->| /dev/tty0 |
-    +---+      +-----------+
-
-    +---+      +-----------+
-    | 1 |----->| /dev/tty0 |
-    +---+      +-----------+
-
-    +---+      +-----------+
-    | 2 |----->| /dev/tty0 |
-    +---+      +-----------+
-  #+END_SRC
-
-  Es posible redireccionar cada uno de éstos descriptores mediante los
-  operadores =>=, =<= y =|=
-
-** Enviar la salida estándar a un archivo
-
-   #+BEGIN_SRC ditaa :file img/stdout-file.png :cmdline -E :exports both
-     +---+      +-----------+
-     | 0 |----->| /dev/tty0 |
-     +---+      +-----------+
-
-     +---+      +-----------+
-     | 1 |----->| /tmp/file |
-     +---+      +-----------+
-
-     +---+      +-----------+
-     | 2 |----->| /dev/tty0 |
-     +---+      +-----------+
-   #+END_SRC
-
-** Enviar la salida de errores a un archivo
-
-   #+BEGIN_SRC ditaa :file img/stderr-file.png :cmdline -E :exports both
-     +---+      +-----------+
-     | 0 |----->| /dev/tty0 |
-     +---+      +-----------+
-
-     +---+      +-----------+
-     | 1 |----->| /dev/tty0 |
-     +---+      +-----------+
-
-     +---+      +-----------+
-     | 2 |----->| /tmp/file |
-     +---+      +-----------+
-   #+END_SRC
-
-** Enviar la salida estándar y la salida de errores a un mismo archivo
-
-   #+BEGIN_SRC ditaa :file img/stderr-stdout-file.png :cmdline -E :exports both
-     +---+      +-----------+
-     | 0 |----->| /dev/tty0 |
-     +---+      +-----------+
-
-     +---+      +-----------+
-     | 1 |--+-->| /tmp/file |
-     +---+  |   +-----------+
-            |
-     +---+  |
-     | 2 |--+
-     +---+
-   #+END_SRC
-
-** Enviar la salida de errores a la salida estándar
-
-   #+BEGIN_SRC ditaa :file img/stderr-stdout.png :cmdline -E :exports both
-     +---+      +-----------+
-     | 0 |----->| /dev/tty0 |
-     +---+      +-----------+
-
-     +---+      +-----------+
-     | 1 |--+-->| /dev/tty0 |
-     +---+  |   +-----------+
-            |
-     +---+  |
-     | 2 |--+
-     +---+
-   #+END_SRC
-
-** Enviar la salida de estándar a =/dev/null=
-
-   #+BEGIN_SRC ditaa :file img/stdout-dev-null.png :cmdline -E :exports both
-     +---+      +-----------+
-     | 0 |----->| /dev/tty0 |
-     +---+      +-----------+
-
-     +---+      +-----------+
-     | 1 |----->| /dev/null |
-     +---+      +-----------+
-            
-     +---+      +-----------+
-     | 2 |------| /dev/tty0 |
-     +---+      +-----------+
-   #+END_SRC
-
-** Enviar la salida de estándar y la salida de errores a =/dev/null=
-
-   #+BEGIN_SRC ditaa :file img/stderr-stdout-dev-null.png :cmdline -E :exports both
-     +---+      +-----------+
-     | 0 |----->| /dev/tty0 |
-     +---+      +-----------+
-
-     +---+      +-----------+
-     | 1 |--+-->| /dev/null |
-     +---+  |   +-----------+
-            |
-     +---+  |
-     | 2 |--+
-     +---+
-   #+END_SRC
-
-** Enviar un archivo a la entrada estándar
-
-   #+BEGIN_SRC ditaa :file img/stdin-file.png :cmdline -E :exports both
-     +---+      +-----------+
-     | 0 |----->| /tmp/file |
-     +---+      +-----------+
-
-     +---+      +-----------+
-     | 1 |----->| /dev/tty0 |
-     +---+      +-----------+
-            
-     +---+      +-----------+
-     | 2 |------| /dev/tty0 |
-     +---+      +-----------+
-   #+END_SRC
-
-** Enviar la salida estándar a un archivo y a la salida estándar
-
-   #+BEGIN_SRC ditaa :file img/tee-stdout-file.png :cmdline -E :exports both
-     +---------+      +-----------+      +-----------+
-     | comando |----->|    tee    |----->| /dev/tty0 |
-     +---------+      +-----------+      +-----------+
-                            |
-                            v    
-                      +-----------+
-                      | /tmp/file |
-                      +-----------+
-   #+END_SRC
-
-** Enviar la salida estándar de un comando como la entrada estándar de otro comando
-
-   #+BEGIN_SRC ditaa :file img/stdout-pipe-stdin.png :cmdline -E :exports both
-     +---+      +------------+      +---+      +------------+ 
-     | 0 |----->| /dev/tty0  |  +-->| 0 |----->| pipe read  |
-     +---+      +------------+  |   +---+      +------------+
-                                |                          
-     +---+      +------------+  |   +---+      +------------+
-     | 1 |----->| pipe write |--+   | 1 |----->| /dev/tty0  |
-     +---+      +------------+      +---+      +------------+
-                                         
-     +---+      +------------+      +---+      +------------+
-     | 2 |------| /dev/tty0  |      | 2 |------| /dev/tty0  |
-     +---+      +------------+      +---+      +------------+
-   #+END_SRC
-
-** =stdout=
-
-   Buscar el texto *model* en el archivo =/proc/cpuinfo= y enviar el
-   resultado a un nuevo archivo llamado =/tmp/cpu= que contendrá
-   únicamente las líneas que coinciden con el texto *model*:
-
-   #+BEGIN_SRC sh :session :results output :exports both
-     grep model /proc/cpuinfo > /tmp/cpu
-     cat /tmp/cpu
-   #+END_SRC
-
-   #+RESULTS:
-   : model		: 28
-   : model name	: Intel(R) Atom(TM) CPU D425   @ 1.80GHz
-   : model		: 28
-   : model name	: Intel(R) Atom(TM) CPU D425   @ 1.80GHz
-
-   Buscar el texto *cache* en el archivo =/proc/cpuinfo= y agregar el
-   resultado al archivo =/tmp/cpu=
-
-   #+BEGIN_SRC sh :session :results output :exports both
-     grep cache /proc/cpuinfo >> /tmp/cpu
-     cat /tmp/cpu
-   #+END_SRC
-
-   #+RESULTS:
-   : model		: 28
-   : model name	: Intel(R) Atom(TM) CPU D425   @ 1.80GHz
-   : model		: 28
-   : model name	: Intel(R) Atom(TM) CPU D425   @ 1.80GHz
-   : cache size	: 512 KB
-   : cache_alignment	: 64
-   : cache size	: 512 KB
-   : cache_alignment	: 64
-
-** =stderr=
-
-   Enviar la salida con errores a =/dev/null=:
-
-   #+BEGIN_EXAMPLE
-     xkcd 2>/dev/null
-   #+END_EXAMPLE
-
-   Redireccionar la salida con errores a la salida estandar:
-
-   #+BEGIN_EXAMPLE
-     echo "xkcd" | grep 2>&1
-   #+END_EXAMPLE
-
-** pipes
-
-   El símbolo =|= es usado para redireccionar la salida de un comando
-   a la entrada de otro comando.
-
-   Ejemplo:
-
-     Lista el directorio =/var/log= ordenando los archivos más nuevos
-     al principio y muestra sólo las primeras 10 líneas mediante el
-     comando =head=
-
-     #+BEGIN_SRC sh :session :results output :exports both
-       ls -lht /var/log | head
-     #+END_SRC
-
-     #+RESULTS:
-     #+begin_example
-     total 14M
-     -rw-rw-r-- 1 root              utmp       107K feb 10 20:46 wtmp
-     -rw-r----- 1 root              adm        769K feb 10 20:45 mail.info
-     -rw-r----- 1 root              adm        769K feb 10 20:45 mail.log
-     -rw-r----- 1 root              adm        356K feb 10 20:45 syslog
-     -rw-r----- 1 root              adm        337K feb 10 20:45 auth.log
-     -rw-r----- 1 root              adm        3,1K feb 10 19:49 messages
-     -rw-r----- 1 root              adm        2,9K feb 10 19:49 kern.log
-     -rw-r--r-- 1 root              root        29K feb 10 16:42 Xorg.0.log
-     -rw-r----- 1 root              adm        1,9K feb 10 16:42 daemon.log
-     #+end_example
-
-     lista el directorio =/var/log= mostrando el tamaño de cada
-     archivo, se filtra el resultando por Megabytes (=M=), luego
-     ordena de mayor a menor y finalmente limita la lista a los
-     primeros 10 archivos que más espacio ocupan, incluyendo el total
-     del directorio:
-
-     #+BEGIN_SRC sh :session :results output :exports both
-       cd /var/log;du -ch *  | grep M | sort -nr | head
-     #+END_SRC
-
-     #+RESULTS:
-     : 496M	total
-     : 468M	atop
-     : 15M	installer
-     : 14M	installer/cdebconf
-     : 3,3M	mail.log.1
-     : 3,3M	mail.info.1
-     : 1,5M	auth.log.1
 
 * Acceso remoto usando ssh
 
