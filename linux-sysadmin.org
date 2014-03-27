@@ -4,26 +4,26 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+DATE:        2014-01-20
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="print.css" media="print"> />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="print.css" media="print" />
 
 * Filosofía UNIX
 
-  UNIX incorpora un conjunto de herramientas que guardan cierta
+  /UNIX/ incorpora un conjunto de herramientas que guardan cierta
   analogía con una navaja multiusos. Son simples, pero hacen muy bien
-  su trabajo. En lugar de construir programas muy complejos, UNIX
+  su trabajo. En lugar de construir programas muy complejos, /UNIX/
   proporcionaba muchas pequeñas herramientas, y un esquema para poder
   combinarlas de forma efectiva. Este diseño escala muy bien,
   permitiendo al sistema crecer, incorporar nuevas herramientas y, a la
   vez, ser compatible hacia atrás.
 
-  Los objetivos con que se creó determinaron una "filosofía" de UNIX
+  Los objetivos con que se creó determinaron una /"filosofía"/ de /UNIX/
   caracterizada por:
 
   - comandos cortos, simples, específicos y muy eficientes, que "hacen
     una sola cosa pero la hacen muy bien".
 
   - entrada y salida estandarizadas que permiten la interconexión de
-    comandos. Esto se llama entubamiento ("pipelining"): la salida de
+    comandos. Esto se llama entubamiento (/"pipelining"/): la salida de
     un comando es tomada por el siguiente como entrada.
 
   Algunas directivas son:
@@ -47,15 +47,15 @@
     formato textual es más fácil de enlazar con otros programas, así
     como reutilizarla en el pasado, presente y futuro.
 
-  En estos conceptos se basa la mayoría de software libre que existe,
-  por lo que servidores como sendmail o postfix, se basan en pequeños
-  servidores y/o programas que hacen partes de todo un proceso y,
-  mediante sus ficheros de configuración, se pueden enlazar de una u
+  En estos conceptos se basa la mayoría del software libre existente,
+  por lo que servidores como =sendmail= o =postfix=, están diseñados en
+  pequeños servidores y/o programas que hacen partes de todo un proceso
+  y, mediante sus ficheros de configuración, se pueden enlazar de una u
   otra forma, así como usar otros programas y/o servidores en lugar de
   los que vienen por defecto y, así, extender su funcionalidad.
 
-  Sobre filosofía Unix, de una forma más extensa, Mike Gancarz, escribe
-  las siguientes líneas:
+  Sobre /filosofía Unix/, de una forma más extensa, /Mike Gancarz/,
+  escribe las siguientes líneas:
 
   - Lo pequeño es hermoso.
   - Haz que cada programa haga una sola cosa, pero que la haga bien.
@@ -63,20 +63,20 @@
   - Elige portabilidad sobre eficiencia.
   - Guarda los datos en archivos de texto plano.
   - Aprovecha funcionalidades del software.
-  - Usa scripts de shell para aumentar la funcionalidad y portabilidad.
+  - Usa /scripts/ de /shell/ para aumentar la funcionalidad y portabilidad.
   - Evita interfaces de usuario captivas.
   - Haz de cada programa un filtro.
 
-  La Filosofía UNIX supone crear programas rápidos, simples, con poca
+  La /filosofía UNIX/ supone crear programas rápidos, simples, con poca
   intervención por parte del usuario, o en caso de necesitarla, esta se
-  produzca al principìo o lo más mínima posible. Esta se acopla
+  produzca al principio o lo más mínima posible. Esta se acopla
   perfectamente a las necesidades de computación de los laboratorios
-  cientificos, puesto que Unix fue originalmente desarrollado en uno de
+  científicos, puesto que /Unix/ fue originalmente desarrollado en uno de
   estos.
 
   A continuación algunas premisas:
 
-  - Que cada programa realice unicamente la tarea para la que fue
+  - Que cada programa realice únicamente la tarea para la que fue
     creado y la haga bien.
   - Para llevar a cabo una nueva tarea escribe un programa nuevo. No
     compliques uno viejo añadiendo nueva funcionalidad.
@@ -103,24 +103,24 @@
   - Diseña pensando en el futuro (esta cercano). Esto nos ofrece
     compatibilidad y mayor tiempo de utilización.
   - Programa de abajo hacia arriba y de conocimiento pragmático.
-  - Progama basado en el conocimiento Empírico o Experiencia.
+  - Programa basado en el conocimiento Empírico o Experiencia.
   - No se encuentra en los métodos y las normas oficiales, sino en el
     medio-reflexivo implícito, el conocimiento.
 
-  En resumidas cuentas la filosofía Unix se puede describir como bien
-  lo dice Doug Mcllroy:
+  En resumidas cuentas la /filosofía Unix/ se puede describir como bien
+  lo dice /Doug Mcllroy/:
 
   "Escribe programas que hagan una cosa y la hagan bien, que trabajen
   en armonía con otros y que manejen flujos de texto, pues esta es una
-  interfaz universal." - Doug Mcllroy
+  interfaz universal." - /Doug Mcllroy/
 
-  "Aquellos que no pueden entender UNIX, estan condenados a
-  reinventarlo, pobremente." - Henry Spencer, 1987
+  "Aquellos que no pueden entender UNIX, están condenados a
+  reinventarlo, pobremente." - /Henry Spencer/, 1987
 
 * Linux por dentro, jerarquías de directorios
 
   #+BEGIN_EXAMPLE
-    / 
+    /
     +-- bin         binarios
     +-- boot        inicio del sistema, imágenes del kernel
     +-- dev         dispositivos, presentes y futuros
@@ -128,11 +128,11 @@
     +-- home        directorios personales de los usuarios
     +-- lib         bibliotecas
     +-- lost+found  archivos y/o cadenas perdidas
-    +-- media       dispositivos extraibles
+    +-- media       dispositivos extraerles
     +-- mnt         dispositivos montados
     +-- opt         binarios fuera de la distro
     +-- proc        procesos en ejecución
-    +-- root        directorio personal del root
+    +-- root        directorio personal del /root/
     +-- run         archivos de procesos en ejecución
     +-- sbin        binarios del sistema
     +-- selinux     secure linux
@@ -143,7 +143,7 @@
     +-- var         archivos que varían de tamaño, ej: logs
   #+END_EXAMPLE
 
-* Todo es un archivo, conociendo /proc y /dev
+* Todo es un archivo, conociendo =/proc= y =/dev=
 ** =/proc=
 
    Es un pseudo-sistema de ficheros que se usa como interfaz para las
@@ -154,7 +154,7 @@
 
 *** =/proc/partitions=
 
-    Podemos ver las particiones que leyó el *kernel*:
+    Podemos ver las particiones que leyó el /kernel/:
 
     #+BEGIN_SRC sh :session :results output :exports both
       cat /proc/partitions
@@ -162,7 +162,7 @@
 
     #+RESULTS:
     : major minor  #blocks  name
-    : 
+    :
     :    8        0  488386584 sda
     :    8        1   52428800 sda1
     :    8        2   52428800 sda2
@@ -173,9 +173,9 @@
 *** =/proc/uptime=
 
     El =uptime= de nuestro equipo puede ser consultado directamente en
-    =/proc/uptime=, 
+    =/proc/uptime=,
 
-    #+BEGIN_SRC sh :session :results output
+    #+BEGIN_SRC sh :session :results output :exports both
       cat /proc/uptime
     #+END_SRC
 
@@ -188,7 +188,7 @@
     de informar otros valores, como la cantidad de usuarios y el
     *average*:
 
-    #+BEGIN_SRC sh :session :results output
+    #+BEGIN_SRC sh :session :results output :exports both
       uptime
     #+END_SRC
 
@@ -217,7 +217,7 @@
 
     #+BEGIN_SRC sh :session :results output :exports both
       echo "hola" >/dev/null
-      ls -lh /dev/null   
+      ls -lh /dev/null
     #+END_SRC
 
     #+RESULTS:
@@ -225,8 +225,8 @@
 
 *** =/dev/sdX=
 
-    Los discos están identificados con el prefijo =sd=, luego una
-    letra =a,b,c,etc= y finalmente un número =1,2,3, etc= que
+    Los discos están identificados con el prefijo =sd=, luego una letra
+    =a=, =b=, =c=, etc y finalmente un número =1=, =2=, =3=, etc que
     identifica la partición:
 
     Listamos el disco =sda=
@@ -263,69 +263,86 @@
 ** Directorios:
 
    El separador de archivos y directorios es la barra =/=
-   
+
    ejemplos:
-   
-   /              directorio raíz (*root*)
-   /etc           directorio usr (sub-directorio de la raíz =/=)
-   /etc/apache2   apache2 subdirectorio de /etc
-   
-*** Moviendose en el sistema de archivos:
-   
-    pwd
-        Muestra el directorio actual.
-    cd
-        Cambia al directorio definido en =HOME=
-    cd /etc/php5
-        Cambia el directorio actual a =/etc/php5=
-    cd conf.d
-        Cambia al subdirectorio =conf.d= del directorio actual
-    cd ..
-        Cambia al directorio inmediato superior
-    cd $HOME
-        Cambia al directorio definid en la variable =HOME=
-    cd ~osiris
-        Cambial al directorio del usuario osiris
-   
+
+   #+BEGIN_EXAMPLE
+     /              directorio raíz (*root*)
+     /etc           directorio usr (sub-directorio de la raíz =/=)
+     /etc/apache2   apache2 subdirectorio de /etc
+   #+END_EXAMPLE
+
+*** Moviéndose en el sistema de archivos:
+
+**** =pwd=
+
+     Muestra el directorio actual.
+
+**** =cd=
+
+     Cambia al directorio definido en =HOME=
+
+**** =cd /etc/php5=
+
+     Cambia el directorio actual a =/etc/php5=
+
+**** =cd apache2=
+
+     Cambia al subdirectorio =apache2= del directorio actual
+
+**** =cd ..=
+
+     Cambia al directorio inmediato superior
+
+**** =cd $HOME=
+
+     Cambia al directorio definido en la variable =HOME=
+
+**** =cd ~osiris=
+
+     Cambia al directorio del usuario osiris
+
 *** Listar directorios:
-   
-    ls
-        Listar directorio actual
-    ls -l
-        Listar directorio actual en formato ancho
-    ls -a
-        Listar directorio actual incluyendo archivos ocultos (comienzan
-        con =.=)
-    
-    #+BEGIN_EXAMPLE
-      $ ls -l
-      -rw-rw-r-- 1 osiris www-data      612 nov  1 19:29 redes.html
-      -rw-rw-r-- 1 osiris www-data    11457 nov  1 19:31 scrum.html
-      -rw-rw-r-- 1 osiris www-data     6556 abr 24  2013 ssh.org
-      -rw-rw-r-- 1 osiris www-data      609 abr 24  2013 graphviz.org
-      -rw-rw-r-- 1 osiris www-data    17326 abr 24  2013 gnuplot.org
-      -rw-rw-r-- 1 osiris www-data    11457 nov  1 19:31 tmp
-      ^ ^  ^  ^  ^ ^           ^          ^ ^      ^     ^
-      | |  |  |  | |           |          | |      |     |
-      | |  |  |  | propietario grupo tamaño fecha  hora  nombre
-      | |  |  |  número de links al archivo o contenido del directorio
-      | |  |  permisos para todos
-      | |  permisos para miembros del grupo
-      | permisos para el propietario del archivo:
-      |   r     lectura
-      |   w     escritura
-      |   x     ejecutar
-      |   -     ninguno
-      tipo de archivo:
-        -   archivo normal
-        d   directorio
-        l   enlace simbolico
-    #+END_EXAMPLE
-   
-   ls -ld *     List all the file and directory names in the current directory using
-                long format. Without the "d" option, ls would list the contents
-                of any sub-directory of the current. With the "d" option, ls
-                just lists them like regular files.
+
+**** =ls -l=
+
+     Listar en formato ancho, de esta manera se visualizan gran parte de
+     los atributos de cada archivo y/o directorio
+
+     #+BEGIN_EXAMPLE
+       $ ls -l
+
+       -rw-rw-r-- 1 osiris www-data      612 nov  1 19:29 redes.html
+       -rw-rw-r-- 1 osiris www-data    11457 nov  1 19:31 scrum.html
+       -rw-rw-r-- 1 osiris www-data     6556 abr 24  2013 ssh.org
+       -rw-rw-r-- 1 osiris www-data      609 abr 24  2013 graphviz.org
+       -rw-rw-r-- 1 osiris www-data    17326 abr 24  2013 gnuplot.org
+       -rw-rw-r-- 1 osiris www-data    11457 nov  1 19:31 tmp
+       ^ ^  ^  ^  ^ ^           ^          ^ ^      ^     ^
+       | |  |  |  | |           |          | |      |     |
+       | |  |  |  | propietario grupo tamaño fecha  hora  nombre
+       | |  |  |  número de links al archivo o contenido del directorio
+       | |  |  permisos para todos
+       | |  permisos para miembros del grupo
+       | permisos para el propietario del archivo:
+       |   r     lectura
+       |   w     escritura
+       |   x     ejecutar
+       |   -     ninguno
+       tipo de archivo:
+         -   archivo normal
+         d   directorio
+         l   enlace simbolico
+     #+END_EXAMPLE
+
+**** =ls=
+
+     Listar directorio actual
+
+**** =ls -a=
+
+     Listar directorio actual incluyendo archivos ocultos (comienzan con
+     =.=)
 
 ** Cambiando permisos y atributos
 
@@ -336,10 +353,10 @@
 
      propietario   7 = rwx lectura, escritura y ejecución
      grupo         5 = rx- lectura y ejecución
-     todos         0 = --- ningún permiso   
+     todos         0 = --- ningún permiso
    #+END_EXAMPLE
 
-    Es necesario ser el propietario del archivo/directorio (o =root=)
+    Es necesario ser el propietario del archivo/directorio (o /root/)
     para realizar el cambio de =usuario= o =grupo=.
 
 *** =chmod 750 archivo=
@@ -372,19 +389,19 @@
 
     #+RESULTS:
     : -rw------- 1 osiris osiris 326316 feb 10 21:55 /home/osiris/.bash_history
-   
+
 *** =chgrp grupo archivo=
 
-    establece el grupo al archivo
+    Establece el grupo al archivo
 
 *** =chown usuario archivo=
 
-    establece el usuario como propietario del archivo
+    Establece el usuario como propietario del archivo
 
 *** =chown usuario archivo=
 
-    establece el usuario como propietario del directorio y todo su contenido recursivamente.
- 
+    Establece el usuario como propietario del directorio y todo su contenido recursivamente.
+
 ** Moviendo, renombrando y copiando archivos:o
 
    Copiamos el archivo =~/.bash_history= a =~/.bash_history.bak= y
@@ -393,7 +410,7 @@
    #+BEGIN_SRC sh :session :results output :exports both
      ls -lh ~/.bash_history
      cp ~/.bash_history ~/.bash_history.bak
-     ls -lh ~/.bash_history
+     ls -lh ~/.bash_history.bak
      md5sum ~/.bash_history ~/.bash_history.bak
    #+END_SRC
 
@@ -433,17 +450,17 @@
 
 *** =cat=
 
-    #+BEGIN_SRC sh :session :results output
+    #+BEGIN_SRC sh :session :results output :exports both
       cat /etc/issue
     #+END_SRC
 
     #+RESULTS:
     : Debian GNU/Linux 7.0 \n \l
-    : 
+    :
 
 *** =head=
 
-    #+BEGIN_SRC sh :session :results output
+    #+BEGIN_SRC sh :session :results output :exports both
       head /proc/meminfo | head
     #+END_SRC
 
@@ -462,8 +479,8 @@
     #+end_example
 
 *** =head -2=
-
-    #+BEGIN_SRC sh :session :results output
+ 
+    #+BEGIN_SRC sh :session :results output :exports both
       head /proc/meminfo | head -2
     #+END_SRC
 
@@ -473,7 +490,7 @@
 
 *** =tail=
 
-    #+BEGIN_SRC sh :session :results output
+    #+BEGIN_SRC sh :session :results output :exports both
       tail /etc/passwd
     #+END_SRC
 
@@ -491,7 +508,7 @@
     davfs2:x:112:122::/var/cache/davfs2:/bin/false
     #+end_example
 
-    #+BEGIN_SRC sh :session :results output
+    #+BEGIN_SRC sh :session :results output :exports both
       tail -2 /etc/passwd
     #+END_SRC
 
@@ -501,7 +518,7 @@
 
 *** =sed=
 
-    #+BEGIN_SRC sh :session :results output
+    #+BEGIN_SRC sh :session :results output :exports both
       cat /etc/issue
       sed s/"7.0"/"8.0"/g /etc/issue
       cat /etc/issue
@@ -509,59 +526,213 @@
 
     #+RESULTS:
     : Debian GNU/Linux 7.0 \n \l
-    : 
+    :
     : Debian GNU/Linux 8.0 \n \l
-    : 
+    :
     : Debian GNU/Linux 7.0 \n \l
-    : 
+    :
 
 ** Expresiones regulares
 
    Se utilizan para definir patrones para la búsqueda y filtrado:
 
-   =[a-z]=
+*** =[a-z]= Minúsculas
 
-       rango de la *a* a la *z*
+    Rango de la *a* a la *z*
 
-   =[A-Z]=
+*** =[A-Z]= Mayúsculas
 
-       rango de la *A* a la *Z*
+    Rango de la *A* a la *Z*
 
-   =[0-9]=
+*** =[0-9]= Números
 
-       rango de 0 a 9
-       
-   =[^..]=
+    Rango de 0 a 9
 
-       negación
-       
-   =^=
+*** =[^..]= Patrón distinto
 
-       principio de línea
+    Negación
 
-   =$=
+*** =^= comienzo de línea
+
+
+*** =$= fin de línea
+
+*** =.= cualquier carácter
+
+*** =?= cero o una aparición
+
+*** =*= ninguna o muchas repeticiones
+
+*** =+= una o más repeticiones
+
+* Entrada estándar, Salida estándar y Tuberías
+** Descriptores de archivos
+
+   Existen 3 descriptores básicos de archivos:
    
-       fin de línea
+   | =0= | =stdin=  | entrada estándar  |
+   | =1= | =stdout= | salida estándar   |
+   | =2= | =stderr= | salida de errores |
 
-   =.=
+  #+BEGIN_SRC ditaa :file img/stdin-stdout-stderr.png :cmdline -E :exports both
+    +---+      +-----------+
+    | 0 |----->| /dev/tty0 |
+    +---+      +-----------+
 
-       cualquier caracter
-       
-   =?=
+    +---+      +-----------+
+    | 1 |----->| /dev/tty0 |
+    +---+      +-----------+
 
-       cero o una aparición
-       
-   =*=
+    +---+      +-----------+
+    | 2 |----->| /dev/tty0 |
+    +---+      +-----------+
+  #+END_SRC
 
-       ninguna o muchas repeticiones
+  Es posible redireccionar cada uno de éstos descriptores mediante los
+  operadores =>=, =<= y =|=
 
-   =+=
-   
-       una o mas repeticiones
+** Enviar la salida estándar a un archivo
 
-* Salida standard y tuberías
+   #+BEGIN_SRC ditaa :file img/stdout-file.png :cmdline -E :exports both
+     +---+      +-----------+
+     | 0 |----->| /dev/tty0 |
+     +---+      +-----------+
 
-** stdout
+     +---+      +-----------+
+     | 1 |----->| /tmp/file |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 2 |----->| /dev/tty0 |
+     +---+      +-----------+
+   #+END_SRC
+
+** Enviar la salida de errores a un archivo
+
+   #+BEGIN_SRC ditaa :file img/stderr-file.png :cmdline -E :exports both
+     +---+      +-----------+
+     | 0 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 2 |----->| /tmp/file |
+     +---+      +-----------+
+   #+END_SRC
+
+** Enviar la salida estándar y la salida de errores a un mismo archivo
+
+   #+BEGIN_SRC ditaa :file img/stderr-stdout-file.png :cmdline -E :exports both
+     +---+      +-----------+
+     | 0 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |--+-->| /tmp/file |
+     +---+  |   +-----------+
+            |
+     +---+  |
+     | 2 |--+
+     +---+
+   #+END_SRC
+
+** Enviar la salida de errores a la salida estándar
+
+   #+BEGIN_SRC ditaa :file img/stderr-stdout.png :cmdline -E :exports both
+     +---+      +-----------+
+     | 0 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |--+-->| /dev/tty0 |
+     +---+  |   +-----------+
+            |
+     +---+  |
+     | 2 |--+
+     +---+
+   #+END_SRC
+
+** Enviar la salida de estándar a =/dev/null=
+
+   #+BEGIN_SRC ditaa :file img/stdout-dev-null.png :cmdline -E :exports both
+     +---+      +-----------+
+     | 0 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |----->| /dev/null |
+     +---+      +-----------+
+            
+     +---+      +-----------+
+     | 2 |------| /dev/tty0 |
+     +---+      +-----------+
+   #+END_SRC
+
+** Enviar la salida de estándar y la salida de errores a =/dev/null=
+
+   #+BEGIN_SRC ditaa :file img/stderr-stdout-dev-null.png :cmdline -E :exports both
+     +---+      +-----------+
+     | 0 |----->| /dev/tty0 |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |--+-->| /dev/null |
+     +---+  |   +-----------+
+            |
+     +---+  |
+     | 2 |--+
+     +---+
+   #+END_SRC
+
+** Enviar un archivo a la entrada estándar
+
+   #+BEGIN_SRC ditaa :file img/stdin-file.png :cmdline -E :exports both
+     +---+      +-----------+
+     | 0 |----->| /tmp/file |
+     +---+      +-----------+
+
+     +---+      +-----------+
+     | 1 |----->| /dev/tty0 |
+     +---+      +-----------+
+            
+     +---+      +-----------+
+     | 2 |------| /dev/tty0 |
+     +---+      +-----------+
+   #+END_SRC
+
+** Enviar la salida estándar a un archivo y a la salida estándar
+
+   #+BEGIN_SRC ditaa :file img/tee-stdout-file.png :cmdline -E :exports both
+     +---------+      +-----------+      +-----------+
+     | comando |----->|    tee    |----->| /dev/tty0 |
+     +---------+      +-----------+      +-----------+
+                            |
+                            v    
+                      +-----------+
+                      | /tmp/file |
+                      +-----------+
+   #+END_SRC
+
+** Enviar la salida estándar de un comando como la entrada estándar de otro comando
+
+   #+BEGIN_SRC ditaa :file img/stdout-pipe-stdin.png :cmdline -E :exports both
+     +---+      +------------+      +---+      +------------+ 
+     | 0 |----->| /dev/tty0  |  +-->| 0 |----->| pipe read  |
+     +---+      +------------+  |   +---+      +------------+
+                                |                          
+     +---+      +------------+  |   +---+      +------------+
+     | 1 |----->| pipe write |--+   | 1 |----->| /dev/tty0  |
+     +---+      +------------+      +---+      +------------+
+                                         
+     +---+      +------------+      +---+      +------------+
+     | 2 |------| /dev/tty0  |      | 2 |------| /dev/tty0  |
+     +---+      +------------+      +---+      +------------+
+   #+END_SRC
+
+** =stdout=
 
    Buscar el texto *model* en el archivo =/proc/cpuinfo= y enviar el
    resultado a un nuevo archivo llamado =/tmp/cpu= que contendrá
@@ -596,12 +767,12 @@
    : cache size	: 512 KB
    : cache_alignment	: 64
 
-** stderr
+** =stderr=
 
    Enviar la salida con errores a =/dev/null=:
 
    #+BEGIN_EXAMPLE
-     xkcd 2>/dev/null   
+     xkcd 2>/dev/null
    #+END_EXAMPLE
 
    Redireccionar la salida con errores a la salida estandar:
@@ -617,7 +788,7 @@
 
    Ejemplo:
 
-     lista el directorio =/var/log= ordenando los archivos más nuevos
+     Lista el directorio =/var/log= ordenando los archivos más nuevos
      al principio y muestra sólo las primeras 10 líneas mediante el
      comando =head=
 
@@ -638,7 +809,7 @@
      -rw-r--r-- 1 root              root        29K feb 10 16:42 Xorg.0.log
      -rw-r----- 1 root              adm        1,9K feb 10 16:42 daemon.log
      #+end_example
-     
+
      lista el directorio =/var/log= mostrando el tamaño de cada
      archivo, se filtra el resultando por Megabytes (=M=), luego
      ordena de mayor a menor y finalmente limita la lista a los
@@ -667,8 +838,8 @@
 
    Es posible ejecutar una aplicación gráfica de un servidor remoto
    visualizando en el equipo local por medio de =ssh=, solo es
-   necesario incluir el parámetro =-X= y el servidor *X* se
-   redireciona a nuestro *host*
+   necesario incluir el parámetro =-X= y el servidor /X/ se
+   redireciona a nuestro /host/
 
    #+BEGIN_EXAMPLE
      ssh -X caipiroska 'gnome-calculator'
@@ -689,9 +860,9 @@
 
 ** =vnc4server=
 
-   Habitualmente se utiliza *VNC* para compartir la sesion actual,
+   Habitualmente se utiliza *VNC* para compartir la sesión actual,
    pero también se pueden levantar instancias nuevas, pudiendo tener
-   entornos gráficos diferentes en cada sesion de usuario en el mismo
+   entornos gráficos diferentes en cada sesión de usuario en el mismo
    servidor.
 
    Es necesario ejecutar en el servidor:
@@ -704,16 +875,16 @@
 
   #+INCLUDE: "procesos-linux.org" :lines "10-"
 
-* Automatizando tareas: sleep, jobs, crontab
+* Automatizando tareas: =sleep=, =jobs=, =crontab=
 
   #+INCLUDE: "automatizando-tareas.org" :lines "10-"
 
-* Análisis de tráfico de red con tcpdump y Wireshark
+* Análisis de tráfico de red con =tcpdump= y =wireshark=
 
   #+INCLUDE: "que-no-se-entere-nadie.org" :lines "10-"
 
 * Introducción a las redes TCP/IP
-  
+
   #+INCLUDE: "entendiendo-la-red.org" :lines "10-"
 
 * Configuración de servicios básicos
@@ -727,7 +898,7 @@
 
 ** MySQL
 
-  #+INCLUDE: "~/blog/mysql-bash-vim-tips.org" :lines "10-"
+  #+INCLUDE: "mysql-bash-vim-tips.org" :lines "10-"
 
 ** Postfix
 
@@ -752,7 +923,7 @@
        subnet 192.168.0.0 netmask 255.255.255.0 {
          range 192.168.0.100 192.168.0.150;
          option routers 192.168.0.1;
-       }    
+       }
      #+END_EXAMPLE
 
      - Se trata de una red =/24=, es decir que los primeros tres
@@ -783,8 +954,8 @@
    - http://www.tomontime.com/
 ** GTD
 
-   #+INCLUDE: "~/blog/gtd-gething-this-done.org" :lines "10-"
-   
+   #+INCLUDE: "gtd-gething-this-done.org" :lines "10-"
+
 ** Scrum
 
    =TODO=
@@ -872,7 +1043,7 @@
       [[file:gca-scrum-2012-08-06.png]]
 
 ** Pomodoro
-   
+
    =TODO=
 
 ** Autofocus
