@@ -7,6 +7,12 @@
 #+OPTIONS: toc:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+** =22/ABR=
+*** [[file:2014-04-22-flisol-2014.org][Se viene el FLISoL 2014]]
+
+    #+ATTR_HTML: :width 640 :height 366 :alt FLISoL 2014
+    [[file:2014-04-22-flisol-2014.org][file:img/flisol-2014-banner.png]]
+
 ** =22/MAR=
 *** [[file:2014-03-22-facttic-mit-libre-planet.org][FACTTIC cuenta su experiencia en el MIT]]
 

@@ -1,0 +1,32 @@
+#+TITLE:     Festival Latinoamericano de Instalación de Software Libre
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+OPTIONS: toc:nil
+#+DATE:      2014-04-22
+
+#+ATTR_HTML: :width 640 :height 366 :alt FLISoL 2014
+[[file:img/flisol-2014-banner.png]]
+
+El próximo *Sábado 26 de Abril*, como todos los años, se realizará el
+/Festival Latinoamericano de Instalación de Software Libre/, mejor
+conocido por *FLISoL* [fn:flisol].
+
+Asi que si tenés ganas de instalar alguna distribución
+*GNU/Linux* [fn:gnulinux] en tu compu, te podés acercar a algunas de
+las sedes que hay por todo el país a que un grupo de entusiastas te
+den una mano, de paso mientrás instalás/configurás o simplemente
+compartis un grato momento rodeado de nerds, geeks y ñoños, podés
+nutrirte de alguna de las tantas charlas que habrá, algunas más
+técnicas, otras más filosóficas...
+
+Este año voy a estar participando del *FLISoL
+Avellaneda* [fn:avellaneda], pero si me hago un tiempito me pego una
+vuelta por el *FLISol CABA* [fn:caba]
+
+[fn:flisol] http://flisol.info/FLISOL2014/Argentina
+[fn:gnulinux] http://www.getgnulinux.org/
+[fn:avellaneda] http://avelibre.usla.org.ar/FLISoL/charlas
+[fn:caba] http://flisolcaba.usla.org.ar/app/schedule
