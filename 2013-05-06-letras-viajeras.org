@@ -4,6 +4,7 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2013-05-06
 
 #+ATTR_HTML: :width 640 :height 388 :alt Letras Viajeras

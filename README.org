@@ -4,6 +4,7 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2012-12-16
 
 Este es un repositorio de archivos en formato

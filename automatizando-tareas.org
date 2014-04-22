@@ -5,6 +5,7 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 
 ** Procesos padres e hijos
 

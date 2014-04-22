@@ -3,8 +3,9 @@
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+OPTIONS:   toc:nil
+#+OPTIONS:   toc:nil timestamp:nil
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2013-04-06
 
 ** Conferencias en Casa del Bicentenario

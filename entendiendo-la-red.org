@@ -5,6 +5,7 @@
 #+LINK_HOME: index.html
 #+OPTIONS:   toc:nil timestamp:nil
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2013-04-04
 
 ** Topología, redes y Subredes

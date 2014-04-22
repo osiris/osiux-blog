@@ -4,6 +4,7 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2012-08-27
 
 Tengo un poco abandonado mi sitio web, obviamente estoy con muy poco tiempo y

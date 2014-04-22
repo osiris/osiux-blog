@@ -4,6 +4,7 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2012-07-05
 
 Como todo amante de =*UNIX= siempre quiero tener un

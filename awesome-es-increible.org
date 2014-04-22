@@ -4,6 +4,7 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2011-06-05
 
 ** La búsqueda del entorno ideal

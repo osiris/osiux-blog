@@ -4,7 +4,8 @@
 #+EMAIL:       <osiux@riseup.net>
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
-[[file:index.org][index]] | [[file:osiux.org][OSiUX]] | [[file:blog.org][blog]] | [[file:docs.org][docs]] | [[charlas.org][charlas]]
+#+INCLUDE: "header.org"                                                 
+#+OPTIONS: toc:nil timestamp:nil 
 #+EXCLUDE_TAGS: noexport
 
 * Seguridad de la Información

@@ -4,6 +4,7 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2012-05-25
 
 En coincidencia con la conmemoración de la revolución del 25 de Mayo,

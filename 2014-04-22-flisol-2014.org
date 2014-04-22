@@ -4,7 +4,7 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2014-04-22
 
 #+ATTR_HTML: :width 640 :height 366 :alt FLISoL 2014

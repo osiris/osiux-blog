@@ -4,6 +4,7 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2012-02-17
 
 #+ATTR_HTML: :width "640" :height "480" :alt "las cooperativas construyen un mundo mejor"

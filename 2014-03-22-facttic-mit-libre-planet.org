@@ -4,7 +4,7 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2014-03-22
 
 #+ATTR_HTML: :width 400 :height 265 :alt FACTTIC MIT LibrePlanet

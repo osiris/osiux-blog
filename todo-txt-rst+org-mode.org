@@ -4,7 +4,7 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2010-11-12
 
 #+BEGIN_EXAMPLE
@@ -13,13 +13,13 @@
                | __|  / _ \   / _` |  / _ \     | __| \ \/ / | __|
                | |_  | (_) | | (_| | | (_) |    | |_   >  <  | |_
                 \__|  \___/   \__,_|  \___/      \__| /_/\_\  \__|
-   
+
                 _                                                      _
        _ __ ___| |_     _      ___  _ __ __ _      _ __ ___   ___   __| | ___
       | '__/ __| __|  _| |_   / _ \| '__/ _` |____| '_ ` _ \ / _ \ / _` |/ _ \
       | |  \__ \ |_  |_   _| | (_) | | | (_| |____| | | | | | (_) | (_| |  __/
       |_|  |___/\__|   |_|    \___/|_|  \__, |    |_| |_| |_|\___/ \__,_|\___|
-                                        |___/            
+                                        |___/
 #+END_EXAMPLE
 
 ** Slides
@@ -138,13 +138,13 @@
 
         Inicia la búsqueda de la expresión regular {patrón}. Con / es
         una búsqueda hacia abajo y ? hacia abajo.
-    
+
     =n, N=
 
         Para avanzar o retroceder en los resultados de la búsqueda.
-    
+
     =vimgrep /{patrón}/ *=
-    
+
         Busca la expresión regular en todos los archivos del directorio
         actual.  Otra variante es utilizar =*= para iniciar una
         búsqueda recursiva o =*.php= para restringir la búsqueda
@@ -153,7 +153,7 @@
 *** Buscar y Reemplazar
 
     =:{rango}s/{a_buscar}/{reemplazo}/g=
-    
+
         Reemplaza todas las apariciones de {a_buscar} por {reemplazo} en
         el sector indicado por {rango}. Si omite {rango} se actúa
         solamente en la linea actual, si coloca % como {rango} se
@@ -266,13 +266,13 @@
 
 *** Instalación
 
-    #+BEGIN_EXAMPLE  
+    #+BEGIN_EXAMPLE
       apt-get install python-docutils
     #+END_EXAMPLE
 
 *** Generar HTML/Slides/Latex/PDF
 
-    #+BEGIN_EXAMPLE 
+    #+BEGIN_EXAMPLE
       rst2html presentacion.txt >presentacion.html
       rst2s5 presentacion.txt >presentacion.html
       rst2latex presentacion.txt presentacion.tex
@@ -319,7 +319,7 @@
        ``````````````````
 
        título subsección 2
-       ~~~~~~~~~~~~~~~~~~~   
+       ~~~~~~~~~~~~~~~~~~~
      #+END_EXAMPLE
 
      [[file:img/secciones.png]]
@@ -327,13 +327,13 @@
 **** Tablas
 
      #+BEGIN_EXAMPLE
-       ========== ===========  
-        columna 1  columna 2   
-       ========== ===========  
-        fila 1     celda       
-        fila 2     celda       
-       ========== ===========  
-     
+       ========== ===========
+        columna 1  columna 2
+       ========== ===========
+        fila 1     celda
+        fila 2     celda
+       ========== ===========
+
        +-----------+-------------+
        | columna 1 |  columna 2  |
        +===========+=============+
@@ -349,7 +349,7 @@
        +-----------+-------------+
        | ``codigo de ejemplo``   |
        | ``en una tabla``        |
-       +-----------+-------------+    
+       +-----------+-------------+
      #+END_EXAMPLE
 
 **** Links
@@ -379,7 +379,7 @@
 
 **** Referencias
 
-     #+BEGIN_EXAMPLE     
+     #+BEGIN_EXAMPLE
        Que ganas de tomar un fernet [1]_
        aunque una caipiroska [#]_ no vendría mal
        igual nunca está demás una stella [#stella]_
@@ -400,16 +400,16 @@
           :height: 6cm
           :alt: no soy un pirata, compartir es bueno
           :align: center
-          :target: http://buenosaireslibre.org     
+          :target: http://buenosaireslibre.org
      #+END_EXAMPLE
 
 **** Reemplazar
 
-     #+BEGIN_EXAMPLE     
-       * Attribution                                     |BY|           
-       * Attribution-Share Alike                         |BY| |SA|     
-       * Attribution-No Derivative Works                 |BY| |ND|     
-       * Attribution-Noncommercial                       |BY| |NC|     
+     #+BEGIN_EXAMPLE
+       * Attribution                                     |BY|
+       * Attribution-Share Alike                         |BY| |SA|
+       * Attribution-No Derivative Works                 |BY| |ND|
+       * Attribution-Noncommercial                       |BY| |NC|
        * Attribution-Noncommercial-No Derivative Works   |BY| |NC| |ND|
        * Attribution-Noncommercial-Share                 |BY| |NC| |SA|
        .. |BY| image:: img/CC-BY.png
@@ -433,7 +433,7 @@
            def p(x)::
                print('Hola ' + x)
 
-           p('Mundo');           
+           p('Mundo');
      #+END_EXAMPLE
 
 *** Aplicaciones
@@ -466,7 +466,7 @@
 
      MoinMoin parsea reST con sólo incluir #!rst entre triples llaves.
 
-     #+BEGIN_EXAMPLE     
+     #+BEGIN_EXAMPLE
        {{{#!rst
        Texto *reST*
        }}}
@@ -482,11 +482,11 @@
      - http://docs.python.org/dev/
 
      *reST* se utiliza para la creación de los PEPs (Python Enhancement Proposals).
-     
+
      - http://www.python.org/dev/peps/pep-0001/
-     
+
      EpyDoc genera documentación para Python y soporta *reST*.
-     
+
      - http://epydoc.sourceforge.net/manual-othermarkup.html
 
 **** rst2a
@@ -494,7 +494,7 @@
      Un interesante servicio web que al pasarle una url de un texto
      escrito en *reST* puede devolver el contenido en formato HTML o PDF
      eligiendo diferentes templates, esto evita tener instalado *reST*.
-     
+
      - http://rst2a.com/
      - http://api.rst2a.com/1.0/rst2/html?uri=http://pub.osiux.com/restructuredtext/reStructuredText.txt
 
@@ -652,18 +652,18 @@
     =TAB=
 
     [[file:img/org-tab.png]]
-    
+
     =Shift + TAB=
-    
+
     [[file:img/org-s-tab.png]]
 
     La visibilidad por defecto se puede establecer en cada fichero
     mediante:
-    
+
     #+BEGIN_EXAMPLE
       #+STARTUP: overview
       #+STARTUP: content
-      #+STARTUP: showall    
+      #+STARTUP: showall
     #+END_EXAMPLE
 
 *** Listas y Checkbox
@@ -697,7 +697,7 @@
 
     - Las tareas pueden tener una o más secuencias de estado:
       =TODO -> NEXT -> DONE=
- 
+
     #+BEGIN_EXAMPLE
       (setq org-todo-keywords
         (quote (
@@ -708,7 +708,7 @@
     #+BEGIN_EXAMPLE
       * Debian en la notebook
       ** DONE Obtener Debian
-      *** DONE Descargar ISO 
+      *** DONE Descargar ISO
       *** DONE Grabar CD
       ** TODO Hacer backup
       ** TODO Instalar
@@ -717,7 +717,7 @@
 *** Tags (Etiquetas)
 
     - Los tags se heredan de archivo a tarea, subtarea, etc.
-    - Una tarea puede tener mas de un tag. 
+    - Una tarea puede tener mas de un tag.
     - Se pueden realizar búsquedas por medio de tags.
 
     #+BEGIN_EXAMPLE
@@ -744,11 +744,11 @@
 
     =C-c C-x C-o=
 
-        Detiene reloj de la tarea actual.                       
+        Detiene reloj de la tarea actual.
 
     =C-c C-x C-d=
 
-        Muestra tiempos parciales y totales.                     
+        Muestra tiempos parciales y totales.
 
     #+BEGIN_EXAMPLE
     ** DONE Obtener Debian      :debian:.....................** 0:38
@@ -770,7 +770,7 @@
 
     =C-c C-x C-u=
 
-        Actualizar el Reporte.                  
+        Actualizar el Reporte.
 
     #+BEGIN_EXAMPLE
       #+BEGIN: clocktable :maxlevel 3 :scope file
@@ -804,7 +804,7 @@
       ** Charlas
       *** *TODO TXT | rst+org-mode*
           <2010-11-12 vie 14:00>--<2010-11-12 vie 15:00>
-       
+
 
       Day-agenda (W45):
       Vie        12 Nov 2010
@@ -856,7 +856,7 @@
       | horario | sala 1 | sala 2 |
       |---------+--------+--------+
       | 14 a 15 | Gestión de Eventos 911 con PostgreSQL | TODO TXT rst+org-mode |
-      |-    
+      |-
 
       | horario | sala 1                                | sala 2                |
       |---------+---------------------------------------+-----------------------|
@@ -884,7 +884,7 @@
       | celular  |   55.00 |  33.333333 |
       |----------+---------+------------|
       |          |    165. |            |
-      
+
       #+TBLFM: @2$3=(@2$2/@6$2)*100;%0d::@3$3=(@3$2/@6$2)*100;%0.1f
              ::@4$3=(@4$2/@6$2)*100;%0.2f::@5$3=(@5$2/@6$2)*100
              ::@6$2=vsum(@I..@II)
@@ -903,21 +903,21 @@
     #+BEGIN_EXAMPLE
         * gastos               | 165.00 |
         ** luz                 | 40.00  |
-           :PROPERTIES:        
-           :COST:     40.00    
-           :END:               
+           :PROPERTIES:
+           :COST:     40.00
+           :END:
         ** gas                 | 30.00  |
-           :PROPERTIES:        
-           :COST:     30.00    
-           :END:               
+           :PROPERTIES:
+           :COST:     30.00
+           :END:
         ** telefono            | 40.00  |
-           :PROPERTIES:        
-           :COST:     40.00    
-           :END:               
+           :PROPERTIES:
+           :COST:     40.00
+           :END:
         ** celular             | 55.00  |
-           :PROPERTIES:        
-           :COST:     55.00    
-           :END:               
+           :PROPERTIES:
+           :COST:     55.00
+           :END:
     #+END_EXAMPLE
 
 *** Búsquedas
@@ -945,27 +945,27 @@
                     )
                 ) ) )
     #+END_EXAMPLE
- 
+
 *** Exportar
 
     =C-c a e=
-    
+
         Exporta vistas de la agenda
-        
+
     =C-c C-e h=
 
         Exporta html
-        
+
     =C-c C-e p=
-    
+
         Exporta pdf
-        
+
     =C-c C-e i=
-    
+
         Exporta calendario ICalendar
 
     =C-c C-e P=
-    
+
         Publica proyecto
 
 *** Graphviz

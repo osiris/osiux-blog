@@ -5,6 +5,7 @@
 #+LINK_HOME: index.html
 #+OPTIONS:   toc:nil timestamp:nil
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2014-01-04
 
 ** 03/2014

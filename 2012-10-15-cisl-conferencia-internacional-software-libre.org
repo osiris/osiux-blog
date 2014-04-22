@@ -4,6 +4,7 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2012-10-15
 
 Hoy comenzó el [[http://cisl.org.ar][CISL]] y

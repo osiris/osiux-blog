@@ -4,6 +4,7 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2012-02-29 
 
 Gracias a *Chester G* que tuvo la gentileza de hacerle caso al pedido de

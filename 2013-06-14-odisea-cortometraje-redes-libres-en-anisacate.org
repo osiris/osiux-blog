@@ -4,7 +4,8 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil timestamp:nil
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2013-06-14
 
 Cortometraje de /Lucas Schiaroli/ y su productora /25watts/ sobre las

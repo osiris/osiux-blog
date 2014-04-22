@@ -4,6 +4,7 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2011-11-25
 
 | en LaTribu Lambaré 873 http://culturalibre.fmlatribu.com/?p=101

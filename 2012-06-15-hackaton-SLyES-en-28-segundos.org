@@ -4,6 +4,7 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2012-06-15
 
 Ariel de [[http://gcoop.coop][gcoop]], dejó la cámara sacando **una foto

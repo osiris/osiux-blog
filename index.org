@@ -4,7 +4,7 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
 ** =22/ABR=
