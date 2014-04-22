@@ -7,6 +7,12 @@
 #+OPTIONS: toc:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+** =22/MAR=
+*** [[file:2014-03-22-facttic-mit-libre-planet.org][FACTTIC cuenta su experiencia en el MIT]]
+
+    #+ATTR_HTML: :width 640 :height 360 :alt FACTTIC MIT LibrePlanet
+    [[file:2014-03-22-facttic-mit-libre-planet.org][file:img/mit-stata-center.jpg]]
+
 ** =20/MAR=
 *** [[file:2014-03-14-saso-conf-curuzu-cuatia.org][SASOConf en Curuzú Cuatiá]]
 
