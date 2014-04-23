@@ -7,6 +7,12 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+** =23/ABR=
+*** [[file:multiboot-grub2-isoboot.org][Muchas Distros en un pendrive = Multiboot Grub2 ISOBoot]]
+
+    #+ATTR_HTML: :width 640 :height 360 :alt Multiboot Grub2 ISOBoot
+    [[file:multiboot-grub2-isoboot.org][file:img/multiboot-grub2-isoboot.png]]
+
 ** =22/ABR=
 *** [[file:2014-04-22-flisol-2014.org][Se viene el FLISoL 2014]]
 
