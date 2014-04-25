@@ -24,6 +24,9 @@
        +---+             +---+
      #+END_SRC
 
+     #+RESULTS:
+     [[file:img/redes-centralizadas.png]]
+
    - descentralizada
 
      #+BEGIN_SRC ditaa :file img/redes-descentralizadas.png :cmdline -E :exports results
@@ -77,6 +80,9 @@
          +---+     +---+     +---+     +---+
     #+END_SRC
 
+    #+RESULTS:
+    [[file:img/redes-lan.png]]
+
 *** =B= dice, *necesito una IP!*
 
     - mensaje: =DHCPDISCOVER=
@@ -92,6 +98,9 @@
          | A |     | B |     | C |     | D |
          +---+     +---+     +---+     +---+
     #+END_SRC
+
+    #+RESULTS:
+    [[file:img/redes-dhcp-discover.png]]
 
 *** =D= dice, *yo te puedo dar IP!*
 
@@ -111,6 +120,9 @@
          +---+     +---+     +---+     +---+
     #+END_SRC
 
+    #+RESULTS:
+    [[file:img/redes-dhcp-offer.png]]
+
 *** =B= dice, confirmo recepción!
 
     - mensaje: =DHCPREQUEST=
@@ -123,6 +135,9 @@
          | A |     | B |     | C |     | D |
          +---+     +---+     +---+     +---+
     #+END_SRC
+
+    #+RESULTS:
+    [[file:img/redes-dhcp-request.png]]
 
 *** =D= dice, confirmo confirmación!
 
@@ -273,8 +288,8 @@
    - infraestructura
    - ad-hoc
 
-** Sniffers nmap, dsniff                                           :noexport:
-*** nmap                                                           :noexport:
+** Sniffers nmap, dsniff
+*** nmap
 
     #+BEGIN_SRC sh :session :results output
       nmap -sV --open 192.168.10.0/24 -p22 | head
@@ -303,7 +318,7 @@
 ** Análisis de tráfico mediante tcpdump                            :noexport:
 ** Firewall, Port Forwarding, NAT                                  :noexport:
 *** iptables
-** Túneles y Redes Privadas Virtuales VPN                          :noexport:
+** Túneles y Redes Privadas Virtuales VPN
 *** Redireccionar puertos con =ssh=
 
     #+BEGIN_EXAMPLE
@@ -322,7 +337,7 @@
       ssh -R 12345:localhost:22 osiux.com    
     #+END_EXAMPLE
 
-*** Redireccionar puertos con =socat=
+*** Redireccionar puertos con =socat=                              :noexport:
 ** Cómo saber la IP de un equipo?
 *** B dice, *cuál es la IP de D?*
 
@@ -339,6 +354,9 @@
          +---+     +---+     +---+     +---+
     #+END_SRC
 
+    #+RESULTS:
+    [[file:img/redes-arp-1.png]]
+
 *** D contesta, *mi IP es 10.4.14.225*
 
     #+BEGIN_SRC ditaa :file img/redes-arp-2.png :cmdline -E :exports results
@@ -349,6 +367,9 @@
          | A |     | B |     | C |     | D |
          +---+     +---+     +---+     +---+
     #+END_SRC
+
+    #+RESULTS:
+    [[file:img/redes-arp-2.png]]
 
 *** Quénes están en esta red?
 
@@ -383,11 +404,9 @@
 
 *** capturando pings
 
-    #+BEGIN_SRC sh :session :results output :exports both
-      sudo tcpdump -i lo -nnnt -c 5 icmp
-    #+END_SRC
-
-    #+RESULTS:
+    #+BEGIN_EXAMPLE
+      sudo tcpdump -i lo -nnnt -c 5 icmp    
+    #+END_EXAMPLE
 
 *** viendo un =ping=
 
