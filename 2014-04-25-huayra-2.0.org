@@ -1,0 +1,90 @@
+#+TITLE:     Disponible Huayra 2.0
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
+#+DATE:      2014-04-25
+
+#+ATTR_HTML: :width 640 :height 480 :alt Huayra 2.0
+[[file:img/huayra-2.0.png][file:tmb/huayra-2.0.png]]
+
+Esta disponible la nueva versión 2.0 de Huayra GNU/Linux, descargá la
+ISO [fn:iso] que podés usarla desde el pendrive directamente o con la
+posibilidad de instalarla. Más info en la web oficial [fn:huayra]
+
+Por las dudas el MD5 es:
+
+#+BEGIN_EXAMPLE
+  8fd873d54f57e5384b64001d2e2bd1ab
+#+END_EXAMPLE
+
+Nuevos Aplicativos: 
+
+- *Huayra Compartir* - Compartí archivos con docentes y estudiantes,
+   fácilmente y sin necesidad de Internet.
+
+- *Huayra Motion* - Filmá tu propio corto de animación con la técnica
+   stopmotion.
+
+- *Huayra TDA Player* - Mirá la Televisión Digital Abierta (TDA) con
+   el sintonizador de Huayra.
+
+- *Pilas Tutorial* - Aprendé a programar creando tus propios
+   videojuegos.
+
+- *Huayra Ayuda* - Nueva ayuda que te va a responder todas las
+   preguntas que tengas sobre Huayra y cómo usarlo.
+
+- *Nuevos Juegos* - Disfrutá de la nueva colección de juegos que trae
+   Huayra para los ratos libres (2048, Atomix, Ayni, Crack Attack,
+   eboard,Enigma, Mintest, NumptyFisics, Secret Mayo Chronicles,
+   Sudoku).
+
+- *LibreCad* - Huayra ahora viene con una aplicación libre para diseño
+   asistido por computadora (CAD), indispensable para las escuelas
+   técnicas.
+
+- *Tupi* - Hemos incluido esta poderosa herramienta de animación 2D,
+   con la que podrás iniciarte en el maravilloso mundo de los dibujos
+   animados.
+
+- *Preciosa* - Chequeá los precios de tu barrio y buscá en dónde está
+   más barato. Precios cuidados.
+
+- *Docky (Dock de aplicaciones)* - Un dock para lanzar y anclar tus
+   aplicaciones preferidas.
+
+- *Florence (Teclado en Pantalla)* - Nuevo teclado en pantalla para
+   mejor accesibilidad.
+
+- *Synapse (Lanzador de aplicaciones)* - Usar el mousepad a veces es
+   incómodo en la netbook. Usando Synapse con solo comenzar a teclear
+   las primeras letras de la aplicación ya vas a poder lanzarla.
+
+- *Tema Limbo* - El escritorio Huayra presenta un tema integral, que
+   hemos bautizado "Limbo", que incluye configuración de GRUB,
+   Plymouth, tema de iconos, temas de aplicaciones GTK2 y GTK3, tema
+   de ventanas, gestor de login (MDM), y aspecto general de
+   aplicativos, que mejoran la experiencia de uso en conjunto con
+   Docky y Synapse.
+
+- *Nuevos avatares de usuario* - Identificá tu usuario con un
+   avatar. En Huayra cada usuario tiene su sesión con su avatar, sus
+   temas, archivos, etc.
+
+Actualizados:
+
+- Mate 1.6 
+- LibreOffice 4.2 
+- Simulaciones Interactivas 
+- MiEscritorio 
+- Pilas Engine 
+- Icaro
+- Nuevos fondos de pantalla
+- Primeros Pasos 
+- Agente TheftDeterrent 
+
+[fn:iso] http://iso.huayragnulinux.com.ar/huayra-i386-2.0.iso
+[fn:huayra] http://huayra.conectarigualdad.gob.ar/huayra
