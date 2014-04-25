@@ -9,7 +9,128 @@
 
 ** Introducción
 
-Generación de distintos grafos como estructuras de datos, estructuras de árbol,
-diagramas entidad-relación, de redes, de flujo, etc, utilizando el conjunto de
-herramientas Graphviz y su integración con otras aplicaciones. Desarrollo de
-scripts para la generación automática de grafos directamente desde una consola.
+   Generación de distintos grafos como estructuras de datos, estructuras
+   de árbol, diagramas entidad-relación, de redes, de flujo, etc,
+   utilizando el conjunto de herramientas Graphviz y su integración con
+   otras aplicaciones. Desarrollo de scripts para la generación
+   automática de grafos directamente desde una consola.
+
+** Qué es Graphviz?
+
+   Es un conjunto de herramientas open-source realizado inicialmente en
+   los laboratorios de investigación de AT&T para el dibujo de gráficos
+   especificados en lenguaje de scripts DOT. Provee librerías para ser
+   usadas por otras aplicaciones. Graphviz es software libre licenciado
+   bajo CPL (Common Public License).
+
+** Aplicaciones
+
+   - Estructuras de datos.
+   - Estructuras de árbol.
+   - Representación de análisis social de redes.
+   - Diagramas entidad relación.
+   - Diagramas de redes.
+   - Diagramas de flujo.
+   - Diagramas de procesos.
+
+** Grafos
+
+   Un grafo es un conjunto de objetos llamados vértices (o nodos) y una
+   selección de pares de vértices, llamados aristas (arcs en inglés) que
+   pueden ser orientados o no. Típicamente, un grafo se representa
+   mediante una serie de puntos (los vértices) conectados por líneas
+   (las aristas).
+
+** Generadores de gráficos
+
+*** =dot= Gráficos direccionales
+
+    #+BEGIN_SRC dot :file graphviz-dot.png :cmdline -Kdot -Tpng :exports boths
+      digraph dot
+      {
+        nodo1 -> nodo2;
+        nodo2 -> nodo3;
+        nodo2 -> nodo4;
+        nodo1 -> nodo5;
+        nodo5 -> nodo6;
+        nodo5 -> nodo7;
+        nodo1 -> nodo8;
+      }
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:graphviz-dot.png]]
+
+
+*** =neato= Gráficos no-direccionales
+
+    #+BEGIN_SRC dot :file graphviz-neato.png :cmdline -Kneato -Tpng :exports boths
+      graph neato
+      {
+        nodo1 -- nodo2;
+        nodo2 -- nodo3;
+        nodo2 -- nodo4;
+        nodo1 -- nodo5;
+        nodo5 -- nodo6;
+        nodo5 -- nodo7;
+        nodo1 -- nodo8;
+      }
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:graphviz-neato.png]]
+
+*** =twopi= Gráficos radiales
+
+    #+BEGIN_SRC dot :file graphviz-twopi.png :cmdline -Ktwopi -Tpng :exports boths
+      graph twopi
+      {
+        nodo1 -- nodo2;
+        nodo2 -- nodo3;
+        nodo2 -- nodo4;
+        nodo1 -- nodo5;
+        nodo5 -- nodo6;
+        nodo5 -- nodo7;
+        nodo1 -- nodo8;
+      }
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:graphviz-twopi.png]]
+
+*** =fdp= Gráficos no-direccionales
+
+    #+BEGIN_SRC dot :file graphviz-fdp.png :cmdline -Kfdp -Tpng :exports boths
+      graph fdp
+      {
+        nodo1 -- nodo2;
+        nodo2 -- nodo3;
+        nodo2 -- nodo4;
+        nodo1 -- nodo5;
+        nodo5 -- nodo6;
+        nodo5 -- nodo7;
+        nodo1 -- nodo8;
+      }
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:graphviz-fdp.png]]
+
+*** =circo= Gráficos circulares
+
+    #+BEGIN_SRC dot :file graphviz-circo.png :cmdline -Kcirco -Tpng :exports boths
+      graph circo
+      {
+        nodo1 -- nodo2;
+        nodo2 -- nodo3;
+        nodo2 -- nodo4;
+        nodo1 -- nodo5;
+        nodo5 -- nodo6;
+        nodo5 -- nodo7;
+        nodo1 -- nodo8;
+      }
+    #+END_SRC
+
+    #+RESULTS:
+    [[file:graphviz-circo.png]]
+
