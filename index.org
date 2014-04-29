@@ -7,6 +7,12 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+** =26/ABR=
+*** [[file:2014-04-26-flisol-avellaneda-undav.org][FLISoL Avellaneda en la UNDAv]]
+
+    #+ATTR_HTML: :width 640 :height 480 :alt FLISoL Avellaneda en la UNDAv
+    [[file:2014-04-26-flisol-avellaneda-undav.org][file:tmb/flisol-2014-undav/2014-04-26-1417-1efa0f.jpg]]
+
 ** =25/ABR=
 *** [[file:2014-04-25-huayra-2.0.org][Salió Huayra 2.0]]
 
