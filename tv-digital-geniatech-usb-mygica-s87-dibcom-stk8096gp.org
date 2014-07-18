@@ -1,0 +1,131 @@
+#+TITLE:       TV Digital Geniatech USB MyGica S87 dibcom STK8096GP Debian Sidux
+#+DESCRIPTION: Instalar y configurar adaptador usb TDA
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
+
+Gracias al post de *lukio* [fn:lukio] basado en el blog de *ubuntu
+peronista* [fn:ubuntuperonista] pude hacer funcionar el sintonizador
+*TV Digital Geniatech USB MyGica S870* con Sidux [fn:sidux] (Debian
+sid).
+
+#+ATTR_HTML: :width 640 :height 480 :alt TV Digital TDA Geniatech USB MyGica
+[[file:img/tv-digital-geniatech-usb-mygica-s87-dibcom-stk8096gp.png][file:tmb/tv-digital-geniatech-usb-mygica-s87-dibcom-stk8096gp.png]]
+
+Los pasos a seguir son los siguientes
+
+   #+BEGIN_EXAMPLE
+    sudo apt-get install mercurial linux-headers-$(uname -r) build essential
+    cd ~
+    hg clone http://linuxtv.org/hg/v4l-dvb
+    cd v4l-dvb
+    make
+    sudo make install
+   #+END_EXAMPLE
+
+Si falla la compilación, debemos editar el =.config= y cambiar la
+siguiente linea:
+
+   #+BEGIN_EXAMPLE
+     vim v4l-dv/v4l/.config
+     CONFIG_DVB_FIREDTV=m y la cambiamos a CONFIG_DVB_FIREDTV=n. Luego guardamos y cerramos el archivo.
+   #+END_EXAMPLE
+
+Luego debemos bajarnos el firmware e instalarlo para nuestro kernel:
+
+   #+BEGIN_EXAMPLE
+    cd ~
+    wget http://www.linuxtv.org/downloads/firmware/dvb-usb-dibusb-6.0.0.8.fw
+    cd /lib/firmware
+    sudo cp ~/dvb-usb-dibusb-6.0.0.8.fw .
+
+    cd ~
+    echo "# Canales UHF del 14 to 69 en el sistema argentino de televisión digital terrestre SATVD-T
+    T 473142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 14
+    T 479142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 15
+    T 485142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 16
+    T 491142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 17
+    T 497142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 18
+    T 503142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 19
+    T 509142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 20
+    T 515142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 21
+    T 521142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 22
+    T 527142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 23
+    T 533142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 24
+    T 539142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 25
+    T 545142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 26
+    T 551142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 27
+    T 557142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 28
+    T 563142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 29
+    T 569142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 30
+    T 575142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 31
+    T 581142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 32
+    T 587142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 33
+    T 593142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 34
+    T 599142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 35
+    T 605142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 36
+    # channel 37 not used
+    T 617142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 38
+    T 623142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 39
+    T 629142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 40
+    T 635142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 41
+    T 641142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 42
+    T 647142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 43
+    T 653142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 44
+    T 659142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 45
+    T 665142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 46
+    T 671142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 47
+    T 677142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 48
+    T 683142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 49
+    T 689142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 50
+    T 695142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 51
+    T 701142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 52
+    T 707142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 53
+    T 713142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 54
+    T 719142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 55
+    T 725142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 56
+    T 731142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 57
+    T 737142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 58
+    T 743142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 59
+    T 749142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 60
+    T 755142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 61
+    T 761142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 62
+    T 767142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 63
+    T 773142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 64
+    T 779142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 65
+    T 785142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 66
+    T 791142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 67
+    T 797142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 68
+    T 803142857 6MHz 3/4 AUTO AUTO AUTO AUTO NONE # channel 69" > freq.cnf
+
+    scan freq.conf > channels.conf
+    #+END_EXAMPLE
+
+Deberia de ver por el momento los canales de la tvpublica y el canal
+encuentro:
+
+    #+BEGIN_EXAMPLE
+      HD TVPublica:527142857:INVERSION_AUTO:BANDWIDTH_6_MHZ:FEC_3_4: ... :59201
+      One Seg TVP 1:527142857:INVERSION_AUTO:BANDWIDTH_6_MHZ:FEC_3_4: ... :59224
+      SD Encuentro:527142857:INVERSION_AUTO:BANDWIDTH_6_MHZ:FEC_3_4: ... :59202
+      SD Tvpublica:527142857:INVERSION_AUTO:BANDWIDTH_6_MHZ:FEC_3_4: ... :59200
+      Canal 9 - HD:647142857:INVERSION_AUTO:BANDWIDTH_6_MHZ:FEC_3_4: ... :23169
+      Canal 9 - SD:647142857:INVERSION_AUTO:BANDWIDTH_6_MHZ:FEC_3_4: ... :23170
+      Canal 9 - Mobile:647142857:INVERSION_AUTO:BANDWIDTH_6_MHZ:FEC_3_4: ... :23195    
+    #+END_EXAMPLE
+
+Si queremos visualizar los canales tenemos el programa VLC:
+
+    #+BEGIN_EXAMPLE
+      vlc -v -v -v channels.conf    
+    #+END_EXAMPLE
+
+Ahora ya somos felices, tenemos tele en la computadora y con *High
+Definition*.
+
+[fn:lukio] http://blog.luchorossi.com.ar/2010/06/10/tv-publica-nacional-y-popular-ole-ole/
+[fn:ubuntuperonista] http://ubuntuperonista.blogspot.com
+[fn:sidux] http://sidux.com/
