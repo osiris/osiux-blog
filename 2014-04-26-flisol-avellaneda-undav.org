@@ -1,0 +1,102 @@
+#+TITLE:     FLISoL Avellaneda en la Universidad Nacional de Avellaneda
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
+#+DATE:      2014-04-26
+
+** UNDAv
+
+   Este año me tocó estar en la /Universidad Nacional de Avellaneda/
+   (muy bonita por cierto), gracias a la invitación de /Diego Cañizares/.
+
+   El evento fue muy bueno, contó con muchos referentes del /Software
+   Libre/, no pude ver todas las charlas y lamentablemente tampoco
+   asistí en la instalación de alguna distro, pero había un aula
+   destinada a tal efecto y al parecer fue un éxito. Muchos colegas y
+   amigos presentes. También junto a /Diego Acorinti/ hicimos algo de
+   difusión en la radio de la /UNDAv/.
+
+** Installfest
+
+   El aula 14 fue el punto de encuentro para realizar instalaciones y
+   también crear pendrives Lives o simplemente copiar ISOs.
+
+   #+ATTR_HTML: :width 640 :height 480 :alt InstallFest en FLISoL Avellaneda 1
+   [[file:img/flisol-2014-undav/2014-04-26-1411-e167fe.jpg][file:tmb/flisol-2014-undav/2014-04-26-1411-e167fe.jpg]]
+
+   #+ATTR_HTML: :width 640 :height 480 :alt InstallFest en FLISoL Avellaneda 2
+   [[file:img/flisol-2014-undav/2014-04-26-1417-1efa0f.jpg][file:tmb/flisol-2014-undav/2014-04-26-1417-1efa0f.jpg]]
+
+** Hacklab
+
+   El Hacklab de Barracas estuvo presente, e incluso /Baza/ dió una
+   charla sobre su proyecto *ciboulette* [fn:ciboulette], aunque
+   lamentablemtne no pude asistir.
+
+   #+ATTR_HTML: :width 640 :height 480 :alt Hacklab en FLISoL Avellaneda
+   [[file:img/flisol-2014-undav/2014-04-26-1320-ababc0.jpg][file:tmb/flisol-2014-undav/2014-04-26-1320-ababc0.jpg]]
+   
+** Software libre en la escuela técnica... una aventura en progreso
+
+   /Román Gelbort/, mejor conocido por /"el profe"/ contó sus
+   peripecias de implementar exclusivamente herramientas de Software
+   Libre en la escuela técnica /Florentino Ameghino/, de
+   Berazategui. Una escuela con las especialidades de electrónica e
+   informática que es una Cooperativa de Trabajo.
+
+   #+ATTR_HTML: :width 640 :height 480 :alt Software Libre Escuela Técnica en FLISoL Avellaneda
+   [[file:img/flisol-2014-undav/2014-04-26-1047-f393d3.jpg][file:tmb/flisol-2014-undav/2014-04-26-1047-f393d3.jpg]]
+
+** Cooperativistas por elección, nuevas cooperativas de Tecnología Innovación
+
+   Tuve la oportunidad de hablar sobre Cooperativismo y Software
+   Libre, proyectado el corto *Códigos Cooperativos* [fn:codigoscoop]
+   y luego junto a los asistentes simulamos una pequeña asamblea,
+   charlando en una ronda sobre *FACTTIC* [fn:facttic] y cómo es el
+   día a día en una cooperativa.
+
+** Dibujando diagramas sin usar el mouse
+
+   Por la tarde di una charla sobre el uso de *GraphViz* para la
+   realización de diagramas de todo tipo, me queda pendiente terminar
+   de pulir el artículo que pronto estará disponible en:
+
+   [[file:visualizando-grafos-graphviz.org][http://osiux.com/visualizando-grafos-graphviz.html]]
+
+   De momento, se puede descargar algunos ejemplos en los siguientes
+   repositorios:
+
+   - http://github.com/osiris/sugar-graphviz
+   - http://github.com/osiris/aps2dot
+   - http://github.com/osiris/mails2dot
+
+** Software Libre sobre Hardware Libre
+
+   /Ernesto Gigliotti/ y /Mauricio Davila/, mostraron un Linux embebido
+   en la plataforma de Hardware libre *BeagleBone Black*. Usando código
+   en Python mostraron la simplicidad de interactuar con leds y
+   pulsadores.
+
+   #+ATTR_HTML: :width 640 :height 480 :alt Software Libre sobre Hardware Libre en FLISoL Avellaneda
+   [[file:img/flisol-2014-undav/2014-04-26-1617-e2a80d.jpg][file:tmb/flisol-2014-undav/2014-04-26-1617-e2a80d.jpg]]
+
+** Cierre
+
+   El cierre estuvo a cargo de /Diego Cañizares/ dando agradecimientos
+   por la participación del evento que fue realizado con exito y /a
+   pulmón/. Hubo espacio para el sorteo de Remeras y Libros.
+
+   #+ATTR_HTML: :width 640 :height 480 :alt Cierre FLISoL Avellaneda
+   [[file:img/flisol-2014-undav/2014-04-26-1748-4190a2.jpg][file:tmb/flisol-2014-undav/2014-04-26-1748-4190a2.jpg]]   
+
+   Finalmente quedó la invitación para participar el próximo año. No
+   pude quedarme para la reunión social post-evento :-( seguramente
+   nos volveremos a ver pronto!
+
+[fn:codigoscoop] http://gcoop.coop/codigos-cooperativos
+[fn:facttic] http://facttic.org.ar
+[fn:ciboulette]  http://ciboulette.hackcoop.com.ar
+
