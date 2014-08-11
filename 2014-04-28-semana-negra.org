@@ -138,11 +138,10 @@
     =links2=. Se puede ver un ranking de los comandos más usados en la
     semana, de acuerdo al historial de =bash=.
 
-    #+BEGIN_SRC sh :session :results output
+    #+BEGIN_SRC sh :session :results output :exports both
       cat ~/semana-negra.log | head
       echo
       cat ~/semana-negra.log | awk '{print $3,$4}' | sort | uniq -c | sort -nr | head -20 | barra
-
     #+END_SRC
 
     #+RESULTS:
