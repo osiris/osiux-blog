@@ -1,0 +1,134 @@
+#+TITLE:       fluxbox + gtk2 + root-tail + gkrellm
+#+AUTHOR:      Osiris Alejandro Gomez
+#+EMAIL:       osiux@osiux.com
+#+LANGUAGE:    es
+#+LINK_HOME:   index.html
+#+DATE:        2009-01-16
+#+INCLUDE: "header.org"
+
+Decidí salir de gnome y probar *fluxbox*, el resultado: no vuelvo ni
+por Beryl (aunque lo extraño!). Realmente es muy facil personalizarlo
+y como manejador de ventanas es excelente, muy rapido y practicamente
+no consume recursos
+
+#+ATTR_HTML: :width 640 :height 480 :alt "fluxbox gtk2 root-tail gkrellm"
+[[file:img/osiux-fluxbox-screenshot-1024x768-01.png][file:tmb/osiux-fluxbox-screenshot-640x480-01.png]]
+
+** Editar un style
+
+   Inicialmente descargue unos cuantos y termine modificandolos y
+   haciendo un mix entre Sephiroth y Equilibrium.
+
+    * http://fluxbox.org/download/themes/contrib/discostoo_sephiroth.tar.bz2
+    * http://rest0re.org/themes/equilibrium.tar.gz
+
+   El archivo de configuracion de un tema debe estar en
+   =~/.fluxbox/styles/osiux/theme.cfg= donde osiux es el nombre del
+   tema.
+
+** Editar menu
+
+   El menu se encuentra en el directorio del usuario =~/.fluxbox/menu=
+   y es autogenerado al instalar fluxbox, en realidad llama al menu
+   compartido para todos los usuarios que esta en
+   =/etc/X11/fluxbox/fluxbox-menu=. Luego de mirar un poco como era la
+   sintaxis opte por crear un menu propio unicamente con las
+   aplicaciones mas usadas y nada mas, la manera mas simple es hacer
+   un include a un arhivo con mi propio menu, asi de esta manera en
+   cualquier momento descomentando la linea original puedo acceder a
+   todas las opciones por defecto:
+
+   #+BEGIN_EXAMPLE
+     [begin] (fluxbox)
+     #[include] (/etc/X11/fluxbox/fluxbox-menu)
+     [include] (~/.fluxbox/menu-osiux)
+     [end]
+   #+END_EXAMPLE
+
+   Este es el contenido del menu personalizado =~/.fluxbox/menu-osiux=:
+
+   #+BEGIN_EXAMPLE
+     [exec] (iceweasel)      {iceweasel}
+     [exec] (gaim)           {/usr/bin/gaim}
+     [exec] (xchat)          {/usr/bin/xchat}
+     [exec] (tsclient)       {/usr/bin/tsclient -f}
+     [exec] (icedove)        {/usr/bin/icedove}
+     [exec] (eclipse)        {/usr/bin/eclipse}
+     [exec] (quanta)         {/usr/bin/quanta}
+     [exec] (gimp)           {/usr/bin/gimp-2.2}
+     [exec] (inkscape)       {/usr/bin/inkscape}
+     [exec] (vmware)         {/usr/bin/wmware}
+     [exec] (mplayer)        {/usr/bin/gmplayer}
+     [exec] (k3b)            {/usr/bin/k3b}
+     [exec] (calc)           {/usr/bin/gnome-calculator}
+     [exec] (opencalc)       {/usr/bin/ooffice -calc} <>
+     [exec] (openwriter)     {/usr/bin/ooffice -writer} <>
+     [exec] (gedit)          {/usr/bin/gedit}
+     [exec] (run..)          {/usr/bin/fbrun} <>
+     [exec] (mc)             { x-terminal-emulator -T "mc" -e /usr/bin/mc}
+     [exec] (thunar)         {/usr/bin/thunar} <>
+     [exec] (Terminal)       {/usr/bin/gnome-terminal}
+   #+END_EXAMPLE
+
+   Algunos iconos =.png= no se mostraban asi que los converti a =.xpm=
+   usando =convert icono.png icono.xpm=.
+
+** Script Fluxbox
+
+   Fue necesario correr un script luego de iniciar fluxbox para que se
+   carge el root-tail y el gkrellm y establecer el background.
+
+   La llamada al script debe hacerce en el archivo =~/.fluxbox/init=
+   en la siguiente linea:
+
+   #+BEGIN_EXAMPLE
+     session.screen0.rootCommand:    ~/.fluxbox/fluxbox-scripts.sh
+   #+END_EXAMPLE
+
+   El contenido del script =fluxbox-scripts.sh=:
+
+   #+BEGIN_EXAMPLE
+     #!/bin/bash
+     Esetroot ~/.fluxbox/backgrounds/osiux-background.png
+     ~/root-tail/info-root-tail.sh &
+     gkrellm &
+   #+END_EXAMPLE
+
+** GTK2
+
+   Para tener un tema de GTK2 corriendo en fluxbox es necesario
+   levantar el =gnome-settings-daemon= y el mismo se agrega en el
+   archivo =~/.fluxbox/startup= antes de que se ejecute fluxbox:
+
+   #+BEGIN_EXAMPLE
+     exec gnome-settings-daemon &
+     exec /usr/bin/fluxbox
+   #+END_EXAMPLE
+
+** root-tail
+
+   Esta utilidad es similar al tail y permite convertir un log a una
+   imagen en el desktop, es posible definir colores, fuente y posicion de
+   la imagen, es excelente!. Asi que solo es necesario crearse un par de
+   scripts de lo que quieran visualizar o directamente leer los logs del
+   sistema.
+
+   Contenido del script =root-tail.sh=:
+
+   #+BEGIN_EXAMPLE
+     #!/bin/bash
+     root-tail -g 500x250+100+0 -font fixed ~/root-tail/info-disk-free.log,gray &
+     root-tail -g 500x250+500+0 -font fixed ~/root-tail/info-netstat-tcp.log,gray &
+     root-tail -g 500x230+100+500 -font fixed ~/root-tail/info-ps.log,gray &
+   #+END_EXAMPLE
+
+** gkrellm
+
+   Es un panel con informacion del estado de los recursos del sistema
+   (red,disco,procesadores,etc) mas la sumatoria de varios plugins que
+   permiten desde ver la temperatura de su ciudad como manejar el xmms
+   o hacer capturas de pantallas:
+
+   #+BEGIN_EXAMPLE
+    apt-get install gkrellm gkrellm-volume gkrellmms gkrellmwireless
+   #+END_EXAMPLE
