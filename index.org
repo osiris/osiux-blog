@@ -7,6 +7,12 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+** =28/ABR=
+*** [[file:2014-04-28-semana-negra.org][Semana Negra - Sobrevivir en la shell]]
+
+    #+ATTR_HTML: :width 640 :height 480 :alt Semana Negra usando TMUX
+    [[file:2014-04-28-semana-negra.org][file:tmb/semana-negra/tmux.png]]
+
 ** =26/ABR=
 *** [[file:2014-04-26-flisol-avellaneda-undav.org][FLISoL Avellaneda en la UNDAv]]
 

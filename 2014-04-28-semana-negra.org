@@ -1,0 +1,239 @@
+#+TITLE:     Semana Negra - Sobrevivir en la shell
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
+#+DATE:      2014-04-25
+
+#+ATTR_HTML: :width 640 :height 480 :alt Semana Negra usando TMUX
+[[file:img/semana-negra/tmux.png][file:tmb/semana-negra/tmux.png]]
+
+** el juramento
+
+   Desde el 28 de Abril del 2014 y por *una semana completa* debía
+   cumplir con el juramento propuesto desde el sitio
+   [[http://elbinario.net][elbinario.net]] [fn:elbinario]
+
+   #+BEGIN_EXAMPLE
+     Te deposito mi corazón junto al tuyo, para hacer que el nuestro
+     sea uno más ancho y seguro. Hago compromiso ante ti,
+     terminal. Seré tuya por una semana. Cuando me sienta débil, seré
+     fuerte y no arrancaré las x, cuando el ascii de los vídeos me
+     agobie, seré fuerte y veré la saga entera de starwars en ascii,
+     seré firme cuando los ojos no aguanten, seré tu sombra cuando no
+     sepa algún comando, seré sonrisa, seré llanto.
+
+     Hasta que la interface gráfica nos separe.
+   #+END_EXAMPLE
+
+** motivación
+
+   A diario abuso de la terminal, de hecho practicamente la única
+   aplicación gráfica que uso es /Firefox/, todo lo demás vive en un
+   =screen/tmux= usando =terminator= y como siempre digo:
+
+   *yo uso la consola sólo por si en algún momento no tengo X*
+
+   Que mejor ocasión para probar vivir sin =X=.
+
+** desafío doble
+
+   Tenía que lograr sobrevivir la semana en una desktop en el trabajo
+   (trabajando) y en una notebook compartida en casa, en el primer
+   caso coincidió justo con el cambio de distro, asi que directamente
+   deshabilité =X= en mi nuevo *Huayra GNU/Linux 2.0* [fn:huayra2].
+
+   En casa no pude deshabilitar =X= por tratarse de una compu
+   compartida, asi que me mantuve en una =tty= usando =CTRL+ALT+F1=
+   cada vez que necesitaba hacer algo.
+
+** blog desde la =tty=
+
+   Justo 2 días antes, participé del *FLISoL en la UNDAv* [fn:flisol]
+   asi que tenía que comenzar la mañana escribiendo un post lo cual no
+   representaba mayores desafíos porque uso *Org-mode* [fn:org-mode]
+   que es parte de *EMACS* [fn:emacs], pero me encontré con un primer
+   problema, ver y editar las fotos que incluiría...
+
+   Probé de utilizar =cacaview= del paquete =caca-utils= [fn:caca] y
+   la verdad que hace honor a su nombre ;-), al menos para ver una
+   foto en /ascii-art/ no sirve de mucho, la imagen inicial a pantalla
+   completa se ve así:
+
+   #+ATTR_HTML: :width 640 :height 360 :alt Semana Negra cacaview
+   [[file:img/semana-negra/cacaview.png][file:tmb/semana-negra/cacaview.png]]
+
+   Haciendo un zoom se puede apreciar mejor pero, hay que scrollear
+   mucho para entender toda la imagen:
+
+   #+ATTR_HTML: :width 640 :height 360 :alt Semana Negra cacaview zoom x20
+   [[file:img/semana-negra/cacaview-zoom.png][file:tmb/semana-negra/cacaview-zoom.png]]
+
+   Por suerte contamos con la ayuda de =fbi= que utiliza el
+   /Framebuffer/ [fn:fbdev] y se visualiza a la perfección:
+
+   #+ATTR_HTML: :width 640 :height 360 :alt Semana Negra fbi
+   [[file:img/semana-negra/fbi.png][file:tmb/semana-negra/fbi.png]]
+
+   El resultado final, pude visualizarlo mediante =links2=
+   agregando los parámetros =-driver\=directfb -g=
+
+   #+ATTR_HTML: :width 640 :height 360 :alt Semana Negra links2
+   [[file:img/semana-negra/links2.png][file:tmb/semana-negra/links2.png]]
+   
+** =tmux= y =mplayer=
+
+   A diario uso =tmux=, sólo tuve que modificar la =statusbar= porque
+   se redibujaba mal, en realidad no usaba muchas características,
+   tiendo a un entorno minimamilista, y sólo para probar pude ver un
+   video usando =mplayer= con la opción =-vo fbdev2= sin
+   inconvenientes por sobre el =tmux=.
+
+   #+ATTR_HTML: :width 640 :height 360 :alt Semana Negra fbi
+   [[file:img/semana-negra/tmux-mplayer.png][file:tmb/semana-negra/tmux-mplayer.png]]
+
+** problemas encontrados
+
+   No funciona correctamente el /UTF8/ en la terminal, probé con
+   =/bin/unicode_start= pero no se ve nada bonito, después vi que
+   algunas fuentes no tienen todos los caracteres, usando =fbterm=
+   mejora notablemente la experiencia.
+
+** resumen y encuesta
+
+   Se realizó un resumen [fn:resumen] de la experiencia y se
+   realizaron las siguientes preguntas, las cuales paso a responder...
+
+*** ¿Cómo me he sentido en la consola?
+
+    Muy bien, confirmé que mi entorno esta preparado para una =tty=
+    aunque algunas configuraciones tuvieron que ser adaptadas, en
+    general no tuve inconvenientes.
+
+*** ¿Lo más sencillo?
+
+    Utilizar =tmux= en una =tty= no varía de un emulador de terminal,
+    asi que rápidamente estaba operativo y podía también trabajar en
+    remoto levantando mi =tmux= vía =ssh=. Sólo que =tmux= no se llevó
+    bien con =fbterm= que aparenta ser una buen terminal que usa
+    /framebuffer/
+
+*** ¿Lo más difícil?
+
+    Navegar por la web, si bien en mi /Firefox/ tengo /plugins/ que
+    deshabilitan /javascript/ por defecto, algunos sitios fueron
+    imposibles de navegarlos usando =w3m= y =links2=.
+
+*** ¿Qué necesidades no he podido cubrir durante la semana?
+
+    Usar el /Home Banking/, nuevamente /javascript/ y un diseño para
+    navegadores modernos impidió realizar movimientos, al menos pude
+    ver el saldo de mi cuenta :-)
+
+*** Herramientas que he usado:
+
+    Las habituales, sólo tuve que reemplazar /Firefox/ por
+    =links2=. Se puede ver un ranking de los comandos más usados en la
+    semana, de acuerdo al historial de =bash=.
+
+    #+BEGIN_SRC sh :session :results output
+      cat ~/semana-negra.log | head
+      echo
+      cat ~/semana-negra.log | awk '{print $3,$4}' | sort | uniq -c | sort -nr | head -20 | barra
+
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+    2014-04-28 08:27 clear
+    2014-04-28 08:27 df -h
+    2014-04-28 08:27 ps ax | grep -i x
+    2014-04-28 08:27 tls
+    2014-04-28 08:30 cd
+    2014-04-28 08:30 cdo
+    2014-04-28 08:30 cdo
+    2014-04-28 08:30 unicode_start 
+    2014-04-28 08:31 cd
+    2014-04-28 08:31 cd /mnt/data/
+
+     23.97 %  23.97 %        58 ████████████ ls 
+     36.36 %  12.40 %        30 ██████ :q 
+     46.69 %  10.33 %        25 █████ l 
+     54.13 %   7.44 %        18 ███ cd 
+     59.92 %   5.79 %        14 ███ sudo 
+     65.70 %   5.79 %        14 ███ pwd 
+     69.83 %   4.13 %        10 ██ mplayer 
+     73.97 %   4.13 %        10 ██ for 
+     76.86 %   2.89 %         7 █ telegramas 
+     79.75 %   2.89 %         7 █ ps 
+     82.64 %   2.89 %         7 █ clear 
+     85.12 %   2.48 %         6 █ gst 
+     87.60 %   2.48 %         6 █ cdh 
+     89.67 %   2.07 %         5 █ tls 
+     91.74 %   2.07 %         5 █ ln 
+     93.39 %   1.65 %         4 █ reboot 
+     95.04 %   1.65 %         4 █ mmi 
+     96.69 %   1.65 %         4 █ cd 
+     98.35 %   1.65 %         4 █ cdi 
+    100.00 %   1.65 %         4 █ cd 
+                            242
+    #+end_example
+
+*** Usos de la shell frente a X y viceversa
+
+    El mejor de los mundos es que exista un comando que hace todo lo
+    que necesitás, si con mil parámetros y luego una o varias /gui/
+    que permitan usos simples y cada usuario podrá elegir su interfaz.
+
+*** El frío en la shell
+
+    Para nada! mi =$TERM= esta seteada en =screen-256color= :-P,
+    además no hay como el fondo negro y letras verdes para aclimatar
+    los ojos, *la shell es mi amiga*
+
+*** ¿Programas pesados?
+
+    No hay duda que las aplicaciones gráficas son enormes y tienen
+    varias capas de abstracción y niveles que no hacen más que gastar
+    un montón de bytes para mostrar un pixel gris oscuro para tener un
+    bonito sombreado. OjO no hay duda, si hacés diseño o necesitás
+    alguna aplicación que verdaderamente aprovecha el entorno gráfico
+    usala, para todo los demás existe una terminal liviana y ágil.
+
+*** ¿Cómo resumirías tu experiencia Alone in the shell?
+
+    Muy productiva, pude poner a prueba mi entorno, corrigiéndolo para
+    que se vea casi igual tanto en =X= o en una =tty=.
+
+    Lo mejor fue que logré sobrevivir toda la semana a la consigna, lo
+    cual demuestra cierta disciplina, más allá de los tecnicismos.
+
+    Utilizar el modo gráfico sobre /framebuffer/ debería estar más
+    soportado por más aplicaciones aunque en cierto punto parecería
+    que es hacer trampa, ya que nos estamos escapando de la salida a
+    puro texto plano :-P
+
+    La destreza sobre una consola, sólo se consigue usándola a diario
+    y puede ser vital tener dominio sobre ella, casualmente unos días
+    después al realizar una entrega de un proyecto, un viernes a
+    última hora, justo cuando estábamos terminando, se cortó la luz y
+    pudimos continuar con los últimos minutos de la UPS desde una
+    =tty= en el servidor, gracias a =screen/tmux= y unos bonitos
+    túneles =ssh=, de otro modo, no hubieramos podido...
+
+    También para el usuario de notebook, mi experiencia demuestra que
+    la batería rinde el doble trabajando únicamente desde una =tty=.
+
+    Asi que recomiendo a todos a tener una *semana negra* como
+    entrenamiento para convertirse en un *console ninja*. :-)
+
+[fn:elbinario] http://elbinario.net/2014/04/21/semana-negra-sobrevivir-en-la-shell/
+[fn:resumen] http://elbinario.net/2014/05/06/resumen-de-la-semananegra/
+[fn:huayra2] [[file:2014-04-25-huayra-2.0.html]]
+[fn:flisol] [[file:2014-04-26-flisol-avellaneda-undav.html]]
+[fn:org-mode] http://orgmode.org/
+[fn:emacs] http://www.gnu.org/software/emacs
+[fn:caca] http://caca.zoy.org/wiki/libcaca
+[fn:fbdev] https://es.wikipedia.org/wiki/Fbdev
