@@ -7,6 +7,12 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+** =12/AGO=
+*** [[file:2014-04-12-clonar-pendrives.org][Clonar 24 pendrives al mismo tiempo!]]
+
+    #+ATTR_HTML: :width 640 :height 487 :alt Clonar 24 pendrives al mismo tiempo usando routers MR3020
+    [[file:img/clonar-pendrives/letras-viajeras-routers.jpg][file:tmb/clonar-pendrives/letras-viajeras-routers.jpg]]
+
 ** =28/ABR=
 *** [[file:2014-04-28-semana-negra.org][Semana Negra - Sobrevivir en la shell]]
 
