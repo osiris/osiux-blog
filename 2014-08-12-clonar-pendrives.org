@@ -81,8 +81,7 @@ pendrives con exactamente lo mismo y no queríamos hacerlo de a uno.
     Se visualizan el total de bytes copiados =160= y la tasa de
     transferencia en cada caso: =4,0=, =3,7= y =3.4 kB/s=.
 
-    Comprobamos que se los 3 archivos estén completos y sean
-    idénticos:
+    Comprobamos que los 3 archivos estén completos y sean idénticos:
 
     #+BEGIN_EXAMPLE
       ls -lh a b c
@@ -169,7 +168,7 @@ pendrives con exactamente lo mismo y no queríamos hacerlo de a uno.
 
     Esta opción sonaba muy interesante, porque podíamos usar varias
     máquinas y podríamos clonar todos los pendrives al mismo tiempo,
-    pero al ser en cascada, en cada /host/q había que especificar la
+    pero al ser en cascada, en cada /host/ había que especificar la
     /IP/ del siguiente y eso involucraba realizar un paso manual en
     cada compu.
 
