@@ -496,7 +496,7 @@
 #+end_example
 
    #+BEGIN_SRC sh :session :results output
-     traceroute -m 255 obiwan.scrye.net|awk {'print $2'}
+     traceroute -m 255 obiwan.scrye.net | awk {'print $2'}
    #+END_SRC
 
 ** Red con acceso a otra red                                       :noexport:

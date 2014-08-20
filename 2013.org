@@ -23,7 +23,7 @@
 **** [[file:2013-08-30-hacks-hackers-buenos-aires-2013.org][Hacks/Hackers Buenos Aires 2013]]
 
      #+ATTR_HTML: :width 640 :height 480 :alt HHBA Hacks Hackers Buenos Aires 2013
-     [[file:2013-09-30-hacks-hackers-buenos-aires-2013.org][file:tmb/hhba-2013/hhba-2013-09-30-44.jpg]]
+     [[file:2013-08-30-hacks-hackers-buenos-aires-2013.org][file:tmb/hhba-2013/hhba-2013-08-30-44.jpg]]
 
 *** =14/JUN=
 **** [[file:2013-06-14-odisea-cortometraje-redes-libres-en-anisacate.org][ODISEA Redes Libres en Anisacate]]
