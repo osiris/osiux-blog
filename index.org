@@ -7,6 +7,11 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+*** =12/AGO=
+    :PROPERTIES:
+    :ID:       ecaa126f-9f54-46bf-b98d-30e3ae783c05
+    :END:
+
 *** [[file:2014-08-12-clonar-pendrives.org][Clonar 24 pendrives al mismo tiempo!]]
     :PROPERTIES:
     :ID:       5d0c08cc-0b18-4320-9e6e-fb5274f06692
@@ -16,6 +21,11 @@
 
     #+ATTR_HTML: :width 640 :height 487 :alt Clonar 24 pendrives al mismo tiempo usando routers MR3020
     [[file:2014-08-12-clonar-pendrives.org][file:tmb/clonar-pendrives/letras-viajeras-routers.jpg]]
+
+*** =28/ABR=
+    :PROPERTIES:
+    :ID:       6f463bfb-face-4d9d-9b4e-7974bbcc59a1
+    :END:
 
 *** [[file:2014-04-28-semana-negra.org][Semana Negra - Sobrevivir en la shell]]
     :PROPERTIES:
@@ -27,6 +37,11 @@
     #+ATTR_HTML: :width 640 :height 480 :alt Semana Negra usando TMUX
     [[file:2014-04-28-semana-negra.org][file:tmb/semana-negra/tmux.png]]
 
+*** =26/ABR=
+    :PROPERTIES:
+    :ID:       396604b4-5a09-40b1-8842-57caa13cb5dc
+    :END:
+
 *** [[file:2014-04-26-flisol-avellaneda-undav.org][FLISoL Avellaneda en la UNDAv]]
     :PROPERTIES:
     :ID:       67c5d9ab-35b5-47db-bd63-cc06cfc702fa
@@ -36,6 +51,11 @@
 
     #+ATTR_HTML: :width 640 :height 480 :alt FLISoL Avellaneda en la UNDAv
     [[file:2014-04-26-flisol-avellaneda-undav.org][file:tmb/flisol-2014-undav/2014-04-26-1417-1efa0f.jpg]]
+
+*** =25/ABR=
+    :PROPERTIES:
+    :ID:       f121b73c-07c8-4bea-b63e-a098110fd990
+    :END:
 
 *** [[file:2014-04-25-huayra-2.0.org][Salió Huayra 2.0]]
     :PROPERTIES:
@@ -47,15 +67,25 @@
     #+ATTR_HTML: :width 640 :height 480 :alt Huayra 2.0
     [[file:2014-04-25-huayra-2.0.org][file:tmb/huayra-2.0.png]]
 
+*** =23/ABR=
+    :PROPERTIES:
+    :ID:       e9ac16d6-3ede-4840-a157-53529afbd04b
+    :END:
+
 *** [[file:multiboot-grub2-isoboot.org][Muchas Distros en un pendrive = Multiboot Grub2 ISOBoot]]
     :PROPERTIES:
     :ID:       6cdfc1ec-b2f1-48c5-b452-c711518ce2cc
-    :PUBDATE:  2014-03-23
+    :PUBDATE:  2014-04-23
     :RSS_PERMALINK: multiboot-grub2-isoboot.org
     :END:
 
     #+ATTR_HTML: :width 640 :height 360 :alt Multiboot Grub2 ISOBoot
     [[file:multiboot-grub2-isoboot.org][file:img/multiboot-grub2-isoboot.png]]
+
+*** =22/ABR=
+    :PROPERTIES:
+    :ID:       389a0347-6dc0-47b0-af40-9c8d53391708
+    :END:
 
 *** [[file:2014-04-22-flisol-2014.org][Se viene el FLISoL 2014]]
     :PROPERTIES:
@@ -67,6 +97,11 @@
     #+ATTR_HTML: :width 640 :height 366 :alt FLISoL 2014
     [[file:2014-04-22-flisol-2014.org][file:img/flisol-2014-banner.png]]
 
+*** =22/MAR=
+    :PROPERTIES:
+    :ID:       174087de-9ec8-4384-b429-c86cbff9677f
+    :END:
+
 *** [[file:2014-03-22-facttic-mit-libre-planet.org][FACTTIC cuenta su experiencia en el MIT]]
     :PROPERTIES:
     :ID:       4628dbb7-f82a-4c95-9cfe-2c050fc820a8
@@ -76,6 +111,11 @@
 
     #+ATTR_HTML: :width 640 :height 360 :alt FACTTIC MIT LibrePlanet
     [[file:2014-03-22-facttic-mit-libre-planet.org][file:img/mit-stata-center.jpg]]
+
+*** =20/MAR=
+    :PROPERTIES:
+    :ID:       e3b9a70d-4521-4b16-9ce0-6141f139129e
+    :END:
 
 *** [[file:2014-03-14-saso-conf-curuzu-cuatia.org][SASOConf en Curuzú Cuatiá]]
     :PROPERTIES:
@@ -87,6 +127,11 @@
     #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Curuzú Cuatiá
     [[file:2014-03-14-saso-conf-curuzu-cuatia.org][file:tmb/sasoconf/SASOConf-2014-03-14-1143-d2c88a.jpg]]
 
+*** =12/MAR=
+    :PROPERTIES:
+    :ID:       d88cc292-c5b0-4934-8b81-c6dfd983c741
+    :END:
+
 *** [[file:2014-03-12-hardware-freedom-day-2014.org][Hardware Freedom Day 2014]]
     :PROPERTIES:
     :ID:       c5148f5a-1045-4cb7-81e3-6a206516dee0
@@ -97,6 +142,11 @@
     #+ATTR_HTML: :width 640 :height 346 :alt Hardware Freedom Day 2014
     [[file:2014-03-12-hardware-freedom-day-2014.org][file:tmb/Hardware-Freedom-Day-2014.png]]
 
+*** =11/MAR=
+    :PROPERTIES:
+    :ID:       484f9100-cd1f-425b-ac27-629a066b6cec
+    :END:
+
 *** [[file:2014-03-11-se-viene-la-sasoconf.org][Se viene a la SASOConf]]
     :PROPERTIES:
     :ID:       be09ec4d-16e6-4451-89c7-e5ac7833f172
@@ -106,6 +156,11 @@
 
     #+ATTR_HTML: :width 640 :height 358 :alt Se viene la SASOConf
     [[file:2014-03-11-se-viene-la-sasoconf.org][file:tmb/SASOConf.png]]
+
+*** =15/ENE=
+    :PROPERTIES:
+    :ID:       60b29995-adb2-4d77-b987-7499fc82e059
+    :END:
 
 *** [[file:todo-txt-rst+org-mode.org][TODO TXT rst + org-mode]]
     :PROPERTIES:
