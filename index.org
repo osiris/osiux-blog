@@ -7,6 +7,21 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+*** =08/OCT=
+    :PROPERTIES:
+    :ID:       ff64001e-4161-461c-afb8-a9cc9c82edce
+    :END:
+
+*** [[file:2014-10-08-tension-en-la-red.org][Tensión en la red]]
+    :PROPERTIES:
+    :RSS_PERMALINK: 2014-10-08-tension-en-la-red.org
+    :PUBDATE:  2014-04-28
+    :ID:       e1aacf72-b0f8-4428-a8c3-cb64d880c081
+    :END:
+
+    #+ATTR_HTML: :width 451 :height 400 :alt Libertad y control en la era digital
+    [[file:2014-10-08-tension-en-la-red.org][file:tmb/tension-en-la-red.jpg]]
+
 *** =12/AGO=
     :PROPERTIES:
     :ID:       ecaa126f-9f54-46bf-b98d-30e3ae783c05
