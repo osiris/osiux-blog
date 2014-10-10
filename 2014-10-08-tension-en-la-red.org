@@ -1,0 +1,36 @@
+#+TITLE:     Tensión en la red - Libertad y control en la era digital
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
+#+DATE:      2014-10-08
+
+Hoy, 8 de octubre, se presenta el libro *Tensión en la red* [fn:libro]
+de *Esteban Magnani* [fn:esteban]. Es un libro *libre*, es decir que
+se publica con una licencia *Creative Commons*, que permite
+descargarlo en formato =epub= [fn:epub] o =pdf= [fn:pdf] y podés
+fotocopiarlo o utilizar la obra a tu gusto mientras no sea con fines
+comerciales y también se puede obtener en formato impreso gracias a
+AUTORIA Consultora Editorial.
+
+Aunque participé con algunos comentarios, sugerencias y mínimas
+correcciones, da mucho placer volverlo a leer y redescubrir que mi
+paranoia tiene pruebas, hace mucho tiempo que nos espían, no a mi o a
+vos, sino que indiscrimidamente a todos y cada vez cuesta más tener
+algo de anonimato y privacidad en la red de redes.
+
+Los invito a todos a leer esta excelente obra que recopila muchísima
+información sobre la lucha por la libertad y el control por medio de
+la tecnología que nos rodea.
+
+Gracias Esteban!
+
+#+ATTR_HTML: :width 451 :height 605 :alt Libertad y control en la era digital
+[[http://www.estebanmagnani.com.ar/wp-content/uploads/2014/09/Tension-en-la-red-interior.pdf][file:img/tension-en-la-red.jpg]]
+
+[fn:esteban] http://www.estebanmagnani.com.ar/quien-soy/
+[fn:libro] http://www.estebanmagnani.com.ar/tension-en-la-red-el-libro/
+[fn:pdf] http://www.estebanmagnani.com.ar/wp-content/uploads/2014/09/Tension-en-la-red-interior.pdf
+[fn:epub] http://www.estebanmagnani.com.ar/wp-content/Tensionenlared.epub
