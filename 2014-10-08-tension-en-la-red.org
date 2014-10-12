@@ -33,4 +33,4 @@ Gracias Esteban!
 [fn:esteban] http://www.estebanmagnani.com.ar/quien-soy/
 [fn:libro] http://www.estebanmagnani.com.ar/tension-en-la-red-el-libro/
 [fn:pdf] http://www.estebanmagnani.com.ar/wp-content/uploads/2014/09/Tension-en-la-red-interior.pdf
-[fn:epub] http://www.estebanmagnani.com.ar/wp-content/Tensionenlared.epub
+[fn:epub] http://www.estebanmagnani.com.ar/wp-content/uploads/2014/09/Tensionenlared.epub
