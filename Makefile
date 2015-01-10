@@ -1,5 +1,5 @@
-update-vodka:
-	ssh vodka 'cd ~/osiux && git pull'
+update-gin:
+	ssh gin 'cd ~/osiux && git pull'
 
-update-all: update-vodka
+update-all: update-gin
 

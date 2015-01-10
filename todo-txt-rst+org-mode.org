@@ -1044,5 +1044,6 @@ http://pub.osiux.com/charlas
 [fn:GTD] http://es.wikipedia.org/Getting_Things_Done
 [fn:Moolenaar] http://www.moolenaar.net/vim.html
 [fn:Joy] http://en.wikipedia.org/wiki/Bill_Joy
+[fn:librogtd] http://www.cuspide.com/isbn/849662708X
 [fn:frontweb] http://frontweb.com.ar
 [fn:conurbania] http://conurbania.org.ar
