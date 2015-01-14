@@ -1,0 +1,160 @@
+#+TITLE:     Sincronizar Repositorios git con git-repos
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
+#+DATE:      2015-01-14
+
+#+ATTR_HTML: :width 640 :height 480 :alt git-repos
+[[file:img/git-repos-osiris.png][file:tmb/git-repos-osiris.png]]
+
+** todo es un repo git
+
+   Hace varios años que uso =git= para el control de versiones del
+   código fuente en los que trabajo a diario. Pero últimamente me
+   estoy moviendo de una computadora a otra: una desktop, una notebook
+   y una netbook, es por esto que necesito tener sincronizados los
+   repositorios en cada una de ellas y terminé realizando un script
+   /bash/ que me facilite la tarea.
+
+   Además de los repositorios de los proyectos en los que estoy
+   involucrado en la cooperativa [fn:gcoop], necesito varias
+   utilidades que en su mayoría estan siendo actualizadas
+   constantemente en /github/, también necesito mis repositorios
+   personales [fn:osiris] y sobre todo las configuraciones de todas
+   los programas que uso, que obviamente estan en un repo git!
+
+** =~/.git-repos=
+
+   Para no olvidarme de ningún repo, armo una lista en =~/.git-repos=,
+   el esquema es el siguiente:
+
+   #+begin_src sh :results output :exports both
+     egrep "(osiris|bash)" ~/.git-repos 
+   #+end_src
+
+   #+RESULTS:
+   #+begin_example
+   parse_bash_history      https://github:swooingfish/parse_bash_history
+   aps2dot                 github:osiris/aps2dot
+   blog                    github:osiris/osiux-blog
+   direplos                github:osiris/direplos
+   git-bash-utils          github:osiris/git-bash-utils
+   html                    github:osiris/osiris.github
+   libretA7                github:osiris/libretA7
+   media-bash-utils        github:osiris/media-bash-utils
+   minimal-bash-prompt     github:osiris/minimal-bash-prompt
+   multiboot               github:osiris/multiboot
+   org-bash-utils          github:osiris/org-bash-utils
+   org-mode-doc-es         github:osiris/org-mode-doc-es
+   pcap2dot                github:osiris/pcap2dot
+   sugar-graphviz          github:osiris/sugar-graphviz
+   traducciones            github:osiris/traducciones
+#+end_example
+
+   Las líneas que comienzan con =#= son ignoradas. Por lo general
+   el directorio coincide con el nombre del repo, aunque a veces es
+   necesario cambiarlo.
+
+   Para acortar la url, es conveniente definir los hosts en el
+   =~/.ssh/config=, por ejemplo para /github/ sería asi:
+
+   #+BEGIN_EXAMPLE
+     Host github
+       User git
+       Hostname github.com
+   #+END_EXAMPLE
+
+** =git-repos=
+
+   Las tareas que realiza =git-repos= son elementales:
+
+   - listar
+   - clonar
+   - pullear
+   - pushear
+
+   Lo interesante es que se realizan en todos los repositorios!
+
+   Supongamos que no tenemos ni un solo repo /git/, para obtener todos
+   los repositorios que utilizo debería descargar la lista [fn:lista]
+   y el script:
+
+   #+begin_src sh :session :results none :exports code
+     cd ~
+     git clone https://github.com/osiris/git-bash-utils
+   #+end_src
+
+   Agregar al =~/.bashrc=:
+
+   #+begin_src sh :session :results none :exports code
+     if [ -d "$HOME/git-bash-utils" ]
+     then
+         PATH="$HOME/git-bash-utils:$PATH"
+         source $HOME/git-bash-utils/git-alias
+     fi
+   #+end_src
+
+   Si quisiera listar todos los repositorios que contienen /bash/
+   ejecutaría lo siguente:
+
+   #+begin_src sh :session :results none :exports code
+     git-repos -f bash
+   #+end_src
+
+   #+ATTR_HTML: :width 640 :height 120 :alt git-repos-list
+   [[file:img/git-repos-list.png][file:tmb/git-repos-list.png]]
+
+   Si no encuentra un repo, muestra *NOT FOUND* y una cruz *✖*
+   indicando que falló el comando sobre el repositorio.
+
+   Si quisiera clonar estos repositorios haría:
+
+   #+begin_src sh :session :results output :exports code
+     git-repos -f bash -c
+   #+end_src
+
+   Se clonaron todos los repositorios pero además se muestra
+   información extra, un streak que indica los últimos 30 días y
+   cuando se hizo por lo menos un commit.
+
+   En caso de agregar el tiempo invertido en cada commit en el formato
+   HH:MM se puede totalizar y saber cuanto tiempo hemos invertido a lo
+   largo del proyecto.
+
+   #+begin_src sh :session :results none :exports code
+     git-repos -f bash -t
+   #+end_src
+
+   #+ATTR_HTML: :width 640 :height 120 :alt git-repos-show-time
+   [[file:img/git-repos-show-time.png][file:tmb/git-repos-show-time.png]]
+
+   Podríamos visualizar la última línea del log a fin de saber que es
+   lo último que se hizo.
+
+   #+begin_src sh :session :results none :exports code
+     git-repos -f bash -g
+   #+end_src
+
+   #+ATTR_HTML: :width 640 :height 220 :alt git-repos-show-log
+   [[file:img/git-repos-show-log.png][file:tmb/git-repos-show-log.png]]
+
+   Y para el final queda lo más importante, hacer un pull/push en todos
+   los repositorios.
+
+   #+begin_src sh :session :results none :exports code
+     git-repos -f bash -ls
+   #+end_src
+
+   #+ATTR_HTML: :width 640 :height 120 :alt git-repos-show-time
+   [[file:img/git-repos-pull.png][file:tmb/git-repos-pull.png]]
+
+   Hay más utilidades en el repositorio =git-bash-utils=, en particular
+   recomiendo mirar el git-alias y cualquier correción/sugerencia será
+   bien recibida.
+
+[fn:gcoop] http://gcoop.coop
+[fn:osiris] https://github.com/osiris
+[fn:lista] https://raw.githubusercontent.com/osiris/git-bash-utils/master/.git-repos

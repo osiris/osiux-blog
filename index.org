@@ -7,6 +7,21 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+*** =14/ENE=
+    :PROPERTIES:
+    :ID:       9112bbca-5b08-4917-986a-4b450598ba3c
+    :END:
+
+*** [[file:2015-01-14-sincronizar-repositorios-git-repos.org][Sincronizar Repositorios git con git-repos]]
+    :PROPERTIES:
+    :RSS_PERMALINK: 2014-01-14-sincronizar-repositorios-git-repos.org
+    :PUBDATE:  2015-01-14
+    :ID:       87264ad9-796b-408c-a89e-9d1b9be22b72
+    :END:
+
+    #+ATTR_HTML: :width 640 :height 480 :alt git-repos
+    [[file:2015-01-14-sincronizar-repositorios-git-repos.org][file:tmb/git-repos-osiris.png]]
+
 *** =10/ENE=
     :PROPERTIES:
     :ID:       826958c4-1ac7-46c3-9e4d-bde2d5c4527f
@@ -15,7 +30,7 @@
 *** [[file:2015-01-10-renombrar-y-ordenar-fotos-duplicadas.org][Renombrar y Ordenar Fotos Duplicadas]]
     :PROPERTIES:
     :RSS_PERMALINK: 2014-01-10-renombrar-y-ordenar-fotos-duplicadas.org
-    :PUBDATE:  2014-01-10
+    :PUBDATE:  2015-01-10
     :ID:       8e59d620-1c00-4cdd-bdd4-f96a29029774
     :END:
 
