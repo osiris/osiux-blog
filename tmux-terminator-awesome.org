@@ -1,0 +1,186 @@
+#+TITLE:     tmux + terminator + awesome
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+DATE:      2015-01-22
+
+** porqué usar tmux?
+
+   Durante mucho tiempo que uso =screen= y me resulta muy útil, muchos
+   desconocen que se pueden hacer split horizontal y vertical usando
+   (=CTRL-A + |= y =CTRL-A + -=).
+
+   Luego de leer varios tutoriales para tmux llegué a dos conclusiones:
+
+   1. es un reemplazo de screen (muchos sugieren mapear el =CTRL-B= por
+      =CTRL-A=
+
+   2. es para usar con monitores grandes!
+
+   Debido a esto es que tarde en implementarlo, =screen= parecía
+   suficiente y =tmux= no me resultaba del todo atractivo.
+
+** tmux + terminator + awesome
+
+   Hasta que decidí probarlo y descubrí que podía adaptarlo a mi
+   manera de trabajar. Habitualmente uso =awesome= [fn:awesome] y
+   =terminator=, me resultan muy cómodos, por un lado terminator
+   permite realizar un /split/ muy fácil, usando =CTRL+SHIFT+E= y
+   =CTRL+SHIFT+O=. Por otro lado usando =SUPER+1..9= me permite
+   cambiar de /workspace/ fácilmente, de esta manera venía trabajando
+   con 1 terminal por /workspace/, esto resulta muy útil para mantener
+   el foco en una única aplicación y no distraerse.
+
+   Ahora en cada terminal hay una sesion de =tmux= corriendo y cada
+   sesion esta dividida en diferentes ventanas y en muy pocos casos
+   además cada ventana en diferentes paneles. No me resulta cómodo
+   usar varios paneles porque no puedo tener diferentes tamaños de
+   fuente en cada panel (al menos yo no encontré cómo hacerlo) y esa
+   funcioalidad la realizo con =terminator=, normalmente lo utilizo para
+   ver logs locales o remotos relacionados a lo que estoy trabajando.
+
+   [[file:img/tmux-terminator-awesome.png][file:tmb/tmux-terminator-awesome.png]]
+
+** definiendo sesiones
+
+   Sin dudas, una de las mejores características de =tmux= es el poder
+   definir la composisión de una sesión, la cantidad y tamaño de las
+   ventanas y/o paneles.
+
+   Un ejemplo de cómo se puede definir una sesion mediante un script
+   =bash= , por ejemplo =~/bin/tmuxosiux= es el siguiente:
+
+   #+BEGIN_SRC bash :session :results code :export code
+     #!/bin/bash
+     cd ~
+     tmux new-session -d -s osiux -n 'mm' 'mutt -F ~/config/mutt/muttrc-imap-osiux-gin'
+     tmux new-window -t osiux:2 -n 'mx' 'mutt -F ~/config/mutt/muttrc-imap-xuiso-gin'
+     tmux a -t osiux
+   #+END_SRC
+
+   De esta manera se crea una sesion *osiux* con dos ventanas *mm* y
+   *mx*, en la primera levanto un =mutt= con la cuenta *osiux* y en la
+   otra ventana un =mutt= con la cuenta *xuiso*. Para simplificar su
+   ejecución defini el alias =tmx=.
+
+   Entonces tengo asociada cada sesion de =tmux= a un *workspace* de
+   =awesome= con el siguiente esquema:
+
+   | ws | alias  | comando    | 
+   |----+--------+------------|
+   | 1  | tmo    | tmuxosiris |
+   | 2  | tgca   | tmuxgca    |
+   | 3  | tmx    | tmuxosiux  |
+   | 7  | temacs | tmuxemacs  |
+   | 8  | tmoc   | tmuxmoc    |
+   | 9  | tchat  | tmuxchat   |
+
+   Otros alias que uso bastante son:
+
+   #+BEGIN_SRC bash :session :results code :export code
+     alias tas='tmux a -s '
+     alias tls='tmux ls'   
+     alias tma='tmux a'    
+     alias tns='tmux new-session -d -s '
+   #+END_SRC
+
+** =screen= dentro de =tmux=
+
+   No cambié el default de =CTRL+B= de =tmux= como reemplazo de
+   =screen=, esto permite que pueda ejecutar =screen= dentro de =tmux=
+   e invocar los comandos de =screen= mediante =CTRL+A= y al mismo
+   tiempo sin superponerse los comandos de =tmux=. Generalmente utilizo
+   =screen= en servidores remotos para procesos que requieran una
+   ejecución prolongada.
+
+   [[file:img/tmux-screen.png][file:tmb/tmux-screen.png]]
+
+** local y remoto de la misma manera
+
+   La gran ventaja de usar =tmux= es poder mantener abiertos todos
+   los programas con la configuración de ventanas y paneles tanto
+   localmente como remotamente vía =ssh=, es decir, no necesito cerrar
+   nada y al terminar el día, al volver a casa puedo conectarme por
+   =ssh= al trabajo y esta todo donde lo dejé, continuar con algo
+   que me olvidé o necesitaba mi atención, hacer un =tmux detach= o
+   =CTRL-B= y quedarme que esta ahi corriendo en segundo plano y que
+   puedo recuperar mediante un =tmux attatch= en cualquier momento y
+   desde cualquier lugar.
+
+   #+BEGIN_EXAMPLE
+    tmux list-windows -a
+
+    chat:2: finch* (1 panes) [140x47] 
+    emacs:2: emacs!* (1 panes) [140x47] 
+    gca:2: vim* (1 panes) [140x47] 
+    gca:3: socks# (1 panes) [140x47] 
+    gca:4: ssh#- (1 panes) [140x47] 
+    gcoop:1: mg!* (1 panes) [140x47] 
+    gcoop:3: mo#!- (1 panes) [140x47] 
+    moc:2: mocp* (1 panes) [140x47] 
+    osiux:1: mm!* (1 panes) [140x47] 
+    osiux:2: mx#!- (1 panes) [140x47] 
+  #+END_EXAMPLE
+
+   Dado que la única aplicación que uso que no vive dentro de una
+   terminal es /Firefox/, todo mi entorno se reduce a una terminal y
+   tmux, ya sea local combinando con /awesome/ como remotamente mediante
+   =ssh=, y esto además de resultar muy cómodo es extremadamente
+   productivo, pueden pasar 2 días y puedo volver en cualquier momento
+   a un archivo abierto en una línea determinada de cualquier proyecto
+   y remotamente!
+
+   [[file:img/tmux-terminator-ssh.png][file:tmb/tmux-terminator-ssh.png]]
+
+   Por tratarse de una conexión =ssh= que sólo envía texto plano,
+   no requiero de ancho de banda, de ser necesario puedo recuperar la
+   sesión desde un telefono espía con /android/
+
+   [[file:img/tmux-juice-ssh-android.png][file:tmb/tmux-juice-ssh-android.png]]
+
+** tmux es un excelente monitor
+
+   También resulta muy útil utilizar =tmux= como herramienta de
+   monitoreo, por ejemplo en /malbec/ a veces es necesario monitorear
+   las conexiones de red y como hay varias placas de red, mediante un
+   script tmux es muy simple ver que esta sucediendo en cada interfaz de
+   red al mismo tiempo:
+
+   #+BEGIN_SRC sh :session :results none :exports code
+     #!/bin/bash
+     cd /
+     tmux ls | grep gorra >/dev/null 2>/dev/null 
+     OK=$(echo $?)
+     if [ $OK -eq 0 ]
+     then
+     	tmux a -t gorra
+     else
+     	tmux new-session -d -s gorra 'iftop -n -i eth3'
+     	tmux select-window -t gorra:0
+     	tmux split-window -h -t 0 'iftop -n -i eth5'
+     	tmux select-window -t gorra:0
+     	tmux split-window -h -t 1 'iftop -n -i eth0'
+     	tmux split-window -h -t 0 'iftop -n -i eth4'
+
+     	tmux select-window -t gorra:0
+     	tmux split-window -v -t 0 'nbwmon -i eth3'
+     	tmux select-window -t gorra:0
+     	tmux split-window -v -t 1 'nbwmon -i eth5'
+     	tmux select-window -t gorra:0
+     	tmux split-window -v -t 2 'nbwmon -i eth0'
+     	tmux select-window -t gorra:0
+     	tmux split-window -v -t 3 'nbwmon -i eth4'
+
+     	tmux a -t gorra
+     fi
+   #+END_SRC
+
+   [[file:img/tmux-malbec-gorra.png][file:tmb/tmux-malbec-gorra.png]]
+
+   Para visualizar varios archivos de logs al mismo tiempo:
+
+   [[file:img/tmux-tail-logs.png][file:tmb/tmux-tail-logs.png]]
+
+[fn:awesome] [[file:awesome-es-increible.org]]

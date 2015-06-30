@@ -1,0 +1,87 @@
+#+TITLE:     Un tupper para almacenar backups
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+OPTIONS: toc:nil timestamp:nil
+#+DATE:      2014-11-14
+
+[[file:tupper.png]]
+
+** dónde guardar los backups?
+
+   En la /cooperativa/ [fn:gcoop] trabajamos con muchas máquinas
+   virtuales (usando /PROXMOX/ [fn:proxmox]) y si bien contamos con
+   /backup/ local no está demás ser previsor y contar con un /backup/
+   remoto por si fuera necesario utilizarlo algún día...
+
+   Como todo problema, uno tiende a simplificarlo, en principio la
+   solución parecía simple: "comprar un disco externo, y copiar todo ahí"
+
+** siempre es bueno tener un tupper a mano
+
+   Teníamos una /AllInOne/ que usamos en algún momento para un evento
+   y que estaba en deshuso, como no se trataba de una compu muy potente,
+   estaba en una caja. /¿Y si la desarmamos y la metemos en un tupper?/
+
+   Las ventajas, en principio son:
+
+   - ocupa muchísimo menos espacio (no necesitamos monitor)
+   - es fácil de transportar (si fuera necesario)
+   - puede estar en cualquier lugar (wifi mediante)
+   - no hace nada de ruido
+
+   Asi procedí al desarme, descarté el disco para ahorrar espacio, en su
+   reemplazo utilice un pendrive de 16GB para el Sistema Operativo, que
+   inicinalmente fue un Huayra 2.0 [fn:huayra], luego probé con
+   OpenElect y OpenMediaVault, finalmente la mejor opción fue realizar
+   la instalación mínima de un Debian Jessie.
+
+   [[file:tupper-desarme.png]]
+
+   Contaba con 1 puerto USB 3.0, donde conecté el disco externo de 2T.
+   Lo ciframos usando LUKS porque somos paranoicos...
+
+   Tuve que tapar con cinta los LEDS, de no hacerlo tendría Navidad
+   todas las noches.
+
+   La wifi interna no tenía buena señal, asi que use un /dongle USB/
+   TPLink WNAlgo que mejoró notablemente la conexión:
+
+   [[file:tupper-wavemon.png]]
+
+   A fin de que no se caliente demasiado hice unos cuantos agujeros en
+   la tapa y en los bordes, y aproveche uno para pasar la antena.
+
+   Aunque luego opté por conectar el tupper mediante UTP a un AP TPLink
+   WDR841ND, asi extendía la red de CompartirEsBueno, agregando un nodo
+   más a la mesh.
+
+** plan-b
+
+   Un backup si no es automatizado: NO SIRVE!
+   
+   Así que implementé plan-b [fn:plan-b], que son una serie de scripts
+   que facilitan el backup de contenedores OpenVZ y que tuve el gusto de
+   presentarlo en la edición 2015 de la SASOConf [fn:sasoconf] y que
+   están disponibles en github [fn:github] para que cualquiera pueda
+   usarlos y mejorarlos.
+
+** bonus extra: un mediacenter!
+
+   Y ya que el tupper tenía que estar prendido todo el día y podía
+   estar en cualquier lugar de la casa, aproveché a conectarlo por
+   /HDMI/ a una /TV/ y se convirtió en un /mediacenter/ instalando
+   /XBMC/ [fn:xbmc].
+
+   [[file:tupper-xbmc.png]]
+
+[fn:gcoop] http://gcoop.coop
+[fn:proxmox] http://proxmox.com
+[fn:huayra] http://huayra.conectarigualdad.gob.ar
+[fn:xbmc] http://xbmc.org
+[fn:github] https://github.com/gcoop-libre/plan-b
+[fn:plan-b] http://pub.osiux.com/plan-b-sasoconf.pdf
+[fn:sasoconf] http://sasoconf.com.ar
+
