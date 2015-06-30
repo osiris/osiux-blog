@@ -1,0 +1,8 @@
+openscad es un cad parametrico con el que se puede modelar en 3d sin
+dibujar, ideal para programadores porque con simples funciones
+se pueden diseñar objetos complejos de manera muy fácil y rápida
+
+lo primero que se me ocurrió dibujar fue el isotipo de gcoop,
+comunmente llamado logo, y fue una excelente prueba de lo simple que puede
+ser modelar en 3 dimensiones escribiendo código en lugar de dibujar
+con el mouse.

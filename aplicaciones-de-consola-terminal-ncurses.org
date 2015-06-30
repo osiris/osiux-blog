@@ -144,7 +144,7 @@
 **** top 10
 
     #+BEGIN_SRC sh :session :results output :exports both
-      ssh vodka 'vnstat -i venet0 -t'
+      ssh osiux 'vnstat -i venet0 -t'
     #+END_SRC
 
     #+RESULTS:
@@ -170,7 +170,7 @@
 **** vista mensual
 
     #+BEGIN_SRC sh :session :results output :exports both
-      ssh vodka 'vnstat -i venet0 -m'
+      ssh osiux 'vnstat -i venet0 -m'
     #+END_SRC
 
     #+RESULTS:
@@ -199,7 +199,7 @@
 **** vista semanal    
 
     #+BEGIN_SRC sh :session :results output :exports both
-      ssh vodka 'vnstat -i venet0 -w'
+      ssh osiux 'vnstat -i venet0 -w'
     #+END_SRC
 
     #+RESULTS:
@@ -219,7 +219,7 @@
 **** vista por horas
 
     #+BEGIN_SRC sh :session :results output :exports both
-      ssh vodka 'vnstat -i venet0 -h'
+      ssh osiux 'vnstat -i venet0 -h'
     #+END_SRC
 
     #+RESULTS:

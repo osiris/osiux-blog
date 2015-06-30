@@ -175,7 +175,7 @@ Luego los mismos 3 segmentos hacia el otro lado
     +----------------------------------+
 #+END_EXAMPLE
 
-Finalmente apilar todas las hojas e introducir una varilla de mandera
+Finalmente apilar todas las hojas e introducir una varilla de madera
 de 2mm de diámetro.
 
 ** Fotos Paso a Paso

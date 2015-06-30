@@ -13,7 +13,7 @@
     Páginas más solicitadas
 
     #+BEGIN_SRC sh :session :results output :exports both
-      ssh vodka 'cat osiux.com-access.log | egrep -o "GET /.*HTTP" | sed s/HTTP//g | cut -c 5- | egrep -v "(img|tmb|css|robots|ico)" | sort | uniq -c | sort -nr | head' | barra
+      ssh osiux 'cat osiux.com-access.log | egrep -o "GET /.*HTTP" | sed s/HTTP//g | cut -c 5- | egrep -v "(img|tmb|css|robots|ico)" | sort | uniq -c | sort -nr | head' | barra
     #+END_SRC
 
     #+RESULTS:
@@ -34,7 +34,7 @@
     Códigos de error HTTP
 
     #+BEGIN_SRC sh :session :results output :exports both
-      ssh vodka 'cat osiux.com-access.log | egrep -o " [0-9]{3} "' | sort | uniq -c | sort -nr | barra
+      ssh osiux 'cat osiux.com-access.log | egrep -o " [0-9]{3} "' | sort | uniq -c | sort -nr | barra
     #+END_SRC
 
     #+RESULTS:
@@ -48,7 +48,7 @@
     Análisis de =user-agent=
 
     #+BEGIN_SRC sh :session :results output :exports both
-      ssh vodka 'cat osiux.com-access.log | cut -d\" -f6 | cut -d" " -f1 | sort | uniq -c | sort -nr' | head -20 | barra
+      ssh osiux 'cat osiux.com-access.log | cut -d\" -f6 | cut -d" " -f1 | sort | uniq -c | sort -nr' | head -20 | barra
     #+END_SRC
 
     #+RESULTS:
