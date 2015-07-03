@@ -7,7 +7,7 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2014-03-12
 
-#+ATTR_HTML: :width 640 :height 346 :alt Hardware Freedom Day 2014
+#+ATTR_HTML: :width 640 :height 346 :title Hardware Freedom Day 2014
 [[file:img/Hardware-Freedom-Day-2014.png][file:tmb/Hardware-Freedom-Day-2014.png]]
 
 El próximo Sábado 15 de Marzo en el Aula 60 de la Universidad Nacional

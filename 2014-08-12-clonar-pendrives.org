@@ -7,7 +7,7 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2014-08-12
 
-#+ATTR_HTML: :width 640 :height 487 :alt Clonar pendrives - routers
+#+ATTR_HTML: :width 640 :height 487 :title Clonar pendrives - routers
 [[file:img/clonar-pendrives/letras-viajeras-routers.jpg][file:tmb/clonar-pendrives/letras-viajeras-routers.jpg]]
 
 Luego de reemplazar el /firmware/ original de /TPLink/ por
@@ -229,14 +229,14 @@ pendrives con exactamente lo mismo y no queríamos hacerlo de a uno.
     Confirmamos que estén conectados todos los /routers/, mediante
     =wicd= se pueden ver los =SSIDs=:
 
-    #+ATTR_HTML: :width 640 :height 480 :alt Clonar pendrives - wicd
+    #+ATTR_HTML: :width 640 :height 480 :title Clonar pendrives - wicd
     [[file:img/clonar-pendrives/letras-viajeras-wicd.jpg][file:tmb/clonar-pendrives/letras-viajeras-wicd.jpg]]
 
     Ahora si, tirando un =uptime= en todos los equipos, rápidamente
     vemos los /routers/ en que se pudo ejecutar el comando y su
     resultado:
 
-    #+ATTR_HTML: :width 640 :height 480 :alt Clonar pendrives - parallel-ssh
+    #+ATTR_HTML: :width 640 :height 480 :title Clonar pendrives - parallel-ssh
     [[file:img/clonar-pendrives/letras-viajeras-pssh.jpg][file:tmb/clonar-pendrives/letras-viajeras-pssh.jpg]]
 
     Para facilitar, la descarga del contenido a copiar en el
@@ -263,7 +263,7 @@ pendrives con exactamente lo mismo y no queríamos hacerlo de a uno.
     Ni bien ejecutamos el /deploy/ vemos el resultado por cada
     /router/:
 
-    #+ATTR_HTML: :width 640 :height 480 :alt Clonar pendrives - md5
+    #+ATTR_HTML: :width 640 :height 480 :title Clonar pendrives - md5
     [[file:img/clonar-pendrives/letras-viajeras-md5.jpg][file:tmb/clonar-pendrives/letras-viajeras-md5.jpg]]
 
     Y si monitoreamos el tráfico de red, podemos apreciar que todos
@@ -272,7 +272,7 @@ pendrives con exactamente lo mismo y no queríamos hacerlo de a uno.
     cuello de botella el ancho de banda, pero por muy poco tiempo y
     teniendo una /LAN/ de =1Gbit= no debería haber problemas:
 
-    #+ATTR_HTML: :width 640 :height 480 :alt Clonar pendrives - iftop
+    #+ATTR_HTML: :width 640 :height 480 :title Clonar pendrives - iftop
     [[file:img/clonar-pendrives/letras-viajeras-iftop.jpg][file:tmb/clonar-pendrives/letras-viajeras-iftop.jpg]]
 
     La mayor ventaja, es poder repetir el proceso una y otra vez,

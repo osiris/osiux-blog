@@ -18,22 +18,22 @@
    *BuenosAiresLibres* [fn:bal] dió un taller de armado de antenas,
    del cuál participé mostrando cómo armar una Omni de 4 elementos.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Taller de Antenas
+   #+ATTR_HTML: :width 640 :height 480 :title HHBA Taller de Antenas
    [[file:img/hhba-2013/hhba-2013-09-30-11.jpg][file:tmb/hhba-2013/hhba-2013-09-30-11.jpg]]
 
-   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Taller de Antenas
+   #+ATTR_HTML: :width 640 :height 480 :title HHBA Taller de Antenas
    [[file:img/hhba-2013/hhba-2013-09-30-27.jpg][file:tmb/hhba-2013/hhba-2013-09-30-27.jpg]]
 
-   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Taller de Antenas
+   #+ATTR_HTML: :width 640 :height 480 :title HHBA Taller de Antenas
    [[file:img/hhba-2013/hhba-2013-09-30-38.jpg][file:tmb/hhba-2013/hhba-2013-09-30-38.jpg]]
 
-   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Taller de Antenas
+   #+ATTR_HTML: :width 640 :height 480 :title HHBA Taller de Antenas
    [[file:img/hhba-2013/hhba-2013-09-30-44.jpg][file:tmb/hhba-2013/hhba-2013-09-30-44.jpg]]
 
-   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Taller de Antenas
+   #+ATTR_HTML: :width 640 :height 480 :title HHBA Taller de Antenas
    [[file:img/hhba-2013/hhba-2013-09-30-52.jpg][file:tmb/hhba-2013/hhba-2013-09-30-52.jpg]]
 
-   #+ATTR_HTML: :width 640 :height 480 :alt HHBA Taller de Antenas
+   #+ATTR_HTML: :width 640 :height 480 :title HHBA Taller de Antenas
    [[file:img/hhba-2013/hhba-2013-09-30-54.jpg][file:tmb/hhba-2013/hhba-2013-09-30-54.jpg]]
 
 ** HowTo Antena OmniDireccional

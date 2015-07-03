@@ -48,7 +48,7 @@
     :ID:       c5939cd6-18bd-47ff-bda8-0c567cd8bd2c
     :END:
 
-    #+ATTR_HTML: :width 640 :height 480 :alt tmux+terminator+awesome
+    #+ATTR_HTML: :title tmux+terminator+awesome
     [[file:tmux-terminator-awesome.org][file:tmb/tmux-terminator-awesome.png]]
 
 *** =14/ENE=
@@ -63,7 +63,7 @@
     :ID:       87264ad9-796b-408c-a89e-9d1b9be22b72
     :END:
 
-    #+ATTR_HTML: :width 640 :height 480 :alt git-repos
+    #+ATTR_HTML: :title git-repos
     [[file:2015-01-14-sincronizar-repositorios-git-repos.org][file:tmb/git-repos-osiris.png]]
 
 *** =10/ENE=
@@ -78,6 +78,6 @@
     :ID:       8e59d620-1c00-4cdd-bdd4-f96a29029774
     :END:
 
-    #+ATTR_HTML: :width 640 :height 320 :alt En casa usamos Debian
+    #+ATTR_HTML: :title En casa usamos Debian
     [[file:2015-01-10-renombrar-y-ordenar-fotos-duplicadas.org][file:img/nahuel-osiris-leonel.jpg]]
 

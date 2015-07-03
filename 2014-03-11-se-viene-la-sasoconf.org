@@ -7,7 +7,7 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2013-03-11
 
-#+ATTR_HTML: :width 640 :height 358 :alt Se viene la SASOConf
+#+ATTR_HTML: :width 640 :height 358 :title Se viene la SASOConf
 [[file:img/SASOConf.png][file:tmb/SASOConf.png]]
 
 Para todos aquellos que estén cerca de Curuzú

@@ -55,17 +55,17 @@
    - podés usar cualquier editor de texto.
    - exportable a cualquier formato.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt exportar TXT a RST ORG PNG JPG S5 PDF
+   #+ATTR_HTML: :width 640 :height 480 :title exportar TXT a RST ORG PNG JPG S5 PDF
    [[file:img/txt.png][file:tmb/txt.png]]
 
 ** Editores de Texto
 
-   #+ATTR_HTML: :width 640 :height 480 :alt exportar Emacs VIM Notepad
+   #+ATTR_HTML: :width 640 :height 480 :title exportar Emacs VIM Notepad
    [[file:img/emacs-vim-notepad.png][file:tmb/emacs-vim-notepad.png]]
 
 ** Vim
 
-   #+ATTR_HTML: :width 640 :height 480 :alt exportar Emacs VIM Notepad
+   #+ATTR_HTML: :width 640 :height 480 :title exportar Emacs VIM Notepad
    [[file:img/vim-vs-emacs.jpg][file:tmb/vim-vs-emacs.jpg]]
 
    - *Vi IMproved* es una versión mejorada del =vi= por Bill Joy [fn:Joy] en 1976.

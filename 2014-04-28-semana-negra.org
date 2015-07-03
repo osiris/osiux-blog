@@ -7,7 +7,7 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2014-04-25
 
-#+ATTR_HTML: :width 640 :height 480 :alt Semana Negra usando TMUX
+#+ATTR_HTML: :width 640 :height 480 :title Semana Negra usando TMUX
 [[file:img/semana-negra/tmux.png][file:tmb/semana-negra/tmux.png]]
 
 ** el juramento
@@ -62,25 +62,25 @@
    foto en /ascii-art/ no sirve de mucho, la imagen inicial a pantalla
    completa se ve así:
 
-   #+ATTR_HTML: :width 640 :height 360 :alt Semana Negra cacaview
+   #+ATTR_HTML: :width 640 :height 360 :title Semana Negra cacaview
    [[file:img/semana-negra/cacaview.png][file:tmb/semana-negra/cacaview.png]]
 
    Haciendo un zoom se puede apreciar mejor pero, hay que scrollear
    mucho para entender toda la imagen:
 
-   #+ATTR_HTML: :width 640 :height 360 :alt Semana Negra cacaview zoom x20
+   #+ATTR_HTML: :width 640 :height 360 :title Semana Negra cacaview zoom x20
    [[file:img/semana-negra/cacaview-zoom.png][file:tmb/semana-negra/cacaview-zoom.png]]
 
    Por suerte contamos con la ayuda de =fbi= que utiliza el
    /Framebuffer/ [fn:fbdev] y se visualiza a la perfección:
 
-   #+ATTR_HTML: :width 640 :height 360 :alt Semana Negra fbi
+   #+ATTR_HTML: :width 640 :height 360 :title Semana Negra fbi
    [[file:img/semana-negra/fbi.png][file:tmb/semana-negra/fbi.png]]
 
    El resultado final, pude visualizarlo mediante =links2=
    agregando los parámetros =-driver\=directfb -g=
 
-   #+ATTR_HTML: :width 640 :height 360 :alt Semana Negra links2
+   #+ATTR_HTML: :width 640 :height 360 :title Semana Negra links2
    [[file:img/semana-negra/links2.png][file:tmb/semana-negra/links2.png]]
    
 ** =tmux= y =mplayer=
@@ -91,7 +91,7 @@
    video usando =mplayer= con la opción =-vo fbdev2= sin
    inconvenientes por sobre el =tmux=.
 
-   #+ATTR_HTML: :width 640 :height 360 :alt Semana Negra fbi
+   #+ATTR_HTML: :width 640 :height 360 :title Semana Negra fbi
    [[file:img/semana-negra/tmux-mplayer.png][file:tmb/semana-negra/tmux-mplayer.png]]
 
 ** problemas encontrados

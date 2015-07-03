@@ -9,7 +9,7 @@
 
 ** Presentación Oficial
 
-   #+ATTR_HTML: :width 640 :height 480 :alt Huayra primer sistema operativo libre de Conectar Igualdad
+   #+ATTR_HTML: :width 640 :height 480 :title Huayra primer sistema operativo libre de Conectar Igualdad
    [[file:img/huayra-oficial/2013-09-13-1115-8988a5.jpg][file:tmb/huayra-oficial/2013-09-13-1115-8988a5.jpg]]
 
    Hoy se realizó la presentación en el Salón Blanco del Palacio
@@ -22,16 +22,16 @@
      <iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/3w_Qnfhl778?rel=0" frameborder="0" allowfullscreen></iframe>
    #+END_HTML
 
-   #+ATTR_HTML: :width 640 :height 480 :alt Huayra primer sistema operativo libre de Conectar Igualdad
+   #+ATTR_HTML: :width 640 :height 480 :title Huayra primer sistema operativo libre de Conectar Igualdad
    [[file:img/huayra-oficial/2013-09-13-1124-ea0852.jpg][file:tmb/huayra-oficial/2013-09-13-1124-ea0852.jpg]]
 
-   #+ATTR_HTML: :width 640 :height 480 :alt Huayra primer sistema operativo libre de Conectar Igualdad
+   #+ATTR_HTML: :width 640 :height 480 :title Huayra primer sistema operativo libre de Conectar Igualdad
    [[file:img/huayra-oficial/2013-09-13-1127-32843f.jpg][file:tmb/huayra-oficial/2013-09-13-1127-32843f.jpg]]
 
-   #+ATTR_HTML: :width 640 :height 480 :alt Huayra primer sistema operativo libre de Conectar Igualdad
+   #+ATTR_HTML: :width 640 :height 480 :title Huayra primer sistema operativo libre de Conectar Igualdad
    [[file:img/huayra-oficial/2013-09-13-1131-35fefc.jpg][file:tmb/huayra-oficial/2013-09-13-1131-35fefc.jpg]]
 
-   #+ATTR_HTML: :width 640 :height 480 :alt Huayra primer sistema operativo libre de Conectar Igualdad
+   #+ATTR_HTML: :width 640 :height 480 :title Huayra primer sistema operativo libre de Conectar Igualdad
    [[file:img/huayra-oficial/2013-09-13-1141-fc2efc.jpg][file:tmb/huayra-oficial/2013-09-13-1141-fc2efc.jpg]]
    
 ** Hay Equipo!

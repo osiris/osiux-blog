@@ -17,7 +17,7 @@ puntos del país.
 
 ** Los disertantes
 
-   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf en Curuzú Cuatiá
+   #+ATTR_HTML: :width 640 :height 480 :title SASOConf en Curuzú Cuatiá
    [[file:img/sasoconf/SASOConf-2014-03-14-1143-d2c88a.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1143-d2c88a.jpg]]
 
 ** Recién llegados!
@@ -29,14 +29,14 @@ puntos del país.
    no sólo dando charlas sino que además todos colaboraron con la
    organización del evento en general.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Conferencia Informática Software Libre, Redes Libres y Seguridad
+   #+ATTR_HTML: :width 640 :height 480 :title SASOConf Conferencia Informática Software Libre, Redes Libres y Seguridad
    [[file:img/sasoconf/SASOConf-2014-03-14-0842-b95560.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0842-b95560.jpg]]
 
 ** La casa del Bicentenario
 
    El lugar elegido fue la casa del Bicentenario.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf en Casa del Bicentenario Curuzú Cuatiá
+   #+ATTR_HTML: :width 640 :height 480 :title SASOConf en Casa del Bicentenario Curuzú Cuatiá
    [[file:img/sasoconf/SASOConf-2014-03-14-0845-42a761.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0845-42a761.jpg]]
 
 ** SASOConf Declarada de Interés Municipal
@@ -47,7 +47,7 @@ puntos del país.
    no sólo declaró de Interés Municipal al evento, además dió el apoyo
    para el traslado y hospedaje de los disertantes.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Declarado de Interés Municipal
+   #+ATTR_HTML: :width 640 :height 480 :title SASOConf Declarado de Interés Municipal
    [[file:img/sasoconf/SASOConf-2014-03-14-0926-94bfdd.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-0926-94bfdd.jpg]]
 
 ** Muuuchas Charlas
@@ -56,7 +56,7 @@ puntos del país.
    la distribución Huayra GNU/Linux del Programa Conectar Igualdad,
    quienes mostraron las nuevas herramientas implementadas.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Huayra
+   #+ATTR_HTML: :width 640 :height 480 :title SASOConf Huayra
    [[file:img/sasoconf/SASOConf-2014-03-14-1033-7b5ac1.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1033-7b5ac1.jpg]]
 
    El cronograma completo de charlas se puede visualizar en:
@@ -65,7 +65,7 @@ puntos del país.
    No pude asistir a todas las charlas, pero estan todas filmadas asi
    que pronto se publicarán y todos podremos disfrutarlas!
 
-   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Voip
+   #+ATTR_HTML: :width 640 :height 480 :title SASOConf Voip
    [[file:img/sasoconf/SASOConf-2014-03-14-1102-f8b526.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1102-f8b526.jpg]]
 
    Por mi parte, dí dos charlas el día viernes, por la mañana hablé
@@ -77,7 +77,7 @@ puntos del país.
    Todos quedaron muy cómodamente en el /Hotel Continental/ dónde se
    disfrutó de un cordial almuerzo.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt SASOConf Almuerzo
+   #+ATTR_HTML: :width 640 :height 480 :title SASOConf Almuerzo
    [[file:img/sasoconf/SASOConf-2014-03-14-1215-144531.jpg][file:tmb/sasoconf/SASOConf-2014-03-14-1215-144531.jpg]]
 
 ** Resistimos Tornado y Tormenta

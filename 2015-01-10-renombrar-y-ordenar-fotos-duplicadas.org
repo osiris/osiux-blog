@@ -7,7 +7,7 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2015-01-10
 
-#+ATTR_HTML: :width 640 :height 320 :alt En casa usamos Debian
+#+ATTR_HTML: :width 640 :height 320 :title En casa usamos Debian
 [[file:img/nahuel-osiris-leonel.jpg]]
 
 ** Caos por naturaleza

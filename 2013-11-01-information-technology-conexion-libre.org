@@ -12,6 +12,9 @@ sección Actualidad/TELCOS apareció la siguiente nota:
 
 *El desarrollo de redes comunitarias.*
 
+#+ATTR_HTML: :width 640 :height 480 :title Information Technology Conexión Libre                                                                                                            
+[[file:tmb/information-technology-conexion-libre.jpg][file:tmb/information-technology-conexion-libre.jpg]]
+
 ** Conexión libre
 
    Mediante el uso de tecnologías inalámbricas,

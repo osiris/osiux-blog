@@ -7,7 +7,7 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2014-04-22
 
-#+ATTR_HTML: :width 640 :height 366 :alt FLISoL 2014
+#+ATTR_HTML: :width 640 :height 366 :title FLISoL 2014
 [[file:img/flisol-2014-banner.png]]
 
 El próximo *Sábado 26 de Abril*, como todos los años, se realizará el

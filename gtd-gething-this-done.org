@@ -28,7 +28,7 @@ inmediatamente.
    
 ** Workflow
 
-   #+ATTR_HTML: :width 640 :height 480 :alt GTD Workflow
+   #+ATTR_HTML: :width 640 :height 480 :title GTD Workflow
    [[file:img/gtd-workflow.png]]
 
 ** Recopilar

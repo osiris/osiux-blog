@@ -12,28 +12,28 @@
    Luego de 9hs de vuelo y una escala de 4hs en Panamá llegué a
    Bogotá.
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ezeiza partida
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ezeiza partida
    [[file:img/flisol-bogota/viaje-ezeiza-partida.jpg][file:icn/flisol-bogota/viaje-ezeiza-partida.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota panama
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota panama
    [[file:img/flisol-bogota/panama-hora.jpg][file:icn/flisol-bogota/panama-hora.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota panama tocumen
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota panama tocumen
    [[file:img/flisol-bogota/panama-tocumen.jpg][file:icn/flisol-bogota/panama-tocumen.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota panama wifi
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota panama wifi
    [[file:img/flisol-bogota/panama-wifi.jpg][file:icn/flisol-bogota/panama-wifi.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota panama canal
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota panama canal
    [[file:img/flisol-bogota/panama-canal.jpg][file:icn/flisol-bogota/panama-canal.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota colombia avion
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota colombia avion
    [[file:img/flisol-bogota/viaje-colombia-avion.jpg][file:icn/flisol-bogota/viaje-colombia-avion.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota colombia nubes
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota colombia nubes
    [[file:img/flisol-bogota/viaje-colombia-nubes.jpg][file:icn/flisol-bogota/viaje-colombia-nubes.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota colombia bienvenido
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota colombia bienvenido
    [[file:img/flisol-bogota/viaje-colombia-bienvenido.jpg][file:icn/flisol-bogota/viaje-colombia-bienvenido.jpg]]
 
    Inicialmente la primera impresión de estar en un lugar
@@ -51,40 +51,40 @@
    de *Televisión Comunitaria Canal5* [fn:canal5] en barrio *La
    Estrella*.
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ciudad bolivar
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ciudad bolivar
    [[file:img/flisol-bogota/ciudad-bolivar-1.jpg][file:icn/flisol-bogota/ciudad-bolivar-1.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ciudad bolivar
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ciudad bolivar
    [[file:img/flisol-bogota/ciudad-bolivar-2.jpg][file:icn/flisol-bogota/ciudad-bolivar-2.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ciudad bolivar nodo
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ciudad bolivar nodo
    [[file:img/flisol-bogota/ciudad-bolivar-nodo-1.jpg][file:icn/flisol-bogota/ciudad-bolivar-nodo-1.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ciudad bolivar nodo
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ciudad bolivar nodo
    [[file:img/flisol-bogota/ciudad-bolivar-nodo-2.jpg][file:icn/flisol-bogota/ciudad-bolivar-nodo-2.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ciudad bolivar jorge osiux
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ciudad bolivar jorge osiux
    [[file:img/flisol-bogota/ciudad-bolivar-jorge-osiux.jpg][file:icn/flisol-bogota/ciudad-bolivar-jorge-osiux.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ciudad bolivar tv antena
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ciudad bolivar tv antena
    [[file:img/flisol-bogota/ciudad-bolivar-tv-antena.jpg][file:icn/flisol-bogota/ciudad-bolivar-tv-antena.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ciudad bolivar tv racks
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ciudad bolivar tv racks
    [[file:img/flisol-bogota/ciudad-bolivar-tv-racks.jpg][file:icn/flisol-bogota/ciudad-bolivar-tv-racks.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ciudad bolivar tv estudio
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ciudad bolivar tv estudio
    [[file:img/flisol-bogota/ciudad-bolivar-tv-estudio.jpg][file:icn/flisol-bogota/ciudad-bolivar-tv-estudio.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ciudad bolivar tv programa
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ciudad bolivar tv programa
    [[file:img/flisol-bogota/ciudad-bolivar-tv-programa.jpg][file:icn/flisol-bogota/ciudad-bolivar-tv-programa.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ciudad bolivar tv graffiti
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ciudad bolivar tv graffiti
    [[file:img/flisol-bogota/ciudad-bolivar-tv-graffiti.jpg][file:icn/flisol-bogota/ciudad-bolivar-tv-graffiti.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ciudad bolivar panoramica
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ciudad bolivar panoramica
    [[file:img/flisol-bogota/ciudad-bolivar-panoramica-1.jpg][file:icn/flisol-bogota/ciudad-bolivar-panoramica-1.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota ciudad bolivar panoramica
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota ciudad bolivar panoramica
    [[file:img/flisol-bogota/ciudad-bolivar-panoramica-2.jpg][file:icn/flisol-bogota/ciudad-bolivar-panoramica-2.jpg]]
 
 ** primer noche
@@ -93,13 +93,13 @@
    estaban muy bien acompañados! y comenzar a compartir diferentes
    experiencias de redes libres y obviamente disfrutar de unas cervezas!
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota noche
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota noche
    [[file:img/flisol-bogota/bogota-noche-1.jpg][file:icn/flisol-bogota/bogota-noche-1.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota noche
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota noche
    [[file:img/flisol-bogota/bogota-noche-2.jpg][file:icn/flisol-bogota/bogota-noche-2.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota noche
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota noche
    [[file:img/flisol-bogota/bogota-noche-3.jpg][file:icn/flisol-bogota/bogota-noche-3.jpg]]
 
 ** día *F*
@@ -112,34 +112,34 @@
    por completo la estructura inicial y las aplicaciones involucradas que
    serán motivo de una nota especial a futuro.
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota idrd
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota idrd
    [[file:img/flisol-bogota/flisol-idrd.jpg][file:icn/flisol-bogota/flisol-idrd.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota cartel
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota cartel
    [[file:img/flisol-bogota/flisol-cartel.jpg][file:icn/flisol-bogota/flisol-cartel.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota auditorio
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota auditorio
    [[file:img/flisol-bogota/flisol-auditorio.jpg][file:icn/flisol-bogota/flisol-auditorio.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota banderas
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota banderas
    [[file:img/flisol-bogota/flisol-banderas.jpg][file:icn/flisol-bogota/flisol-banderas.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota alcalde
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota alcalde
    [[file:img/flisol-bogota/flisol-alcalde.jpg][file:icn/flisol-bogota/flisol-alcalde.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota mesas
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota mesas
    [[file:img/flisol-bogota/flisol-mesas.jpg][file:icn/flisol-bogota/flisol-mesas.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota compus
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota compus
    [[file:img/flisol-bogota/flisol-compus.jpg][file:icn/flisol-bogota/flisol-compus.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota stand
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota stand
    [[file:img/flisol-bogota/flisol-stand.jpg][file:icn/flisol-bogota/flisol-stand.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota hackbo
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota hackbo
    [[file:img/flisol-bogota/flisol-hackbo.jpg][file:icn/flisol-bogota/flisol-hackbo.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota robot
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota robot
    [[file:img/flisol-bogota/flisol-robot.jpg][file:icn/flisol-bogota/flisol-robot.jpg]]
 
 ** en la radio
@@ -214,7 +214,7 @@
    - Descargar Video: http://pub.osiux.com/charlas/FLISOL-Bogota-2012-Redes-Libres.ogv
 
 ** a debatir!
-   
+
    Mientras estaba hablando con /Andrés Gómez/ de la
    /Red Inalámbrica y Comunitaria de Bogotá/ [fn:ricb], nuevamente la
    organización del evento me invitó a participar de un panel
@@ -268,22 +268,22 @@
    - RICB, http://ricb.org
    - Valledupar-Mesh
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota foro redes libres
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota foro redes libres
    [[file:img/flisol-bogota/foro-redes-libres-general.jpg][file:icn/flisol-bogota/foro-redes-libres-general.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota foro redes libres
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota foro redes libres
    [[file:img/flisol-bogota/foro-redes-libres-hollman.jpg][file:icn/flisol-bogota/foro-redes-libres-hollman.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota foro redes libres
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota foro redes libres
    [[file:img/flisol-bogota/foro-redes-libres-gral-0.jpg][file:icn/flisol-bogota/foro-redes-libres-gral-0.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota foro redes libres
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota foro redes libres
    [[file:img/flisol-bogota/foro-redes-libres-gral-1.jpg][file:icn/flisol-bogota/foro-redes-libres-gral-1.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota foro redes libres
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota foro redes libres
    [[file:img/flisol-bogota/foro-redes-libres-gral-2.jpg][file:icn/flisol-bogota/foro-redes-libres-gral-2.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota foro redes libres
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota foro redes libres
    [[file:img/flisol-bogota/foro-redes-libres-gral-3.jpg][file:icn/flisol-bogota/foro-redes-libres-gral-3.jpg]]
 
    Se planteó la posibilidad de agrupar a las distintas redes en
@@ -303,13 +303,13 @@
    pudimos charlar más distendidos sobre diversos temas como
    privacidad en la red, hardware libre.
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota centro mayor
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota centro mayor
    [[file:img/flisol-bogota/centro-mayor-1.jpg][file:icn/flisol-bogota/centro-mayor-1.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota centro mayor
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota centro mayor
    [[file:img/flisol-bogota/centro-mayor-2.jpg][file:icn/flisol-bogota/centro-mayor-2.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota centro mayor
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota centro mayor
    [[file:img/flisol-bogota/centro-mayor-3.jpg][file:icn/flisol-bogota/centro-mayor-3.jpg]]
 
 ** el festejo
@@ -319,28 +319,28 @@
    dejando de lado los dilemas y conflictos que enfrentamos a diario
    para mover un poco las caderas!
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota sunrise cerveza
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota sunrise cerveza
    [[file:img/flisol-bogota/sunrise-cerveza.jpg][file:icn/flisol-bogota/sunrise-cerveza.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota sunrise 
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota sunrise
    [[file:img/flisol-bogota/sunrise-grupal1.jpg][file:icn/flisol-bogota/sunrise-grupal1.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota sunrise 
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota sunrise
    [[file:img/flisol-bogota/sunrise-grupal2.jpg][file:icn/flisol-bogota/sunrise-grupal2.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota sunrise aguardiente
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota sunrise aguardiente
    [[file:img/flisol-bogota/sunrise-aguardiente.jpg][file:icn/flisol-bogota/sunrise-aguardiente.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota sunrise 
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota sunrise
    [[file:img/flisol-bogota/sunrise-andres.jpg][file:icn/flisol-bogota/sunrise-andres.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota sunrise 
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota sunrise
    [[file:img/flisol-bogota/sunrise-aleja.jpg][file:icn/flisol-bogota/sunrise-aleja.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota sunrise 
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota sunrise
    [[file:img/flisol-bogota/sunrise-azul.jpg][file:icn/flisol-bogota/sunrise-azul.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota sunrise 
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota sunrise
    [[file:img/flisol-bogota/sunrise-sunrise.jpg][file:icn/flisol-bogota/sunrise-sunrise.jpg]]
 
 ** asado y nuevo nodo
@@ -362,40 +362,40 @@
    disfrutar de la segunda y tercer tanda de asado y espumosas
    cervezas!
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota perzam poker
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota perzam poker
    [[file:img/flisol-bogota/perzam-poker.jpg][file:icn/flisol-bogota/perzam-poker.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota perzam asado
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota perzam asado
    [[file:img/flisol-bogota/perzam-asado.jpg][file:icn/flisol-bogota/perzam-asado.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota perzam grupal
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota perzam grupal
    [[file:img/flisol-bogota/perzam-grupal.jpg][file:icn/flisol-bogota/perzam-grupal.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota perzam nightwing
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota perzam nightwing
    [[file:img/flisol-bogota/perzam-nightwing.jpg][file:icn/flisol-bogota/perzam-nightwing.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota perzam cloud mesh
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota perzam cloud mesh
    [[file:img/flisol-bogota/perzam-cloud-mesh.jpg][file:icn/flisol-bogota/perzam-cloud-mesh.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota perzam redlibre
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota perzam redlibre
    [[file:img/flisol-bogota/perzam-redlibre.co.jpg][file:icn/flisol-bogota/perzam-redlibre.co.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota perzam ereccion
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota perzam ereccion
    [[file:img/flisol-bogota/perzam-pre-ereccion.jpg][file:icn/flisol-bogota/perzam-pre-ereccion.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota perzam ereccion
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota perzam ereccion
    [[file:img/flisol-bogota/perzam-ereccion.jpg][file:icn/flisol-bogota/perzam-ereccion.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota perzam enlace
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota perzam enlace
    [[file:img/flisol-bogota/perzam-enlace.jpg][file:icn/flisol-bogota/perzam-enlace.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota perzam nodo
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota perzam nodo
    [[file:img/flisol-bogota/perzam-nodo.jpg][file:icn/flisol-bogota/perzam-nodo.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota perzam festejo
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota perzam festejo
    [[file:img/flisol-bogota/perzam-festejo.jpg][file:icn/flisol-bogota/perzam-festejo.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota perzam chicas
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota perzam chicas
    [[file:img/flisol-bogota/perzam-chicas.jpg][file:icn/flisol-bogota/perzam-chicas.jpg]]
 
 ** en el punto más alto
@@ -404,28 +404,28 @@
    ascendimos 200 metros y paseamos un poco, lamentablemente habían
    tantas nubes que no se podía ver nada de la ciudad.
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota monserrate campanario
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota monserrate campanario
    [[file:img/flisol-bogota/monserrate-campanario.jpg][file:icn/flisol-bogota/monserrate-campanario.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota monserrate osiux jorge
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota monserrate osiux jorge
    [[file:img/flisol-bogota/monserrate-osiux-jorge.jpg][file:icn/flisol-bogota/monserrate-osiux-jorge.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota monserrate subida
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota monserrate subida
    [[file:img/flisol-bogota/monserrate-subida.jpg][file:icn/flisol-bogota/monserrate-subida.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota monserrate turistas
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota monserrate turistas
    [[file:img/flisol-bogota/monserrate-turistas.jpg][file:icn/flisol-bogota/monserrate-turistas.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota monserrate iglesia
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota monserrate iglesia
    [[file:img/flisol-bogota/monserrate-iglesia.jpg][file:icn/flisol-bogota/monserrate-iglesia.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota monserrate bajando
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota monserrate bajando
    [[file:img/flisol-bogota/monserrate-bajando.jpg][file:icn/flisol-bogota/monserrate-bajando.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota monserrate teleferico
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota monserrate teleferico
    [[file:img/flisol-bogota/monserrate-teleferico.jpg][file:icn/flisol-bogota/monserrate-teleferico.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt flisol bogota monserrate cascada
+   #+ATTR_HTML: :width 200 :height 150 :title flisol bogota monserrate cascada
    [[file:img/flisol-bogota/monserrate-cascada.jpg][file:icn/flisol-bogota/monserrate-cascada.jpg]]
 
 ** hacklab

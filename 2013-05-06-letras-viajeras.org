@@ -7,7 +7,7 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2013-05-06
 
-#+ATTR_HTML: :width 640 :height 388 :alt Letras Viajeras
+#+ATTR_HTML: :width 640 :height 388 :title Letras Viajeras
 [[file:img/letras-viajeras.jpg]]
 
 **Letras Viajeras** es una iniciativa de la

@@ -182,5 +182,4 @@
    Para visualizar varios archivos de logs al mismo tiempo:
 
    [[file:img/tmux-tail-logs.png][file:tmb/tmux-tail-logs.png]]
-
 [fn:awesome] [[file:awesome-es-increible.org]]

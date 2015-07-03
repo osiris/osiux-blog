@@ -16,25 +16,25 @@
    /Escuela Técnica "Pedro Ferré", la /Escuela Ramón J. Cárcano/ y el
    auspicio del Gobierno de la ciudad de Monte Caseros.
 
-   #+ATTR_HTML: :width 200 :height 150 :alt conferencias
+   #+ATTR_HTML: :width 200 :height 150 :title conferencias
    [[file:icn/1eslmc/2013-04-05-18-30-212a51.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt conferencias
+   #+ATTR_HTML: :width 200 :height 150 :title conferencias
    [[file:icn/1eslmc/2013-04-05-09-37-496ddd.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt conferencias
+   #+ATTR_HTML: :width 200 :height 150 :title conferencias
    [[file:icn/1eslmc/2013-04-05-09-35-9112ac.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt conferencias
+   #+ATTR_HTML: :width 200 :height 150 :title conferencias
    [[file:icn/1eslmc/2013-04-06-11-50-73f620.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt conferencias
+   #+ATTR_HTML: :width 200 :height 150 :title conferencias
    [[file:icn/1eslmc/2013-04-05-15-05-5b70b5.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt conferencias
+   #+ATTR_HTML: :width 200 :height 150 :title conferencias
    [[file:icn/1eslmc/2013-04-05-15-52-f1d00d.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt conferencias
+   #+ATTR_HTML: :width 200 :height 150 :title conferencias
    [[file:icn/1eslmc/2013-04-05-16-12-178562.jpg]]
 
 ** Taller de Antenas en Estación del Este
@@ -43,25 +43,25 @@
    Antenas, en el cual todos se pusieron a armar y luego se pudieron
    probar las antenas con las netbooks.
 
-   #+ATTR_HTML: :width 200 :height 150 :alt taller de antenas
+   #+ATTR_HTML: :width 200 :height 150 :title taller de antenas
    [[file:icn/1eslmc/2013-04-06-12-16-0d361b.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt taller de antenas
+   #+ATTR_HTML: :width 200 :height 150 :title taller de antenas
    [[file:icn/1eslmc/2013-04-06-12-16-7aaf09.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt taller de antenas
+   #+ATTR_HTML: :width 200 :height 150 :title taller de antenas
    [[file:icn/1eslmc/2013-04-06-12-18-b1edf8.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt taller de antenas
+   #+ATTR_HTML: :width 200 :height 150 :title taller de antenas
    [[file:icn/1eslmc/2013-04-06-16-18-378f55.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt taller de antenas
+   #+ATTR_HTML: :width 200 :height 150 :title taller de antenas
    [[file:icn/1eslmc/2013-04-06-16-18-0fafbf.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt taller de antenas
+   #+ATTR_HTML: :width 200 :height 150 :title taller de antenas
    [[file:icn/1eslmc/2013-04-06-16-17-fafc7b.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt taller de antenas
+   #+ATTR_HTML: :width 200 :height 150 :title taller de antenas
    [[file:icn/1eslmc/2013-04-06-12-16-b39771.jpg]]
 
 ** Instalando Huayra
@@ -70,13 +70,13 @@
    netbooks que los chicos traían para actualizar, además se copiaba
    la imagen en los pendrives de todo aquel que se animana a probarlo.
 
-   #+ATTR_HTML: :width 200 :height 150 :alt instalando huayra
+   #+ATTR_HTML: :width 200 :height 150 :title instalando huayra
    [[file:img/1eslmc/2013-04-06-16-11-579919.jpg][file:icn/1eslmc/2013-04-06-16-11-579919.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt instalando huayra
+   #+ATTR_HTML: :width 200 :height 150 :title instalando huayra
    [[file:img/1eslmc/2013-04-05-17-41-0c7ebc.jpg][file:icn/1eslmc/2013-04-05-17-41-0c7ebc.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt instalando huayra
+   #+ATTR_HTML: :width 200 :height 150 :title instalando huayra
    [[file:img/1eslmc/2013-04-05-17-11-791474.jpg][file:icn/1eslmc/2013-04-05-17-11-791474.jpg]]
 
 ** Almuerzos en "Cristina"
@@ -85,13 +85,13 @@
    satisfechos, un lujo de comida y no perdimos oportunidad de seguir
    probando Huayra Live.
 
-   #+ATTR_HTML: :width 200 :height 150 :alt cristina
+   #+ATTR_HTML: :width 200 :height 150 :title cristina
    [[file:icn/1eslmc/2013-04-05-14-00-0614ba.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt cristina
+   #+ATTR_HTML: :width 200 :height 150 :title cristina
    [[file:icn/1eslmc/2013-04-06-13-41-861647.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt cristina
+   #+ATTR_HTML: :width 200 :height 150 :title cristina
    [[file:icn/1eslmc/2013-04-06-14-00-568990.jpg]]
 
 ** Hotel frente al río
@@ -99,13 +99,13 @@
    Aunque por el hotel estuvimos poco tiempo, fue el mejor lugar para
    descanzar, desayunar y reponer energía para seguir dando charla.
 
-   #+ATTR_HTML: :width 200 :height 150 :alt monte caseros hotel de turismo con pileta frente al río
+   #+ATTR_HTML: :width 200 :height 150 :title monte caseros hotel de turismo con pileta frente al río
    [[file:icn/1eslmc/2013-04-06-08-39-e21871.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt monte caseros hotel de turismo
+   #+ATTR_HTML: :width 200 :height 150 :title monte caseros hotel de turismo
    [[file:icn/1eslmc/2013-04-05-19-00-a60f4c.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt monte caseros hotel de turismo
+   #+ATTR_HTML: :width 200 :height 150 :title monte caseros hotel de turismo
    [[file:icn/1eslmc/2013-04-05-19-00-0274bc.jpg]]
 
 ** Noches de Asadito
@@ -113,22 +113,22 @@
    Para cerrar cada noche, nada mejor que un asadito y la última noche
    en medio de un camping frente al río.
 
-   #+ATTR_HTML: :width 200 :height 150 :alt noches de asado
+   #+ATTR_HTML: :width 200 :height 150 :title noches de asado
    [[file:icn/1eslmc/2013-04-05-22-21-56f804.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt noches de asado
+   #+ATTR_HTML: :width 200 :height 150 :title noches de asado
    [[file:icn/1eslmc/2013-04-05-22-23-1197a9.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt noches de asado
+   #+ATTR_HTML: :width 200 :height 150 :title noches de asado
    [[file:icn/1eslmc/2013-04-06-00-05-1d4d29.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt noches de asado
+   #+ATTR_HTML: :width 200 :height 150 :title noches de asado
    [[file:icn/1eslmc/2013-04-06-23-13-ed93f3.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt noches de asado
+   #+ATTR_HTML: :width 200 :height 150 :title noches de asado
    [[file:icn/1eslmc/2013-04-06-23-32-c492e5.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt noches de asado
+   #+ATTR_HTML: :width 200 :height 150 :title noches de asado
    [[file:icn/1eslmc/2013-04-06-23-34-a4a276.jpg]]
 
 ** El Mural
@@ -136,40 +136,40 @@
    Frente a /Estación del Este/ hay un inmenso mural que cuenta la
    historia de /Monte Caseros/, es muy interesante...
 
-   #+ATTR_HTML: :width 200 :height 150 :alt mural monte caseros
+   #+ATTR_HTML: :width 200 :height 150 :title mural monte caseros
    [[file:icn/1eslmc/2013-04-06-16-13-5e7754.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt mural monte caseros
+   #+ATTR_HTML: :width 200 :height 150 :title mural monte caseros
    [[file:icn/1eslmc/2013-04-06-16-13-028217.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt mural monte caseros
+   #+ATTR_HTML: :width 200 :height 150 :title mural monte caseros
    [[file:icn/1eslmc/2013-04-06-16-14-2ca78a.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt mural monte caseros
+   #+ATTR_HTML: :width 200 :height 150 :title mural monte caseros
    [[file:icn/1eslmc/2013-04-06-16-14-6e52d3.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt mural monte caseros
+   #+ATTR_HTML: :width 200 :height 150 :title mural monte caseros
    [[file:icn/1eslmc/2013-04-06-16-14-87f4a5.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt mural monte caseros
+   #+ATTR_HTML: :width 200 :height 150 :title mural monte caseros
    [[file:icn/1eslmc/2013-04-06-16-14-123bd4.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt mural monte caseros
+   #+ATTR_HTML: :width 200 :height 150 :title mural monte caseros
    [[file:icn/1eslmc/2013-04-06-16-14-eb4402.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt mural monte caseros
+   #+ATTR_HTML: :width 200 :height 150 :title mural monte caseros
    [[file:icn/1eslmc/2013-04-06-16-15-2a06a4.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt mural monte caseros
+   #+ATTR_HTML: :width 200 :height 150 :title mural monte caseros
    [[file:icn/1eslmc/2013-04-06-16-15-33e16f.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt mural monte caseros
+   #+ATTR_HTML: :width 200 :height 150 :title mural monte caseros
    [[file:icn/1eslmc/2013-04-06-16-15-f1b237.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt mural monte caseros
+   #+ATTR_HTML: :width 200 :height 150 :title mural monte caseros
    [[file:icn/1eslmc/2013-04-06-16-15-ab17b1.jpg]]
 
-   #+ATTR_HTML: :width 200 :height 150 :alt mural monte caseros
+   #+ATTR_HTML: :width 200 :height 150 :title mural monte caseros
    [[file:icn/1eslmc/2013-04-06-16-16-3de74e.jpg]]
 
 ** Resumen

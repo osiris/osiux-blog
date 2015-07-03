@@ -24,10 +24,10 @@
    El aula 14 fue el punto de encuentro para realizar instalaciones y
    también crear pendrives Lives o simplemente copiar ISOs.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt InstallFest en FLISoL Avellaneda 1
+   #+ATTR_HTML: :width 640 :height 480 :title InstallFest en FLISoL Avellaneda 1
    [[file:img/flisol-2014-undav/2014-04-26-1411-e167fe.jpg][file:tmb/flisol-2014-undav/2014-04-26-1411-e167fe.jpg]]
 
-   #+ATTR_HTML: :width 640 :height 480 :alt InstallFest en FLISoL Avellaneda 2
+   #+ATTR_HTML: :width 640 :height 480 :title InstallFest en FLISoL Avellaneda 2
    [[file:img/flisol-2014-undav/2014-04-26-1417-1efa0f.jpg][file:tmb/flisol-2014-undav/2014-04-26-1417-1efa0f.jpg]]
 
 ** Hacklab
@@ -36,7 +36,7 @@
    charla sobre su proyecto *ciboulette* [fn:ciboulette], aunque
    lamentablemtne no pude asistir.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt Hacklab en FLISoL Avellaneda
+   #+ATTR_HTML: :width 640 :height 480 :title Hacklab en FLISoL Avellaneda
    [[file:img/flisol-2014-undav/2014-04-26-1320-ababc0.jpg][file:tmb/flisol-2014-undav/2014-04-26-1320-ababc0.jpg]]
    
 ** Software libre en la escuela técnica... una aventura en progreso
@@ -47,7 +47,7 @@
    Berazategui. Una escuela con las especialidades de electrónica e
    informática que es una Cooperativa de Trabajo.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt Software Libre Escuela Técnica en FLISoL Avellaneda
+   #+ATTR_HTML: :width 640 :height 480 :title Software Libre Escuela Técnica en FLISoL Avellaneda
    [[file:img/flisol-2014-undav/2014-04-26-1047-f393d3.jpg][file:tmb/flisol-2014-undav/2014-04-26-1047-f393d3.jpg]]
 
 ** Cooperativistas por elección, nuevas cooperativas de Tecnología Innovación
@@ -80,7 +80,7 @@
    en Python mostraron la simplicidad de interactuar con leds y
    pulsadores.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt Software Libre sobre Hardware Libre en FLISoL Avellaneda
+   #+ATTR_HTML: :width 640 :height 480 :title Software Libre sobre Hardware Libre en FLISoL Avellaneda
    [[file:img/flisol-2014-undav/2014-04-26-1617-e2a80d.jpg][file:tmb/flisol-2014-undav/2014-04-26-1617-e2a80d.jpg]]
 
 ** Cierre
@@ -89,7 +89,7 @@
    por la participación del evento que fue realizado con exito y /a
    pulmón/. Hubo espacio para el sorteo de Remeras y Libros.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt Cierre FLISoL Avellaneda
+   #+ATTR_HTML: :width 640 :height 480 :title Cierre FLISoL Avellaneda
    [[file:img/flisol-2014-undav/2014-04-26-1748-4190a2.jpg][file:tmb/flisol-2014-undav/2014-04-26-1748-4190a2.jpg]]   
 
    Finalmente quedó la invitación para participar el próximo año. No

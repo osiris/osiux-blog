@@ -18,5 +18,5 @@ ingreso por calle Zufriategui y Blanco Encalada
 
 *Próximamente se informará una nueva fecha*.
 
-   #+ATTR_HTML: :width 640 :height 480 :alt Huayra Presentación Tecnopolis
+   #+ATTR_HTML: :width 640 :height 480 :title Huayra Presentación Tecnopolis
    [[file:tmb/huayra-invitacion-tecnopolis.png]]

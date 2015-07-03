@@ -27,7 +27,7 @@ la tecnología que nos rodea.
 
 Gracias Esteban!
 
-#+ATTR_HTML: :width 451 :height 605 :alt Libertad y control en la era digital
+#+ATTR_HTML: :width 451 :height 605 :title Libertad y control en la era digital
 [[http://www.estebanmagnani.com.ar/wp-content/uploads/2014/09/Tension-en-la-red-interior.pdf][file:img/tension-en-la-red.jpg]]
 
 [fn:esteban] http://www.estebanmagnani.com.ar/quien-soy/

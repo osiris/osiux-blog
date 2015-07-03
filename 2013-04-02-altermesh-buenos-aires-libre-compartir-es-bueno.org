@@ -384,7 +384,7 @@
    permite de manera simple y cómoda editar un archivo de texto plano
    con cada equipo para luego generar el gráfico final.
 
-   #+ATTR_HTML: :width 640 :height 527 :alt Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram
+   #+ATTR_HTML: :width 640 :height 527 :title Altermesh, BuenosAiresLibre y CompartirEsBueno network diagram
    [[file:img/osiux-network.png][file:tmb/osiux-network.png]]
 
 ** Cual es el próximo paso? [6/10]

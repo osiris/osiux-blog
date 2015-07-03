@@ -136,7 +136,7 @@
 
    Entonces se muestra el menú de /GRUB/ y se puede probar una distro:
 
-   #+ATTR_HTML: :width 640 :height 360 :alt Multiboot Grub2 ISOBoot
+   #+ATTR_HTML: :width 640 :height 360 :title Multiboot Grub2 ISOBoot
    file:img/multiboot-grub2-isoboot.png
 
 [fn:huayra] http://huayra.conectarigualdad.gob.ar

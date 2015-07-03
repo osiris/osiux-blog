@@ -7,7 +7,7 @@
 #+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2014-03-22
 
-#+ATTR_HTML: :width 400 :height 265 :alt FACTTIC MIT LibrePlanet
+#+ATTR_HTML: :width 400 :height 265 :title FACTTIC MIT LibrePlanet
 [[file:img/facttic-mit-libre-planet.jpg]]
 
 "Participar de *LibrePlanet* [fn:libreplanet] fue muy importante para

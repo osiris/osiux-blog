@@ -12,7 +12,7 @@ peronista* [fn:ubuntuperonista] pude hacer funcionar el sintonizador
 *TV Digital Geniatech USB MyGica S870* con Sidux [fn:sidux] (Debian
 sid).
 
-#+ATTR_HTML: :width 640 :height 480 :alt TV Digital TDA Geniatech USB MyGica
+#+ATTR_HTML: :width 640 :height 480 :title TV Digital TDA Geniatech USB MyGica
 [[file:img/tv-digital-geniatech-usb-mygica-s87-dibcom-stk8096gp.png][file:tmb/tv-digital-geniatech-usb-mygica-s87-dibcom-stk8096gp.png]]
 
 Los pasos a seguir son los siguientes

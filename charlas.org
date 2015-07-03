@@ -91,7 +91,7 @@ resumen y un historial cronológico de todas ellas.
 **** FLISoL - Festival Latinoamericano de Instalación de Software Libre
 ***** Cooperativismo y Software Libre                                  :coop:
 
-      #+ATTR_HTML: :width 640 :height 453 :alt Cooperativismo y Software Libre
+      #+ATTR_HTML: :width 640 :height 453 :title Cooperativismo y Software Libre
       [[http://gcoop.coop/COOPySL.pdf][file:COOPySL.png]]
 
       - Slides: http://gcoop.coop/COOPySL.pdf
@@ -101,7 +101,7 @@ resumen y un historial cronológico de todas ellas.
 **** SASOConf - Conferencia Informática Software Libre, Redes Libres y Seguridad
 ***** fast OpenVZ backups                                            :openvz:
 
-      #+ATTR_HTML: :width 640 :height 452 :alt fast OpenVz backups
+      #+ATTR_HTML: :width 640 :height 452 :title fast OpenVz backups
       [[http://pub.osiux.com/plan-b-sasoconf.pdf][file:img/plan-b-sasoconf.png]]
 
       - Slides: [[http://pub.osiux.com/plan-b-sasoconf.pdf]]
@@ -118,7 +118,7 @@ resumen y un historial cronológico de todas ellas.
 **** FLISoL - Festival Latinoamericano de Instalación de Software Libre
 ***** Cooperativistas por elección, nuevas cooperativas de Tecnología Innovación y Conocimiento :coop:
 
-      #+ATTR_HTML: :width 640 :height 453 :alt Cooperativismo y Software Libre
+      #+ATTR_HTML: :width 640 :height 453 :title Cooperativismo y Software Libre
       [[http://gcoop.coop/COOPySL.pdf][file:COOPySL.png]]
 
       - Slides: http://gcoop.coop/COOPySL.pdf
@@ -144,7 +144,7 @@ resumen y un historial cronológico de todas ellas.
 **** SASOConf - Conferencia Informática Software Libre, Redes Libres y Seguridad
 ***** Cooperativismo y Software Libre                                  :coop:
 
-      #+ATTR_HTML: :width 640 :height 453 :alt Cooperativismo y Software Libre
+      #+ATTR_HTML: :width 640 :height 453 :title Cooperativismo y Software Libre
       [[http://gcoop.coop/COOPySL.pdf][file:COOPySL.png]]
 
       - Slides: http://gcoop.coop/COOPySL.pdf
@@ -158,7 +158,7 @@ resumen y un historial cronológico de todas ellas.
 **** CISL - Conferencia Internacional Software Libre
 ***** Redes para todos                                                :redes:
 
-      #+ATTR_HTML: :width 640 :height 452 :alt Redes para todos
+      #+ATTR_HTML: :width 640 :height 452 :title Redes para todos
       [[http://pub.osiux.com/redes-para-todos.pdf][file:redes-para-todos.png]]
 
       - Slides: http://pub.osiux.com/redes-para-todos.pdf
@@ -174,14 +174,14 @@ resumen y un historial cronológico de todas ellas.
 **** FLISoL - Festival Latinoamericano de Instalación de Software Libre
 ***** Cooperativismo y Software Libre                                  :coop:
 
-      #+ATTR_HTML: :width 640 :height 453 :alt Cooperativismo y Software Libre
+      #+ATTR_HTML: :width 640 :height 453 :title Cooperativismo y Software Libre
       [[http://gcoop.coop/COOPySL.pdf][file:COOPySL.png]]
 
       - Slides: http://gcoop.coop/COOPySL.pdf
 
 ***** Altermesh, libera tu red                                        :redes:
 
-      #+ATTR_HTML: :width 640 :height 453 :alt Cooperativismo y Software Libre
+      #+ATTR_HTML: :width 640 :height 453 :title Cooperativismo y Software Libre
       [[http://pub.osiux.com/altermundi.pdf][file:altermundi.png]]
 
       - Slides: http://pub.osiux.com/altermundi.pdf
@@ -199,7 +199,7 @@ resumen y un historial cronológico de todas ellas.
 
 ***** Privacidad y Anonimato en la red                           :privacidad:
 
-      #+ATTR_HTML: :width 640 :height 453 :alt Privacidad y Anonimato en la red
+      #+ATTR_HTML: :width 640 :height 453 :title Privacidad y Anonimato en la red
       [[http://youtu.be/xjxzCDmkNyQ][file:img/priv-y-anon.pdf]]
 
       - Slides: http://pub.osiux.com/priv-y-anon.pdf
@@ -214,7 +214,7 @@ resumen y un historial cronológico de todas ellas.
 **** CISL - Conferencia Internacional Software Libre
 ***** Redes para todos                                                :redes:
 
-      #+ATTR_HTML: :width 640 :height 452 :alt Redes para todos
+      #+ATTR_HTML: :width 640 :height 452 :title Redes para todos
       [[http://pub.osiux.com/redes-para-todos.pdf][file:redes-para-todos.png]]
 
       - Slides: http://pub.osiux.com/redes-para-todos.pdf
@@ -224,7 +224,7 @@ resumen y un historial cronológico de todas ellas.
 **** CNEISI - Congreso Nacional de Estudiantes de Ingeniería en Sistemas de Información
 ***** Cooperativismo y Software Libre                                  :coop:
 
-      #+ATTR_HTML: :width 640 :height 453 :alt Cooperativismo y Software Libre
+      #+ATTR_HTML: :width 640 :height 453 :title Cooperativismo y Software Libre
       [[http://gcoop.coop/COOPySL-CNEISI.pdf][file:img/COOPySL-CNEISI.png]]
 
       - Slides: http://gcoop.coop/COOPySL-CNEISI.pdf
@@ -238,7 +238,7 @@ resumen y un historial cronológico de todas ellas.
 *** Taller de Comunicaciones Seguras y Software Libre
 **** Privacidad y Anonimato en la red                            :privacidad:
 
-      #+ATTR_HTML: :width 640 :height 453 :alt Taller Comunicaciones Seguras para Activistas y Periodistas
+      #+ATTR_HTML: :width 640 :height 453 :title Taller Comunicaciones Seguras para Activistas y Periodistas
       [[http://pub.osiux.com/priv-y-anon.pdf][file:img/taller-comunicaciones-seguras.png]]
 
       - Slides: http://pub.osiux.com/priv-y-anon.pdf
@@ -249,7 +249,7 @@ resumen y un historial cronológico de todas ellas.
 **** CampusParty CPCO5
 ***** no seas un terminal de internet, creá una red libre             :redes:
 
-      #+ATTR_HTML: :width 640 :height 453 :alt CPCO5 Campus Party Colombia No seas un terminal de internet
+      #+ATTR_HTML: :width 640 :height 453 :title CPCO5 Campus Party Colombia No seas un terminal de internet
       [[http://pub.osiux.com/cpco5-redlibre.pdf][file:img/cpco5-redlibre.png]]
 
       - Slides: http://pub.osiux.com/cpco5-redlibre.pdf
@@ -287,7 +287,7 @@ resumen y un historial cronológico de todas ellas.
 **** Terceras Jornadas Regionales de Redes Libres
 ***** 10 años armando una red libre en Buenos Aires                   :redes:
 
-      #+ATTR_HTML: :width 630 :height 472 :alt 10 años armando una red libre en Buenos Aires
+      #+ATTR_HTML: :width 630 :height 472 :title 10 años armando una red libre en Buenos Aires
       [[http://pub.osiux.com/charlas/bal-jrrl3.pdf][file:img/bal-jrrl3.png]]
 
       - Slides: http://pub.osiux.com/charlas/bal-jrrl3.pdf
@@ -310,7 +310,7 @@ resumen y un historial cronológico de todas ellas.
 **** Conurbania
 ***** TODO TXT | rst+org-mode                                       :orgmode:
 
-      #+ATTR_HTML: :width 640 :height 480 :alt TODO TXT | rst+org-mode
+      #+ATTR_HTML: :width 640 :height 480 :title TODO TXT | rst+org-mode
       [[http://pub.osiux.com/charlas/todo-txt-rst+org-mode-slides.pdf][file:img/todo-txt-rst-org-mode.png]]
 
       - Source: http://osiux.com/todo-txt-rst+org-mode.org
@@ -348,7 +348,7 @@ resumen y un historial cronológico de todas ellas.
 **** WhyFloss Conference
 ***** Una red wireless comunitaria. montada sobre FLOSS               :redes:
 
-      #+ATTR_HTML: :width 504 :height 378 :alt Una red wireless comunitaria. montada sobre FLOSS
+      #+ATTR_HTML: :width 504 :height 378 :title Una red wireless comunitaria. montada sobre FLOSS
       [[http://pub.osiux.com/charlas/WhyFLOSS-2007-BuenosAiresLibre.pdf][file:img/presentacion-bal.png]]
 
       - http://pub.osiux.com/charlas/WhyFLOSS-2007-BuenosAiresLibre.pdf
@@ -358,7 +358,7 @@ resumen y un historial cronológico de todas ellas.
 **** Jornadas 2007
 ***** Buenos Aires Libre: una. red wireless comunitaria               :redes:
 
-      #+ATTR_HTML: :width 504 :height 378 :alt Buenos Aires Libre: una. red wireless comunitaria
+      #+ATTR_HTML: :width 504 :height 378 :title Buenos Aires Libre: una. red wireless comunitaria
       [[http://pub.osiux.com/charlas/lugfi-jornadas-2007/presentacion-bal.pdf][file:img/WhyFLOSS-2007-BuenosAiresLibre.png]]
 
       - Slides: http://pub.osiux.com/charlas/lugfi-jornadas-2007/presentacion-bal.pdf

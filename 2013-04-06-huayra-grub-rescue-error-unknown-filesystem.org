@@ -4,7 +4,6 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2013-04-06
 
 ** mmmm que rarooo...
@@ -16,7 +15,7 @@
    arrancar tras instalar /Huayra 1.0/ y en su lugar apareció un bonito
    mensaje de error =grub rescue> error unknown filesystem=
 
-   #+ATTR_HTML: :width "640" :height "480" :alt "huayra grub rescue error unknown filesystem"
+   #+ATTR_HTML: :width "640" :height "480" :title huayra grub rescue error unknown filesystem
    file:tmb/1eslmc/2013-04-06-17-45-a4bdc1-grub-rescue-error-unknown-filesystem.jpg
 
 ** linux.mod
@@ -31,7 +30,7 @@
    justo ese archivo no se copió al instalarse, por algún motivo que
    ignoramos por ahora.
 
-   #+ATTR_HTML: :width "640" :height "480" :alt "huayra grub error file not found"
+   #+ATTR_HTML: :width "640" :height "480" :title huayra grub error file not found
    [[file:tmb/1eslmc/2013-04-06-17-55-926d69-grub-error-file-not-found.jpg]]
 
 ** super grub2 disk al rescate de grub
@@ -74,12 +73,12 @@
    Booteamos con /SuperGrub2Disk/ y elegimos una opción que no
    encontró nada de nada:
 
-   #+ATTR_HTML: :width "640" :height "480" :alt "huayra not found any grub2 installation"
+   #+ATTR_HTML: :width "640" :height "480" :title huayra not found any grub2 installation
    [[file:tmb/1eslmc/2013-04-06-18-15-caef04-not-found-any-grub2-installation.jpg]]
 
    En el segundo intento tuvimos éxito!:
 
-   #+ATTR_HTML: :width "640" :height "480" :alt "huayra super grub2 disk"
+   #+ATTR_HTML: :width "640" :height "480" :title huayra super grub2 disk
    [[file:tmb/1eslmc/2013-04-06-18-15-d81f34-super-grub2-disk.jpg]]
 
 ** instalando grub
@@ -91,14 +90,14 @@
      grub-install /dev/sdb
    #+END_EXAMPLE
 
-   #+ATTR_HTML: :width "640" :height "480" :alt "huayra grub install"
+   #+ATTR_HTML: :width "640" :height "480" :title huayra grub install
    [[file:tmb/1eslmc/2013-04-06-18-18-f4b7dd-grub-install.jpg]]
 
 ** booteando Huayra
 
    A festejar /Huayra/ salió andando de una, "la dire" contenta:
 
-   #+ATTR_HTML: :width "640" :height "480" :alt "huayra"
+   #+ATTR_HTML: :width "640" :height "480" :title huayra
    [[file:tmb/1eslmc/2013-04-06-18-19-9d2385-huayra.jpg]]
 
 ** compartir es bueno
@@ -114,7 +113,7 @@
    alguno le llega a pasar este error o algo similar con =grub=, ahora
    saben como solucionarlo en pocos pasos.
 
-   #+ATTR_HTML: :width "640" :height "480" :alt "huayra compartir es bueno"
+   #+ATTR_HTML: :width "640" :height "480" :title huayra compartir es bueno
    [[file:tmb/1eslmc/2013-04-06-18-41-662982-compartir.jpg]]
 
 [fn:huayra] http://huayra.conectarigualdad.gob.ar/

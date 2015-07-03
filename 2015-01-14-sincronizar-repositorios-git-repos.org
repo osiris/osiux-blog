@@ -6,7 +6,7 @@
 #+INCLUDE: "header.org"
 #+DATE:      2015-01-14
 
-#+ATTR_HTML: :width 640 :height 480 :alt git-repos
+#+ATTR_HTML: :width 640 :height 480 :title git-repos
 [[file:img/git-repos-osiris.png][file:tmb/git-repos-osiris.png]]
 
 ** todo es un repo git
@@ -103,7 +103,7 @@
      git-repos -f bash
    #+end_src
 
-   #+ATTR_HTML: :width 640 :height 120 :alt git-repos-list
+   #+ATTR_HTML: :width 640 :height 120 :title git-repos-list
    [[file:img/git-repos-list.png][file:tmb/git-repos-list.png]]
 
    Si no encuentra un repo, muestra *NOT FOUND* y una cruz *✖*
@@ -127,7 +127,7 @@
      git-repos -f bash -t
    #+end_src
 
-   #+ATTR_HTML: :width 640 :height 120 :alt git-repos-show-time
+   #+ATTR_HTML: :width 640 :height 120 :title git-repos-show-time
    [[file:img/git-repos-show-time.png][file:tmb/git-repos-show-time.png]]
 
    Podríamos visualizar la última línea del log a fin de saber que es
@@ -137,7 +137,7 @@
      git-repos -f bash -g
    #+end_src
 
-   #+ATTR_HTML: :width 640 :height 220 :alt git-repos-show-log
+   #+ATTR_HTML: :width 640 :height 220 :title git-repos-show-log
    [[file:img/git-repos-show-log.png][file:tmb/git-repos-show-log.png]]
 
    Y para el final queda lo más importante, hacer un pull/push en todos
@@ -147,7 +147,7 @@
      git-repos -f bash -ls
    #+end_src
 
-   #+ATTR_HTML: :width 640 :height 120 :alt git-repos-show-time
+   #+ATTR_HTML: :width 640 :height 120 :title git-repos-show-time
    [[file:img/git-repos-pull.png][file:tmb/git-repos-pull.png]]
 
    Hay más utilidades en el repositorio =git-bash-utils=, en particular
