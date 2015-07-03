@@ -4,6 +4,7 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
+#+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
 ** =whoami=
 

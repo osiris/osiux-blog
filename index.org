@@ -43,7 +43,7 @@
 
 *** [[file:tmux-terminator-awesome.org][tmux + terminator = awesome]]
     :PROPERTIES:
-    :RSS_PERMALINK: tmux-terminator-awsome.org
+    :RSS_PERMALINK: tmux-terminator-awesome.org
     :PUBDATE:  2015-06-30
     :ID:       c5939cd6-18bd-47ff-bda8-0c567cd8bd2c
     :END:

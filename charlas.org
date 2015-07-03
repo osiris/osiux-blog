@@ -4,7 +4,7 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+DATE:      2014-01-04
+#+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
 Hace varios años que doy charlas, trato de hacerlo cada vez mejor, asi
 que acepto críticas y a medida que detecto posible mejoras las voy

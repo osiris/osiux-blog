@@ -4,6 +4,7 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
+#+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
 *** [[file:2014.org][2014]]
 **** =08/OCT=
