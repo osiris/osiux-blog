@@ -5,7 +5,6 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        {{{modification-time(%Y-%m-%d %H:%M)}}}
 
 ** la era de la inocencia

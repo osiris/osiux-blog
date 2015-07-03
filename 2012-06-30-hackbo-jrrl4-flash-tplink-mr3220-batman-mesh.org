@@ -4,7 +4,6 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2012-06-30
 
 El 30 de Junio estuve en el [[http://hackbo.co/][HackBo]] dando una

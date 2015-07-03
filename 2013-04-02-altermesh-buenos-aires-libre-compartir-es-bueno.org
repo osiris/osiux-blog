@@ -4,7 +4,6 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2013-04-02
 
 ** Migrando de =OLSR= a =Batman-adv=

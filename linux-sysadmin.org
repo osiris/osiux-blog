@@ -4,7 +4,6 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"                                                 
-#+OPTIONS: toc:t timestamp:nil 
 #+DATE:        2014-01-20
 
 * Filosofía UNIX

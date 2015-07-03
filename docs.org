@@ -4,7 +4,6 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 
 ** =Introducción a GNU/Linux y la programación=
    - [[file:introduccion-al-software-libre.org][Introducción al Software Libre]]

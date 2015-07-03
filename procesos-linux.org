@@ -5,7 +5,6 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2012-11-06
 
 ** ¿Qué es proceso?

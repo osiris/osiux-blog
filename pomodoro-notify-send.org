@@ -4,7 +4,6 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2011-02-03
 
 Hace tiempo vengo utilizando a diario la técnica pomodoro [fn:pomodoro] que me

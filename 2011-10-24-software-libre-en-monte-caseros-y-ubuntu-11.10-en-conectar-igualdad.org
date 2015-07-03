@@ -4,7 +4,6 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2011-10-24
 
 [[file:img/conectar-igualdad/2011-10-22_ubuntu-conectar-igualdad_10.jpg]]

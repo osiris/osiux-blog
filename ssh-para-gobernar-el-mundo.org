@@ -4,7 +4,6 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 
 ** ¿qué es =ssh= y para qué sirve?
 

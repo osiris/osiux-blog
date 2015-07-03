@@ -4,7 +4,6 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2011-10-24
 
 El sábado 22 en la Ciudad de Curuzú Cuatiá gracias a Liliana Arbelo,

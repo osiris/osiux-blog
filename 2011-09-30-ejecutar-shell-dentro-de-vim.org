@@ -4,7 +4,6 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2011-09-30
 
 Ayer alguien preguntó en la [[http://gcoop.coop][coop]] cómo ejecutar un

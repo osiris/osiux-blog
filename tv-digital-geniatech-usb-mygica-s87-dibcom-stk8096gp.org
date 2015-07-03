@@ -5,7 +5,6 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 
 Gracias al post de *lukio* [fn:lukio] basado en el blog de *ubuntu
 peronista* [fn:ubuntuperonista] pude hacer funcionar el sintonizador

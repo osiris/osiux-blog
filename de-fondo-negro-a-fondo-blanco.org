@@ -1,7 +1,6 @@
 #+startup: beamer
 #+LaTeX_CLASS: beamer
 #+LaTeX_CLASS_OPTIONS: [presentation,t]
-#+OPTIONS:   H:3 num:t toc:nil
 #+LANGUAGE: es
 #+BEAMER_HEADER_EXTRA: \usetheme{Madrid}\usecolortheme{default}
 #+BEAMER_FRAME_LEVEL: 2

@@ -4,7 +4,6 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2013-04-27
 
 El sábado 27 de Abril, junto a /Hugo Ruscitti/ [fn:hugo] de

@@ -4,7 +4,6 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 
 #+ATTR_HTML: :width 600 :height 399 :title Ministerio de Ciencia crea clúster de software libre
 [[file:img/2013-04-23-cluster-de-software-libre.jpg][file:tmb/2013-04-23-cluster-de-software-libre.jpg]]

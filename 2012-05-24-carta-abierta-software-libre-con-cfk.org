@@ -4,7 +4,6 @@
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2012-05-24
 
 :url: http://www.softwarelibreconcfk.com.ar/carta-abierta-24-05-2012

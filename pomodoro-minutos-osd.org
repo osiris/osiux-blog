@@ -3,7 +3,6 @@
 #+EMAIL:     osiux@osiux.com.ar
 #+LANGUAGE:  es
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2011-05-23
 
 * Pomodoro Minutos OSD

@@ -3,7 +3,6 @@
 #+EMAIL:       osiux@osiux.com
 #+LANGUAGE:    es
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:        2011-05-23
 
 Luego de varios meses pude dedicar un par de pomodoros a documentar

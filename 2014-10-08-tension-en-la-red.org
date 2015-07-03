@@ -4,7 +4,6 @@
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
-#+OPTIONS: toc:nil timestamp:nil
 #+DATE:      2014-10-08
 
 Hoy, 8 de octubre, se presenta el libro *Tensión en la red* [fn:libro]
