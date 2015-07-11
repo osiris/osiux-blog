@@ -46,7 +46,7 @@
       Osiris Alejandro Gomez (OSiRiS) osiris@gcoop.coop
       DC44 95D2 0D5D D544 FC1A F00F B308 A671 9237 D36C
       http://gcoop.coop | Cooperativa de Software Libre
-      Buenos Aires, Velasco 508 "A" | 0054(11)4855-4390
+      Julián Alvarez 958 CABA C1414DRT +54 11 4711-0055
     #+END_EXAMPLE
 
 *** =public key=
