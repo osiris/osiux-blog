@@ -11,7 +11,7 @@ por Beryl (aunque lo extraño!). Realmente es muy facil personalizarlo
 y como manejador de ventanas es excelente, muy rapido y practicamente
 no consume recursos
 
-#+ATTR_HTML: :width 640 :height 480 :title fluxbox gtk2 root-tail gkrellm
+#+ATTR_HTML: :title fluxbox gtk2 root-tail gkrellm
 [[file:img/osiux-fluxbox-screenshot-1024x768-01.png][file:tmb/osiux-fluxbox-screenshot-640x480-01.png]]
 
 ** Editar un style

@@ -21,7 +21,8 @@ tengo siempre una mano en el teclado.
 En fin, durante mucho tiempo usé *fluxbox* [fn:fluxbox] y llegué a tunearlo
 bastante, se puede ver un artículo que escribí al respecto:
 
-[[file:fluxbox-gtk2-root-tail-gkrellm.org]]
+#+ATTR_HTML: :title fluxbox gtk2 root-tail gkrellm
+[[file:fluxbox-gtk2-root-tail-gkrellm.org][file:tmb/osiux-fluxbox-screenshot-640x480-01.png]]
 
 Pero luego me di cuenta que pasaba mucho tiempo jugando con la ubicación de
 las ventanas, así que emprendí la búsqueda de una alternativa tan liviana y
@@ -88,7 +89,7 @@ otra aplicación. Si se necesita cambiar la disposición de las ventanas abierta
 basta con presionar una combinación de teclas y todo el esquema cambia de
 horizontal a vertical por ejemplo.
 
-#+ATTR_HTML: :width 640 :height 480 :title awesome mosaico
+#+ATTR_HTML: :title awesome mosaico
 [[file:img/awesome/awesome-mosaico.png][file:tmb/awesome/awesome-mosaico.png]]
 
 ** Ventanas Flotantes
@@ -105,7 +106,7 @@ maximizada es que permite tener en foco qué se está haciendo, es decir una
 minimizada o mucho mejor aún en otro escritorio y alternar fácilmente entre
 varios escritorios.
 
-#+ATTR_HTML: :width 640 :height 480 :title awesome flotante
+#+ATTR_HTML: :title awesome flotante
 [[file:img/awesome/awesome-flotante.png][file:tmb/awesome/awesome-flotante.png]]
 
 ** Un escritorio para cada tarea
@@ -127,7 +128,7 @@ siguiente:
 | 9 | mensajería y chat | finch                  |
 |---+-------------------+------------------------|
 
-#+ATTR_HTML: :width 640 :height 480 :title awesome desktops
+#+ATTR_HTML: :title awesome desktops
 [[file:img/awesome/awesome-2400x1800.png][file:tmb/awesome/awesome-800x600.png]]
 
 Esta distribución logra aprovechar el 100% de la resolución de pantalla para
@@ -139,7 +140,7 @@ cuadrado, como si tuvieras dos monitores en uno, es altamente productivo,
 tengan en cuenta que el texto encolumnado se lee mejor que una cadena muy
 larga.
 
-#+ATTR_HTML: :width 640 :height 360 :title awesome vertical
+#+ATTR_HTML: :title awesome vertical
 [[file:img/awesome/awesome-vertical_800x450.png][file:tmb/awesome/awesome-vertical_800x450.png]]
 
 ** Una terminal de terminales
@@ -166,7 +167,7 @@ par de teclas dividirlo en varias partes (de la misma manera que awesome) e
 inclusive subdividir casi hasta el infinito con la posibilidad de agrupar estas
 subterminales y comandarlas a todas desde una sola!
 
-#+ATTR_HTML: :width 640 :height 480 :title awesome terminator
+#+ATTR_HTML: :title awesome terminator
 [[file:img/awesome/awesome-terminator.png][file:tmb/awesome/awesome-terminator.png]]
 
 Hay que aprenderse unas teclas básicas:
