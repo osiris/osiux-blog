@@ -1,0 +1,102 @@
+#+TITLE:     monitoreo en status bar de tmux
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+#+DATE:      2014-11-14
+
+#+ATTR_HTML: :width 570 :height 147 :title qmhandle status bar tmux using spark
+[[file:img/qmhandle-status-bar-tmux.png][file:tmb/qmhandle-status-bar-tmux-spark.png]]
+
+** ...anda lento... mmm... que raro!
+
+   Hace un par de meses que heredé un par de servidores con varios
+   servicios que deben estar operativos 24x7 y entre ellos me tocó
+   manter un /qmail/ y como no podía ser de otra manera de tanto en
+   tanto hay algo de SPAM y por ello la cola de mails se eleva. :S
+
+   A fin de tener alguna métrica de qué está sucediendo era necesario
+   visualizar constantemente el estado de la cola y si bien hay
+   muchísimas herramientas disponibles opté por el principio
+   *KISS* [fn:KISS] (/Keep it simple, stupid/), de momento sólo lo
+   vería yo y posiblemente alguién más en mi ausencia, no quería
+   instalar nada en ese servidor, tampoco tenía muchas posibilidades
+   de conectarme a otros servidores por reglas de firewall y quería
+   tenerlo visible en mi tmux ya que paso ahí gran parte del día (y a
+   veces las noches)
+
+** =bash= para generar y =spark= para graficar
+
+   Abusando una vez más de /bash/ hice un script en el server que
+   envía un timestamp y metricas básicas, entre ellas la cantidad de
+   mails encolados a un log y ese log se copia un una vps donde esta
+   este blog, asi de esta manera el qmail envía a osiux.com el log y
+   luego un script debería descargar de osiux.com para "graficar"
+   localmente.
+
+   El contenido del script =qmhandle=:
+
+   #+BEGIN_SRC sh :session :results output :export code
+      #!/bin/sh
+      export http_proxy=""
+      log=/tmp/qmhandle.log
+      wget -q -O $log http://pub.osiux.com/qmhandle.log
+      q=`tail -20 $log | awk '{print $5}'`
+
+      a=`echo $q | awk '{print \$1}'`
+      b=`echo $q | awk '{print \$5}'`
+      c=`echo $q | awk '{print \$10}'`
+      d=`echo $q | awk '{print \$15}'`
+      e=`echo $q | awk '{print \$20}'`
+
+      echo $a `echo $a $b $c $d $e | spark` $e
+   #+END_SRC
+
+   Si ejecutamos =qmhandle= vemos:
+
+   #+BEGIN_SRC sh :session :results output :exports results
+     qmhandle
+   #+END_SRC
+
+    #+RESULTS:
+    : 441 ██▁▁▁ 440
+
+   Para entender qué estamos visualizando, miremos el log:
+
+   #+BEGIN_SRC sh :session :results output :exports both
+     tail /tmp/qmhandle.log
+   #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+    2016-02-03 02:10 440 0 440 2 0
+    2016-02-03 02:11 440 0 440 2 0
+    2016-02-03 02:12 440 0 440 2 0
+    2016-02-03 02:13 440 0 440 2 0
+    2016-02-03 02:14 440 0 440 2 0
+    2016-02-03 02:15 440 0 440 2 0
+    2016-02-03 02:16 440 0 440 2 0
+    2016-02-03 02:17 440 0 440 2 0
+    2016-02-03 02:18 440 0 440 2 0
+    2016-02-03 02:19 440 0 440 2 0
+    #+end_example
+
+    El resultado es un /timestamp/ con una serie de números, la
+    columna 5 es la que importa y hay una línea nueva cada 1 minuto.
+
+    Al procesar el log, me quedo con la cantidad de mails encolados
+    cada 1, 5, 10, 15 y 20 minutos, asi tengo una tendencia con unas
+    bonitas barras (gracias a *spark* [fn:spark]) y el mínimo y
+    máximo, esta información se actualiza en la barra de tmux cada 1
+    minuto, agregando al =~/.tmux.conf= el comando qmhandle:
+
+    #+BEGIN_SRC sh :session :results output :exports code
+      set -g status-right '#[fg=red,bg=default]#(qmhandle) #[fg=colour231,bg=colour232] #(bateria) #[fg=colour11,bg=colour232] %d/%m %H:%M'
+    #+END_SRC
+
+    Básico pero efectivo! *:)*
+
+[fn:KISS] https://en.wikipedia.org/wiki/KISS_principle
+[fn:spark] https://github.com/holman/spark
+

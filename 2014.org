@@ -1,0 +1,38 @@
+#+TITLE:     ABSOLUTELLY NO WARRANTY blog 2014
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+
+
+
+** =2014=
+*** =08/OCT=
+**** [[file:2014-10-08-tension-en-la-red.org][Tensión en la red]]
+*** =12/AGO=
+**** [[file:2014-08-12-clonar-pendrives.org][Clonar 24 pendrives al mismo tiempo!]]
+*** =28/ABR=
+**** [[file:2014-04-28-semana-negra.org][Semana Negra - Sobrevivir en la shell]]
+*** =26/ABR=
+**** [[file:2014-04-26-flisol-avellaneda-undav.org][FLISoL Avellaneda en la UNDAv]]
+*** =25/ABR=
+**** [[file:2014-04-25-huayra-2.0.org][Salió Huayra 2.0]]
+*** =23/ABR=
+**** [[file:multiboot-grub2-isoboot.org][Muchas Distros en un pendrive = Multiboot Grub2 ISOBoot]]
+*** =22/ABR=
+**** [[file:2014-04-22-flisol-2014.org][Se viene el FLISoL 2014]]
+*** =22/MAR=
+**** [[file:2014-03-22-facttic-mit-libre-planet.org][FACTTIC cuenta su experiencia en el MIT]]
+*** =20/MAR=
+**** [[file:2014-03-14-saso-conf-curuzu-cuatia.org][SASOConf en Curuzú Cuatiá]]
+*** =12/MAR=
+**** [[file:2014-03-12-hardware-freedom-day-2014.org][Hardware Freedom Day 2014]]
+*** =11/MAR=
+**** [[file:2014-03-11-se-viene-la-sasoconf.org][Se viene a la SASOConf]]
+*** =15/ENE=
+**** [[file:todo-txt-rst+org-mode.org][TODO TXT rst + org-mode]]
+**** [[file:tengo-el-titulo-de-la-charla-y-ahora-como-hago-los-slides.org][tengo el título de la charla y ahora cómo hago los slides?]]
+** [[file:archive.org][=ARCHIVE=]]
+
+   #+INCLUDE: "years.org"

@@ -5,6 +5,8 @@
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
 
+
+
 ** =2011=
 *** =29/DIC=
 **** [[file:2011-12-29-orgmode-y-gnuplot.org][org-mode y gnuplot]]
@@ -40,4 +42,6 @@
    - [[file:2011-03-15-dibujando-con-numeros-desde-la-consola.org][dibujando con números desde la consola]]
 *** =03/FEB=
    - [[file:2011-02-03.org][Blog de prueba]]
-*** [[file:index.org][<- index]] | [[file:blog.org][blog]] | [[file:2012.org][2012]] | [[file:docs.org][docs ->]]
+** [[file:archive.org][=ARCHIVE=]]
+
+   #+INCLUDE: "years.org"

@@ -5,6 +5,8 @@
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
 
+
+
 ** =2013=
 *** =01/NOV=
 **** [[file:2013-11-01-information-technology-conexion-libre.org][Information Technology Conexión Libre]]
@@ -89,8 +91,13 @@
      [[file:2013-03-18-huayra-el-dia-que-las-vacas-vuelen.org][file:img/huayra-vaca-volando.png]]
 
 *** =31/MAY=
-   - [[file:2013-03-31-inscripcion-cursos-de-formacion-profesional.org][Abierta la inscripción a los Cursos de Formación Profesional en Software Libre]]
-*** =01/FEB=
-   - [[file:2013-02-01-migrando-de-frontweb-a-org-mode.org][Migrando de frontweb a Org-mode]]
 
-*** [[file:index.org][<- index]] | [[blog.org][blog]] | [[file:2012.org][2012]] | [[file:2011.org][2011]] | [[file:docs.org][docs ->]]
+    - [[file:2013-03-31-inscripcion-cursos-de-formacion-profesional.org][Abierta la inscripción a los Cursos de Formación Profesional en Software Libre]]
+
+*** =01/FEB=
+
+    - [[file:2013-02-01-migrando-de-frontweb-a-org-mode.org][Migrando de frontweb a Org-mode]]
+
+** [[file:archive.org][=ARCHIVE=]]
+
+   #+INCLUDE: "years.org"

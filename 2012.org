@@ -5,6 +5,8 @@
 #+LINK_HOME: index.html
 #+INCLUDE: "header.org"
 
+
+
 ** =2012=
 *** =15/OCT=
 **** [[file:2012-10-15-cisl-conferencia-internacional-software-libre.org][Conferencia Internacional de Software Libre CISL 2012]]
@@ -99,5 +101,7 @@
 
      [[file:2012-02-14-de-fondo-negro-a-fondo-blanco.org][file:tmb/de-fondo-negro-a-fondo-blanco.png]]
 
+** [[file:archive.org][=ARCHIVE=]]
 
-*** [[file:index.org][<- index]] | [[file:blog.org][blog]] | [[2013.org][2013]] | [[file:2011.org][2011]] | [[file:docs.org][docs ->]]
+   #+INCLUDE: "years.org"
+

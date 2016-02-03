@@ -1,0 +1,60 @@
+#+TITLE:     ABSOLUTELLY NO WARRANTY ARCHIVE
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE: "header.org"
+
+
+
+** =ARCHIVE=
+
+   #+BEGIN_SRC sh :session :results none :exports both
+     cd ~/blog
+     ls *.org | egrep -o "^[0-9]{4}" | sort -u | while read i
+     do
+        echo "- [[file:$i.org][$i]]"
+     done >years.org
+   #+END_SRC
+
+   #+INCLUDE: "years.org"
+
+** =STATS=
+
+*** =YEARS=
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      cd ~/blog && ls *.org | egrep -o "^[0-9]{4}-" | tr -d - | sort | uniq -c | barra
+    #+END_SRC
+
+    #+RESULTS:
+    :  17.46 %  17.46 %         11 ████                 2011 
+    :  55.56 %  38.10 %         24 █████████            2012 
+    :  80.95 %  25.40 %         16 ██████               2013 
+    :  96.83 %  15.87 %         10 ████                 2014 
+    : 100.00 %   3.17 %          2 ▌                    2015 
+    :                           63
+
+*** =MONTHS=
+
+    #+BEGIN_SRC sh :session :results output :exports both
+      cd ~/blog && ls *.org | egrep -o "^[0-9]{4}-[0-9]{2}" | cut -c 6- | sort | uniq -c | barra
+    #+END_SRC
+
+    #+RESULTS:
+    #+begin_example
+      3.17 %   3.17 %          2 ▌                    01 
+     11.11 %   7.94 %          5 ██                   02 
+     23.81 %  12.70 %          8 ███                  03 
+     39.68 %  15.87 %         10 ████                 04 
+     53.97 %  14.29 %          9 ███                  05 
+     68.25 %  14.29 %          9 ███                  06 
+     74.60 %   6.35 %          4 █                    07 
+     79.37 %   4.76 %          3 █                    08 
+     87.30 %   7.94 %          5 ██                   09 
+     92.06 %   4.76 %          3 █                    10 
+     98.41 %   6.35 %          4 █                    11 
+    100.00 %   1.59 %          1 ▌                    12 
+                              63
+#+end_example
+
