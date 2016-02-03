@@ -6,6 +6,13 @@
 #+INCLUDE: "header.org"
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+*** [[file:2015.org][2015]]
+**** =30/JUN=
+***** [[file:tmux-terminator-awesome.org][tmux + terminator = awesome]]
+**** =14/ENE=
+***** [[file:2015-01-14-sincronizar-repositorios-git-repos.org][Sincronizar Repositorios git con git-repos]]
+**** =10/ENE=
+***** [[file:2015-01-10-renombrar-y-ordenar-fotos-duplicadas.org][Renombrar y Ordenar Fotos Duplicadas]]
 *** [[file:2014.org][2014]]
 **** =08/OCT=
 ***** [[file:2014-10-08-tension-en-la-red.org][Tensión en la red]]
@@ -137,4 +144,7 @@
 **** =15/MAR=
 ***** [[file:2011-03-15-dibujando-con-numeros-desde-la-consola.org][dibujando con numeros desde la consola]]
 
-*** [[file:index.org][<- index]] | [[file:2014.org][2014]] | [[file:2013.org][2013]] | [[file:2012.org][2012]] | [[file:2011.org][2011]] | [[file:docs.org][docs ->]]
+** [[file:archive.org][=ARCHIVE=]]
+
+   #+INCLUDE: "years.org"
+
