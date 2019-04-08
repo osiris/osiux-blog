@@ -3,7 +3,7 @@
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+INCLUDE: "header.org"
+#+INCLUDE:   header.org
 #+DATE:      2015-01-14
 
 #+ATTR_HTML: :width 640 :height 480 :title git-repos
@@ -51,7 +51,7 @@
    pcap2dot                github:osiris/pcap2dot
    sugar-graphviz          github:osiris/sugar-graphviz
    traducciones            github:osiris/traducciones
-#+end_example
+   #+end_example
 
    Las líneas que comienzan con =#= son ignoradas. Por lo general
    el directorio coincide con el nombre del repo, aunque a veces es
@@ -89,7 +89,7 @@
    Agregar al =~/.bashrc=:
 
    #+begin_src sh :session :results none :exports code
-     if [ -d "$HOME/git-bash-utils" ]
+     if [[ -d "$HOME/git-bash-utils" ]]
      then
          PATH="$HOME/git-bash-utils:$PATH"
          source $HOME/git-bash-utils/git-alias
@@ -154,6 +154,6 @@
    recomiendo mirar el git-alias y cualquier correción/sugerencia será
    bien recibida.
 
-[fn:gcoop] http://gcoop.coop
+[fn:gcoop]  http://gcoop.coop
 [fn:osiris] https://github.com/osiris
-[fn:lista] https://raw.githubusercontent.com/osiris/git-bash-utils/master/.git-repos
+[fn:lista]  https://raw.githubusercontent.com/osiris/git-bash-utils/master/.git-repos

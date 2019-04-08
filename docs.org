@@ -3,7 +3,7 @@
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+INCLUDE: "header.org"
+#+INCLUDE:   header.org
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
 ** =Introducción a GNU/Linux y la programación=
@@ -67,4 +67,5 @@
    - [[file:olimpiadas-informaticas-en-monte-caseros.org]]
    - [[file:restructuredtext-blog-python-script-rest2web.org]]
    - [[file:restructuredtext-blog-script-rst2blog.org]]
+
 ** [[file:index.org][<- index]] | [[file:blog.org][blog ->]]

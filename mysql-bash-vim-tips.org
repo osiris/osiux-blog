@@ -15,6 +15,12 @@
     SET PASSWORD FOR 'sugar'@'%'=PASSWORD('sugar');
    #+END_EXAMPLE
 
+** Otorgar privilegios a un usuario@host a una base
+
+   #+BEGIN_EXAMPLE
+    GRANT ALL PRIVILEGES ON mydb.* TO myuser@localhost IDENTIFIED BY 'mypasswd';
+   #+END_EXAMPLE
+
 ** UTF8
 
    Definir UTF8 en el cliente

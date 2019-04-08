@@ -3,7 +3,7 @@
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+INCLUDE: "header.org"
+#+INCLUDE:   header.org
 #+DATE:      2013-02-01
 
 Actualmente me encuentro migrando el blog que estaba en frontweb a

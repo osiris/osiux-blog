@@ -3,7 +3,7 @@
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+INCLUDE: "header.org"
+#+INCLUDE:   header.org
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
 Hace varios años que doy charlas, trato de hacerlo cada vez mejor, asi
@@ -14,8 +14,8 @@ anotando en el post:
 
 Como siempre armé mis charlas en texto plano y con alguna herramienta
 la convierto en un bonito PDF o HTML, el source esta disponible en un
-repositorio en https://github.com/osiris/charlas y el resultado en
-http://pub.osiux.com/charlas, asi que a continuación detalle un
+repositorio en [[https://gitlab.com/osiux/charlas]] y el resultado en
+[[https://pub.osiux.com/charlas]], asi que a continuación detalle un
 resumen y un historial cronológico de todas ellas.
 
 ** Resumen
@@ -28,76 +28,138 @@ resumen y un historial cronológico de todas ellas.
      printf "\n\n** meses más frecuentes\n\n"
      egrep "^\*+ [0-9]{2}/[0-9]{4}" ~/blog/charlas.org | cut -d/ -f1 | tr -d '*' | sort | uniq -c | egrep -v "^.*1 " | sort -nr | barra
      printf "\n\n** eventos más frecuentes\n\n"
-     egrep "^\*\*\*\* " ~/blog/charlas.org  | sort | tr -d '*' | uniq -c | grep -v 1 | sort -nr | sed s/-.*//g | barra
+     egrep "^\*\*\*\* " ~/blog/charlas.org  | sort | tr -d '*' | uniq -c | grep -v ' 1 ' | sort -nr | sed s/-.*//g | barra
      printf "\n\n** ciudades más frecuentes\n\n"
-     egrep "^\*\*\* " ~/blog/charlas.org  | cut -d, -f2 | sort | uniq -c | sort -nr | grep -v 1 | barra
+     egrep "^\*\*\* " ~/blog/charlas.org  | cut -d, -f2 | sort | uniq -c | sort -nr | barra
    #+END_SRC
 
    #+RESULTS:
    #+begin_example
 
+<<<<<<< Updated upstream
    ** charlas por tag
 
-    38.24 %  38.24 %         13 █████████            redes 
-    55.88 %  17.65 %          6 ████                 coop 
-    67.65 %  11.76 %          4 ███                  sysadmin 
-    79.41 %  11.76 %          4 ███                  graphviz 
-    88.24 %   8.82 %          3 ██                   orgmode 
-    94.12 %   5.88 %          2 █                    privacidad 
-    97.06 %   2.94 %          1 ▌                    openvz 
-   100.00 %   2.94 %          1 ▌                    gnu 
-                             34
+    34.21 %  34.21 %         13 ████████             redes 
+    57.89 %  23.68 %          9 ██████               coop 
+    68.42 %  10.53 %          4 ██                   sysadmin 
+    78.95 %  10.53 %          4 ██                   graphviz 
+    86.84 %   7.89 %          3 ██                   privacidad 
+    94.74 %   7.89 %          3 ██                   orgmode 
+    97.37 %   2.63 %          1 ▌                    openvz 
+   100.00 %   2.63 %          1 ▌                    gnu 
+			     38
    ** charlas por año
 
-    25.00 %  25.00 %          6 ██████               2011 
-    45.83 %  20.83 %          5 █████                2012 
-    58.33 %  12.50 %          3 ███                  2014 
-    70.83 %  12.50 %          3 ███                  2013 
-    79.17 %   8.33 %          2 ██                   2015 
-    87.50 %   8.33 %          2 ██                   2008 
-    95.83 %   8.33 %          2 ██                   2007 
-   100.00 %   4.17 %          1 █                    2010 
-                             24
+    23.08 %  23.08 %          6 █████                2011 
+    42.31 %  19.23 %          5 ████                 2012 
+    53.85 %  11.54 %          3 ███                  2014 
+    65.38 %  11.54 %          3 ███                  2013 
+    73.08 %   7.69 %          2 ██                   2018 
+    80.77 %   7.69 %          2 ██                   2015 
+    88.46 %   7.69 %          2 ██                   2008 
+    96.15 %   7.69 %          2 ██                   2007 
+   100.00 %   3.85 %          1 █                    2010 
+			     26
 
    ** meses más frecuentes
 
-    28.57 %  28.57 %          6 ███████              04 
-    47.62 %  19.05 %          4 ████                 11 
-    61.90 %  14.29 %          3 ███                  10 
-    71.43 %   9.52 %          2 ██                   09 
-    80.95 %   9.52 %          2 ██                   07 
-    90.48 %   9.52 %          2 ██                   05 
-   100.00 %   9.52 %          2 ██                   03 
-                             21
+    30.43 %  30.43 %          7 ███████              04 
+    52.17 %  21.74 %          5 █████                11 
+    65.22 %  13.04 %          3 ███                  10 
+    73.91 %   8.70 %          2 ██                   09 
+    82.61 %   8.70 %          2 ██                   07 
+    91.30 %   8.70 %          2 ██                   05 
+   100.00 %   8.70 %          2 ██                   03 
+			     23
 
    ** eventos más frecuentes
 
-    63.64 %  63.64 %          7 ████████████████     FLISoL  
-    81.82 %  18.18 %          2 ████                 SASOConf  
-   100.00 %  18.18 %          2 ████                 CISL  
-                             11
+    69.23 %  69.23 %          9 █████████████████    FLISoL  
+    84.62 %  15.38 %          2 ███                  SASOConf  
+   100.00 %  15.38 %          2 ███                  CISL  
+			     13
 
    ** ciudades más frecuentes
 
-    50.00 %  50.00 %          8 ████████████         CABA 
-    75.00 %  25.00 %          4 ██████               Curuzú Cuatiá 
-    87.50 %  12.50 %          2 ███                  Monte Caseros 
-   100.00 %  12.50 %          2 ███                  Bogotá 
-                             16
+    47.37 %  47.37 %          9 ███████████          CABA 
+    68.42 %  21.05 %          4 █████                Curuzú Cuatiá 
+    78.95 %  10.53 %          2 ██                   Río Gallegos 
+    89.47 %  10.53 %          2 ██                   Monte Caseros 
+   100.00 %  10.53 %          2 ██                   Bogotá 
+			     19
 #+end_example
 
+** 11/2018
+*** Universidad Nacional de José C. Paz, José C. Paz, Buenos Aires, Argentina
+**** I Jornadas "Universidad y desarrollo local"
+
+***** Cooperativismo y Software Libre                                  :coop:
+
+      #+ATTR_HTML: :width 640 :height 453 :title Cooperativismo y Software Libre
+      [[https://pub.osiux.com/COOPySL-UNPAZ.pdf][file:img/COOPySL-UNPAZ.png]]
+
+      - Slides: [[https://pub.osiux.com/COOPySL-UNPAZ.pdf]]
+
+** 04/2018
+*** Complejo Cultural Santa Cruz, Río Gallegos, Santa Cruz, Argentina
+**** Desarrollo local y nuevas tecnologías
+=======
+#+end_example
+
+** 04/2018
+*** Universidad Nacional de la Patagonia Austral, Río Gallegos, Argentina
+**** FLISoL - Festival Latinoamericano de Instalación de Software Libre
+>>>>>>> Stashed changes
+***** Cooperativismo y Software Libre                                  :coop:
+
+      #+ATTR_HTML: :width 640 :height 453 :title Cooperativismo y Software Libre
+      [[http://gcoop.coop/COOPySL.pdf][file:COOPySL.png]]
+
+<<<<<<< Updated upstream
+      - Slides: http://gcoop.coop/COOPySL.pdf
+
+*** Universidad Nacional de la Patagonia Austral UARG, Río Gallegos, Santa Cruz, Argentina
+**** FLISoL - Festival Latinoamericano de Instalación de Software Libre
+***** Cooperativismo y Software Libre                                  :coop:
+
+      #+ATTR_HTML: :width 640 :height 453 :title Cooperativismo y Software Libre
+      [[https://pub.osiux.com/COOPySL-RGL.pdf][file:img/COOPySL-RGL.png]]
+
+      - Slides: [[https://pub.osiux.com/COOPySL-RGL.pdf]]
+
+*** Centro Cultural General San Martin, CABA, Argentina
+**** FLISoL - Festival Latinoamericano de Instalación de Software Libre
+***** Privacidad y anonimato con software libre                  :privacidad:
+
+      #+ATTR_HTML: :width 640 :height 453 :title Privacidad y anonimato con Software Libre
+      [[https://pub.osiux.com/privacidad-y-anonimato-con-software-libre-flisol-caba-ccgsm.pdf][file:img/privacidad-y-anonimato-con-software-libre-flisol-caba-ccgsm.png]]
+
+      - Slides: [[https://pub.osiux.com/privacidad-y-anonimato-con-software-libre-flisol-caba-ccgsm.pdf]]
+=======
+      - Slides: https://www.gcoop.coop/COOPySL.pdf
+
+*** Centro Cultural General San Martín, CABA, Argentina
+**** FLISoL - Festival Latinoamericano de Instalación de Software Libre
+***** Privacidad y Anonimato con Software Libre                 :privacidad:
+
+** 04/2016
+*** Centro Cultural General San Martín, CABA, Argentina
+**** FLISoL - Festival Latinoamericano de Instalación de Software Libre
+***** Sólo confío en localhost                                     :sysadmin:
+>>>>>>> Stashed changes
+
 ** 04/2015
-*** Escuela Secundaria Técnica Nro. 4 de Berazategui, Buenos Aires, Argentina
+*** Escuela Secundaria Técnica Nro. 4 de Berazategui, Berazategui, Argentina
 **** FLISoL - Festival Latinoamericano de Instalación de Software Libre
 ***** Cooperativismo y Software Libre                                  :coop:
 
       #+ATTR_HTML: :width 640 :height 453 :title Cooperativismo y Software Libre
       [[http://gcoop.coop/COOPySL.pdf][file:COOPySL.png]]
 
-      - Slides: http://gcoop.coop/COOPySL.pdf
+      - Slides: https://www.gcoop.coop/COOPySL.pdf
 
 ** 03/2015
-*** Casa del Bicentenario, Curuzú Cuatiá, Corrientes, Argentina
+*** Casa del Bicentenario, Curuzú Cuatiá, Argentina
 **** SASOConf - Conferencia Informática Software Libre, Redes Libres y Seguridad
 ***** fast OpenVZ backups                                            :openvz:
 
@@ -108,8 +170,8 @@ resumen y un historial cronológico de todas ellas.
       - Source: https://github.com/gcoop-libre/plan-b
 
 ** 11/2014
-*** Primera Escuela de Arte Multimedial Da Vinci, Ciudad de Buenos Aires, Argentina
-**** AnDSeC Security Conference
+*** Primera Escuela de Arte Multimedial Da Vinci, CABA, Argentina
+**** AnDSeC - Security Conference
 ***** Análisis de logs usando Orgmode                               :orgmode:
 ***** Convertir un pcap a un grafo                                 :graphviz:
 
@@ -140,7 +202,7 @@ resumen y un historial cronológico de todas ellas.
       [[file:graficar-desde-consola.org]]
 
 ** 03/2014
-*** Casa del Bicentenario, Curuzú Cuatiá, Corrientes, Argentina
+*** Casa del Bicentenario, Curuzú Cuatiá, Argentina
 **** SASOConf - Conferencia Informática Software Libre, Redes Libres y Seguridad
 ***** Cooperativismo y Software Libre                                  :coop:
 
@@ -164,8 +226,9 @@ resumen y un historial cronológico de todas ellas.
       - Slides: http://pub.osiux.com/redes-para-todos.pdf
 
 ** 06/2013
-*** Segunda Muestra Municipal de Ciencia y Tecnología de La Matanza
-**** Tecnologías libres para la comunicación soberana                 :redes:
+*** La Matanza, Argentina
+**** Segunda Muestra Municipal de Ciencia y Tecnología de La Matanza
+***** Tecnologías libres para la comunicación soberana                 redes:
 
       - http://www.osiux.com/2013-06-14-matanza-comparte-y-redes-libres-en-plaza-ciencia-2013.html
 
@@ -187,12 +250,13 @@ resumen y un historial cronológico de todas ellas.
       - Slides: http://pub.osiux.com/altermundi.pdf
       - [[http://osiux.com/2013-04-02-altermesh-buenos-aires-libre-compartir-es-bueno.html]]
 
-*** Curso de Formación Profesional
-**** Administración GNU/Linux                                      :sysadmin:
+*** CFP, CABA, Argentina
+**** Curso de Formación Profesional
+***** Administración GNU/Linux                                     :sysadmin:
 
     - http://cursofp.gcoop.coop
 
-*** Casa del Bicentenario, Monte Caseros, Corrientes, Argentina
+*** Casa del Bicentenario, Monte Caseros, Argentina
 **** Primer Encuentro de Software Libre
 
      - [[http://osiux.com/2013-04-06-primer-encuentro-software-libre-monte-caseros.html]]
@@ -220,7 +284,7 @@ resumen y un historial cronológico de todas ellas.
       - Slides: http://pub.osiux.com/redes-para-todos.pdf
 
 ** 09/2012
-*** Facultad de Informática, Universidad Nacional de La Plata, Argentina
+*** Facultad de Informática - Universidad Nacional de La Plata, La Plata, Argentina
 **** CNEISI - Congreso Nacional de Estudiantes de Ingeniería en Sistemas de Información
 ***** Cooperativismo y Software Libre                                  :coop:
 
@@ -235,8 +299,9 @@ resumen y un historial cronológico de todas ellas.
 
       - http://pub.osiux.com/charlas/CaFeIN-que-hice-ayer-que-tengo-que-hacer-hoy.ogv
 
-*** Taller de Comunicaciones Seguras y Software Libre
-**** Privacidad y Anonimato en la red                            :privacidad:
+*** Vía Libre, CABA, Argentina
+**** Taller de Comunicaciones Seguras y Software Libre
+***** Privacidad y Anonimato en la red                          :privacidad:
 
       #+ATTR_HTML: :width 640 :height 453 :title Taller Comunicaciones Seguras para Activistas y Periodistas
       [[http://pub.osiux.com/priv-y-anon.pdf][file:img/taller-comunicaciones-seguras.png]]
@@ -270,13 +335,14 @@ resumen y un historial cronológico de todas ellas.
       - http://gcoop.coop/COOPySL.pdf
 
 ** 11/2011
-*** SysAdmin Experts
-**** Dame una consola                                              :sysadmin:
+*** SysAdmin Experts, CABA, Argentina
+**** SysAdmin Experts
+***** Dame una consola                                             :sysadmin:
 
      - http://pub.osiux.com/charlas/dame-una-consola-slides.pdf
 
 ** 10/2011
-*** Escuela Técnica Pedro Ferré, Monte Caseros, Corrientes, Argentina
+*** Escuela Técnica Pedro Ferré, Monte Caseros, Argentina
 **** Primera Olimpíada Interescolar Informática de Nivel Secundario
 ***** Introducción a las redes                                        :redes:
 
@@ -294,19 +360,20 @@ resumen y un historial cronológico de todas ellas.
 
 ** 05/2011
 *** Escuela Mundo Nuevo, CABA, Argentina
-**** Introducción a GNU/Linux y la programación                    :sysadmin:
+**** GNU/Linux
+***** Introducción a GNU/Linux y la programación                   :sysadmin:
 
      - http://gcoop.coop/pdf/introduccion-gnu-linux-programacion.pdf
 
 ** 04/2011
-*** Instituto Superior de Curuzú Cuatiá, Curuzú Cuatiá, Corrientes, Argentina
+*** Instituto Superior de Curuzú Cuatiá, Curuzú Cuatiá, Argentina
 **** FLISoL - Festival Latinoamericano de Instalación de Software Libre
 ***** Redes Libres                                                    :redes:
 
       - ftp://buenosaireslibre.org/videos/flisol-2011_redes-libres_osiux_720x576.ogv
 
 ** 11/2011
-*** Universidad de Lanús, Lanús, Provincia de Buenos Aires, Argentina
+*** Universidad de Lanús, Lanús, Argentina
 **** Conurbania
 ***** TODO TXT | rst+org-mode                                       :orgmode:
 
@@ -317,7 +384,7 @@ resumen y un historial cronológico de todas ellas.
       - Slides: http://pub.osiux.com/charlas/todo-txt-rst+org-mode-slides.pdf
 
 ** 04/2010
-*** Instituto Superior de Curuzú Cuatiá, Corrientes, Argentina
+*** Instituto Superior de Curuzú Cuatiá, Argentina
 **** FLISoL - Festival Latinoamericano de Instalación de Software Libre
 ***** Dame una consola                                             :sysadmin:
 
@@ -330,7 +397,7 @@ resumen y un historial cronológico de todas ellas.
 
       - http://osiux.com/redes-libres-festival-cultura-libre-fm-latribu.txt
 
-*** Instituto Superior de Curuzú Cuatiá, Curuzú Cuatiá, Corrientes, Argentina
+*** Instituto Superior de Curuzú Cuatiá, Curuzú Cuatiá, Argentina
 **** Primeras Charlas Software Libre
 ***** Curuzú Libre                                                      :gnu:
 

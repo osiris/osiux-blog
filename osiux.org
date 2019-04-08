@@ -3,7 +3,7 @@
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+INCLUDE: "header.org"
+#+INCLUDE:   header.org
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
 ** =whoami=
@@ -20,11 +20,11 @@
 
    Los archivos =*.org= de este blog se encuentran en:
 
-   - http://github.com/osiris/osiux-blog
+   - http://gitlab.com/osiux/osiux-blog
 
    Los archivos =*.html= junto con las imágenes en:
 
-   - https://github.com/osiris/osiris.github.com
+   - https://gitlab.com/osiux/osiris.github.com
 
 ** =gpg=
 
@@ -39,14 +39,14 @@
 *** =signature=
 
     #+BEGIN_EXAMPLE
-      Osiris Alejandro Gomez (OSiUX) osiux@osiux.com.ar
-      DC44 95D2 0D5D D544 FC1A F00F B308 A671 9237 D36C
-      http://www.osiux.com.ar http://www.altermundi.net
+      Osiris Alejandro Gomez (OSiUX) osiux@osiux.com
+      DC4495D2 0D5DD544  FC1AF00F  B308A671 9237D36C
+      https://www.osiux.com/ https://www.gcoop.coop/
 
       Osiris Alejandro Gomez (OSiRiS) osiris@gcoop.coop
       DC44 95D2 0D5D D544 FC1A F00F B308 A671 9237 D36C
       http://gcoop.coop | Cooperativa de Software Libre
-      Julián Alvarez 958 CABA C1414DRT +54 11 4711-0055
+      La Pampa 4395 CABA C1430BXU | (0054 11) 5254-7755
     #+END_EXAMPLE
 
 *** =public key=

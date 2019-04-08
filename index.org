@@ -3,9 +3,50 @@
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+INCLUDE: "header.org"
+#+INCLUDE:   header.org
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
+<<<<<<< Updated upstream
+** 2018-12-11
+
+*** =04:00= [[file:2018-12-11-org-mode-is-back.org][Org-mode is back!]]
+
+** 2018-08-21
+
+*** =16:07= [[file:2018-08-21-ejecutar-un-binarioexe-de-32bits-en-un-gnulinux-de-64bits-y-resolver-sus-dependencias.org][Ejecutar un =Binario.exe= de 32bits en un GNU/Linux de 64bits y resolver sus dependencias]]
+
+** 2018-08-15
+
+*** =15:00= [[file:2018-08-15-realizar-un-profile-en-vim-y-deshabilitar-foldexpr-markdown.org][Realizar un *profile* en =vim= y deshabilitar =Foldexpr_markdown=]]
+
+** 2018-01-01
+
+*** =21:27= [[file:2018-01-01-reemplazando-orgmode-por-txt-bash-jrnl.org][Reemplazando =orgmode= por =txt-bash-jrnl=]]
+
+** 2017-12-04
+
+*** =01:22= [[file:2017-12-04-nuevo-blog-gracias-a-jrnl-y-markdown-styles.org][nuevo blog gracias a =jrnl= y =markdown-styles=]]
+
+** 2017-07-10
+
+*** =09:42= [[file:2017-07-10-convertir-org-mode-a-markdown-org2md.org][Convertir Org-mode a Markdown (org2md)]]
+
+** 2017-07-08
+
+*** =03:30= [[file:2017-07-08-instalar-markdown-styles-para-convertir-un-md-en-un-html.org][Instalar =markdown-styles= para convertir un =.md= en un =.html=]]
+
+** 2017-07-07
+
+*** =22:30= [[file:2017-07-07-ideas-para-utilizar-txt-bash-jrnl-como-un-sistema-de-micro-blog.org][Ideas para utilizar =txt-bash-jrnl= como un sistema de micro blog]]
+
+** 2017-04-26
+
+*** =12:00= [[file:2017-04-26-percona-live-17-mysql-load-balancers-maxscale-proxysql-haproxy-mysql-router-&-nginx-a-close-up-look.org][Percona Live 17 - MySQL Load Balancers - MaxScale, ProxySQL, HAProxy, MySQL Router & nginx - a close up look]]
+
+** 2017-04-25
+
+*** =11:30= [[file:2017-04-25-percona-live-17-use-proxysql-to-improve-your-mysql-high-availability-solution.org][Percona Live 17 - Use ProxySQL to Improve Your MySQL High Availability Solution]]
+=======
 *** [[file:gcoop-en-accion.org][gcoop en acción]]                                                :noexport:
     :PROPERTIES:
     :ID:       a1bbdd6a-55e1-4db7-a127-299755cd539d
@@ -36,8 +77,12 @@
     :ID:       c180e17e-ee35-424d-a0c6-785df73f54d1
     :END:
 
+** =24/ABR=
+*** Percona Live Open Source Databases Conference
+
 ** =03/FEB=
 *** [[file:2016-02-03-monitoreo-en-status-bar-de-tmux.org][monitoreo en status bar de tmux]]
 
     #+ATTR_HTML: :width 570 :height 147 :title qmhandle status bar tmux using spark
     [[file:2016-02-03-monitoreo-en-status-bar-de-tmux.org][file:tmb/qmhandle-status-bar-tmux-spark.png]]
+>>>>>>> Stashed changes
