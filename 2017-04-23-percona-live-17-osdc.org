@@ -6,7 +6,9 @@
 #+INCLUDE:   header.org
 #+DATE:      2017-04-23
 
-** Percona Live 17
+#+INCLUDE: "2017-04-23-percona-live-17-header.org"
+
+** gcoop presente en Percona Live 17
 
    Hace rato que en *gcoop* [fn:gcoop] decidimos que en lugar de
    sponsorear un evento, era mucho mejor participar de un evento, ya
@@ -29,7 +31,7 @@
 
 #+INCLUDE: "2017-04-23-percona-live-17-sjo.org"   :lines "10-"
 
-#+INCLUDE: "2017-04-24-percona-live-17-day-zero.org"      :lines "10-"
+#+INCLUDE: "2017-04-24-percona-live-17-zero-day.org"      :lines "10-"
 
 #+INCLUDE: "2017-04-25-percona-live-17-day-one.org"       :lines "10-"
 

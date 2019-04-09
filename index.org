@@ -40,37 +40,37 @@
 
 ** 2017-04-30
 
-*** [[file:2017-04-30-percona-live-17-eze.org][Percona Live 17 =SJO -> DFW -> EZE=]
+*** [[file:2017-04-30-percona-live-17-eze.org][Percona Live 17 =SJO -> DFW -> EZE=]]
 
 ** 2017-04-29
 
-*** [[file:2017-04-29-percona-live-17-santa-clara.org][Percona Live 17 - Santa Clara]
+*** [[file:2017-04-29-percona-live-17-santa-clara.org][Percona Live 17 - Santa Clara]]
 
 ** 2017-04-28
 
-*** [[file:2017-04-28-percona-live-17-san-francisco.org][Percona Live 17 =San Francisco=]
+*** [[file:2017-04-28-percona-live-17-san-francisco.org][Percona Live 17 =San Francisco=]]
 
 ** 2017-04-27
 
-*** [[file:2017-04-27-percona-live-17-day-three.org][Percona Live 17 =Day Three= keynotes]
+*** [[file:2017-04-27-percona-live-17-day-three.org][Percona Live 17 =Day Three= keynotes]]
 
 ** 2017-04-26
 
-*** [[file:2017-04-26-percona-live-17-day-two.org][Percona Live 17 =Day Two= Too Many Talks]
+*** [[file:2017-04-26-percona-live-17-day-two.org][Percona Live 17 =Day Two= Too Many Talks]]
 
 ** 2017-04-25
 
-*** [[file:2017-04-25-percona-live-17-day-one.org][Percona Live 17 =Day One= Load Balancers]
+*** [[file:2017-04-25-percona-live-17-day-one.org][Percona Live 17 =Day One= Load Balancers]]
 
 ** 2017-04-24
 
-*** [[file:2017-04-24-percona-live-17-zero-day.org][Percona Live 17 =Zero Day= Tutorials]
+*** [[file:2017-04-24-percona-live-17-zero-day.org][Percona Live 17 =Zero Day= Tutorials]]
 
 ** 2017-04-23
 
-*** [[file:2017-04-23-percona-live-17-sjo.org][Percona Live 17 - =EZE -> DFW -> SJO=]
+*** [[file:2017-04-23-percona-live-17-sjo.org][Percona Live 17 - =EZE -> DFW -> SJO=]]
 
-*** [[file:2017-04-23-percona-live-17-osdc.org][Percona Live 17 - =Open Source Databases Conference=]
+*** [[file:2017-04-23-percona-live-17-osdc.org][Percona Live 17 - =Open Source Databases Conference=]]
 
 ** 2016-02-03
 
@@ -78,7 +78,7 @@
 
 ** 2014-11-14
 
-*** [[file:2014-11-14-:un-tupper-para-almacenar-backups.org][un tupper para almacenar backups]]
+*** [[file:2014-11-14-un-tupper-para-almacenar-backups.org][un tupper para almacenar backups]]
 
 ** SOMEDAY                                                                           :noexport:
 *** [[file:gcoop-en-accion.org][gcoop en acción]]                                    :noexport:

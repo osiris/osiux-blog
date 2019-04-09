@@ -6,6 +6,8 @@
 #+INCLUDE:   header.org
 #+DATE:      2017-04-30
 
+#+INCLUDE: "2017-04-23-percona-live-17-header.org"
+
 ** Volviendo de EEUU
 
    Partí muy temprano y muy amablemente Jocelyn (la dueña de casa) se

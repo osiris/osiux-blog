@@ -6,13 +6,15 @@
 #+INCLUDE:   header.org
 #+DATE:      2017-04-23
 
+#+INCLUDE: "2017-04-23-percona-live-17-header.org"
+
 ** Viajando desde EZE con escala en DFW para llegar a SJO
 
-   Fue mi primera vez en viajar a EEUU asi que toda una experiencia
+   Fue mi primera vez en viajar a /EEUU/ asi que toda una experiencia
    nueva, empezando por la distancia a recorrer 8523Km en línea recta
-   entre Ezeiza y Dallas donde fue mi primer escala y desde ahí hasta
-   el aeropuerto de San Jose otros 2334Km aprox, que traducido en
-   horas, fueron 10hs el vuelo internacional y 3hs el vuelo de
+   entre /Ezeiza/ y /Dallas/ donde fue mi primer escala y desde ahí
+   hasta el aeropuerto de /San Jose/ otros 2334Km aprox, que traducido
+   en horas, fueron 10hs el vuelo internacional y 3hs el vuelo de
    cabotaje.
 
    No deja de sorprenderme cada vez que subo a un avión como logran
@@ -20,7 +22,7 @@
    son 50 segundos de tomar carrera y los últimos 10 segundos ya
    empezó a volar.
 
-   El avión llegó temprano a Dallas (04:40 AM Hora del pacífico) y
+   El avión llegó temprano a /Dallas/ (04:40 AM Hora del pacífico) y
    tuvimos que esperar porque todavía Migración no había abierto,
    luego el primer control, una máquina que escanea el pasaporte y te
    hace unas preguntas para finalmente imprimir un papel y con éste ir

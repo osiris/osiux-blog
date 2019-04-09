@@ -6,6 +6,8 @@
 #+INCLUDE:   header.org
 #+DATE:      2017-04-26
 
+#+INCLUDE: "2017-04-23-percona-live-17-header.org"
+
 ** Day Two
 *** Galera Cluster Data Consistency
 

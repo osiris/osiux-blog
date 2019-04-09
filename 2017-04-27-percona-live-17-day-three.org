@@ -6,6 +6,8 @@
 #+INCLUDE:   header.org
 #+DATE:      2017-04-27
 
+#+INCLUDE: "2017-04-23-percona-live-17-header.org"
+
 ** Day Three
 
    La manaña nuevamente comenzó con los keynotes, Paul Dix de Influx
