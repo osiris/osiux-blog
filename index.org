@@ -6,7 +6,6 @@
 #+INCLUDE:   header.org
 #+DATE:      {{{modification-time(%Y-%m-%d %H:%M)}}}
 
-<<<<<<< Updated upstream
 ** 2018-12-11
 
 *** =04:00= [[file:2018-12-11-org-mode-is-back.org][Org-mode is back!]]
@@ -39,50 +38,52 @@
 
 *** =22:30= [[file:2017-07-07-ideas-para-utilizar-txt-bash-jrnl-como-un-sistema-de-micro-blog.org][Ideas para utilizar =txt-bash-jrnl= como un sistema de micro blog]]
 
+** 2017-04-30
+
+*** [[file:2017-04-30-percona-live-17-eze.org][Percona Live 17 =SJO -> DFW -> EZE=]
+
+** 2017-04-29
+
+*** [[file:2017-04-29-percona-live-17-santa-clara.org][Percona Live 17 - Santa Clara]
+
+** 2017-04-28
+
+*** [[file:2017-04-28-percona-live-17-san-francisco.org][Percona Live 17 =San Francisco=]
+
+** 2017-04-27
+
+*** [[file:2017-04-27-percona-live-17-day-three.org][Percona Live 17 =Day Three= keynotes]
+
 ** 2017-04-26
 
-*** =12:00= [[file:2017-04-26-percona-live-17-mysql-load-balancers-maxscale-proxysql-haproxy-mysql-router-&-nginx-a-close-up-look.org][Percona Live 17 - MySQL Load Balancers - MaxScale, ProxySQL, HAProxy, MySQL Router & nginx - a close up look]]
+*** [[file:2017-04-26-percona-live-17-day-two.org][Percona Live 17 =Day Two= Too Many Talks]
 
 ** 2017-04-25
 
-*** =11:30= [[file:2017-04-25-percona-live-17-use-proxysql-to-improve-your-mysql-high-availability-solution.org][Percona Live 17 - Use ProxySQL to Improve Your MySQL High Availability Solution]]
-=======
-*** [[file:gcoop-en-accion.org][gcoop en acción]]                                                :noexport:
-    :PROPERTIES:
-    :ID:       a1bbdd6a-55e1-4db7-a127-299755cd539d
-    :END:
+*** [[file:2017-04-25-percona-live-17-day-one.org][Percona Live 17 =Day One= Load Balancers]
 
-*** [[file:multi-ssh-config.org][Multi SSH Config]]                                               :noexport:
-    :PROPERTIES:
-    :ID:       214a1da6-b739-442b-b185-9fa95ebadf40
-    :END:
+** 2017-04-24
 
-*** [[file:openscad-para-programadores.org][OpenSCAD para programadores]]                                    :noexport:
-    :PROPERTIES:
-    :ID:       bcea51a7-a22b-48a0-8e76-0ba532af0215
-    :END:
+*** [[file:2017-04-24-percona-live-17-zero-day.org][Percona Live 17 =Zero Day= Tutorials]
 
-*** [[file:workshop-prusa-i3-impresora-3d.org][Workshop Prusa i3 Impresora 3D]]                                 :noexport:
-    :PROPERTIES:
-    :ID:       c60be70c-daa4-4214-a05b-7b1f66b5e432
-    :END:
+** 2017-04-23
 
-*** [[file:plan-b-fast-openvz-backups.org][plan-b Fast OpenVZ Backups]]                                     :noexport:
-    :PROPERTIES:
-    :ID:       dcf07566-241e-44a2-bec2-620941f17ccc
-    :END:
+*** [[file:2017-04-23-percona-live-17-sjo.org][Percona Live 17 - =EZE -> DFW -> SJO=]
 
-*** [[file:un-tupper-para-almacenar-backups.org][un tupper para almacenar backups]]                               :noexport:
-    :PROPERTIES:
-    :ID:       c180e17e-ee35-424d-a0c6-785df73f54d1
-    :END:
+*** [[file:2017-04-23-percona-live-17-osdc.org][Percona Live 17 - =Open Source Databases Conference=]
 
-** =24/ABR=
-*** Percona Live Open Source Databases Conference
+** 2016-02-03
 
-** =03/FEB=
 *** [[file:2016-02-03-monitoreo-en-status-bar-de-tmux.org][monitoreo en status bar de tmux]]
 
-    #+ATTR_HTML: :width 570 :height 147 :title qmhandle status bar tmux using spark
-    [[file:2016-02-03-monitoreo-en-status-bar-de-tmux.org][file:tmb/qmhandle-status-bar-tmux-spark.png]]
->>>>>>> Stashed changes
+** 2014-11-14
+
+*** [[file:2014-11-14-:un-tupper-para-almacenar-backups.org][un tupper para almacenar backups]]
+
+** SOMEDAY                                                                           :noexport:
+*** [[file:gcoop-en-accion.org][gcoop en acción]]                                    :noexport:
+*** [[file:multi-ssh-config.org][Multi SSH Config]]                                  :noexport:
+*** [[file:openscad-para-programadores.org][OpenSCAD para programadores]]            :noexport:
+*** [[file:workshop-prusa-i3-impresora-3d.org][Workshop Prusa i3 Impresora 3D]]      :noexport:
+*** [[file:plan-b-fast-openvz-backups.org][plan-b Fast OpenVZ Backups]]              :noexport:
+

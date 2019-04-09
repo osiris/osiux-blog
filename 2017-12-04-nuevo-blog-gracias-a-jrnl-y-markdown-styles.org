@@ -1,0 +1,16 @@
+#+TITLE:     nuevo blog gracias a =jrnl= y =markdown-styles=
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE:   header.org
+#+DATE:      2017-12-04
+
+Hace casi 2 años de mi último *post* [fn:post] en este blog y espero
+revertir esta situación median te la utilización de =jrnl= [fn:jrnl],
+un script que estoy utilizando en reemplazo de *Org-mode* [fn:orgmode]
+
+[fn:post]    https://github.com/osiris/osiux-blog/commit/1311ba6ddb764547ee6f44b036a1d5fa9c11d15e
+[fn:jrnl]    https://github.com/osiris/txt-bash-jrnl/
+[fn:orgmode] http://orgmode.org/
+

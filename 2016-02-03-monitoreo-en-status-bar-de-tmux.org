@@ -1,9 +1,9 @@
-#+TITLE:     monitoreo en status bar de tmux
+#+TITLE:     monitoreo en status bar de =tmux=
 #+AUTHOR:    Osiris Alejandro Gómez
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+INCLUDE: "header.org"
+#+INCLUDE:   header.org
 #+DATE:      2014-11-14
 
 #+ATTR_HTML: :width 570 :height 147 :title qmhandle status bar tmux using spark

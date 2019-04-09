@@ -33,62 +33,6 @@ resumen y un historial cronológico de todas ellas.
      egrep "^\*\*\* " ~/blog/charlas.org  | cut -d, -f2 | sort | uniq -c | sort -nr | barra
    #+END_SRC
 
-   #+RESULTS:
-   #+begin_example
-
-<<<<<<< Updated upstream
-   ** charlas por tag
-
-    34.21 %  34.21 %         13 ████████             redes 
-    57.89 %  23.68 %          9 ██████               coop 
-    68.42 %  10.53 %          4 ██                   sysadmin 
-    78.95 %  10.53 %          4 ██                   graphviz 
-    86.84 %   7.89 %          3 ██                   privacidad 
-    94.74 %   7.89 %          3 ██                   orgmode 
-    97.37 %   2.63 %          1 ▌                    openvz 
-   100.00 %   2.63 %          1 ▌                    gnu 
-			     38
-   ** charlas por año
-
-    23.08 %  23.08 %          6 █████                2011 
-    42.31 %  19.23 %          5 ████                 2012 
-    53.85 %  11.54 %          3 ███                  2014 
-    65.38 %  11.54 %          3 ███                  2013 
-    73.08 %   7.69 %          2 ██                   2018 
-    80.77 %   7.69 %          2 ██                   2015 
-    88.46 %   7.69 %          2 ██                   2008 
-    96.15 %   7.69 %          2 ██                   2007 
-   100.00 %   3.85 %          1 █                    2010 
-			     26
-
-   ** meses más frecuentes
-
-    30.43 %  30.43 %          7 ███████              04 
-    52.17 %  21.74 %          5 █████                11 
-    65.22 %  13.04 %          3 ███                  10 
-    73.91 %   8.70 %          2 ██                   09 
-    82.61 %   8.70 %          2 ██                   07 
-    91.30 %   8.70 %          2 ██                   05 
-   100.00 %   8.70 %          2 ██                   03 
-			     23
-
-   ** eventos más frecuentes
-
-    69.23 %  69.23 %          9 █████████████████    FLISoL  
-    84.62 %  15.38 %          2 ███                  SASOConf  
-   100.00 %  15.38 %          2 ███                  CISL  
-			     13
-
-   ** ciudades más frecuentes
-
-    47.37 %  47.37 %          9 ███████████          CABA 
-    68.42 %  21.05 %          4 █████                Curuzú Cuatiá 
-    78.95 %  10.53 %          2 ██                   Río Gallegos 
-    89.47 %  10.53 %          2 ██                   Monte Caseros 
-   100.00 %  10.53 %          2 ██                   Bogotá 
-			     19
-#+end_example
-
 ** 11/2018
 *** Universidad Nacional de José C. Paz, José C. Paz, Buenos Aires, Argentina
 **** I Jornadas "Universidad y desarrollo local"

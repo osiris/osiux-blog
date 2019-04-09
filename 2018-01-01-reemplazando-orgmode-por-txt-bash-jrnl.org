@@ -63,5 +63,3 @@ Es una excelente manera de comenzar este *Happy GNU Year* :)
 [fn:txt-bash-jrnl] https://github.com/osiris/txt-bash-jrnl/
 [fn:orgmode]       http://orgmode.org/
 [fn:vim]           http://www.vim.org/
-
-  @ 00:32 hs

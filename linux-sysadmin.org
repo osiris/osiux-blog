@@ -3,7 +3,7 @@
 #+EMAIL:       osiris@gcoop.coop
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
-#+INCLUDE: "header.org"                                                 
+#+INCLUDE:     header.org
 #+DATE:        2014-01-20
 
 * Filosofía UNIX
@@ -263,7 +263,7 @@
 ** Descriptores de archivos
 
    Existen 3 descriptores básicos de archivos:
-   
+
    | =0= | =stdin=  | entrada estándar  |
    | =1= | =stdout= | salida estándar   |
    | =2= | =stderr= | salida de errores |
@@ -371,7 +371,7 @@
      +---+      +-----------+
      | 1 |----->| /dev/null |
      +---+      +-----------+
-            
+
      +---+      +-----------+
      | 2 |------| /dev/tty0 |
      +---+      +-----------+
@@ -409,7 +409,7 @@
      +---+      +-----------+
      | 1 |----->| /dev/tty0 |
      +---+      +-----------+
-            
+
      +---+      +-----------+
      | 2 |------| /dev/tty0 |
      +---+      +-----------+
@@ -425,7 +425,7 @@
      | comando |----->|    tee    |----->| /dev/tty0 |
      +---------+      +-----------+      +-----------+
                             |
-                            v    
+                            v
                       +-----------+
                       | /tmp/file |
                       +-----------+
@@ -437,14 +437,14 @@
 ** Enviar la salida estándar de un comando como la entrada estándar de otro comando
 
    #+BEGIN_SRC ditaa :file img/stdout-pipe-stdin.png :cmdline -E :exports results
-     +---+      +------------+      +---+      +------------+ 
+     +---+      +------------+      +---+      +------------+
      | 0 |----->| /dev/tty0  |  +-->| 0 |----->| pipe read  |
      +---+      +------------+  |   +---+      +------------+
-                                |                          
+                                |
      +---+      +------------+  |   +---+      +------------+
      | 1 |----->| pipe write |--+   | 1 |----->| /dev/tty0  |
      +---+      +------------+      +---+      +------------+
-                                         
+
      +---+      +------------+      +---+      +------------+
      | 2 |------| /dev/tty0  |      | 2 |------| /dev/tty0  |
      +---+      +------------+      +---+      +------------+
@@ -770,7 +770,7 @@
     #+end_example
 
 *** =head -2=
- 
+
     #+BEGIN_SRC sh :session :results output :exports both
       head /proc/meminfo | head -2
     #+END_SRC

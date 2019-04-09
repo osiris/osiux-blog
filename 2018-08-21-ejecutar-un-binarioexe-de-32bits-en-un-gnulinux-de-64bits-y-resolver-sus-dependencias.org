@@ -1,0 +1,45 @@
+#+TITLE:     Ejecutar un =Binario.exe= de 32bits en un /GNU/Linux/ de 64bits y resolver sus dependencias
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE:   header.org
+#+DATE:      2018-08-21 16:07
+
+** Instalar Wine 32 bits en Debian/Ubuntu 64bits
+
+Tengo que probar si un dispositivo (que no posee driver para
+/GNU/Linux/) funcionaría utilizando =wine= [fn:wine]. El operativo
+/GNU/Linux/ es 64bits pero el binario a ejecutar es de 32bits, asi que
+hay que forzar la arquitectura 32bits y luego instalar *Wine*
+
+: # dpkg --add-architecture i386
+:
+: # apt update
+:
+: # apt install wine32
+
+## Dependencias fallidas de un =.exe=
+
+Luego de instalar *Wine* al ejecutar el binario obtengo el error:
+
+: # wine Binario.exe
+:
+: 0009:err:module:import_dll Library MSVBVM60.DLL (which is needed by L"Z:\\home\\test\\Binario.exe") not found
+: 0009:err:module:attach_dlls Importing dlls for L"Z:\\home\\test\\Binario.exe" failed, status c0000135
+
+Buscando un poco cómo instalar la *DLL* faltante, la cual es parte del
+*VisualBasic 6 Runtime*, encuentro =winetricks= [fn:winetricks] que
+permite simplificar la instalación de *fonts*, *DLLs* y gran parte de
+las aplicaciones mas utilizadas en *wine*:
+
+: # wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+:
+: # chmod +x winetricks
+:
+: # ./winetricks corefonts vb6run
+:
+: # wine Binario.exe
+
+[fn:wine]       https://www.winehq.org/
+[fn:winetricks] https://wiki.winehq.org/Winetricks

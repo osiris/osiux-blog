@@ -3,7 +3,7 @@
 #+EMAIL:     osiux@osiux.com
 #+LANGUAGE:  es
 #+LINK_HOME: index.html
-#+INCLUDE: "header.org"
+#+INCLUDE:   header.org
 #+DATE:      2014-11-14
 
 [[file:tupper.png]]
@@ -69,7 +69,7 @@
    edición 2015 de la *SASOConf* [fn:sasoconf] y están disponibles en
    /github/ [fn:github] para que cualquiera pueda usarlos y
    mejorarlos.
-
+   
 ** bonus extra: un mediacenter!
 
    Y ya que el tupper tenía que estar prendido todo el día y podía
@@ -85,19 +85,19 @@
  
    file:tupper-mame.png
 
-[fn:gcoop] http://gcoop.coop
-[fn:proxmox] http://proxmox.com
-[fn:huayra] http://huayra.conectarigualdad.gob.ar
-[fn:oelect] http://openelec.tv/
-[fn:omvault] http://www.openmediavault.org
-[fn:xbmc] http://xbmc.org
-[fn:github] https://github.com/gcoop-libre/plan-b
-[fn:plan-b] http://pub.osiux.com/plan-b-sasoconf.pdf
-[fn:sasoconf] http://sasoconf.com.ar
-[fn:openvz] http://openvz.org
-[fn:archive] https://archive.org/details/messmame
-[fn:mame] http://mamedev.org
-[fn:luks] http://www.hermann-uwe.de/blog/howto-disk-encryption-with-dm-crypt-luks-and-debian
-[fn:wn722n] http://www.tp-link.com/ar/products/details/?categoryid=&model=TL-WN722N
-[fn:wr842nd] http://www.tp-link.com/ar/products/details/?categoryid=&model=TL-WR842ND
+[fn:gcoop]     http://gcoop.coop
+[fn:proxmox]   http://proxmox.com
+[fn:huayra]    http://huayra.conectarigualdad.gob.ar
+[fn:oelect]    http://openelec.tv/
+[fn:omvault]   http://www.openmediavault.org
+[fn:xbmc]      http://xbmc.org
+[fn:github]    https://github.com/gcoop-libre/plan-b
+[fn:plan-b]    http://pub.osiux.com/plan-b-sasoconf.pdf
+[fn:sasoconf]  http://sasoconf.com.ar
+[fn:openvz]    http://openvz.org
+[fn:archive]   https://archive.org/details/messmame
+[fn:mame]      http://mamedev.org
+[fn:luks]      http://www.hermann-uwe.de/blog/howto-disk-encryption-with-dm-crypt-luks-and-debian
+[fn:wn722n]    http://www.tp-link.com/ar/products/details/?categoryid=&model=TL-WN722N
+[fn:wr842nd]   http://www.tp-link.com/ar/products/details/?categoryid=&model=TL-WR842ND
 [fn:compartir] file:2013-04-02-altermesh-buenos-aires-libre-compartir-es-bueno.org

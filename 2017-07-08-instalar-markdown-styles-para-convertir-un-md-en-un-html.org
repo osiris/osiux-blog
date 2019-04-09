@@ -1,0 +1,42 @@
+#+TITLE:     Instalar =markdown-styles= para convertir un =.md= en un =.html=
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE:   header.org
+#+DATE:      2017-07-08 03:30
+
+Luego de una búsqueda por la web, encontré
+*markdown-styles* [fn:styles] que permite fácilmente convertir un
+archivo de *Markdown* al formato *HTML*.
+
+** Instalar =nodejs= y =markdown-styles= usando =npm=
+
+: # curl -sL https://deb.nodesource.com/setup_8.x | sudo -E  -
+: # sudo apt-get install -y nodejs
+: # sudo npm install -g markdown-styles
+
+** Ejecución
+
+Es muy simple, lo más básico es indicar un *layout* (que puede ser
+personalizado), el directorio de entrada y el directorio de salida
+
+: # generate-md --layout ./layouts/osiux --input ./input --output ./output
+
+La generación se ocupa de copiar los *assets*, en mi caso estoy
+armando mi layout en base a uno existente
+
+: # generate-md --layout ./layouts/osiux --input ./input --output ./output
+: Layout: /home/osiris/blog/layouts/osiux
+: Input: /home/osiris/blog/input
+: Output: /home/osiris/blog/output
+: Copy asset file /home/osiris/blog/layouts/osiux/assets/hljs-solarized-dark.min.css => /home/osiris/blog/output/assets/hljs-solarized-dark.min.css
+: Copy asset file /home/osiris/blog/layouts/osiux/assets/osiux.css => /home/osiris/blog/output/assets/osiux.css
+: Copy asset file /home/osiris/blog/layouts/osiux/assets/pilcrow.css => /home/osiris/blog/output/assets/pilcrow.css
+: Copy asset file /home/osiris/blog/layouts/osiux/assets/style.css => /home/osiris/blog/output/assets/style.css
+
+Realmente es muy rápido y con muy buen resultado, definitivamente lo
+voy a utilizar en mi sistema de micro blog basándome en
+=txt-bash-jrnl=
+
+[fn:styles] https://github.com/mixu/markdown-styles

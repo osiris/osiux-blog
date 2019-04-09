@@ -1,0 +1,17 @@
+#+TITLE:     Convertir Org-mode a Markdown =org2md=
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiux@osiux.com
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE:   header.org
+#+DATE:      2017-07-10
+
+Estoy migrando mi blog de *Org-mode* a *Markdown* y para convertir el
+archivo en *EMACS* solo basta ejecutar:
+
+: M-x org-md-export-to-markdown
+
+También encontré una alternativa interesante, *Github Flavored
+Markdown Back-End for Org Export Engine* [fn:gfm]
+
+[fn:gfm] https://github.com/larstvei/ox-gfm

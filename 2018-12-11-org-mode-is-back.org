@@ -34,11 +34,11 @@ obligó a encontrar la manera de documentar velozmente y para ello creé
 =jrnl= [fn:jrnl], el cual utilizo casi todo el día, pero al intentar
 adaptarlo para usarlo para este blog, por más que haya logrado
 resolverlo técnicamente (aún con la implementación de *Markdown* y
-unos bash scripts), el problema de no postear seguido no se trataba de
-la herramienta, yo no sirvo para el micro-bloging, claramente no poder
-para resumir, mayormente mis publicaciones son extensas y detalladas y
-es porque disfruto hacerlo y me tomo mi tiempo para ello (bueno hace
-un par de años que no lo hago).
+unos *bash* scripts), el problema de no postear seguido no se trataba
+de la herramienta, yo no sirvo para el micro-bloging, claramente no
+tengo poder para resumir, mayormente mis publicaciones son extensas y
+detalladas y es porque disfruto hacerlo y me tomo mi tiempo para ello
+(bueno hace un par de años que no lo hago).
 
 ** Org-mode
 

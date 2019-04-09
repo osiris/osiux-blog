@@ -1,0 +1,54 @@
+#+TITLE:     Percona Live 17 Open Source Databases Conference
+#+AUTHOR:    Osiris Alejandro Gómez
+#+EMAIL:     osiris@gcoop.coop
+#+LANGUAGE:  es
+#+LINK_HOME: index.html
+#+INCLUDE:   header.org
+#+DATE:      2017-04-23
+
+** Percona Live 17
+
+   Hace rato que en *gcoop* [fn:gcoop] decidimos que en lugar de
+   sponsorear un evento, era mucho mejor participar de un evento, ya
+   sea como disertante o asistente ya que de esta manera nos
+   capacitamos o capacitamos y contribuimos con la comunidad del
+   *Software Libre* en primera persona.
+
+   A fin de 2016 vimos que se venía el *Percona Live 17*, del cual
+   nunca habíamos participado y como cada día que pasa necesitamos
+   exprimir mas nuestros motores de Bases de Datos
+   (/MySQL/MariaDB/Percona/PostgreSQL/) era una excelente oportunidad
+   para participar del evento.
+
+   Resulta que el evento era en la ciudad de /Santa Clara/, estado de
+   /California/ en /Estados Unidos/, asi que el primer paso era
+   obtener la /VISA/ (y no hablo de la tarjeta de crédito) para poder
+   ingresar, en fin luego del trámite obtuve la /B1/, asi que con
+   pasajes en mano y /tickets/ de la conferencia ya estaba en
+   condiciones de viajar.
+
+#+INCLUDE: "2017-04-23-percona-live-17-sjo.org"   :lines "10-"
+
+#+INCLUDE: "2017-04-24-percona-live-17-day-zero.org"      :lines "10-"
+
+#+INCLUDE: "2017-04-25-percona-live-17-day-one.org"       :lines "10-"
+
+#+INCLUDE: "2017-04-26-percona-live-17-day-two.org"       :lines "10-"
+
+#+INCLUDE: "2017-04-27-percona-live-17-day-three.org"     :lines "10-"
+
+#+INCLUDE: "2017-04-28-percona-live-17-san-francisco.org" :lines "10-"
+
+#+INCLUDE: "2017-04-29-percona-live-17-santa-clara.org"   :lines "10-"
+
+#+INCLUDE: "2017-04-30-percona-live-17-eze.org"   :lines "10-"
+
+[fn:gcoop]                   https://www.gcoop.coop/
+
+[fn:welcoming-keynote-web]   https://www.percona.com/live/17/sessions/percona-welcoming-keynote
+[fn:welcoming-keynote-pdf]   https://www.percona.com/live/17/sites/default/files/slides/PL17-Welcoming-Keynote-5026.pdf
+
+[fn:peter-zaitsev] https://www.percona.com/about-percona/team/peter-zaitsev
+
+[fn:dr-hipp] https://en.wikipedia.org/wiki/D._Richard_Hipp
+[fn:sqlite]  https://www.sqlite.org/mostdeployed.html

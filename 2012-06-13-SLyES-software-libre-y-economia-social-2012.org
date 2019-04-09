@@ -3,7 +3,7 @@
 #+EMAIL:       osiux@osiux.com
 #+LANGUAGE:    es
 #+LINK_HOME:   index.html
-#+INCLUDE: "header.org"
+#+INCLUDE:     header.org
 #+DATE:        2012-06-13
 
 Hoy desde las 16 horas los esperamos en el Centro Cultural de la
@@ -85,7 +85,7 @@ Juan Manuel Schillaci
  Miembro Fundador de la Cooperativa de Trabajo de Desarrollo de
  Software Libre Devecoop; Analista de Sistemas.
 
-- Invita: [[fhttp://gcoop.coop][Cooperativa de Trabajo gcoop Ltda]]
+- Invita: [[http://gcoop.coop][Cooperativa de Trabajo gcoop Ltda]]
 - Auspician:
   [[http://www.fecootra.org.ar/][FECOOTRA]] y [[http://www.cnct.org.ar/][CNCT]]
 

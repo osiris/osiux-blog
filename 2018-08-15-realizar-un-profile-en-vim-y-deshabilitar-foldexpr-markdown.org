@@ -15,63 +15,55 @@ pegando texto desde el /buffer/ de =tmux=.
 Pero luego comprobé que al pegar en =mcedit= esto no pasaba, e
 investigando cuál podría ser el problema descubrí dos cosas:
 
-** Cómo realizar un [profile] [1] en =vim= para detectar dónde esta la lentitud
+** Cómo realizar un /profile/ [fn:vim] en =vim= para detectar dónde esta la lentitud
 
 Para iniciar el profile:
 
-#+BEGIN_EXAMPLE
-        :profile start profile.log
-        :profile func *
-        :profile file *
-        " At this point do slow actions
-        :profile pause
-        :noautocmd qall!
-#+END_EXAMPLE
+: :profile start profile.log
+: :profile func *
+: :profile file *
+: " At this point do slow actions
+: :profile pause
+: :noautocmd qall!
 
 Para visualizar rápidamente que fue lo más lento:
 
-#+BEGIN_SRC bash :exports code
-  # awk '{print $2,$3}' profile.log  | grep -v total | grep -v SORTED | sort -nr | head
-  27.629469 Foldexpr_markdown()
-  27.629469 Foldexpr_markdown()
-  1.671386 if
-  1.395355 if
-  1.186143 if
-  1.162478 if
-  1.044769 let
-  0.997596 let
-  0.834278 let
-  0.661260 if
-#+END_SRC
+: # awk '{print $2,$3}' profile.log  | grep -v total | grep -v SORTED | sort -nr | head
+:
+: 27.629469 Foldexpr_markdown()
+: 27.629469 Foldexpr_markdown()
+: 1.671386 if
+: 1.395355 if
+: 1.186143 if
+: 1.162478 if
+: 1.044769 let
+: 0.997596 let
+: 0.834278 let
+: 0.661260 if
 
 ** el plugin vim-markdown es lento
 
-Encontré que el plugin /vim-markdown/ tiene un [bug] [2] y se puede
-deshabilitar la función =Foldexpr_markdown()= fácilmente agregando al
-=.vimrc= la siguiente línea:
+Encontré que el plugin /vim-markdown/ tiene un /bug/ [fn:bug] y se
+puede deshabilitar la función =Foldexpr_markdown()= fácilmente
+agregando al =.vimrc= la siguiente línea:
 
-#+BEGIN_EXAMPLE
-  let g:vim_markdown_folding_disabled=1
-#+END_EXAMPLE
+: let g:vim_markdown_folding_disabled=1
 
 Luego volví a repetir el mismo pegado y en el nuevo /profile/ ya no
 apareció la función =Foldexpr_markdown= y fue muy rápido:
 
-#+BEGIN_SRC bash :exports code
-  # awk '{print $2,$3}' markdown.log  | grep -v SORTED | grep -v total | sort -nr | head
-  0.035887 0.000680
-  0.035887 0.000680
-  0.035855 0.002342
-  0.035855 0.002342
-  0.035534 0.000327
-  0.035207 <SNR>94_MarkdownHighlightSources()
-  0.035207 <SNR>94_MarkdownHighlightSources()
-  0.032944 0.000331
-  0.031879 0.000077
-  0.031723 0.000280
-#+END_SRC
+: # awk '{print $2,$3}' markdown.log  | grep -v SORTED | grep -v total | sort -nr | head
+:
+: 0.035887 0.000680
+: 0.035887 0.000680
+: 0.035855 0.002342
+: 0.035855 0.002342
+: 0.035534 0.000327
+: 0.035207 <SNR>94_MarkdownHighlightSources()
+: 0.035207 <SNR>94_MarkdownHighlightSources()
+: 0.032944 0.000331
+: 0.031879 0.000077
+: 0.031723 0.000280
 
-@ 00:29 hs
-
-[1] https://stackoverflow.com/questions/12213597/how-to-see-which-plugins-are-making-vim-slow
-[2] https://github.com/plasticboy/vim-markdown/issues/162
+[fn:vim] https://stackoverflow.com/questions/12213597/how-to-see-which-plugins-are-making-vim-slow
+[fn:bug] https://github.com/plasticboy/vim-markdown/issues/162
