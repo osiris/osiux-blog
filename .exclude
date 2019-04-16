@@ -1,0 +1,9 @@
+^blog.org$
+^charlas.org$
+^docs.org$
+^index.org$
+^osiux.org$
+^sitemap.org$
+^header.org$
+^head.org$
+^[0-9]{4}.org$

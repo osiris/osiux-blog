@@ -50,7 +50,7 @@
              :base-extension "org"
              :recursive t
              :publishing-function '(org-html-publish-to-html)
-             :publishing-directory "/var/www/osiux.com"
+             :publishing-directory "./public"
              :exclude (regexp-opt '("README" "draft"))
              :table-of-contents nil
              :makeindex nil
@@ -82,7 +82,7 @@
              :html-head-extra "<link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\"/>"
              :html-head-extra "<link rel=\"stylesheet\" type=\"text/css\" href=\"osiux.css\" />"
 						 ; SITEMAP
-             :auto-sitemap t
+             :auto-sitemap nil
              :sitemap-filename "sitemap.org"
              :sitemap-title "ASOLUTELLY NO WARRANTY =sitemap="
 						 :sitemap-date-format "%Y-%m-%d"
@@ -94,9 +94,9 @@
 						 ; %d is the date formated using `org-publish-sitemap-date-format
        (list "site-static"
              :base-directory "."
-             :exclude "/var/www/osiux.com/"
+             :exclude "public/"
              :base-extension site-attachments
-             :publishing-directory "/var/www/osiux.com"
+             :publishing-directory "./public"
              :publishing-function 'org-publish-attachment
              :recursive t)
        (list "site" :components '("site-org"))))
