@@ -1,4 +1,4 @@
-image: moul/emacs
+image: iquiw/alpine-emacs
 
 pages:
   script:
